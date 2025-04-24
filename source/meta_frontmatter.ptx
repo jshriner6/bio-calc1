@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- This frontmatter division will contain all content before the -->
+<!-- first chapter.  Fill in and comment/uncomment to see how this -->
+<!-- works.                                                        -->
+
+<frontmatter xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="meta_frontmatter">
+  <titlepage>
+    <author>
+      <personname>Jeff Shriner</personname>
+      <department>Mathematics</department>
+      <institution>Colorado State University</institution>
+      <email>jeffrey.shriner@colostate.edu</email>
+    </author>
+    <date><today/></date>
+  </titlepage>
+
+  <colophon>
+
+<!--
+    <website>
+      <name><c>my-website.org</c></name>
+      <address>http://pretextbook.org</address>
+    </website>
+   -->
+
+    <copyright>
+      <!-- In addition to specifying the copyright holder, you should  -->
+      <!-- include a license, such as the cc-by-sa license shown below -->
+      <!-- so people reading your book know how they can use it.       -->
+      <year>2022 <ndash/>2024</year> <!-- for multiple years: <ndash/>2022 -->
+      <holder>Jeff Shriner</holder>
+      <!-- <minilicense><image source="../images/by-sa.png" /></minilicense> -->
+      <minilicense>CC BY-SA 4.0 License</minilicense>
+    <shortlicense>
+      Permission is granted to copy and (re)distribute this material in any format and/or adapt it (even commercially) under the terms of the Creative Commons Attribution-ShareAlike 4.0 International License.  The work may be used for free in any way by any party so long as attribution is given to the author(s) and if the material is modified, the resulting contributions are distributed under the same license as this original.  All trademarks<trademark /> are the registered<registered /> marks of their respective owners. The graphic
+
+      <sidebyside width="25%">
+        <image xml:id="CC-BY-SA-license" source="images/CC-BY-SA-license" >
+        		<description>Graphic for the creative commons attribution share alike license. </description>
+        </image>
+      </sidebyside>
+
+      that may appear in other locations in the text shows that the work is licensed with the Creative Commons and that the work may be used for free by any party so long as attribution is given to the author(s) and if the material is modified, the resulting contributions are distributed under the same license as this original. Full details may be found by visiting <url href="https://creativecommons.org/licenses/by-sa/4.0/" visual="">https://creativecommons.org/licenses/by-sa/4.0/</url>  or sending a letter to Creative Commons, 444 Castro Street, Suite 900, Mountain View, California, 94041, USA.
+    </shortlicense>
+    </copyright>
+
+  </colophon>
+
+  <acknowledgement>
+    <p>
+     The general style of this text was motivated by the <url href="https://activecalculus.org/" visual="activecalculus.org">Active Calculus</url> suite by Dr. Matthew Boelkins and contributing authors. Considerable content from <url href="https://activecalculus.org/single/book-1.html" visual="activecalculus.org/single/book-1.html">Active Calculus - Single Variable</url> was used and modified for the purposes of serving life science majors. Chapter 1, section 3.2, section 3.3, section 3.7, and section 4.1 were created by the current author. All other sections contain content which originated from <em>Active Calculus - Single Variable</em>, and was modified to fit the needs of this text. I am grateful to all of the contributors of the Active Calculus suite for allowing me to use the fantastic resources that have been developed through years of hard work.
+    </p>
+    <p>
+    The current .html version of the text is possible only because of the amazing work of Rob Beezer and his development of the original Mathbook XML,
+      now known as <url href="https://pretextbook.org/" visual="pretextbook.org">PreTeXt</url>.
+    </p>
+    <p>
+    Finally, I am grateful to the many graduate students, instructors, and students that I have worked with in teaching the course for which this text was developed. The examples, exercises, and overall content layout is better because of their collective engagement and feedback with the material.
+    </p>
+    <p>
+    I welcome <url href="https://docs.google.com/forms/d/e/1FAIpQLSfqb-mJw72Dhhm6BRbYn5IO3eLVvxuBmMoiuRvvYTvmABnZTw/viewform?usp=sf_link" visual="docs.google.com/forms">user feedback</url> to correct errors and collect suggestions for improvements.
+    </p>
+    <p>
+    <em>This text was created with grant support from Colorado State University Libraries and the Colorado Department of Higher Education.</em>
+    </p>
+  </acknowledgement>
+
+<!--
+  <preface xml:id="meta_frontmatter-preface">
+    	<title>Contributors</title>
+    <p>
+      
+    </p>
+  </preface>
+ -->
+
+  <preface>
+    <title>Our Goals</title>
+    <p>
+      As in <em>Active Calculus</em>, our general goal is to provide a free resource that actively engages the reader in learning mathematical concepts in the context of life sciences.  In the text we aim to stress the <em>process</em> of mathematics by using activities and interactives to encourage deepened understanding over memorization of facts. Towards these general goals, the text was designed to
+      	<ul>
+		<li>Provide a guide for reading a scientific text. We ask motivating, big picture questions before each section, and encourage the reader to answer them on their own at the end of each section before reading a summary.</li>
+		<li>Provide opportunities for the reader to actively engage with concepts independently and with others. We present a Warm-Up activity at the beginning of each section for the reader to ponder, which contains previous concepts in a way that will be relevant to the current section they are reading. We also present activities in each section which are meant to be explored in groups, and encourage the reader to deepen their understanding of the concepts being presented, as well as strengthen their oral and written communication in a technical setting.</li>
+		<li>Provide tools for using technology to strengthen understanding and build intuition. We embed Desmos interactives that guide the reader in visualizing concepts and computations, and give an illustration of how technology can be used effectively to assist in learning something new.</li>
+	</ul>
+    </p>
+  </preface>
+  
+  <!--
+    <preface>
+    <title>Text Features</title>
+    <p>
+     
+    </p>
+  </preface>
+     -->
+     
+     <preface>
+    <title>Students: Read this!</title>
+    <p>
+     This book is different. 
+    </p>
+    <p>
+      The text is available in HTML and PDF, both of which are free.  If you are going to use the book electronically, the best mode is the HTML version.  The HTML version looks great in any browser, including on a smartphone, and the links are much easier to navigate in HTML than in PDF.  It also gives you access to the interactive elements of the text. Some particular direct suggestions about using the HTML follow among the next few paragraphs.  It is also wise to download and save the PDF, since you can use the PDF offline, while the HTML version requires an internet connection.
+    </p>
+
+    <p>
+      This book is intended to be read sequentially and engaged with, much more than to be used as a lookup reference.  For example, each section begins with a short introduction and a Warm-Up; you should read the short introduction and complete the Warm-Up prior to class, even if your instructor does not require you to do so. Most Warm-Up activities can be completed in 10-20 minutes and are intended to be accessible based on the understanding you have from preceding sections.  There are not answers provided to Warm-Up activities, as these are designed simply to get you thinking about ideas that will be helpful in work on upcoming new material. There is great benefit in thinking about these questions before class, even if you are unsure about the correctness of your answers.
+    </p>
+
+    <p>
+      As you use the book, think of it as a workbook, not a <em>worked-book</em>.  There is a great deal of scholarship that shows people learn better when they actively engage and struggle with ideas themselves, rather than passively watch others.  Thus, instead of reading worked examples or watching an instructor complete examples, you will engage with Activities that prompt you to grapple with concepts and develop deep understanding.  You should expect to spend time in class working with peers on Activities and getting feedback from them and from your instructor. Your goal should be to do all of the activities in the relevant sections of the text and keep a careful record of your work.  Answers to the activities are not provided in the text, though you can get answers by asking questions in class or outside of class (such as in office hours).
+    </p>
+
+    <p>
+      Each section concludes with a Summary, which re-visits the Motivating Questions from the beginning of the section. After you have read the section and worked the Activities, you should attempt to answer these questions in your own words first. You can then expand answers to check your understanding. This is a good place to find a short list of key ideas that are most essential to take from the section.  
+    </p>
+
+    <p>
+      At the end of each section, you'll find written Exercises. These are designed to encourage you to connect ideas, investigate new situations, and write about your understanding. You are encouraged to work these exercises with others, focusing on your process rather than a final answer. Answers to selected exercises are provided in <xref ref="exercises-answers">Appendix</xref>. Worked solutions are not provided, so you are encouraged to discuss your thought process and reasoning for exercises with others, even if your final answer matches what is listed in the back. Your process and reasoning are the most important things for deepening your understanding and ensuring you can use important concepts on your own in the future, so use the answers as a guide, but not a replacement for engaging in the exercises with others. 
+    </p>
+
+    <p>
+      The best way to be successful in mathematics generally and calculus specifically is to strive to make sense of the main ideas.  We make sense of ideas by asking questions, interacting with others, attempting to solve problems, making mistakes, revising attempts, and writing and speaking about our understanding.  This text has been designed to help you make sense of calculus in the context of the life sciences. We wish you the best as you undertake the large and challenging task of doing so!
+    </p>
+
+  </preface>
+  
+  <preface>
+    <title>Instructors: Read this!</title>
+        <p>
+      This text contains most of the content you would expect from a typical first semester calculus course, though may be lighter in some areas (for example, there are no sections for implicit differentiation or related rates). It also contains content that you would not expect from a typical first semester calculus course. Chapter 1 contains pre-calculus content as well as an introduction to discrete-time dynamical systems, and chapter 3 contains some applications of derivatives in analyzing discrete-time dynamical systems. We approach Chapter 4 from the perspective of analyzing continuous-time dynamical systems (differential equations), and cover most of the standard first semester concepts in integration while doing so.
+       </p>
+
+
+    <p>
+      Among the two formats (HTML, PDF), the HTML is optimal for display in class if you have a suitable projector.  The HTML is also best for navigation, as links to internal and external references are much more obvious, and Desmos interactives can be used directly from the HTML version.  We recommend saving a downloaded version of the PDF format as a backup in the event you don't have internet access. 
+      <!--A PDF of just the Activities or a PDF of just the exercises can be made available by direct request of the author (jeffrey dot shriner at colostate dot edu). -->
+    </p>
+
+    <p>
+      The text is written so that each section corresponds to one to two hours of class meeting time.  A typical instructional sequence when starting a new section might look like the following:
+      <ul>
+        <li>
+          <p>
+             Students complete a Warm-Up in advance of class.  Class begins with a short debrief among peers followed by all class discussion.  (5-10 minutes) 
+          </p>
+        </li>
+        <li>
+          <p>
+             Brief lecture and discussion to build on the Warm-Up and set the stage for the next activity. (5-10 minutes)
+
+          </p>
+        </li>
+        <li>
+          <p>
+             Students engage with peers to work on and discuss the first activity in the section. (10-15 minutes)
+          </p>
+        </li>
+        <li>
+          <p>
+             Brief discussion and possibly lecture to reach closure on the preceding activity, followed by transition to new ideas.  (Varies, but 5-15 minutes)
+          </p>
+        </li>
+        <li>
+          <p>
+            Possibly repeat with the next activity, and summarize section at the very end.
+          </p>
+        </li>
+      </ul>
+      If the section was not completed, the next hour of class would be similar, but without the Warm-Up at the beginning of class.
+    </p>
+
+    <p>
+      There is a <url href="https://teacher.desmos.com/collection/5f5050fa1aec2537b2ab3543" text="custom" visual="teacher.desmos.com/collection/5f5050fa1aec2537b2ab3543">suite of Desmos activities</url> that can be used (or copied and modified) to accompany the text. They were created to be used for a final hands-on experience of important topics during a full class period after the relevant content has already been covered in class.
+    </p>
+
+    <p>
+      The Exercises in the text are meant to be conceptual problems for students to engage with in writing and orally. We recommend also using an online homework system (such as <webwork />) to provide students more procedural practice in which they can receive immediate feedback.
+    </p>
+    
+    <p>
+      The <pretext /> source code for the text is shared at <url href="https://github.com/jshriner6/bio-calc" visual="github.com">GitHub</url>. If you find errors in the text or have other suggestions, use the <url href="https://docs.google.com/forms/d/e/1FAIpQLSfqb-mJw72Dhhm6BRbYn5IO3eLVvxuBmMoiuRvvYTvmABnZTw/viewform?usp=sf_link" visual="docs.google.com/forms">feedback link</url> in the HTML version (found at the bottom left), or email the author directly.
+    </p>
+  </preface>
+
+</frontmatter>
+

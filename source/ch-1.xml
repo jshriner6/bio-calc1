@@ -1,0 +1,3340 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- **********************************************************************              -->
+<!--			                                                                                              -->
+<!--  Jeff Shriner                                                                                              -->
+<!--                                                                                                                  -->
+<!-- This file is part of Calculus for Biological Scientists                 		 -->
+<!--                                                                                                                  -->
+<!-- Permission is granted to copy, distribute and/or modify this document   -->
+<!-- under the terms of the Creative Commons BY-SA license.  The work     -->
+<!-- may be used for free by any party so long as attribution is given to        -->
+<!-- the author(s), the work and its derivatives are used in the spirit of          -->
+<!-- "share and share alike".  All trademarks are the registered marks of.     -->
+<!-- their respective owners.                                                                           -->
+<!-- **********************************************************************              -->
+<chapter xml:id="ch-1" >
+  <title>Functions As Models</title>
+  <!--*******************************************************************************-->
+  <!--		SECTION 1										-->
+  <!--*******************************************************************************-->
+ 	<section xml:id="sec-1-1-bio-math">
+		<title>Biology and Calculus </title>
+			<objectives xml:id="obj-1-1">
+				<ul>
+					<li> <p>What is a mathematical model and why do we need them? </p></li>
+					<li><p> What are some common mathematical models? </p></li>
+					<li><p>What are some mathematical processes that can help us become better problem solvers?</p></li>
+				</ul>
+			</objectives>
+			
+			<introduction>
+				<p>
+				A central theme in science is to study systems and how they <em>change</em>. Calculus can be viewed broadly as the 
+study of change, and is therefore a useful tool to understand as a scientist. In this section we'll begin to gain an understanding of the relationship between biology and mathematics. We begin with a warm-up describing a simple situation you may need to explore in the future.
+				</p>
+			</introduction>
+			
+			<exploration xml:id="wu-1-1">
+				<p>
+				You are in the field measuring the height of a bine each day under certain conditions. You organize your measurements in the following table:
+				<table>
+					<tabular>
+						<row header="yes" bottom="major">
+							<cell>
+								<m>t</m> (days)
+							</cell>
+							<cell>
+								<m>h</m> (feet)
+							</cell>
+						</row>
+						<row>
+							<cell>
+								0
+							</cell>
+							<cell>
+								1			
+							</cell>
+						</row>
+						<row>
+							<cell>
+								1
+							</cell>
+							<cell>
+								2.90
+							</cell>
+						</row>
+						<row>
+							<cell>
+								2
+							</cell>
+							<cell>
+								4.61
+							</cell>
+						</row>
+						<row>
+							<cell>
+								3
+							</cell>
+							<cell>
+								6.15
+							</cell>
+						</row>
+						<row>
+							<cell>
+								4
+							</cell>
+							<cell>
+								7.53
+							</cell>
+						</row>
+						<row>
+							<cell>
+								5
+							</cell>
+							<cell>
+								8.78
+							</cell>
+						</row>
+						<row>
+							<cell>
+								6
+							</cell>
+							<cell>
+								9.90
+							</cell>
+						</row>
+						<row>
+							<cell>
+								7
+							</cell>
+							<cell>
+								10.91
+							</cell>
+						</row>
+						<row>
+							<cell>
+								8
+							</cell>
+							<cell>
+								11.82
+							</cell>
+						</row>
+						<row>
+							<cell>
+								9
+							</cell>
+							<cell>
+								12.64
+							</cell>
+						</row>
+						<row>
+							<cell>
+								10
+							</cell>
+							<cell>
+								13.38
+							</cell>
+						</row>
+					</tabular>
+				</table>
+				
+				<ol>
+					<li> Organize your data as a graph.</li>
+					<li> What do you think the height of the bine will be after <m> 11</m> days?</li>
+				</ol>
+				</p>
+			</exploration>
+			
+			<subsection>
+				<title>Mathematical Models </title>
+					<p>
+					If you compare your answer to <xref ref="wu-1-1">Warm-Up</xref> with other students, you will likely find that your estimation of the bine height after <m>11</m> days is different. You may have used slightly different reasoning to come up with your final answer.  
+					</p>
+					
+					<p>
+					Mathematical modeling is a way to convert data that we measure and observe into something that we can analyze and make predictions based on.
+					</p>
+						<assemblage>
+							<title>Mathematical Model </title> <idx><h>mathematical model </h> </idx>
+								<p>
+								A <em>mathematical model </em> is a mathematical representation that describes a system we have observed and measured.
+								</p>
+						</assemblage>
+						
+					<p>
+					The process of developing and using mathematical models often involves the following steps:
+					
+					
+					<ol>
+						<li><em>Observe</em> and <em>measure</em> a system you are interested in. </li>
+						<li><em> Describe</em> patterns in your observations and measurements.  </li>
+						<li><em>Model </em> the system with a mathematical representation that shares the patterns of the system. </li>
+						<li><em>Analyze </em> the system and <em>make predictions</em> about the system using the mathematical model. </li>
+					</ol>
+					</p>
+					
+					<p>
+					The focus of our text will be on analyzing and making predictions about how systems change given a mathematical model. The mathematical models we will use the most and will explore in much more detail are summarized below:
+					
+					
+					<ul>
+						<li>A <term>function </term> describes a specific type of relationships between different quantities. It can be expressed using multiple representations. Most models involve a function relationship. </li>
+						<li>A <idx><h>discrete-time dynamical system</h></idx> <term> discrete-time dynamical system (DTDS)</term> describes a sequence of measurements made at equally spaced intervals. Functions are an important component of these systems.</li>
+						<li>A <idx><h>continuous-time dynamical system</h></idx> <term> continuous-time dynamical system (CTDS)</term> describes measurements taken over an entire time interval. Functions are an important component of these systems.</li>
+					</ul>	
+					</p>	
+					
+					<example xml:id="ex-1-1-dtds">
+						<title> Discrete-Time Dynamical System</title>
+								<p>
+								Each year <m>t</m>, a population <m>P</m> of wolves is measured. A model which describes the population at a yearly interval is a discrete-time dynamical system. The graph of the relationship between population and time of such a model might look something like this:
+								</p>
+									<image width="60%" source="images/dtds.png">
+										<description>Five discrete points corresponding to each t value 0, 1, 2, 3, and 4.  </description>
+									</image>  
+					</example>	
+					
+					<example xml:id="ex-1-1-ctds">
+						<title> Continuous-Time Dynamical System</title>
+								<p>
+								As time <m>t</m> passes in seconds, my distance <m>D</m> from the door is measured. A model which describes my distance over the entire continuous time interval is a continuous-time dynamical system. The graph of the relationship between distance and time of such a model might look something like this:
+								</p>
+									<image width="60%" source="images/ctds.png">
+										<description>A continuous line which defines a distance for every possible t value between 0 and 5.  </description>
+									</image>  
+					</example>	
+					
+					<p>
+					In <xref ref="ex-1-1-dtds">Example</xref> and <xref ref="ex-1-1-ctds">Example</xref>, we described the relationships explicitly; that is, we showed what a population value or a distance value would be for a given time value. In practice, this is not typically the representation we begin with for these models. For a DTDS, we give a first example below in <xref ref="ex-1-1-updating">Example</xref>, and will explore in much more detail in <xref ref="sec-1-7">Section</xref>. The common representation and analysis of a CTDS is the main topic of <xref ref="ch-4">Chapter</xref>.
+					</p>	
+					
+					<example xml:id="ex-1-1-updating">
+						<title>Updating Function and Initial Value </title>
+							<p>
+							A strawberry plant begins as one plant. Each year, the plant produces <m>2</m> daughter plants. We can describe the growth of this system using an <term> initial value </term> (<m> p_0</m>)
+							<notation><usage><m>p_0</m></usage><description>the initial value of a quantity <m>p</m> in a DTDS</description></notation> 
+							<notation><usage><m>p_t</m></usage><description>the value of a quantity <m>p</m> after <m>t</m> steps in a DTDS</description></notation>
+							and an <term>updating function </term>, which uses the current population value (<m>p_t</m>) to describe what the next population value (<m>p_{t+1}</m>) will be:
+							
+							
+							<md>
+								<mrow>p_0 = 1</mrow>
+								<mrow> p_{t+1}= p_t +2</mrow>
+							</md>
+							</p>
+							
+							<p>
+							Using the initial value and the updating function, we can determine the population of strawberry plants (<m>p_t</m>) at a given year <m>t</m>:
+							
+							
+							<table>
+								<tabular>
+									<row header="yes" bottom="major">
+										<cell>
+											<m>t</m>
+										</cell>
+										<cell>
+											<m>p_t</m>
+										</cell>
+									</row>
+									<row>
+										<cell>
+											0
+										</cell>
+										<cell>
+											<m>p_0 =1</m>
+										</cell>
+									</row>
+									<row>
+										<cell>
+											1
+										</cell>
+										<cell>
+											<m>p_1 = p_0+2 =3</m>
+										</cell>
+									</row>
+									<row>
+										<cell>
+											2
+										</cell>
+										<cell>
+											<m>p_2 = p_1+2 = 5</m>
+										</cell>
+									</row>
+									<row>
+										<cell>
+											3
+										</cell>
+										<cell>
+											<m>p _3 = p_2+2 =7</m>
+										</cell>
+									</row>
+								</tabular>
+							</table>
+							
+							</p>
+					</example>	
+							
+			</subsection>
+			
+			<subsection>
+				<title>Mathematical Processes </title>
+				<p>
+				Along with mathematical content, our text will also emphasize <em>mathematical processes</em> that enhance problem solving skills. The processes we will utilize most are:
+				
+				<ul>
+					<li><em>Creating examples and counterexamples.</em>  We are likely used to watching an example from someone else to try and understand a concept, but the process of <em>creating</em> your own example or counterexample can be even more illuminating.  In the process of constructing examples and counterexamples, you must think deeply about important aspects of a concept, and typically get repetition in applying relevant procedural tools. This process can be frustrating, as it does not usually happen quickly, but it can be a vital step in learning something well, and is a tools mathematicians use every day.</li>
+					<li><em>Utilizing technology. </em> Technology can be an extremely useful tool for gaining intuition about a concept and for verifying conclusions. We'll practice using technology in our study of Calculus to reinforce and enhance our conceptual understanding, not to replace it. The main tool we will use is <idx><h>desmos</h></idx><url href="https://www.desmos.com/" visual="Desmos.com"> Desmos </url>. </li>
+				</ul>
+				</p>
+			</subsection>
+			
+			<activity>
+				<title>Creating Examples </title>
+					<p>
+					Consider a population that changes according to the updating function
+					
+					<me> b_{t+1} = 0.5b_t + 1 </me>.
+					<ol>
+						<li>Find an example of an initial value <m>b_0</m> for which the population increases over time. </li>
+						<li>Find an example of an initial value <m>b_0</m> for which the population decreases over time. </li>
+					</ol>
+					</p>
+			</activity>
+			
+			<activity>
+				<title> Utilizing Technology </title>
+					<p>
+					The following activity explores an algebra topic to practice utilizing technology to gain understanding of a topic. The general equation of a quadratic function is <m>ax^2 + bx +c</m>. Use the interactive below to answer the questions.
+					
+						<interactive desmos="xdluusffkw" width="170%" aspect="2:1" preview="images/1_1_int_prev_quad.png" />
+						<ol>
+							<li>Which of <m>a</m>, <m>b</m>, or <m>c</m> determines whether the graph opens up or down?</li>
+							<li> What types of values make the graph open down?</li>
+						</ol>
+					</p>
+			</activity>
+			
+			<subsection>
+				<title>Summary</title>
+				<p>
+				Below we re-visit the <xref ref="obj-1-1" text="custom">Motivating Questions</xref> from the beginning of the section. It is good practice to attempt to summarize in your own words before viewing the answers.
+				</p>
+				<ul>
+					<li> <question>What is a mathematical model and why do we need them? </question>
+						<answer>A mathematical model is a mathematical representation that describes a system we have observed and measured. We can manipulate mathematical models in order to analyze and predict how a system is changing. </answer>
+					</li>
+					<li><question> What are some common mathematical models? </question>
+						<answer>Common mathematical models are functions, discrete-time dynamical systems, and continuous-time dynamical systems. </answer>
+					</li>
+					<li><question>What are some mathematical processes that can help us become better problem solvers?</question>
+						<answer> Processes that can help us become better problem solvers are creating examples and counterexamples, and learning how to utilize technology in a way that reinforces and enhances our understanding of a concept. </answer>
+					</li>
+				</ul>
+
+			</subsection>
+			
+			<exercises>
+				<exercise>
+					<statement>
+					<p>
+					Use the <url href="https://www.desmos.com/calculator/" visual="Desmos.com/calculator"> Desmos graphing calculator </url> to plot the points given in the table of <xref ref="wu-1-1"> Warm-Up</xref>. Then graph <m> y = -19 \cdot 0.9^x + 20</m>. What do you notice? Use this graph to predict the height of the bine after <m> 11</m> days.
+					</p>
+					</statement>
+					<answer>
+					<m>14.04</m> feet
+					</answer>
+				</exercise>
+				
+				<exercise xml:id="x-1-1-models">
+					<p>
+					The representations of models that we will practice working with in this text are motivated by the models that are used to analyze real systems.
+						<aside>
+							<title>arXiv and bioRxiv </title>
+								<p>
+								The papers in <xref ref="x-1-1-models">Exercise</xref> come from <url href="https://arxiv.org/" visual="arxiv.org">arXiv</url> and <url href="https://www.biorxiv.org/" visual="biorxiv.org">bioRxiv</url>, which are examples of open-access archives of scholarly articles in many disciplines. 
+								</p>
+								<p>
+								Articles posted here have not been peer-reviewed, though they are pre-prints of articles that typically get submitted to peer-reviewed journals. These open-access archives are a good way for authors to make their research available to the public quickly, and for the scientific community to remain current on what research is happening in their field.
+								</p>
+						</aside>
+						<ol>
+							<li>
+								<p>Browse the following papers which describe research in the field of biology. Focus on the models being used and how they are represented.
+									<ul>
+										<li> <url href="https://arxiv.org/pdf/2206.07016.pdf" visual="https://arxiv.org/pdf/2206.07016.pdf"> Dynamical behavior of colony migration system</url></li>
+										<li><url href="https://www.biorxiv.org/content/10.1101/2022.03.20.484666v1.full" visual="https://www.biorxiv.org/content/10.1101/2022.03.20.484666v1.full"> Discovering dynamical models of human behavior</url> </li>
+									</ul>
+								</p> 
+							</li>
+							<li>
+								<p>Reflect on your observations by considering the following questions:
+									<ul>
+										<li>What types of models do you see?</li>
+										<li>What do you notice about the use of numbers in the models?</li>
+										<li>What are some questions that you have about how symbols are being used in the models? The way symbols are used to create meaning is called <term>notation</term>, 
+										<idx><h>notation</h></idx> and we will address many questions regarding notation as we continue our development and analysis of mathematical models. </li>
+									</ul>
+								</p>
+							</li>
+						</ol>
+					</p>
+				</exercise>
+			</exercises>
+	</section>
+  <!--*******************************************************************************-->
+  <!--		SECTION 2										-->
+  <!--*******************************************************************************-->
+  	<section xml:id="sec-1-2-functions">
+		<title>Functions </title>
+		<objectives xml:id="obj-1-2">
+			<ul>
+				<li> <p>What makes a relationship a function? </p></li>
+				<li> <p>What are different ways we can describe a function? </p></li>
+				<li><p> What does it mean when there are letters in a model? </p></li>
+				<li><p>What are different ways that we can combine functions?</p></li>
+				<li><p>What does it mean for a function to be invertible?</p></li>
+				<li><p>How can we describe how a function changes over time?</p></li>
+			</ul>
+		</objectives>
+		
+		<introduction>
+			<p>
+			Functions are a core concept in the study of calculus. In this section we outline common representations of functions and some general properties that we will use throughout future sections. 
+			</p>
+		</introduction>
+		
+		<exploration xml:id="wu-1-2">
+			Consider the following equations:
+				<ol marker="a." cols="2">
+					<li> <m>y = x + 1 </m></li>
+					<li><m> y^2 = x +1</m></li>
+				</ol>
+				
+				<p>
+				For each equation above, fill in the following tables:
+						<interactive desmos="do5rormmpj" width="170%" aspect="2:1" preview="images/1_2_int_prev_tables.png"  />
+				</p>
+		</exploration>
+		
+		<subsection>
+			<title>Functions and their Representations </title>
+			
+			<p>
+			Understanding systems is all about being able to describe the <em>relationship</em> between the quantities involved. The population of a species is related to time, the energy an animal exerts when running is related to its speed, and the growth of a plant is related to its exposure to sunlight. Equations, tables, and graphs are all mathematical objects that help us represent relationships between quantities, and it is beneficial to be able to represent a single relationship in multiple different ways.
+			</p>
+			<p>
+			The systems we are typically interested in are a special type of relationship called a <em>function</em>:
+			</p>
+			
+			<definition xml:id="def-1-2-function">
+				<title>Function </title>
+				<idx><h>function</h></idx>
+				<p>
+				Given two related quantities <m>x</m> and <m>y</m>, we say <term><m>y</m> is a  function of <m>x</m></term> if every <m>x</m> value in the relationship is related to exactly one <m>y</m> value.
+				</p>
+			</definition>
+			<p>
+			Using this terminology with our previous illustrations, we would say a population is a function of time, energy is a function of speed, and the height of a plant is a function of sunlight exposure. Notice that there is an ordering implied when we talk about function relationships. 
+			<idx><h>variable</h><h>independent</h></idx>
+			<idx><h>variable</h><h>dependent</h></idx>
+			<idx><h>input</h></idx>
+			<idx><h>output</h></idx>
+			When we say <q><m>y</m> is a  function of <m>x</m></q>, we call <m>x</m> the <term>input</term> (or <term>independent variable</term>) and <m>y</m> the <term>output</term> (or <term>dependent variable</term>).
+			</p> 
+			<example xml:id="ex-1-2-reps">
+			Looking at <xref ref="wu-1-2">Warm-Up</xref>, one equation represents <m>y</m> as a function of <m>x</m> and one does not.
+				<ol marker="a.">
+					<li>
+						<p>In <m> y = x+1</m>, <m>y</m> is a function of <m>x</m>. Our reasoning will sound different depending on whether you are looking at the equation, table, or graph, but in all cases our reasoning is based on <xref ref="def-1-2-function">Definition</xref>:
+						</p>
+						<p>
+							<ul>
+								<li> <em>Equation:</em> For an <m>x</m> value, the corresponding <m>y</m> value is obtained by adding one. This gives a unique <m>y</m> value for every <m>x</m> value.</li>
+								<li><p><em>Table:</em> Every <m>x</m> value in the table is listed exactly once. This means each <m>x</m> value in the table is associated with exactly one <m>y</m> value.</p>
+									<p>
+									<alert>Warning:</alert> When relationships are represented via tables, it is possible you have limited information about the relationship. Unless you are told that the table shows every <m>x,y</m> pair in the relationship, you should assume there may be other <m>x,y</m> pairs in the relationship not listed in the table.
+									</p>
+								</li>
+								<li><em>Graph:</em> If you pick an <m>x</m> value and draw a vertical line at that <m>x</m> value, you will intersect the graph exactly once. This means each <m>x</m> value corresponds to exactly one <m>y</m> value. This is known as the <term>vertical line test</term> <idx><h>vertical line test</h></idx> to determine if the graph of a relationship represents a function relationship.</li>
+							</ul>
+						</p>
+					 </li>
+					 <li>
+						<p>In <m> y^2 = x+1</m>, <m>y</m> is <em>not</em> a function of <m>x</m>. Our reasoning will sound different depending on whether you are looking at the equation, table, or graph, but in all cases our reasoning is based on <xref ref="def-1-2-function">Definition</xref>:
+						</p>
+						<p>
+							<ul>
+								<li> <em>Equation:</em> For an <m>x</m> value, the corresponding <m>y</m> value is obtained by the rule <m>\pm \sqrt{x+1}</m>. This means that when <m>x=0</m>, for example, the associated <m>y</m> values are <m>\pm 1</m>. This means there is an <m>x</m> value associated to more than one <m>y</m> value, and so this relationship is not a function.</li>
+								<li><em>Table:</em> There are <m>x</m> values in the table listed more than once, and associated with different <m>y</m> values. This means there are <m>x</m> values in the relationship associated with more than one <m>y</m> value.</li>
+								<li><em>Graph:</em> You can pick an <m>x</m> value and draw a vertical line at that <m>x</m> value such that you intersect the graph more than once. This means you have found an <m>x</m> value which corresponds to more than one <m>y</m> value. This is known as the <term>vertical line test</term> to determine if the graph of a relationship represents a function relationship.</li>
+							</ul>
+						</p>
+					 </li>
+
+				</ol>
+			</example>
+			
+			<activity xml:id="act-1-2-func">
+				<title>Function Relationships </title>
+				<p>
+				Practice using <xref ref="def-1-2-function">Definition</xref> by answering each question below. Focus on verbalizing your thought process. Your reasoning is more important than your final answer.
+				</p>
+				<ol>
+					<li>In the equation <m>y^2 = x+1</m>, is <m>x</m> a function of <m>y</m>?</li>
+					<li>Is student height a function of student name? </li>
+					<li><p>For each graph below, is <m>y</m> a function of <m>x</m>?</p>
+						<p>
+							<ul>
+								<li><image width="60%" source="images/func1.png">
+										<description>A line which is broken at x equal 2. There is a closed dot at y equal -2 and an open dot at y equal 1. </description>
+									</image>  
+								 </li>
+								 <li><image width="60%" source="images/func2.png">
+										<description>A line which is broken at x equal 2. There is a closed dot at y equal -2 and a closed dot at y equal 1.</description>
+									</image>  
+								 </li>
+								 <li><image width="60%" source="images/func3.png">
+										<description>A line which is broken at x equal 2. There is an open dot at y equal -2 and an open dot at y equal 1.  </description>
+									</image>  
+								 </li>
+							</ul>
+						</p>
+					 </li>
+				</ol>
+			</activity>
+			
+			<p>
+			The graphs in <xref ref="act-1-2-func">Activity</xref> are very similar, but they all represent different relationships. Of those that are functions, they differ in their domain and range, which we define below:
+			</p>
+			<definition>
+				<title>Domain and Range</title>
+				<idx><h>domain</h></idx>
+				<idx><h>range</h></idx>
+				<p>
+					<ul>
+						<li> The <term>domain of a function </term> is the set of all possible input values. </li>
+						<li> The <term>range of a function </term> is the set of all possible output values. </li>
+					</ul>
+				</p>
+			</definition>
+			
+			<remark>
+				<p>
+				The domain of a function is typically determined by one or more of the following:
+					<ul>
+						<li><em>Operations:</em> There may be operations used to define a function which are undefined for specific inputs. For example, in <m>y=\frac{1}{x}</m>, <m>x=0</m> is not in the domain because the operation of division by <m>0</m> is not defined. </li>
+						<li><em>Context:</em> When a function is used as a model, there may be some input values that don't make sense for what the function represents. For example, if height is a function of time given by <m>h = t^2</m>, negative <m>t</m> values are not in the domain even though operationally the function is defined for negative <m>t</m> values. </li>
+					</ul>
+				</p> 
+			</remark>
+			
+			
+			
+		</subsection>
+		
+		<subsection xml:id="ssec-1-2-rec">
+			<title> Explicit and Recursive Functions</title>
+			<p>
+			When given a function relationship, there are two main ways we might express that relationship:
+				<ol>
+					<li><term>Explicit Function</term>: 
+					<idx><h>function</h><h>explicit</h></idx>
+					<idx><h>explicit function</h></idx>
+					<notation><usage><m>f(x)</m></usage><description>the output value associated with an input value of <m>x</m> in the function relationship represented by <m>f</m></description></notation>
+					An explicit function describes the output (or dependent variable) explicitly in terms of the input (or independent variable). For example, <m>y=x+1</m> is an explicit function. However, moving forward we will most often write explicit functions using <term>function notation</term>, which means we write the output (dependent variable) as <m>f(x)</m> instead of <m>y</m>. The function <m>y=x+1</m> is written using function notation as <m>f(x) = x+1</m>. Note that we may name the function whatever we'd like (it does not have to be <q><m>f</m></q>). For example, if the output was <q>population</q> and the input was <q>time</q>, we might call our function <m>p(t)</m>.</li>
+					<li><term>Recursive Function</term>:
+					<idx><h>function</h><h>recursive</h></idx>
+					<idx><h>recursive function</h></idx>
+					 A recursive function is typically used when modeling discrete systems, and describes the next output (or dependent variable) in terms of the current output (or dependent variable). For example, <m>p_{t+1} = p_t +2 </m> is a recursive function. In words, this function says <q>the next output is equal to the current output plus two.</q> Notice that this relationship does have an independent variable <m>t</m>, it is just not used in describing the relationship like in an explicit function. </li>
+				</ol>
+			</p>
+		</subsection>
+		
+		<subsection>
+			<title> Variables and Parameters</title>
+			<p>
+			As illustrated in <xref ref="x-1-1-models">Exercise</xref>, modeling real systems typically involves representing quantities with letters and numbers. It is important that we know how to interpret the letters that we see in function representations.
+			</p>
+			<definition>
+				<title>Variable and Parameter</title>
+				<idx><h>variable</h></idx>
+				<idx><h>parameter</h></idx>
+				<ul>
+					<li>A <term>variable</term> represents a quantity that can change in a fixed model.</li>
+					<li>A <term>parameter</term> represents a quantity that is constant in a fixed model.</li>
+				</ul>
+			</definition>
+			
+			<example>
+				<title>Variables and Parameters</title>
+				<p>
+				The function <m>h(t)=mt+b</m> describes a relationship whose graph looks like a straight line. One benefit of using function notation is that it clearly indicates to us which letters represent variables. The notation <q><m>h(t)</m></q> tells us that <m>t</m> is the input (or independent variable), and <m>h(t)</m> is the output (or dependent variable). This means that for a fixed line, the input value <m>t</m> can change, and <m>h(t)</m> changes along with it. 
+				</p>
+				<p>
+				 Once we identify the independent and dependent variable, every other letter represents a parameter. In this example, <m>m</m> and <m>b</m> are parameters. This means that for a fixed line, <m>m</m> and <m>b</m> are constant values.  
+				 </p>	 
+			</example>
+			
+			<p>
+				 One benefit of using parameters is that it allows us to describe many models at once, and we can then analyze how a specific system behaves based on its parameter values. 
+				 </p>
+		</subsection>
+		
+		<subsection xml:id="ssec-1-2-comb">
+			<title>Combinations of Functions </title>
+			<p>
+			Just as there are ways to combine two numbers to get a new number, we can also combine two functions to get a new function. Given two functions <m>g(x)</m> and <m>k(x)</m>, we can define the following combinations:
+			<definition>
+				<title>Combining Functions</title>
+				<idx><h>function</h><h>sum</h></idx>
+				<idx><h>function</h><h>difference</h></idx>
+				<idx><h>function</h><h>product</h></idx>
+				<idx><h>function</h><h>quotient</h></idx>
+				<idx><h>function</h><h>composition</h></idx>
+				<idx><h>composition</h></idx>
+				<notation><usage><m>(f \circ g)(x)</m></usage><description><m>f</m> composed with the function <m>g</m>, or <m>f(g(x))</m></description></notation>
+				<ul>
+					<li><term>Sum</term>: <m>(g+k)(x) = g(x) + k(x)</m></li>
+					<li><term>Difference</term>: <m>(g-k)(x) = g(x) - k(x)</m></li>
+					<li><term>Product</term>: <m>(g\cdot k)(x) = g(x) \cdot k(x)</m></li>
+					<li><term>Quotient</term>: <m>\left(\dfrac{g}{k}\right)(x) = \dfrac{g(x)}{k(x)}</m></li>
+					<li><term>Composition</term>: <m>(g \circ k)(x) = g(k(x))</m></li>
+				</ul>
+			</definition>
+			</p>
+			
+			<example xml:id="ex-1-2-comb">
+				<title>Combining Functions</title>
+				<p>Let <m>f(x) = x^2 +1</m> and <m>g(x)=2x - 3</m>. </p>
+				<ul>
+					<li><md><mrow>(f+g)(x) \amp= f(x) + g(x) </mrow>
+							<mrow> \amp= (x^2+1) + (2x-3) </mrow>
+							<mrow> \amp= x^2 + 2x -2</mrow>
+						</md>
+					</li>
+					<li><fn>Note the importance in using parentheses!</fn> 
+						<md><mrow>(f-g)(x) \amp= f(x) - g(x) </mrow>
+							<mrow> \amp= (x^2+1) - (2x-3) </mrow>
+							<mrow> \amp= x^2 - 2x +4 </mrow>
+						</md>
+					</li>
+					<li><md><mrow>(f \cdot g)(x) \amp= f(x) \cdot g(x) </mrow>
+							<mrow> \amp= (x^2+1) \cdot (2x-3) </mrow>
+							<mrow> \amp= 2x^3- 3x^2 + 2x -3</mrow>
+						</md>
+					</li>
+					<li><md><mrow>\left(\dfrac{f}{g}\right)(x) \amp= \dfrac{f(x) }{ g(x)} </mrow>
+							<mrow> \amp= \dfrac{(x^2+1)}{ (2x-3)} </mrow>
+						</md>
+					</li>
+					<li><md><mrow>(f \circ g)(x) \amp= f(g(x)) </mrow>
+							<mrow> \amp= g(x)^2+1 </mrow>
+							<mrow> \amp= (2x-3)^2 +1</mrow>
+							<mrow> \amp= 4x^2-12x+10</mrow>
+						</md>
+					</li>
+					<li><md><mrow>(g \circ f)(x) \amp= g(f(x)) </mrow>
+							<mrow> \amp= 2f(x)-3 </mrow>
+							<mrow> \amp= 2(x^2+1)-3</mrow>
+							<mrow> \amp= 2x^2 -1</mrow>
+						</md>
+					</li>
+				</ul>
+				
+			</example>
+			
+			<p>
+			Composition is a way to combine functions that we cannot do with numbers, and allows us to <q>chain</q> multiple relationships together. 
+			</p>
+			<activity>
+				<title>Composition</title>
+				<p>
+				Let <m>m(w)</m> be the number of mosquitos entering a house if <m>w</m> windows are open, and <m>b(m)</m> be the number of mosquito bites someone gets if there are <m>m</m> mosquitos in a house.
+				</p>
+				<ol>
+					<li>In this context, which composition makes sense: <m>b \circ m</m> or <m>m \circ b</m>? </li>
+					<li>In words, what relationship does the composition that makes sense describe?</li>
+				</ol>
+			</activity>
+		</subsection>
+		
+		<subsection xml:id="ssec-1-2-inverse">
+			<title>Inverse Functions </title>
+			<p>
+			We noticed in <xref ref="def-1-2-function">Definition</xref> that there is an order implied in a function relationship. Depending on the question you would like to answer, the ordering of the function may or may not be desirable. For example, if you had a model where population was a function of time, and you wanted to know when the population would reach <m>1,000</m>, this ordering would be desirable. However, if the population was decreasing and you wanted to know after how many years the population would become extinct, it may be desirable to have a model expressing time as a function of population. The property of being able to switch input and output and still have a function relationship is what we define below:
+			</p>
+			<definition>
+				<title>Inverse Function</title>
+				<idx><h>inverse function</h></idx>
+				<idx><h>function</h><h>invertible</h></idx>
+				<notation><usage><m>f^{-1}(x)</m></usage><description>the inverse function of an invertible function <m>f(x)</m></description></notation>
+				<p>
+				Let <m>f(x)=y</m> be a function of <m>x</m>. If <m> x</m> is also a function of <m>y</m>, we say that <m>f</m> is <term>invertible</term>. We denote <m>x</m> as a function of <m>y</m> as <m>f^{-1}</m>, and call it the <term>inverse function of <m>f</m></term>.
+				</p>
+			</definition>
+			<example xml:id="ex-1-2-inv">
+				<title>Inverse Functions as Graphs</title>
+					<image width="60%" source="images/f.png">
+						<description>A curve which is always increasing.</description>
+					</image>  
+					<p>
+					To determine if this function has an inverse function, we must determine if the relationship obtained by swapping input and output is also a function. 	We can test this directly on the graph of <m>f</m> by remembering the vertical line test used in <xref ref="ex-1-2-reps">Example</xref>, and thinking about how vertical lines change when we swap input and output. 
+					</p>
+					<p>
+					A vertical line in the <m>x,y</m> plane is a line whose points have a constant <m>x</m> value. For example, the points <m>(1,0), (1,1), (1,2), (1,3)</m> all lie on the vertical line <m> x=1</m>. When we swap input and output, those points become <m>(0,1), (1,1), (2,1), (3,1)</m>	, which all lie on the <em>horizontal</em> line <m>y=1</m>. So we can determine if the function <m>f</m> is invertible by drawing horizontal lines on the graph of <m>f</m>. If every horizontal line intersects the graph at most once, then <m>f</m> is invertible. Otherwise, the function <m>f</m> is not invertible.
+					</p>
+					<p> This is known as the <term>horizontal line test</term> for testing invertibility. In this example we see the function is invertible, and we can visualize the graph of <m>f^{-1}</m> by reflecting the graph of <m>f</m> over the diagonal line <m>y=x</m>:
+					</p>
+					<image width="60%" source="images/finverse.png">
+						<description>A curve which is the mirror image over the line y equals x of the previous curve.</description>
+					</image> 
+			</example>
+			<example>
+				<title>Inverse Functions as Equations</title>
+				<p>
+					<ul>
+						<li><p>Let <m>f(x)= 3x + 1</m>. If <m>f</m> has an inverse function, <m>x</m> would be the output and <m>f(x)</m> would be the input. As an equation, this means we will try to re-write the function relationship as <q><m>x=</m></q>. For notational purposes, before we start the computation we'll write the function as <m>y=3x+1</m> instead of using function notation.</p>
+							<md>
+								<mrow> y \amp=3x+1</mrow>
+								<mrow>y-1 \amp= 3x</mrow>
+								<mrow> \dfrac{y-1}{3}\amp= x</mrow>
+								<mrow> x \amp= \dfrac{y-1}{3}</mrow>
+							</md>
+							<p>
+							This shows us that <m>f</m> is invertible, and also what the rule is for the inverse function. Instead of using <m>x</m> as the output variable, we switch back to the standard notation and write <m>f^{-1}</m> as a function of <m>x</m>: <m>f(x)=3x+1</m> and <m> f^{-1}(x) = \dfrac{x-1}{3}</m>.
+							</p>
+						</li>
+						
+						<li><p>Let <m>g(x) = x^2 + 1</m>. We'll try the same process as above to determine if there is an inverse function, <m>g^{-1}</m>. </p>
+							<md>
+								<mrow>y \amp= x^2+1</mrow>
+								<mrow>y -1 \amp= x^2</mrow>
+								<mrow>\pm \sqrt{y -1} \amp= x</mrow>
+								<mrow>x \amp= \pm \sqrt{y -1} </mrow>
+							</md>
+							<p>
+							Note that <m>x</m> is not a function of <m>y</m>, and so our original function <m>g(x)</m> is not invertible. 
+							</p>
+						</li>
+					</ul> 
+				</p>
+			</example>
+			<p>
+			Invertible functions and their inverse functions have a special property under composition. As illustrated in <xref ref="ex-1-2-comb">Example</xref>, the order of composition matters. That is, for two functions <m>f(x)</m> and <m>g(x)</m>, the compositions <m>f(g(x))</m> and <m>g(f(x))</m> are, in general, different. However, composition with an invertible function and its inverse function is an example of a special case when the order does not matter. Even more, the composition will always result in the same function:
+			</p>
+			<theorem>
+			<p>
+			For an invertible function <m>f(x)</m> and its inverse function <m>f^{-1}(x)</m>, 
+			</p>
+				<me>f(f^{-1}(x)) = f^{-1}(f(x)) = x</me>.
+			</theorem>
+		</subsection>
+		
+		<subsection xml:id="ssec-1-2-aroc">
+			<title>Average Rate of Change </title>
+			<p>
+			We mentioned in <xref ref="sec-1-1-bio-math">Section</xref> that a main goal in mathematical modeling is to study how systems <em>change</em>. Given a function, one way we can describe how the function changes over time is by computing an <em>average rate of change</em>. This is also a foundational concept that will be used to extend our tools for describing change in <xref ref="ch-2">Chapter</xref>. 
+			</p> 
+			<definition>
+				<title>Average Rate of Change</title>
+				<idx><h>average rate of change</h></idx>
+				<notation><usage><m>AROC_{[a,b]}</m></usage><description>the average rate of change between <m>x</m> values <m>a</m> and <m>b</m> for a given function</description></notation>
+				Given a function <m>f(x)</m> and <m>x</m> values <m>a</m> and <m>b</m>, the <term>average rate of change between <m>a</m> and <m>b</m></term> is the number 
+				<me>
+				AROC_{[a,b]}= \dfrac{f(b) - f(a)}{b-a}
+				</me>.
+			</definition>
+			<p>
+			Being able to compute an average rate of change is necessary, but understanding what an average rate of change represents graphically will be even more important for our future developments in describing how functions change. Use the interactive provided to complete the statements below before viewing the answers. 
+			</p>
+			<interactive desmos="lomycilmj5" width="170%" aspect="2:1" preview="images/1_2_int_prev_aroc.png" /> 
+			<ol>
+				<li>The value of <m>AROC_{[-3,2]}</m> is
+					<answer>1</answer>
+				</li>
+				<li> The line connecting the points <m>(-3,f(-3))</m> and <m>(2,f(2))</m> (<em>increases</em>/<em>decreases</em>/<em>stays the same</em>).
+					<answer>increases</answer>
+				</li>
+				<li>The value of <m>AROC_{[-1,1]}</m> is
+					<answer>-1.5</answer>
+				</li>
+				<li> The line connecting the points <m>(-1,f(-1))</m> and <m>(1,f(1))</m> (<em>increases</em>/<em>decreases</em>/<em>stays the same</em>).
+					<answer>decreases</answer>
+				</li>
+				<li>The value of <m>AROC_{[-2,2]}</m> is
+					<answer>0</answer>
+				</li>
+				<li> The line connecting the points <m>(-2,f(-2))</m> and <m>(2,f(2))</m> (<em>increases</em>/<em>decreases</em>/<em>stays the same</em>).
+					<answer>stays the same</answer>
+				</li>
+				<li> Graphically, the value of <m>AROC_{[a,b]}</m> describes	
+					<answer>whether the line connecting the two points <m>(a,f(a))</m> and <m>(b,f(b))</m> increases, decreases, or stays the same. Further, the larger the average rate of change is in absolute value, the steeper the line will increase or decrease. The line connecting the two points is called the <term>secant line</term>. </answer>		
+				</li>
+			</ol>
+			
+			<activity>
+				<title>AROC</title>
+				<ol>
+					<li>Sketch the graph of a function <m>f</m> such that <m>AROC_{[0,2]} \gt 0</m> and <m>f</m> is increasing on the interval <m>(0,2)</m>. </li>
+					<li>Sketch the graph of a function <m>f</m> such that <m>AROC_{[0,2]} \gt 0</m> and <m>f</m>  increases and decreases on the interval <m>(0,2)</m>. </li>
+					<li>Sketch the graph of a function <m>f</m> such that <m>AROC_{[0,2]} \gt 0</m> and <m>f</m> is decreasing on the interval <m>(0,2)</m>. </li>
+				</ol>
+			</activity>
+		</subsection>
+		
+		<subsection>
+			<title>Summary </title>
+			<p>
+				<ul>
+					<li> <question>What makes a relationship a function? </question>
+						<answer>A quantity <m>y</m> is a function of a quantity <m>x</m> when each <m>x</m> value is associated with exactly one <m>y</m> value. </answer>
+					</li>
+					<li> <question>What are different ways we can describe a function? </question>
+						<answer>We can describe function relationships using equations, tables, and graphs. Function relationships can also be described explicitly or recursively.</answer>
+					</li>
+					<li><question> What does it mean when there are letters in a model? </question>
+						<answer>A letter in function may represent a variable (a changing quantity) or a parameter ( a constant quantity). Function notation is useful for helping us recognize the variables in a model.</answer>
+					</li>
+					<li><question>What are different ways that we can combine functions?</question>
+						<answer>We can combine functions like numbers using addition, subtraction, multiplication, and division. We can also put functions inside of other functions using composition.</answer>
+					</li>
+					<li><question>What does it mean for a function to be invertible?</question>
+						<answer>A function is invertible if swapping domain and range results in another function relationship.</answer>
+					</li>
+					<li><question>How can we describe how a function changes over time?</question>
+						<answer>We can describe how a function changes over a specific time interval by computing the average rate of change over that time interval. Graphically, this number tells us the steepness of the secant line connecting the two end points, and if the secant line is increasing or decreasing. </answer>
+					</li>
+			</ul>
+			</p>
+		</subsection>
+		
+		<exercises>
+			<exercise>
+				<statement>
+				Give an example of a relationship in which <m>y</m> is not a function of <m>x</m>. Represent your example as an equation, table, and graph. 
+				</statement>
+			</exercise>
+			<exercise>
+				<statement>
+				Give an example of a relationship in which <m>y</m> is a function of <m>x</m> but is not an invertible function. Represent your example as an equation, table, and graph. 
+				</statement>
+			</exercise>
+			<exercise>
+				<statement>
+				Consider the equation <m> h= kt^2 -m^2t + cm</m>.
+					<ol>
+						<li> Write the equation using function notation if <m>t</m> is the independent variable and <m>h</m> is the dependent variable. What are the parameters?</li>
+						<li> Write the equation using function notation if <m>m</m> is the independent variable and <m>h</m> is the dependent variable. What are the parameters?</li>
+					</ol>
+				</statement>
+				<answer>
+					<ol>
+						<li>Parameters: <m>k,m,c</m></li>
+						<li>Parameters: <m>k,t,c</m></li>
+					</ol>
+				</answer>
+			</exercise>
+			<exercise>
+				<statement>
+					<ol>
+						<li><p>Sketch the graph of a single function <m>q(x)</m> that meets all of the following criteria:
+								<ul>
+									<li><p>The domain of <m>q(x)</m> is <m>[-1,0) \cup (0,4]</m>.</p>
+									     <p> <em>Note:</em> This notation means the domain is between <m>-1</m> and <m>4</m>, not including <m>0</m>. </p></li>
+									<li> The range of <m>q(x)</m> is <m>[0,3]</m>.</li>
+									<li><m>q(-1) > q(4)</m>.</li>
+								</ul>
+							</p>
+						</li>
+						<li> Is your function from the previous part invertible? Explain why or why not. </li>
+					</ol>
+				</statement>
+			</exercise>
+			<exercise>
+				<statement>
+				The functions <m>g(x)</m> and <m>h(x)</m> are defined on the domain <m>(-\infty, \infty)</m>. Compute the following values given that
+					<ul>
+						<li><m>g(-1)=2</m> and <m>h(-1)=-10</m>, and  </li>
+						<li><m>g(x)</m> and <m>h(x)</m> are inverse functions of each other (i.e., <m>g(x)=h^{-1}(x)</m> and <m>h(x) = g^{-1}(x)</m>).  </li>
+					</ul>
+					<ol>
+						<li><m>(g+h)(-1)</m> </li>
+						<li><m>(g-h)(-1)</m> </li>
+						<li><m>(g \cdot h)(-1)</m> </li>
+						<li><m>(h \circ g)(-10)</m></li>
+						<li> <m>(g \circ h)(5)</m></li>
+					</ol>
+				</statement>
+				<answer>
+					<ol>
+						<li><m>-8</m></li>
+						<li><m>12</m></li>
+						<li><m>-20</m></li>
+						<li><m>-10</m></li>
+						<li><m>5</m></li>
+					</ol>
+				</answer>
+			</exercise>
+			<exercise>
+				<statement>
+				Let <m>\sigma(x) = x^2 +1</m>. Calculate each average rate of change below. Then use the graph provided to illustrate what each calculation represents graphically. 
+					<ol>
+						<li> <m>AROC_{[0,3]}</m></li>
+						<li> <m>AROC_{[-2,2]}</m></li>
+						<li> <m>AROC_{[-3,1]}</m></li>
+					</ol>
+				<image width="60%" source="images/sigma.png">
+					<description>A parabola which is the graph of x squared plus one.</description>
+				</image> 
+				</statement>
+				<answer>
+					<ol>
+						<li><m>3</m></li>
+						<li><m>0</m></li>
+						<li><m>-2</m></li>
+					</ol>
+				</answer>
+			</exercise>
+		</exercises>
+	</section>
+
+ <!--*******************************************************************************-->
+  <!--		SECTION 3             									-->
+  <!--*******************************************************************************-->
+  	<section xml:id="sec-1-3">
+		<title>Units and Dimensions of Functions </title>
+		<objectives xml:id="obj-1-3">
+			<ul>
+				<li> <p>When using functions as models, how do we ensure our models are meaningful? </p></li>
+				<li> <p>When computing with functions that are being used as models, how do we ensure our computations are meaningful? </p></li>
+				<li><p> How can we visualize unit conversions graphically? </p></li>
+			</ul>
+		</objectives>
+		
+		<introduction>
+			<p>
+			 Suppose you were told that <m>h(t) = \dfrac{10t +1}{t+2}</m> represented the height <m>h</m> of a tree after time <m>t</m>, and were asked to use it to estimate the height of the tree after <m>5</m> years. Do you plug in <m>5</m> years for <m>t</m>, or <m>60</m> months? If you compute the value <m>8</m> for <m>h</m>, is that <m>8</m> meters, feet, or something else? In order to make functions usable as models, we must understand how variables are being measured, and how those variables are being combined to produce something meaningful. 
+			</p>
+		</introduction>
+		
+		<exploration xml:id="wu-1-3">
+			<p>
+			Separate the following words into groups, and explain why you separated them the way that you did.
+			</p>
+			<p>
+			<em>meter, liter, second, cubic feet, mile, year </em>
+			</p>
+		</exploration>
+		
+		<subsection>
+			<title>Units and Dimensions </title>
+			<p>
+			In <xref ref="wu-1-3">Warm-Up</xref>, there are multiple ways you may have separated the words into different groups. One way would be to group them based on <em>what</em> each is measuring, called a <idx><h>dimension</h></idx> <term>dimension</term>. Within a single group (dimension), each word describes <em>how</em> we might measure that dimension, called a <idx><h>unit</h></idx> <term>unit</term>.
+			</p>
+			<example>
+				<title>Units and Dimensions </title>
+				<p>
+				Volume is a dimension that may be measured in one of many different units, including <m>\text{m}^3</m>, <m>\text{ft}^3</m>, gallons, and liters.
+				</p>
+				<p>
+				Mass is a dimension that may be measured in one of many different units, including grams, kilograms, and milligrams.
+				</p>
+			</example>
+		</subsection>
+		
+		<subsection>
+			<title> Conversion Factors and Fundamental Relations</title>
+			<p>
+			There are situations when it is necessary to change the units in which a quantity is being measured in order to make a meaningful computation. To convert between different units, we use <idx><h>conversion factor</h></idx> <term>conversion factors</term>, which are ratios that express the same quantity of a dimension in two different units. For example, the ratio <m>\dfrac{1000 \text{g}}{1 \text{kg}}</m> is a conversion factor because <m>1000 \text{g} = 1 \text{kg}</m>.
+			</p>
+			<p> We can multiply numerical expressions by conversion factors without changing the quantity being represented since the numerator and denominator are equal, it is the same as multiplying by <m> 1</m>. If we use conversion factors correctly, we can also get unwanted units to cancel and convert to new units.
+			</p>
+			<example>
+				<title>Conversion Factors</title>
+				<p>
+				Let <m> p(t) = 3t</m> be the mass of a bacterial colony after <m>t</m> minutes measured in grams, and <m>q(t)= t+2</m> be the mass of a separate bacterial colony after <m>t</m> minutes measured in kilograms. If we wanted to find the total mass of all bacterial colonies, we cannot just add the functions as they are written, since mass is being measured in different units for each colony. We could either convert <m>p(t)</m> to units of kilograms, or <m>q(t)</m> to units of grams. For this example, we will do the latter:
+				</p>
+				<me> (t+2) \cancel{\text{kg}} \cdot \dfrac{1000 \text{g}}{1\cancel{\text{kg}}} = 1000 \cdot (t+2) \text{g}</me>
+				<p>
+				Notice that we had the choice to write the conversion factor as <m>\dfrac{1000 \text{g}}{1 \text{kg}}</m> or <m>\dfrac{1 \text{kg}}{1000 \text{g}}</m>, and we made our choice so that the unwanted unit (kilograms) would cancel.
+				</p>
+				<p>
+				Now that <m>p(t)</m> and <m>q(t)</m> are both measured in grams, we may add them together to get the total mass:
+				</p>
+				<me>p(t) \text{g} + q(t) \text{g} = (3t + 1000 \cdot(t+2)) \text{g} = (1003t + 2000) \text{g} </me>.
+			</example>
+			
+			<activity>
+				<p>
+				Let <m>V(t)=2t</m> measure the volume (in liters) of a balloon after <m>t</m> seconds, and <m>m(V) = 6+V</m> measure the mass (in grams) of the balloon when the volume is <m>V</m> milliliters. Use conversion factors to determine a meaningful expression for the function <m>m(V(t))</m>. What does this function represent?
+				</p>
+			</activity>
+			
+			<p>
+			Though different dimensions measure different things, it is possible that two different dimensions are related. For example, the radius of a circle is related to its area and the volume of a glass of water is related to its mass. The precise relationship between multiple dimensions is know as a <idx><h>fundamental relation</h></idx> <term>fundamental relation</term>, and can help us compute useful quantities. It is good practice to pay attention to units being used within fundamental relations to make sure we understand the units of the quantity being computed, and avoid common errors. Below we list some commonly used fundamental relations:
+			</p>
+			<assemblage>
+				<title> Fundamental Relations</title>
+				<p>
+					<ul>
+						<!--<li> <m>C = 2\pi r </m> (circumference <m>C</m> of a sphere from the radius <m>r</m>)</li> -->
+						<li> <m>A = \pi r^2 </m> (area <m>A</m> of a circle from the radius <m>r</m>)</li>
+						<li> <m>V = \dfrac{4}{3} \pi r^3 </m> (volume <m>V</m> of a sphere from the radius <m>r</m>)</li>
+						<li> <m>m = \rho A </m> (mass <m>m</m> from the density <m>\rho</m> and area <m>A</m>)</li>
+						<li> <m>m = \rho V </m> (mass <m>m</m> from the density <m>\rho</m> and volume <m>V</m>)</li>
+					</ul>
+				</p>
+			</assemblage>
+			<example>
+				<title> Density</title>
+				A circular bacterial colony with radius <m>10 \text{mm} </m> has a density of <m>0.2 \dfrac{\text{mg}}{\text{mm}^2} </m>. The units given for the density are a good reminder that we'll be using the fundamental relation <m>m = \rho A</m> to compute the mass, since it gives us mass per unit area. The mass of the colony is then
+				<md>
+					<mrow> m \amp= \rho A </mrow>
+					<mrow> \amp = \rho \pi r^2 </mrow>
+					<mrow> \amp= 0.2 \dfrac{\text{mg}}{\text{mm}^2} \cdot \pi \cdot (10 \text{mm})^2</mrow>
+					<mrow> \amp= 0.2 \dfrac{\text{mg}}{\cancel{\text{mm}^2}} \cdot \pi 100 \cancel{\text{mm}^2 }</mrow>
+					<mrow> \amp= 20 \pi \text{ mg}</mrow>
+				</md>.
+			</example>
+			<activity>
+				A spherical liquid droplet has density <m> 13 \dfrac{\text{g}}{\text{cm}^3} </m>. If the radius of the droplet is <m>2.3 \text{mm}</m>, what is its mass?
+			</activity>
+		</subsection>
+		
+		<subsection xml:id="ssec-1-3-trans">
+			<title>Function Transformations </title>
+			<p>
+			If we have a function <m>b(t)</m> which measures a population in millions after <m>t</m> hours, how would converting the population unit to thousands change the graph of <m>b(t)</m>? How would converting the time unit to days change the graph of <m>b(t)</m>? Take a few moments with the interactive below to explore before viewing the answers.
+			</p>
+			<interactive desmos="l9rqsarqfw" width="170%" aspect="2:1" preview="images/1_3_int_prev_trans1.png" />
+			<p>
+			In both unit conversions above, the resulting graphs are <idx><h>function transformations</h></idx> <idx><h>function</h><h>transformations</h></idx> <term>function transformations</term> of the original graph <m>b(t)</m>. Function transformations are useful outside of unit conversions in recognizing the general shape and other properties of graphs of complicated functions, so we summarize the different types of transformations in the table below:
+			</p>
+			<table>
+				<title>Function transformations of a function <m>f(x)</m></title>
+				<tabular>
+					<row bottom="major">
+						<cell>
+						</cell>
+						<cell>
+						Vertical
+						</cell>
+						<cell>
+						Horizontal
+						</cell>
+					</row>
+					<row bottom="medium">
+						<cell >
+						Shift
+						</cell>
+						<cell>
+						<m>f(x) + c</m>
+						</cell>
+						<cell>
+						<m>f(x + c)</m>
+						</cell>
+					</row>
+					<row bottom="medium">
+						<cell >
+						Scale
+						</cell>
+						<cell>
+						<m>cf(x)</m>
+						</cell>
+						<cell>
+						<m>f(cx)</m>
+						</cell>
+					</row>
+					<row bottom="medium">
+						<cell >
+						Reflection
+						</cell>
+						<cell>
+						<m>-f(x)</m>
+						</cell>
+						<cell>
+						<m>f(-x )</m>
+						</cell>
+					</row>
+				</tabular>
+			</table>
+			<p>
+			Notice that vertical changes to graphs result from adding or multiplying outside of the function notation (since this changes output values, or <m>y</m> values, of functions), and that horizontal changes to graphs result from adding or multiplying inside of the function notation (since this changes input values, or <m>x</m> values, of functions).
+			</p>
+			<example>
+				<title>Unit Conversions and Transformtions</title>
+				<p>
+				A function <m>C(t)</m> gives the temperature in Celsius of an object after <m>t</m> seconds. 
+				</p>
+				<p>
+				The temperature of the object in Kelvin would be given by <m>K(t) = C(t) + 273</m>, which graphically is a vertical shift up <m>273</m> units:
+					<interactive desmos="8mntygrvd8" width="170%" aspect="2:1" preview="images/1_3_int_prev_trans2.png"/>
+				</p>
+				<p>
+				The temperature of the object in Fahrenheit would be given by <m>F(t) = \dfrac{9}{5}C(t) + 32</m>, which graphically is a vertical scale by a factor of  <m>\dfrac{9}{5}</m> followed by a vertical shift up <m>32</m> units:
+					<interactive desmos="bggzlirwpz" width="170%" aspect="2:1" preview="images/1_3_int_prev_trans3.png"/>
+				</p>
+			</example>
+		</subsection>
+		
+		<subsection>
+			<title>Summary</title>
+			<p>
+				<ul>
+					<li> <question>When using functions as models, how do we ensure our models are meaningful? </question>
+						<answer>To ensure our models are meaningful, we must be sure we are using appropriate fundamental relations that describe the quantities we are measuring, and appropriate units to measure those variable quantities. </answer>
+					</li>
+					<li> <question>When computing with functions that are being used as models, how do we ensure our computations are meaningful? </question>
+						<answer>We can use the units of variable quantities when making computations to ensure that units combine and cancel appropriately to give a meaningful output.</answer>
+					</li>
+					<li><question> How can we visualize unit conversions graphically? </question>
+						<answer>Unit conversions result in a transformation of the graph of the function being used. Function transformations can be useful in recognizing the general shape and other properties of graphs of complicated functions. </answer>
+					</li>
+				</ul>
+			</p>
+		</subsection>
+		
+		<exercises>
+			<exercise>
+				<statement>
+				<p>
+				Explain the error in the following argument:
+				</p>
+				<p>
+					<q>
+				The area of a square of length <m>10</m> cm is <m>100</m>. If we instead measure the square in meters (so the length is <m>0.1</m> m), the area of the same square is <m>0.01</m>. Since in one case the area gets big and in the other case the area gets small, this means the actual area of a square can change depending on the units used to measure the length.
+					</q>
+				</p>
+				</statement>
+			</exercise>
+			<exercise>
+				<statement>
+				The conversion from degrees Celsius to degrees Fahrenheit is given by <m>F = \dfrac{9}{5}C + 32</m>, where <m>F</m> is measured in degrees Fahrenheit and <m>C</m> is measured in degrees Celsius.
+				<ol>
+					<li>What are the units of <m>32</m>? </li>
+					<li>What are the units of <m> \dfrac{9}{5}</m>? </li>
+				</ol>
+				</statement>
+				<answer>
+					<ol>
+						<li><m>^\circ</m>F</li>
+						<li><m>^\circ</m>F/<m>^\circ</m>C</li>
+					</ol>
+				</answer>
+			</exercise>
+			<exercise>
+				<statement>
+				<p>
+				The graph of a function <m>h(x)</m> is given below:
+				</p>
+					<image width="60%" source="images/trans.png">
+						<description>A graph shaped like a v.</description>
+					</image> 
+				<p>
+				On the same coordinate system, sketch the graph of each transformation of <m>h(x)</m>.
+				</p>
+				<ol>
+					<li><m>h(x) -2</m></li>
+					<li><m>0.5h(x)</m></li>
+					<li><m>h(0.5x)</m></li>
+					<li><m>-2h(x)+1</m></li>
+				</ol>
+				</statement>
+			</exercise>
+		</exercises>
+	</section>
+	
+ <!--*******************************************************************************-->
+  <!--		SECTION 4             									-->
+  <!--*******************************************************************************-->
+  	<section xml:id="sec-1-4">
+		<title>Linear Functions </title>
+		<objectives xml:id="obj-1-4">
+			<ul>
+				<li> <p>What is the difference between a linear function and a proportional relationship? </p></li>
+				<li> <p>How is the equation of a linear function related to its graph?  </p></li>
+				<li><p> What do solutions to linear equations represent graphically?</p></li>
+			</ul>
+		</objectives>
+		
+		<introduction>
+			<p>
+			There are some families of functions that describe very common relationships. We will study a few of these families in this section, <xref ref="sec-1-5">Section</xref>, and <xref ref="sec-1-6">Section</xref>.
+			</p>
+		</introduction>
+		
+		<exploration xml:id="wu-1-4">
+			<p>
+			The table of a function <m>g(x)</m> is given below. Compute <m>AROC_{[-1,0]}</m>, <m>AROC_{[0,2]}</m>, and <m>AROC_{[2,5]}</m>, recalling <xref ref="ssec-1-2-aroc">Subsection</xref> as needed.
+			</p>
+			<table>
+				<tabular>
+					<row header="yes" bottom="minor">
+						<cell>
+							<m>x</m>
+						</cell>
+						<cell>
+							<m>g(x)</m>
+						</cell>
+					</row>
+					<row>
+						<cell><m> -1</m></cell>
+						<cell> <m> -5</m></cell>
+					</row>
+					<row>
+						<cell><m> 0</m></cell>
+						<cell> <m> -1</m></cell>
+					</row>
+					<row>
+						<cell><m> 2</m></cell>
+						<cell> <m> 7</m></cell>
+					</row>
+					<row>
+						<cell><m> 5</m></cell>
+						<cell> <m> 19</m></cell>
+					</row>
+				</tabular>
+			</table>
+		</exploration>
+		
+		<subsection>
+			<title>Linear and Proportional Relationships</title>
+			<p>
+			You should have found in <xref ref="wu-1-4">Warm-Up</xref> that no matter which interval <m>[a,b]</m> you chose, <m>AROC_{[a,b]}</m> was the same number. This property is the defining characteristic of linear functions:
+			</p>
+			<definition>
+				<title>Linear Function</title>
+				<idx><h>linear function</h></idx>
+				<idx><h>function</h><h>linear</h></idx>
+				A <term>linear function</term> is a function such that <m>AROC_{[a,b]}</m> is constant for every two <m>x</m> values <m>a</m> and <m>b</m> in the domain of the function.
+			</definition>
+			<p>
+			If a function has a constant average rate of change, we can say something very specific about the equation for the function. For suppose <m>f(x)</m> is a linear function. Then we know that for any <m>x</m> value, the average rate of change between <m>x</m> and <m>0</m> is constant (call it <m>m</m>). That is, 
+			</p>
+			<md>
+				<mrow>AROC_{[0,x]} \amp= \dfrac{f(x)-f(0)}{x- 0}</mrow>
+				<mrow> \amp= m </mrow>.
+			</md>
+			<p>
+			We can re-write <m>\dfrac{f(x)-f(0)}{x- 0}= m </m> as 
+			</p>
+			<me>f(x)-f(0)= m(x-0)</me>, <p>or</p>
+			<me>f(x) = mx + f(0)</me>.
+			
+			<assemblage>
+				<title>Linear Function Equation</title>
+				<p>
+				The equation of a linear function in <idx><h>linear function</h><h>slope-intercept form</h></idx> <term>slope-intercept form</term> is <m>f(x) = mx + f(0)</m>. The value <m>m</m> is called the <term>slope</term> of the function, and the value <m>f(0)</m> is called the <term><m>y</m>-intercept</term>.
+				</p>
+				<p>
+				The equation of a linear function in <idx><h>linear function</h><h>point-slope form</h></idx> <term>point-slope form</term> is <m>f(x) = f(a) +m(x-a)</m>. The value <m>m</m> is the slope of the function, and <m>(a,f(a))</m> is any point on the graph of the function.
+				</p>
+			</assemblage>
+			<p>
+			A related concept is that of a <em>proportional relationship</em>, which we define next. 
+			</p>
+			<definition>
+				<title>Proportional Relationship</title>
+				<idx><h>proportional</h></idx>
+				<idx><h>proportional</h><h>proportionality constant</h></idx>
+				<p>
+				A quantity <m>y</m> is <term>proportional</term> to a quantity <m>x</m> if they are related by the equation <m>y = kx</m>, where <m>k</m> is a parameter. The value <m>k</m> is called the <term>proportionality constant</term>.
+				</p>
+			</definition>
+			
+			<example>
+				<title>Linear and Proportional Relationships</title>
+				<p>
+				The function <m>\ell(x) = -2x -4</m> is a linear function with slope <m>-2</m> and <m>y</m>-intercept <m>-4</m>.
+				</p>
+				<p>
+				The function <m>p(x) = 8x</m> represents a proportional relationship. <m>p(x)</m> is proportional to <m>x</m> with proportionality constant <m>8</m>.
+				</p>
+			</example>
+			
+			<activity>
+				<p>
+				Determine whether each table below represents a linear relationship, proportional relationship, or neither.
+				</p>
+				<p>
+				<sbsgroup>
+					<sidebyside>
+					<table>
+						<tabular>
+							<row header="yes" bottom="minor">
+								<cell> <m>x</m> </cell>
+								<cell> <m>f(x)</m> </cell>
+							</row>
+							<row>
+								<cell><m>-4</m></cell>
+								<cell><m>-10</m></cell>
+							</row>
+							<row>
+								<cell><m>-2</m></cell>
+								<cell><m>-8</m></cell>
+							</row>
+							<row>
+								<cell><m>0</m></cell>
+								<cell><m>-6</m></cell>
+							</row>
+							<row>
+								<cell><m>2</m></cell>
+								<cell><m>-4</m></cell>
+							</row>
+							<row>
+								<cell><m>4</m></cell>
+								<cell><m>-2</m></cell>
+							</row>
+						</tabular>
+					</table>
+					<table>
+						<tabular>
+							<row header="yes" bottom="minor">
+								<cell> <m>x</m> </cell>
+								<cell> <m>g(x)</m> </cell>
+							</row>
+							<row>
+								<cell><m>-4</m></cell>
+								<cell><m>16</m></cell>
+							</row>
+							<row>
+								<cell><m>-2</m></cell>
+								<cell><m>4</m></cell>
+							</row>
+							<row>
+								<cell><m>0</m></cell>
+								<cell><m>0</m></cell>
+							</row>
+							<row>
+								<cell><m>2</m></cell>
+								<cell><m>4</m></cell>
+							</row>
+							<row>
+								<cell><m>4</m></cell>
+								<cell><m>16</m></cell>
+							</row>
+						</tabular>
+					</table>
+					</sidebyside>
+					<sidebyside>
+					<table>
+						<tabular>
+							<row header="yes" bottom="minor">
+								<cell> <m>x</m> </cell>
+								<cell> <m>h(x)</m> </cell>
+							</row>
+							<row>
+								<cell><m>-4</m></cell>
+								<cell><m>-8</m></cell>
+							</row>
+							<row>
+								<cell><m>-2</m></cell>
+								<cell><m>-4</m></cell>
+							</row>
+							<row>
+								<cell><m>0</m></cell>
+								<cell><m>0</m></cell>
+							</row>
+							<row>
+								<cell><m>2</m></cell>
+								<cell><m>4</m></cell>
+							</row>
+							<row>
+								<cell><m>4</m></cell>
+								<cell><m>8</m></cell>
+							</row>
+						</tabular>
+					</table>
+					<table>
+						<tabular>
+							<row header="yes" bottom="minor">
+								<cell> <m>x</m> </cell>
+								<cell> <m>k(x)</m> </cell>
+							</row>
+							<row>
+								<cell><m>-4</m></cell>
+								<cell><m>-1</m></cell>
+							</row>
+							<row>
+								<cell><m>-2</m></cell>
+								<cell><m>1</m></cell>
+							</row>
+							<row>
+								<cell><m>0</m></cell>
+								<cell><m>3</m></cell>
+							</row>
+							<row>
+								<cell><m>2</m></cell>
+								<cell><m>5</m></cell>
+							</row>
+							<row>
+								<cell><m>4</m></cell>
+								<cell><m>7</m></cell>
+							</row>
+						</tabular>
+					</table>
+					</sidebyside>
+				</sbsgroup>
+				</p>
+				
+			</activity>
+		</subsection>
+		
+		<subsection>
+			<title>Graphs of Linear Relationships</title>
+			<p>
+			Notice that in the equation of a linear function <m>f(x)=mx +f(0)</m>, the slope <m>m</m> is the constant average rate of change of the function. We can use our previous knowledge about average rates of change from <xref ref="ssec-1-2-aroc">Subsection</xref> and transformations from <xref ref="ssec-1-3-trans">Subsection</xref> to help us understand the graphical behavior of linear functions.
+			</p>
+			<activity>
+				<p> Let <m>l(x)= mx+l(0)</m> be a linear function.
+					<ol>
+						<li><p>First, use concepts from <xref ref="ssec-1-2-aroc">Subsection</xref> to complete the sentences below. Then use the interactive provided to support your answers.
+								<ul>
+									<li>No matter the value of <m>m</m>, the graph of <m>l(x)</m> is always...</li>
+									<li>If <m>m \gt 0</m>, then the graph of <m>l(x)</m>... </li>
+									<li>If <m>m \lt 0</m>, then the graph of <m>l(x)</m>... </li>
+									<li>If <m>m = 0</m>, then the graph of <m>l(x)</m>... </li>
+									<li>If <m>m</m> is very large in absolute value, then the graph of <m>l(x)</m>... </li>
+									<li>If <m>m</m> is very small in absolute value, then the graph of <m>l(x)</m>... </li>
+								</ul>
+							</p>
+						</li>
+						<li><p>With <m>y=x</m> as your parent function, use concepts from <xref ref="ssec-1-3-trans">Subsection</xref> to complete the sentences below. Then use the interactive provided to support your answers.
+								<ul>
+									<li>If <m>l(0) \gt 0</m>, then the graph of <m>l(x)</m>... </li>
+									<li>If <m>l(0) \lt 0</m>, then the graph of <m>l(x)</m>... </li>
+									<li>If <m>l(0) = 0</m>, then the graph of <m>l(x)</m>... </li>
+								</ul>
+							</p>
+						</li>
+					</ol>
+				</p>
+				<interactive desmos="gzznupiaus" width="170%" aspect="2:1" preview="images/1_4_int_prev_linear.png"/>
+			</activity>
+		</subsection>
+		
+		<subsection>
+			<title>Solutions of Linear Equations</title>
+			<p>
+			A <idx><h>linear equation</h></idx> <term>linear equation</term> is any equation involving only linear functions. A <idx><h>linear equation</h><h>solution</h></idx> <term>solution to a linear equation</term> is any value that makes the equation true.
+			</p>
+			<example xml:id="ex-1-4-lin">
+				<title>Linear Equations and Solutions</title>
+				<p>
+				The equation <m>x+1 = 2x-1</m> is a linear equation. A solution to this equation is <m>x=2</m> since <m>(2) + 1 = 2(2)-1</m>. This solution could be found algebraically by solving for <q><m>x</m></q>:
+				</p>
+				<md>
+					<mrow>x+1 \amp= 2x -1</mrow>
+					<mrow>1 \amp= x -1</mrow>
+					<mrow>2 \amp= x</mrow>.
+				</md>
+			</example>
+			<p>
+			Given two linear functions <m>\ell_1(x)</m> and <m>\ell_2(x)</m>, finding a solution to the linear equation <m>\ell_1(x) = \ell_2(x)</m> means finding an <m>x</m> value when the associated <m>y</m> values on each line are equal. Graphically, this means finding a point of intersection.
+			</p>
+			<example>
+				<title>Solutions to Linear Equations Graphically</title>
+				<p>
+				In <xref ref="ex-1-4-lin">Example</xref>, we saw that a solution to the linear equation <m>x+1 = 2x-1</m> is <m>x=2</m>. Graphically, this means if we graphed <m>y=x+1</m> and <m>y=2x-1</m>, there would be an intersection point at <m>x=2</m>:
+				</p>
+				<image width="60%" source="images/intersect.png">
+						<description>A graph of two lines intersecting at x equal two.</description>
+				</image> 
+			</example>
+			
+			<activity>
+				<p>
+				Give an example of a linear equation for each scenario below, or explain why an example does not exist. You are encouraged to think about each scenario graphically.
+					<ol>
+						<li>A linear equation which has exactly one solution. </li>
+						<li>A linear equation which has no solution. </li>
+						<li>A linear equation which has two solutions. </li>
+						<li>A linear equation in which every number is a solution. </li>
+					</ol>
+				</p>
+			</activity>
+		</subsection>
+		
+		<subsection>
+			<title>Summary</title>
+			<ul>
+				<li> <question>What is the difference between a linear function and a proportional relationship? </question>
+					<answer>A linear function is a function relationship which has a constant average rate of change between any two points. A proportional relationship is a specific type of linear function in which the <m>y</m>- intercept is equal to <m>0</m>.</answer>
+				</li>
+				<li> <question>How is the equation of a linear function related to its graph?  </question>
+					<answer>The graph of a linear function can be determined by its slope and <m>y</m>-intercept. The slope determines whether the graph increases or decreases, and how quickly it increases or decreases. The <m>y</m>-intercept is a vertical shift of the graph of <m>y=mx</m> which determines where the graph crosses the <m>y</m>-axis. </answer>
+				</li>
+				<li><question> What do solutions to linear equations represent graphically?</question>
+				<answer>Solutions to linear equations are points of intersection when graphing the lines on the left and right of the <q><m>=</m></q> sign. It is possible to have exactly one solution, no solution, or infinitely many solutions.</answer>
+				</li>
+			</ul>
+		</subsection>
+		
+		<exercises>
+			<exercise>
+				<statement>
+				Give an example, or explain why no example exists, of the graph of a function which is
+					<ol>
+						<li>linear but not proportional. </li>
+						<li>proportional but not linear. </li>
+						<li>linear and proportional.</li>
+					</ol>
+				</statement>
+			</exercise>
+			<exercise>
+				<statement>
+				Write the equation of the line that passes through the points <m>(-2,10)</m> and <m>(4,-3)</m> using
+				<ol>
+					<li>point-slope form.</li>
+					<li>slope-intercept form.</li>
+				</ol>
+				</statement>
+				<answer>
+					<ol>
+						<li><m>y-10 = \frac{-13}{6}(x+2)</m></li>
+						<li><m>y = \frac{-13}{6}x + \frac{17}{3}</m></li>
+					</ol>
+				</answer>
+			</exercise>
+			<exercise>
+				<statement>
+				Find the solution(s) to <m>mx+1 = 2x -3</m>, where <m>m</m> is a parameter (your answer will be <m>x=</m> something in terms of <m>m</m>). For what value(s) of <m>m</m> is there no solution?
+				</statement>
+				<answer>
+					<m>x = \frac{-4}{m-2}</m>, <m>m \neq 2</m>
+				</answer>
+			</exercise>
+			<exercise>
+				<statement>
+				Let <m>p(x) =mx + p(0)</m> be a linear function representing the price <m>p(x)</m> (in dollars) for riding <m>x</m> miles.
+				<ol>
+					<li>What are the units of <m>p(0)</m>?</li>
+					<li>What are the units of <m>m</m>?</li>
+				</ol>
+				</statement>
+				<answer>
+					<ol>
+						<li>dollars</li>
+						<li>dollars/mile</li>
+					</ol>
+				</answer>
+			</exercise>
+		</exercises>
+	</section>
+
+<!--*******************************************************************************-->
+  <!--		SECTION 5             									-->
+  <!--*******************************************************************************-->
+  	<section xml:id="sec-1-5">
+		<title>Exponential and Logarithmic Functions </title>
+		<objectives xml:id="obj-1-5">
+			<ul>
+				<li> <p>What is an exponential function? </p></li>
+				<li> <p>What is a logarithmic function?</p></li>
+				<li><p> How do we solve exponential equations?</p></li>
+			</ul>
+		</objectives>
+		
+		
+		<exploration xml:id="wu-1-5">
+			<p>
+			The table of a function <m>h(x)</m> is given below. Compute <m>AROC_{[-1,0]}</m>, <m>AROC_{[0,1]}</m>, and <m>AROC_{[1,2]}</m>, recalling <xref ref="ssec-1-2-aroc">Subsection</xref> as needed.
+			</p>
+			<table>
+				<tabular>
+					<row header="yes" bottom="minor">
+						<cell>
+							<m>x</m>
+						</cell>
+						<cell>
+							<m>h(x)</m>
+						</cell>
+					</row>
+					<row>
+						<cell><m> -1</m></cell>
+						<cell> <m> 0.5</m></cell>
+					</row>
+					<row>
+						<cell><m> 0</m></cell>
+						<cell> <m> 1</m></cell>
+					</row>
+					<row>
+						<cell><m> 1</m></cell>
+						<cell> <m> 2</m></cell>
+					</row>
+					<row>
+						<cell><m> 2</m></cell>
+						<cell> <m> 4</m></cell>
+					</row>
+				</tabular>
+			</table>
+			<p>
+			Then sketch the visual representation of each average rate of change on a graph to get an idea of how the function changes over time.
+			</p>
+		</exploration>
+		
+		<subsection>
+			<title>Exponential Functions</title>
+			<aside>
+				<title>Properties of Exponents</title>
+				<p>
+				In working with exponential functions, we will often use properties of exponents. We will not review those in full detail in this text, but you may find a review with examples at <url href="https://tutorial.math.lamar.edu/Classes/Alg/IntegerExponents.aspx#Int_Props" visual="tutorial.math.lamar.edu/Classes/Alg/IntegerExponents.aspx#Int_Props">Paul's Online Notes: Properties of Exponents</url>.
+				</p>
+			</aside>
+			<p>
+			You should have found in <xref ref="wu-1-5">Warm-Up</xref> that the value of <m>AROC_{[a,b]}</m> was dependent on the interval <m>[a,b]</m>. Since this function does not have a constant average rate of change, we know that it does not represent a linear relationship that we studied in <xref ref="sec-1-4">Section</xref>. There is, however, still an important pattern to be discovered in this relationship: each consecutive output value is multiplied by the constant <m>2</m> in order to get the next output value. This is the defining characteristic of an <term>exponential function</term>:
+			</p>
+			<definition>
+				<title>Exponential Function</title>
+				<idx><h>exponential function</h></idx>
+				<p>
+				An <term>exponential function</term> is a function of the form <m>f(x)= b^x</m>, for some constant <m>b</m> where <m>b \gt 0</m> and <m>b \neq 1</m>. The constant <m>b</m> is called the <idx><h>exponential function</h><h>base</h></idx> <term>base</term> of the exponential.
+				</p>
+			</definition>
+			<p>
+			If <m>b \gt 1</m> we call the function <idx><h>exponential function</h><h>exponential growth</h></idx> <term>exponential growth</term>. If <m>0 \lt b \lt 1</m> we call the function <idx><h>exponential function</h><h>exponential decay</h></idx> <term>exponential decay</term>. Use the interactive to view how the graph of <m>f(x) = b^x</m> changes for different values of <m>b</m>:
+			</p>
+			<interactive desmos="h9kzns2y9j" width="170%" aspect="2:1" preview="images/1_5_int_prev_exp.png"/>
+			<example>
+				<title>Exponential Models</title>
+				<p>
+				Exponential functions can be accurate in modeling population growth on a restricted domain. If you have a population that initially has <m>1</m> individual, and each individual produces one more individual every year (i.e., the population doubles every year), you could model this with the exponential function <m>p(t) = 2^t</m>.
+				</p>
+			</example>
+			<p>
+			You may observe a system that behaves exponentially, but does not exactly fit a model of the form <m>y=b^x</m>. For example, the output value associated with <m>x=0</m> may not be always be <m>b^0 =1</m>. This is an instance in which transformations from <xref ref="ssec-1-3-trans">Subsection</xref> can be useful. A general transformation of an exponential function has the form
+			 <me> f(x) = v \cdot b^{h(x-r)}+ u</me>. 
+			 Using rules of exponents this can be written as 
+			 <me>f(x) =(vb^{-hr}) \cdot (b^h)^x +u</me>.
+			  Defining <m>v_1=vb^{-hr}</m> as a new vertical scale and <m>b_1=b^h</m> as a new base, we can write the transformation as 
+			  <me>f(x)=v_1 \cdot (b_1)^x + u</me>, 
+			  using only a vertical scale and vertical shift on the graph of <m>y=(b_1)^x</m>. Therefore, we will focus on transformations of exponential functions in the form <m>f(x)=v \cdot b^x +u</m>. Take a moment to use the interactive below to describe how each parameter transforms <m>y=b^x</m> (<m>b \gt 1</m>) before viewing the answers.
+			</p>
+			<interactive desmos="aosgwl700w" width="170%" aspect="2:1" preview="images/1_5_int_prev_exptrans.png"/>
+			<p>
+				<ul>
+					<li><m>v</m>
+						<answer> is a vertical scale by a factor of <m>|v|</m>. When a function has the form <m>f(x)=vb^x</m>, <m>v</m> is the <m>y</m>-intercept.</answer>
+					</li>
+					<!--<li><m>h</m>
+						<answer> is a horizontal scale. It will stretch or compress the graph horizontally by a factor of <m>\left|\dfrac{1}{h}\right|</m>.</answer>
+					</li> -->
+					<!--<li><m>r</m>
+						<answer> is a horizontal shift. It will shift the graph left or right <m>|r|</m> units.</answer>
+					</li> -->
+					<li><m>u</m>
+						<answer> is a vertical shift. It will shift the graph up or down <m>|u|</m> units.</answer>
+					</li>
+				</ul>
+			</p>
+			<p>
+			Though <m>AROC_{[a,b]}</m> is not constant for exponential functions, we can still use these computations to help identify when a relationship fits an exponential model (or a transformation of one) using the following fact:
+			</p>
+			<theorem xml:id="f-1-5-aroc">
+				<p>
+				If <m>f(x) = v \cdot b^{x} + u</m>, then <me>\dfrac{AROC_{[x+1,x+2]}}{AROC_{[x,x+1]}} = b</me> for every <m>x</m> value.
+				</p>
+			</theorem>
+			<example>
+				<title>Constant AROC Ratio</title>
+				Looking at the table in <xref ref="wu-1-5">Warm-Up</xref>, we compute <me>\dfrac{AROC_{[x+1,x+2]}}{AROC_{[x,x+1]}}</me> for <m>x=-1</m> and <m>x=0</m>:
+				<me>\dfrac{AROC_{[-1+1,-1+2]}}{AROC_{[-1,-1+1]}} = \dfrac{AROC_{[0,1]}}{AROC_{[-1,0]}} = \dfrac{1}{0.5} = 2  </me>
+				<me>\dfrac{AROC_{[0+1,0+2]}}{AROC_{[0,0+1]}} = \dfrac{AROC_{[1,2]}}{AROC_{[0,1]}} = \dfrac{2}{1} = 2  </me>
+				<p>
+				The table lists points of the function <m>f(x) = 2^x</m>, which is why we computed the constant <m>b=2</m> for each ratio. 
+				</p>
+			</example>
+			<activity>
+				<p>
+				Determine whether the tables below represent an exponential relationship (or a transformation of one). If yes, what is the base?
+				</p>
+				<table>
+					<tabular>
+						<row header="yes" bottom="minor">
+							<cell><m>x</m></cell>
+							<cell><m>g(x)</m></cell>
+						</row>
+						<row>
+							<cell><m>-2</m></cell>
+							<cell><m>5</m></cell>
+						</row>
+						<row>
+							<cell><m>-1</m></cell>
+							<cell><m>3</m></cell>
+						</row>
+						<row>
+							<cell><m>0</m></cell>
+							<cell><m>1</m></cell>
+						</row>
+						<row>
+							<cell><m>1</m></cell>
+							<cell><m>-1</m></cell>
+						</row>
+						<row>
+							<cell><m>2</m></cell>
+							<cell><m>-3</m></cell>
+						</row>
+					</tabular>
+				</table>
+				<table>
+					<tabular>
+						<row header="yes" bottom="minor">
+							<cell><m>x</m></cell>
+							<cell><m>k(x)</m></cell>
+						</row>
+						<row>
+							<cell><m>-2</m></cell>
+							<cell><m>15</m></cell>
+						</row>
+						<row>
+							<cell><m>-1</m></cell>
+							<cell><m>7</m></cell>
+						</row>
+						<row>
+							<cell><m>0</m></cell>
+							<cell><m>3</m></cell>
+						</row>
+						<row>
+							<cell><m>1</m></cell>
+							<cell><m>1</m></cell>
+						</row>
+						<row>
+							<cell><m>2</m></cell>
+							<cell><m>0</m></cell>
+						</row>
+					</tabular>
+				</table>
+			</activity>
+			<p>
+			It can be useful to write exponential functions using specific bases, depending on the information we are given about the system and what question(s) we are trying to answer. There are two related contexts in which this will be relevant:
+			</p>
+			<assemblage>
+				<title>Doubling Time and Half Life</title>
+				<idx><h>doubling time</h></idx>
+				<idx><h>exponential function</h><h>doubling time</h></idx>
+				<idx><h>half life</h></idx>
+				<idx><h>exponential function</h><h>half life</h></idx>
+				<notation><usage><m>t_d</m></usage><description>the doubling time for a given exponential growth model</description></notation>
+				<notation><usage><m>t_h</m></usage><description>the half life for a given exponential decay model</description></notation>
+				<p>
+				Given a function <m>p(t)=p_0 \cdot b^t</m>, <m>b \gt 1</m>, the <term>doubling time</term> is the input value <m>t_d</m> such that <m>p(t_d)= 2p_0</m>.
+				</p>
+				<p>
+				Given a function <m>p(t)=p_0 \cdot b^t</m>, <m>0 \lt b \lt 1</m>, the <term>half life</term> is the input value <m>t_h</m> such that <m>p(t_h)= \dfrac{1}{2}p_0</m>.
+				</p>
+			</assemblage>
+			
+			<example xml:id="ex-1-5-dt">
+				<title>Doubling Time</title>
+				<p>
+				If we know that the doubling time of a population is <m>3</m> years, then we can quickly write down a model for this population using the base <m>2</m>:
+				<me>p(t) = p_0 \cdot 2^{t/3}</me>,
+				where <m>t</m> is measured in years. Note that when we plug in <m>t=3</m>, we get
+				<me>p(3) = p_0 \cdot 2^{3/3} = 2p_0</me>, which shows that the doubling time is <m>t_d =3</m> as desired. If we'd like to know how much the population increases each <em>year</em>, we can use rules of exponents to write
+				<me>p(t)= p_0 \cdot (2^{1/3})^t</me>, to see that the base is <m>2^{1/3} \approx 1.26</m>. This means the population increases by approximately <m>26\%</m> each year.
+				</p>
+			</example>
+			<p>
+			Another common base for writing exponential functions is the number <idx><h><m>e</m> (number)</h></idx> <m>e</m>. This is an irrational number equal to approximately <m>2.718</m>, which is special in calculus for reasons we will see in <xref ref="sec-2-1-elem-rules">Section</xref>. Writing an exponential function such as <m>2^x</m> using base <m>e</m> means re-writing <m>2^x</m> as <m>e^{kx}</m> for some constant <m>k</m>. Using rules of exponents to write
+			<me>2^x = e^{kx} = (e^k)^x</me>, we see this means finding a constant <m>k</m> such that <m>2 = e^k</m>. How do we find such a <m>k</m>?
+			</p>
+			<p>
+			Similarly, in <xref ref="ex-1-5-dt">Example</xref>, we were given the doubling time and found an equation. What if we were given an equation <m>p(t)=10 \cdot (1.5)^t</m>, and asked to find the doubling time? We would need to solve the equation <m>20 = 10 \cdot (1.5)^t</m>, or equivalently <m>2 = 1.5^t</m>, for <m>t</m>.  
+			</p>
+			<p>
+			Solving <m>2 = e^k</m> for <m>k</m> and <m>2 = 1.5^t</m> for <m>t</m> are similar in that the variable we are looking to solve for is in the <em>exponent</em>. These are called <idx><h>exponential equation</h></idx> <term>exponential equations</term>, and we need tools from <xref ref="ssec-1-5-log">Subsection</xref> to solve them. 
+			</p>
+		</subsection>
+		
+		<subsection xml:id="ssec-1-5-log">
+			<title>Logarithmic Functions and Solving Exponential Equations</title>
+			<aside>
+				<title>Properties of Logarithms</title>
+				<p>
+				In working with logarithmic functions, we will often use properties of logarithms. We will not review those in full detail in this text, but you may find a review with examples at <url href="https://tutorial.math.lamar.edu/Classes/Alg/LogFunctions.aspx" visual="tutorial.math.lamar.edu/Classes/Alg/LogFunctions">Paul's Online Notes: Properties of Logarithms</url>.
+				</p>
+			</aside>
+			<p>
+				<question>Are exponential functions invertible? <em>Hint</em>: Picture what the graphs of exponential functions look like.</question>
+				<answer>Yes, because they pass the horizontal line test (see <xref ref="ex-1-2-inv">Example</xref>).</answer>
+			</p>
+			<definition>
+				<title>Logarithmic Function of Base <m>b</m></title>
+				<idx><h>logarithmic function</h></idx>
+				<idx><h>logarithmic function</h><h>base</h></idx>
+				Given an exponential function with base <m>b</m>, <m>y=b^x</m>, its inverse function is called the <term>logarithmic function of base <m>b</m></term>. It is written <m>y=\log_b(x)</m>.
+			</definition>
+			<p>
+			Base <m>10</m> and base <m>e</m> are used often and have special notation:
+			</p>
+			<assemblage>
+				<title>The Common and Natural Log</title>
+				<idx><h>logarithmic function</h><h>common logarithm</h></idx>
+				<idx><h>logarithmic function</h><h>natural logarithm</h></idx>
+				<p>
+				Instead of writing <m>\log_{10}(x)</m>, we write <m>\log(x)</m>. Note that every logarithm has a base, so if you don't see one indicated, it is assumed to be <m>10</m>! This is called the <term>common logarithm</term>.
+				</p>
+				<p>
+				Instead of writing <m>\log_{e}(x)</m>, we write <m>\ln(x)</m>. This is called the <term>natural logarithm</term>.
+				</p>
+			</assemblage>
+			<p>
+			Since logarithmic functions are inverse functions of exponentials, and inverse functions are obtained by swapping the input and output of the original function, we can always interpret logarithmic expressions in terms of exponential expressions:
+			</p>
+			<assemblage>
+				<title>Interpreting Log Expressions</title>
+				<p>
+				The expression <me>y=\log_b(x)</me> is equivalent to the expression <me>b^y = x</me>.
+				</p>
+			</assemblage>
+			<example>
+				<title>Interpreting Log Expressions</title>
+				<p></p>
+				<p>
+				<m>\log_2(8) = 3</m> since <m>2^3 = 8</m>.
+				</p>
+				<p>
+				<m>\log(0.01) = -2</m> since <m>10^{-2} = 0.01</m>.
+				</p>
+				<p>
+				<m>\ln(\sqrt{e}) = 0.5</m> since <m>e^{0.5} =\sqrt{e}</m>.
+				</p>
+			</example>
+			<p>
+			Since the graph of an inverse functions is related to the graph of the original function by reflection across the line <m>y=x</m> (<xref ref="ex-1-2-inv">Example</xref>), we can see what graphs of logarithmic functions look like as the base <m>b</m> changes:
+			</p>
+			<interactive desmos="s17e2hlhqk" width="170%" aspect="2:1" preview="images/1_5_int_prev_log.png"/>
+			<p>
+			A property of logarithms that make them a useful tool for solving exponential equations is the following:
+			</p>
+			<assemblage>
+				<title>Composing Logarithms and Exponentials</title>
+				<p>
+					<me>\log_b(a^x) = x\cdot \log_b(a)</me>
+				In words, this says that if everything inside of a logarithm is raised to a power, we can bring the power outside of the logarithm using multiplication. Note also that the bases do not need to match to use this property. If they do match, we get a nicer simplification: 
+					<me>\log_b(b^x) = x\cdot\log_b(b) = x</me>
+				</p>
+			</assemblage>
+			
+			<example>
+				<title>Solving Exponential Equations Using Logarithms</title>
+				<p>
+				We will write <m>y=2^x</m> in the form <m>y=e^{kx}</m>. As seen previously, this means we must solve <m>2=e^k</m> for <m>k</m>:
+					<md>
+						<mrow>2 \amp=e^k</mrow>
+						<mrow>\ln(2) \amp=\ln(e^k)</mrow>
+						<mrow>\ln(2) \amp=k</mrow>
+					</md>
+				So <m>k = \ln(2)</m>, which means <m>y=2^x</m> can be written as <m> y =e^{\ln(2)x}</m>.
+				</p>
+				<p>
+				We will find the doubling time for the function <m>p(t)=10 \cdot (1.5)^t</m>. Since <m>p(0) =10</m>, we must find the value <m>t</m> such that <m>p(t)=2 \cdot p(0) = 20</m>:
+					<md>
+						<mrow>20 \amp=10\cdot (1.5)^t</mrow>
+						<mrow>2 \amp=1.5^t</mrow>
+						<mrow>\log(2) \amp=\log(1.5^t)</mrow>
+						<mrow>\log(2) \amp=t \cdot \log(1.5)</mrow>
+						<mrow>\dfrac{\log(2)}{\log(1.5)} \amp=t</mrow>
+					</md>
+				So <m>t_d = \dfrac{\log(2)}{\log(1.5)} \approx 1.71</m>.
+				</p>
+			</example>
+			<activity>
+			 	<p>
+				A fish population is changing according to the model <m>p(t)= 500 \cdot e^{-2t}</m>.
+					<ol>
+						<li>Find the doubling time or half life of the population (whichever is appropriate).</li>
+						<li>By what percentage does the population increase or decrease each year?</li>
+					</ol>
+				</p>
+			</activity>
+		</subsection>
+		
+		<subsection>
+			<title>Scaling and Fitting Data with Logarithms</title>
+			<p>
+			Aside from being a tool for solving exponential equations, logarithms can also be useful for scaling and fitting data, as our next examples illustrate.
+			</p>
+			<example>
+				<title>Scaling Data</title>
+				<p>
+				Some systems produce data that are very large or small, and/or cover a very large range. It can be difficult to plot such data in an effective way. Logarithms are useful for taking very large (or small) numbers and making them more manageable, and for compressing a data set that covers a very large range. 
+				</p>
+				<p>
+				For example, you may have a function that measures the acidity of soil over time. Acidity is based on the concentration of hydrogen ions present, and can be measured in moles per liter (<m>M</m>). These numbers are very small, and can vary widely if the acidity of the soil is changing.
+				</p>
+				<p>
+				The example below shows what the data might look like to plot the molarity <m>a</m> against time <m>t</m> in the first table. In the window given, it's difficult to see any difference between the points. Further, because they cover such a large range of values (<m>.1</m> to <m>10^{-13}</m>), it is difficult to change the window to display the relationship in an effective way.
+				</p>
+				<p>
+				Using the second table, we plot <m>-\log(a)</m> against time <m>t</m>. In fact, this is the definition of <term>pH</term> for measuring acidity. As you can see, this makes the numbers more manageable to plot, the relationship of acidity with respect to time easier to describe qualitatively, and changes the range of outputs to values between <m>1</m> and <m>13</m>.
+				</p>
+				<interactive desmos="ytbhq6wvz7" width="170%" aspect="2:1" preview="images/1_5_int_prev_logscale.png"/>
+			</example>
+			<example>
+				<title>Fitting Data</title>
+				<p>
+				After collecting data, we may want to try and fit that data with a specific type of function. For example, we may suspect our data can be modeled by a <idx><h>power function</h></idx> <idx><h>function</h><h>power function</h></idx> <term>power function</term>: a function of the form <m>f(x) = kx^p</m>. We would need to find values for the parameters <m>k</m> and <m>p</m> that best fit our data. 
+				</p>
+				<p>
+				If we take the log of both sides of <m>f(x) = kx^p</m>, we get 
+					<md>
+						<mrow>\log(f(x)) \amp= \log(kx^p) </mrow>
+						<mrow>\log(f(x)) \amp= \log(k)+ \log(x^p) </mrow>
+						<mrow>\underset{y}{\log(f(x))} \amp= \underset{m}{p} \cdot \underset{x}{\log(x)} + \underset{y_0}{\log(k)} </mrow>
+					</md>
+				This shows us that if our data fits a power function, then we can plot <m>\log(f(x))</m> as our output and <m>\log(x)</m> as our input and the resulting graph should be linear. Moreover, the slope of the linear function will be the power <m>p</m> and the <m>y</m>-intercept of the linear function will be <m>\log(k)</m>.
+				</p>
+				<p>
+				The example below shows our original data points in the first table that we'd like to fit with a power function <m>f(x)=kx^p</m>. The second table shows our data after taking the log of both input and output. We suspect the second table should be a linear function, so we can compute the average rate of change between each interval to confirm and find the slope:
+					<me>\dfrac{\log(16)- \log(2)}{\log(2)-0} = 3</me>
+					<me>\dfrac{\log(54)- \log(16)}{\log(3)-\log(2)} = 3</me>
+				So we see that <m>p=3</m>. We can also see the <m>y</m>-intercept from the table is <m>\log(2)</m>, so <m>k=2</m>. This means the power function that fits our original data is <m>y=2x^3</m>.
+				</p>
+				<interactive desmos="drueualibc" width="170%" aspect="2:1" preview="images/1_5_int_prev_logfit.png"/>
+			</example>
+		</subsection>
+		
+		<subsection>
+			<title>Summary</title>
+			<ul>
+				<li> <question>What is an exponential function? </question>
+					<answer><p>An exponential function is a function that has the form <m>f(x)=b^x</m> for some constant <m>b</m> where <m>b \gt 0</m> and <m>b \neq 1</m>. A special property of these functions is that the ratio of consecutive average rates of change is equal to <m>b</m>. That is, 
+						<me>\dfrac{AROC_{[x+1,x+2]}}{AROC_{[x,x+1]}} = b</me>
+						for every <m>x</m> value.</p>
+					</answer>
+				</li>
+				<li> <question>What is a logarithmic function?</question>
+					<answer>A logarithmic function of base <m>b</m> is the inverse function of the exponential function of base <m>b</m>. That is, <m>\log_b(x)=y</m> means <m>b^y=x</m>.</answer>
+				</li>
+				<li><question> How do we solve exponential equations?</question>
+					<answer>To solve equations for a variable that is in the exponent, we can apply logarithms to both sides of the equation and use properties of logarithms. Specifically, we use the property that <m>\log_b(a^x)=x \cdot \log_b(a)</m>.</answer>
+				</li>
+			</ul>
+		</subsection>
+		
+		<exercises>
+			<exercise>
+			 	<statement>
+				Let <m>j(x)=e^{kx}</m>. For what values of <m>k</m> is <m>j(x)</m> increasing?  For what values of <m>k</m> is <m>j(x)</m> decreasing? Justify your answers by using what you know about the graph of <m>y=b^x</m>.
+				</statement>
+				<answer>
+					Increasing for <m>k \gt 0</m>, decreasing for <m>k \lt 0</m>
+				</answer>
+			</exercise>
+			<exercise>
+				<statement>
+				In the table below, determine the value of <m>c</m> that would make the points fit an exponential relationship with base <m>0.25</m>.
+				<table>
+					<tabular>
+						<row header="yes" bottom="minor">
+							<cell>
+								<m>x</m>
+							</cell>
+							<cell>
+								<m>y</m>
+							</cell>
+						</row>
+						<row >
+							<cell>
+								<m>0</m>
+							</cell>
+							<cell>
+								<m>8</m>
+							</cell>
+						</row>
+						<row >
+							<cell>
+								<m>1</m>
+							</cell>
+							<cell>
+								<m>c</m>
+							</cell>
+						</row>
+						<row >
+							<cell>
+								<m>2</m>
+							</cell>
+							<cell>
+								<m>3</m>
+							</cell>
+						</row>
+					</tabular>
+				</table>
+				</statement>
+				<answer>
+					<m>c =4 </m>
+				</answer>
+			</exercise>
+			<exercise>
+				<statement>
+				Use logarithms to find a power function that fits the data in the table below:
+				<table>
+					<tabular>
+						<row header="yes" bottom="minor">
+							<cell>
+								<m>x</m>
+							</cell>
+							<cell>
+								<m>h(x)</m>
+							</cell>
+						</row>
+						<row>
+							<cell>
+								<m>0</m>
+							</cell>
+							<cell>
+								<m>0</m>
+							</cell>
+						</row>
+						<row>
+							<cell>
+								<m>2</m>
+							</cell>
+							<cell>
+								<m>24</m>
+							</cell>
+						</row>
+						<row>
+							<cell>
+								<m>4</m>
+							</cell>
+							<cell>
+								<m>384</m>
+							</cell>
+						</row>
+						<row>
+							<cell>
+								<m>6</m>
+							</cell>
+							<cell>
+								<m>1944</m>
+							</cell>
+						</row>
+					</tabular>
+				</table>
+				</statement>
+				<answer>
+					<m>h(x) = 1.5x^4</m>
+				</answer>
+			</exercise>
+			
+			<exercise>
+				<statement>
+					You have data that you suspect fits an exponential model of the form <m>f(x)= a\cdot b^x</m>. Show that if you plot <m>\log(f(x))</m> as the output and <m>x</m> as the input, you should get a linear relationship. What is the slope? What is the <m>y</m>-intercept?
+				</statement>
+				<answer>
+				slope: <m>\log(b)</m>, <m>y</m>-intercept: <m>(0,\log(a))</m>
+				</answer>
+			</exercise>
+		</exercises>
+	</section>
+	
+<!--*******************************************************************************-->
+  <!--		SECTION 6             									-->
+  <!--*******************************************************************************-->
+  	<section xml:id="sec-1-6">
+		<title>Trigonometric Functions </title>
+		<objectives xml:id="obj-1-6">
+			<ul>
+				<li> <p>How are <m>\sin(x)</m>, <m>\cos(x)</m>, and <m>\tan(x)</m> defined?</p></li>
+				<li> <p>How can we use trigonometric functions in modeling?</p></li>
+			</ul>
+		</objectives>
+		
+		<introduction>
+			<p>
+			There are many relationships in which a pattern repeats itself over a set period of time, such as outside temperatures, hours of sunlight in a day, and tide levels. Trigonometric functions are useful in modeling these relationships.  
+			</p>
+		</introduction>
+		<exploration xml:id="wu-1-6">
+			<p>
+			When using trigonometric functions in calculus, we use a measurement called <idx><h>radians</h></idx> <term>radians</term>. Address the questions below as completely as possible using the interactive provided.
+			</p>
+			<interactive desmos="ql8vnbcfpc" width="170%" aspect="2:1" preview="images/1_6_int_prev_radian.png"/>
+			<ol>
+				<li>What do you think <q>radians</q> (<m>r</m>) is a measurement of?</li>
+				<li>What is the difference between a positive radian measurement and a negative radian measurement?</li>
+				<li>How many radians trace out the entire circle of radius <m>1</m>? What is the conversion factor between radians and degrees?</li>
+				<li>What is a radian measure that corresponds to the point <m>(0,1)</m>? <m>(-1,0)</m>?  <m>(0,-1)</m>?  <m>(1,0)</m>?</li>
+				<li>What is the arc length of the segment of the circle traced out when <m>r=1</m>?</li>
+			</ol>
+		</exploration>
+		
+		<subsection>
+			<title>The Unit Circle and Trigonometric Functions</title>
+			<p>
+			The circle in <xref ref="wu-1-6">Warm-Up</xref> is called the <idx><h>unit circle</h></idx> <term>unit circle</term>. As <m>r</m> changes, the line connecting <m>(0,0)</m> to the unit circle moves around the circle, eventually repeating itself. This repetition is the characteristic that allows us to define functions that repeat a pattern over time. Use the interactive below to determine the definitions of <m>\sin(r)</m>, <m>\cos(r)</m>, and <m>\tan(r)</m> before viewing the answers.
+			</p>
+			<interactive xml:id="int-1-6-trig" desmos="j6vqzcmwlf" width="170%" aspect="2:1" preview="images/1_6_int_prev_trig.png"/>
+			<idx><h>trigonometric functions</h></idx>
+			<idx><h>trigonometric functions</h><h>sine</h></idx>
+			<idx><h>trigonometric functions</h><h>cosine</h></idx>
+			<idx><h>trigonometric functions</h><h>tangent</h></idx>
+			<ul>
+				<li><m>\sin(r)</m> 
+					<answer>For a value of <m>r</m>, you can draw a right triangle in the unit circle by drawing a vertical line up or down to the <m>x</m>-axis. <m>\sin(r)</m> is the height of that triangle. Equivalently,  <m>\sin(r)</m> is the <m>y</m> value of the point on the unit circle associated with <m>r</m>.</answer>
+				</li>
+				<li><m>\cos(r)</m>
+					<answer>For a value of <m>r</m>, you can draw a right triangle in the unit circle by drawing a vertical line up or down to the <m>x</m>-axis. <m>\cos(r)</m> is the length of that triangle. Equivalently,  <m>\cos(r)</m> is the <m>x</m> value of the point on the unit circle associated with <m>r</m>.</answer>
+				 </li>
+				<li><m>\tan(r)</m>
+					<answer>For a value of <m>r</m>, you can draw a right triangle in the unit circle by drawing a vertical line up or down to the <m>x</m>-axis. <m>\tan(r)</m> is the slope of the triangle's hypotenuse. Equivalently,  <m>\tan(r)</m> is the slope of the line associated with <m>r</m> connecting <m>(0,0)</m> to the unit circle.</answer>
+				 </li>
+			</ul>
+			<remark>
+				<p>
+				As with any function, we can use any symbol to represent the input variable inside a trigonometric function. However, it is common to use the greek letter <m>\theta</m> (<q>theta</q>) to represent the input variable in these cases: <m>\sin(\theta)</m>, <m>\cos(\theta)</m>, and <m>\tan(\theta)</m>. The important thing to remember is that the output values of these functions come from the unit circle as described above.
+				</p>
+			</remark>
+			<p>
+			If you are computing the value of trigonometric functions using technology, you'll want to be sure the device you are using is measuring the input in <em>radians</em>. There may be times when it is useful to understand the values of trigonometric functions at special points on the unit circle. You can compute trigonometric values at any multiple of <m>\dfrac{\pi}{4}</m> or <m>\dfrac{\pi}{6}</m> just by remembering the lengths of two triangles:
+			</p>
+			<assemblage xml:id="ass-1-6-triangle">
+				<title><m>\dfrac{\pi}{4}</m>-<m>\dfrac{\pi}{4}</m> and <m>\dfrac{\pi}{6}</m>-<m>\dfrac{\pi}{3}</m> Right Triangles</title>
+					<image width="60%" source="images/triangles.png">
+						<description>Lengths of right triangles with angles pi over 4, pi over 4 radians and pi over 6, pi over 3 radians.  </description>
+					</image> 
+			</assemblage>
+			<p>
+			As seen in the <xref ref="int-1-6-trig" text="custom">unit circle</xref>, we can draw a right triangle within the unit circle for different values of <m>r</m>. When <m>r</m> is a multiple of <m>\dfrac{\pi}{4}</m> or <m>\dfrac{\pi}{6}</m>, that triangle will be one of the <xref ref="ass-1-6-triangle">special triangles</xref>, from which we can compute the desired trigonometric value.
+			</p>
+			
+			<example>
+				<title>Computations in the Unit Circle</title>
+				<p>
+				We will compute trigonometric values of <m>\dfrac{2\pi}{3}</m>. The first step is to identify the picture of <m>\dfrac{2\pi}{3}</m> in the unit circle:
+					<image width="60%" source="images/trigcomp.png">
+						<description>A transformation of a trigonometric function.  </description>
+					</image> 
+				As the picture shows, we can then draw a right triangle within the unit circle by drawing a vertical line down to the input axis. We can then determine all of the angles of the triangle, and fill in each length, which tells us the coordinates of the point on the unit circle. Pay attention to whether the coordinates are positive or negative! These are exactly what define, sine, cosine, and tangent of the angle:
+					<md>
+						<mrow>\cos\left(\dfrac{2\pi}{3}\right) \amp=- \dfrac{1}{2} </mrow>
+						<mrow>\sin\left(\dfrac{2\pi}{3}\right) \amp=\dfrac{\sqrt{3}}{2} </mrow>
+						<mrow>\tan\left(\dfrac{2\pi}{3}\right) \amp=\dfrac{\dfrac{\sqrt{3}}{2} - 0 }{- \dfrac{1}{2} - 0} = -\sqrt{3} </mrow>
+					</md>
+				</p>
+			</example>
+			<activity>
+				<p>Answer the following questions without using technology:
+					<ol>
+						<li>Determine if <m>\cos\left(\dfrac{5\pi}{4}\right)</m> is positive, negative, or zero. Then compute the exact value.</li>
+						<li>Determine if <m>\sin\left(\dfrac{7\pi}{6}\right)</m> is positive, negative, or zero. Then compute the exact value.</li>
+						<li>Determine if <m>\tan\left(-\dfrac{\pi}{3}\right)</m> is positive, negative, or zero. Then compute the exact value.</li>
+						<li>Determine if <m>\sin\left(-\pi \right)</m> is positive, negative, or zero. Then compute the exact value.</li>
+						<li>What is the domain of <m>\tan(\theta)</m>? How do you know?</li>
+					</ol>
+				</p>
+			</activity>
+		</subsection>
+		
+		<subsection>
+			<title>Graphs and Transformations of Trigonometric Functions</title>
+			<p>
+			When we graph trigonometric functions, we are graphing the output value for a given input angle <m>\theta</m>. Take a moment to try and sketch the graphs of <m>\sin(\theta)</m>, <m>\cos(\theta)</m>, and <m>\tan(\theta)</m> based on how these values change as <m>\theta</m> changes in the unit circle. Then check your answers with the graph below.
+			</p>
+			<interactive desmos="ucda1wv80v" width="170%" aspect="2:1" preview="images/1_6_int_prev_triggraph.png"/>
+			<p>
+			Transformations of trigonometric functions work as described in <xref ref="ssec-1-3-trans">Subsection</xref>, and allow us to change different properties of a repeating pattern based on our observations. However, there is some different vocabulary that we use to describe the transformations in this context based on which graphical properties they change. The general form a transformation of <m>\sin(x)</m> and <m>\cos(x)</m> is
+			<md>
+				<mrow>A\sin\left(\dfrac{2\pi}{P}(x-H)\right) + V</mrow>
+				<mrow>A\cos\left(\dfrac{2\pi}{P}(x-H)\right) + V</mrow>
+			</md>
+			Take a moment to describe what each transformation does on the graph of <m>\sin(x)</m> before viewing the answers. 
+			</p>
+			<interactive desmos="ozeie9oeqv" width="170%" aspect="2:1" preview="images/1_6_int_prev_trigtrans.png"/>
+			<idx><h>trigonometric functions</h><h>amplitude</h></idx>
+			<idx><h>trigonometric functions</h><h>period</h></idx>
+			<idx><h>trigonometric functions</h><h>phase shift</h></idx>
+			<idx><h>trigonometric functions</h><h>average</h></idx>
+			<ul>
+				<li>
+					<m>A</m>
+					<answer>This performs a vertical scale on the graph. If <m>A \lt 0</m>, it vertically reflects the graph. The value of <m>|A|</m> is called the <term>amplitude</term> and is half the distance between the maximum (<m>MAX</m>) and minimum (<m>MIN</m>)  values of the function. It can be computed by <m> |A| = \dfrac{MAX - MIN}{2}</m>. </answer>
+				</li>
+				<li>
+					<m>P</m>
+					<answer>This contributes to the horizontal scale of the graph. It is called the <term>period</term> of the function, and determines how long it takes for the function to start repeating itself.</answer>
+				</li>
+				<li>
+					<m>H</m>
+					<answer>This performs a horizontal shift of the graph. It is called a <term>phase shift</term> of the function.</answer>
+				</li>
+				<li>
+					<m>V</m>
+					<answer>This performs a vertical shift of the graph. It is the <m>y</m> value over which the graph has vertical symmetry, and is called the <term>average</term> of the function. It can be computed by <m> V = \dfrac{MAX + MIN}{2}</m>.</answer>
+				</li>
+			</ul>
+			<example>
+				<title>Transformations </title>
+				<p>
+				We would like to model the outside temperature over one day. We will measure this as a function of <m>t</m> hours since midnight. We know the minimum temperature of <m>43^{\circ}</m>F occurs at midnight (<m>t=0</m>), and the maximum temperature is <m>75^{\circ}</m>F.
+				</p>
+				<p>
+				Since the minimum temperature occurs at <m>t=0</m>, we will use a transformation of <m>\cos(x)</m>. It is possible to use <m>\sin(x)</m>, but this would require a phase shift, where as using <m>\cos(x)</m> does not. So we will write a model of the form <m>f(t) = A\cos\left(\dfrac{2\pi}{P}(t-H)\right) + V </m>.
+				</p>
+				<p>
+				The amplitude is <m>|A|=\dfrac{75-43}{2}=16</m>. Since we'd like the minimum value to occur at <m>t=0</m>, we'll let <m>A=-16</m>.
+				</p>
+				<p>
+				The average is <m>V=\dfrac{75+43}{2}=59</m>.
+				</p>
+				<p>
+				Our model is to repeat after one day (<m>24</m> hours), so the period should be <m>P = 24</m>. This means the horizontal scale is <m>\dfrac{2\pi}{24}=\dfrac{\pi}{12}</m>. Therefore, our model is
+				<me>f(t) = -16\cos\left(\dfrac{\pi}{12}t\right) + 59</me>.
+				</p>
+			</example>
+			<activity>
+				<p>
+					<ol>
+						<li>Determine an equation for each of the following transformations. You can type your answer into the interactive to check your answer.
+							<interactive desmos="jrcijo8m1i" width="170%" aspect="2:1" preview="images/1_6_int_prev_trigtransact1.png"/>
+							<interactive desmos="qjnxuv4s83" width="170%" aspect="2:1" preview="images/1_6_int_prev_trigtransact2.png"/>
+						</li>
+						<li>
+							<p>
+							Use transformations to justify each of the following trigonometric identities:
+								<ul>
+									<li><m>\cos(x) = \sin\left(x+\dfrac{\pi}{2}\right)</m></li>
+									<li><m>\cos(-x)=\cos(x)</m></li>
+									<li><m>\sin(-x)=-\sin(x)</m></li>
+								</ul>
+							</p>
+						</li>
+					</ol>
+				</p>
+			</activity>
+		</subsection>
+		
+		<subsection>
+			<title>Summary</title>
+			<ul>
+				<li> <question>How are <m>\sin(\theta)</m>, <m>\cos(\theta)</m>, and <m>\tan(\theta)</m> defined?</question>
+					<answer>These functions are defined based on the coordinates of the unit circle associated with the angle <m>\theta</m>. <m>\sin(\theta)</m> is the <m>y</m> value, <m>\cos(\theta)</m> is the <m>x</m> value, and <m>\tan(\theta)</m>is the slope of the line connecting the point <m>(0,0)</m> to the point on the unit circle. 
+					 </answer>
+				</li>
+				<li> <question>How can we use trigonometric functions in modeling?</question>
+					<answer>
+					Trigonometric functions are useful in modeling relationships that repeat a pattern over a specific period of time. The maximum/minimum values, average value, and period can all be customized using transformations.
+					</answer>
+				</li>
+			</ul>
+		</subsection>
+		
+		<exercises>
+			<exercise>
+				<statement>
+				Is there an angle <m>\theta</m> such that <m>\sin(\theta) \gt 0 </m> and <m>\tan(\theta) \lt 0 </m>? Give an example if one exists, or explain why no such example is possible. If an example exists, illustrate your example with a sketch within the unit circle.
+				</statement>
+				<answer>
+					Yes
+				</answer>
+			</exercise>
+			<exercise>
+				<statement>
+				Is there an angle <m>\theta</m> such that <m>\sin(\theta) = 0 </m> and <m>\tan(\theta) \lt 0 </m>? Give an example if one exists, or explain why no such example is possible. If an example exists, illustrate your example with a sketch within the unit circle.
+				</statement>
+				<answer>
+					No
+				</answer>
+			</exercise>
+			<exercise>
+				<statement>
+				Sleepiness has two cycles, a circadian rhythm with a period of <m>24</m> hours and an ultradian rhythm with period of <m>4</m> hours. Both have a phase shift of <m>0</m> (in relation to cosine). The average value of the circadian rhythm is <m>3</m> sleepiness units and the average value of the ultradian rhythm is <m>1</m> sleepiness unit. The amplitude of the circadian rhythm is <m>2</m> sleepiness units, and that of the ultradian rhythm is <m>0.5</m> sleepiness units.
+					<ol>
+						<li>Find models for sleepiness over the course of a day due to the circadian rhythm <m>c(t)</m> and ultradian rhythm <m>u(t)</m>, where <m>t</m> is measured in hours since midnight.</li>
+						<li>Use <url href="https://www.desmos.com/calculator" visual="Desmos.com"> Desmos </url> to graph your models and verify they have the desired properties.</li>
+					</ol>
+				</statement>
+				<answer>
+					<ol>
+						<li>
+							<m>c(t)=2\cos\left(\frac{\pi}{12}t\right) + 3</m>, <m>u(t)=0.5\cos\left(\frac{\pi}{2}t\right) + 1</m>
+						</li>
+					</ol>
+				</answer>
+			</exercise>
+			<exercise>
+				<statement>
+				Use <url href="https://www.desmos.com/calculator" visual="Desmos.com"> Desmos </url> to describe all of the solutions to <m>\sin(x)=\dfrac{1}{2}</m>. How many solutions are there on the domain <m>[0,\pi]</m>? How many solutions are there on the domain <m>[-\pi,0]</m>?
+				</statement>
+				<answer>
+					<p><m>x = \frac{\pi}{6} + 2\pi k</m>, <m>x = \frac{5\pi}{6} + 2\pi k</m>, where <m>k</m> is any integer</p>
+					<p><m>2</m> solutions in <m>[0,\pi]</m></p>	
+					<p><m>0</m> solutions in <m>[-\pi,0]</m></p>			
+				</answer>
+			</exercise>
+		</exercises>
+	</section>
+	
+<!--*******************************************************************************-->
+  <!--		SECTION 7         									-->
+  <!--*******************************************************************************-->
+  	<section xml:id="sec-1-7">
+		<title>Discrete-Time Dynamical Systems </title>
+		<objectives xml:id="obj-1-7">
+			<ul>
+				<li> <p>What is a discrete-time dynamical system, and how can we represent one using functions?</p></li>
+				<li> <p>How can we make predictions about a discrete-time dynamical system?</p></li>
+			</ul>
+		</objectives>
+		
+		<introduction>
+			<p>  
+			We were introduced briefly to discrete-time dynamical systems in <xref ref="sec-1-1-bio-math">Section</xref>. In this section and <xref ref="sec-1-8">Section</xref>, we will recall the basic vocabulary of these systems, and go into detail regarding how we can analyze these systems.
+			</p>
+		</introduction>
+		<exploration xml:id="wu-1-7">
+		A tree is initially <m>2</m> meters tall, and grows <m>150</m> centimeters each year. 
+			<ol>
+				<li>Write the relationship of height versus time as a <em>recursive</em> function (recall <xref ref="ssec-1-2-rec">Subsection</xref>). Be careful with units! (<xref ref="sec-1-3">Section</xref>)</li>
+				<li>Use your recursive relationship to determine the height of the tree after <m>5</m> years.</li>
+			</ol>
+		</exploration>
+		
+		<subsection>
+			<title>Representing Discrete-Time Dynamical Systems</title>
+			<p>
+			Recall that a <idx><h>DTDS</h><see><h>discrete-time dynamical system</h></see></idx> <idx><h>discrete-time dynamical system</h></idx> <term>discrete-time dynamical system</term> (or <term>DTDS</term>) describes a sequence of measurements made at equally spaced intervals. The relationship in <xref ref="wu-1-7">Warm-Up</xref> is a DTDS because it describes the height of a tree <m>h</m> (the dependent variable) at discrete times <m>t</m> (the independent variable, defined at <m>t=1,2,3,\dots</m>). 
+			</p>
+			<p>
+			You were asked to describe this relationship recursively, which is a natural way to describe how measurements change from one measurement to the next. This recursive description is called an <idx><h>discrete-time dynamical system</h><h>updating function</h></idx> <term>updating function</term>. In order to use the updating function to determine the height of the tree after <m>5</m> years, we need to know the initial height of the tree. This is called the <idx><h>discrete-time dynamical system</h><h>initial value</h></idx> <term>initial value</term> of the system. 
+			</p>
+			<example xml:id="ex-1-7-dtds">
+				<title>Representing a DTDS </title>
+				<p>
+				Consider the relationship described in <xref ref="wu-1-7">Warm-Up</xref>. Let <m>h</m> represent the height of the tree after <m>t</m> years. The initial value is <m>h_0 = 2</m> meters, and the updating function is <m>h_{t+1} = h_t +1.5</m>. Note:
+					<ul>
+						<li>We use special notation when describing relationships recursively. The independent variable <m>t</m> is given in the subscript, but it is not explicitly used to describe the relationship. </li>
+						<li>We had to be careful with units. The initial value was given in meters, while the constant amount of change each year was given in centimeters. We converted to a consistent unit of measure before writing the updating function.</li>
+					</ul>
+				</p>
+			</example>
+			<p>
+			In computing with updating functions, it will become useful to identify the function rule used for the recursive relationship. We do this by writing the rule explicitly, treating the current value of the recursive relationship as the input and the next value in the recursive relationship as the output. We call this the <idx><h>discrete-time dynamical system</h><h>updating function rule</h></idx> <term>updating function rule</term>. For example, in <xref ref="ex-1-7-dtds">Example</xref>, the updating function is <m>h_{t+1} = h_t +1.5</m>. Recognizing <m>h_t</m> as the input and <m>h_{t+1}</m> as the output, the updating function rule is <m>f(x) = x+1.5</m>.
+			</p>
+			<activity>
+			A population of bacteria double each minute. There is initially <m>3</m> million bacteria.
+				<ol>
+					<li>Write the updating function and initial value for this DTDS. Focus on using correct notation.</li>
+					<li>What is the updating function rule?</li>
+					<li>Use your updating function and initial value to determine the population of bacteria after <m>4</m> minutes.</li>
+				</ol>
+			</activity>
+		</subsection>
+		
+		<subsection>
+			<title>Solutions to Discrete-Time Dynamical Systems</title>
+			<p>
+			Representing discrete-time dynamical systems using updating functions can be a convenient way to model our observations. However, this can be a difficult representation to analyze and make predictions off of. For example, if you wanted to use the updating function to determine the height of the tree in <xref ref="ex-1-7-dtds">Example</xref> after <m>50</m> years, you would need to iterate the updating function <m>50</m> times! In order to analyze a DTDS, it is useful to be able to convert the updating function to other representations of the system. 
+			</p>
+			<example xml:id="ex-1-7-solution">
+				<title>Creating Tables and Graphs</title>
+				<p>
+				Using the updating function and initial value, you can create a table of values that describes the relationship between the dependent and independent variables of your system. Looking again at the system in <xref ref="ex-1-7-dtds">Example</xref>, we could iterate the updating function to produce the following table:
+				</p>
+				<table xml:id="t-1-7-dtds">
+					<tabular>
+						<row header="yes" bottom="minor">
+							<cell>
+								<m>t</m>
+							</cell>
+							<cell>
+								<m>h_t</m>
+							</cell>
+							<cell>
+								<m>h_{t+1}</m>
+							</cell>
+						</row>
+						<row>
+							<cell>
+								<m>0</m>
+							</cell>
+							<cell>
+								<m>2</m>
+							</cell>
+							<cell>
+								<m>3.5</m>
+							</cell>
+						</row>
+						<row>
+							<cell>
+								<m>1</m>
+							</cell>
+							<cell>
+								<m>3.5</m>
+							</cell>
+							<cell>
+								<m>5</m>
+							</cell>
+						</row>
+						<row>
+							<cell>
+								<m>2</m>
+							</cell>
+							<cell>
+								<m>5</m>
+							</cell>
+							<cell>
+								<m>6.5</m>
+							</cell>
+						</row>
+						<row>
+							<cell>
+								<m>3</m>
+							</cell>
+							<cell>
+								<m>6.5</m>
+							</cell>
+							<cell>
+								<m>8</m>
+							</cell>
+						</row>
+					</tabular>
+				</table>
+				<p>
+				Note that <xref ref="t-1-7-dtds">Table</xref> holds information about the relationship of height versus time in two different representations. The right two columns display information about the updating function of the system (<m>h_t</m> versus <m>h_{t+1}</m>), while the left two columns display information about the input and output variables of the system <em>explicitly</em> (<m>t</m> versus <m>h_t</m>). This explicit relationship is called the <idx><h>discrete-time dynamical system</h><h>solution function</h></idx> <term>solution function</term> of the DTDS. 
+				</p>
+				<p>
+				Using <xref ref="t-1-7-dtds">Table</xref>, we could also create graphs of this system. Note that we must be careful to label axes appropriately to make it clear which representation of the system we are graphing.
+				</p>
+				<figure>
+					<image width="60%" source="images/updating.png">
+						<description>Graph of the line y equals x plus 1.5.  </description>
+					</image>  
+					<caption>Graph of the updating function.</caption>
+				</figure>
+				<p>
+				Note that the updating function rule is <m>f(x)=x+1.5</m>, which is used to help us graph the updating function.
+				</p>
+				<figure>
+					<image width="60%" source="images/solution.png">
+						<description>Graph of the line y equals 1.5 times x plus 2, with discrete points at the input values 0, 1, 2, 3, and 4.  </description>
+					</image>
+					<caption>Graph of the solution function. </caption>
+				</figure>
+				<p>
+				Note the discrete dots plotted on the graph of the solution function. These are points from the table and values of the DTDS. They happen to fit the relationship <m>h_t = 1.5t + 2</m>, which you see graphed continuously on the graph. 
+				</p>
+			</example>
+			<p>
+			The explicit form of the solution function is very useful to know if we are able to find it. In <xref ref="ex-1-7-solution">Example</xref>, this was the function <m>h_t = 1.5t + 2</m>. It allows us to answer questions about the system that would be very tedious to do using the updating function. For example, the question regarding the tree height after <m>50</m> years is much easier to answer using the solution function:
+				<me> h_{50} = 1.5(50)+ 2 = 77 \text{ m}</me> 
+			</p>
+			<p>
+			Finding the explicit solution function from a recursive updating function, however, can be a challenging (and sometimes impossible) task. In the following examples, we'll look at a few cases in which we can determine the solution function explicitly. 
+			</p>
+			<p>
+			In order to do so, it is important to recognize the information that an updating function is actually giving us. For example, if you re-write the updating function 
+				<me>h_{t+1} = h_t + 1.5</me> as 
+				<me> \dfrac{h_{t+1} - h_t}{1} = 1.5</me>, 
+			you may notice that the left side of the equation is the expression for <m>AROC_{[t,t+1]}</m> for the solution function <m>h_t</m>. Recursive equations written this way are called <idx><h>difference equation</h></idx> <term>difference equations</term>, and can help us determine what type of function the solution function is by analyzing its average rate of change. 
+			</p>
+			<example>
+				<title>A Linear Solution Function</title>
+				<p>
+				Consider the updating function from <xref ref="ex-1-7-dtds">Example</xref>, <m>h_{t+1} = h_t + 1.5</m>. As worked out above, written as a difference equation we see that 
+					<me> h_{t+1} - h_t = 1.5</me>.
+				In words, this says the function <m>h_t</m> has a constant average rate of change of <m>1.5</m>. We know from <xref ref="sec-1-4">Section</xref> that this describes a linear function, and so <m>h_t</m> must be linear with slope <m>1.5</m>:
+					<me>h_t = 1.5t + h_0</me>
+				Further, we know that <m>h_0 = 2</m>, so the solution function is <m>h_t = 1.5t + 2</m>.
+				</p>
+			</example>
+			
+			<example>
+				<title>An Exponential Solution Function</title>
+				<p>
+				Consider the updating function <m>b_{t+1} = 2b_t</m> with initial value <m>b_0= 3</m>. Written as a difference equation, this becomes
+					<me>b_{t+1} -b_t = b_t </me>.
+				Since the average rates of change of <m>b_t</m> are not constant, we know that <m>b_t</m> cannot be a linear function. However, if we look at the ratio of consecutive average rates of change (<xref ref="f-1-5-aroc">Fact</xref>), we compute
+					<md>
+						<mrow>\dfrac{AROC_{[t+1,t+2]}}{AROC_{[t,t+1]}} \amp= \dfrac{b_{t+2} - b_{t+1}}{b_{t+1} - b_t}  </mrow>
+						<mrow> \amp= \dfrac{b_{t+1}}{b_t}</mrow>
+						<mrow>\amp= \dfrac{2b_t}{b_t}</mrow>
+						<mrow>\amp= 2</mrow>
+					</md>
+				This shows that a solution function of the form <m>b_t = v \cdot 2^t + u</m> would fit the discrete system described by the updating function <m>b_{t+1} = 2b_t</m>. Create a table similar to that of <xref ref="t-1-7-dtds">Table</xref> using the updating function to verify that the solution function is described by <m>b_t = 3 \cdot 2^t</m>.
+				</p>
+			</example>
+			<example xml:id="ex-1-7-exptrans">
+				<title>An Exponential Transformation Solution Function</title>
+				<p>
+				Consider the updating function <m>p_{t+1} = 0.5p_t + 1</m> with initial value <m>p_0=10</m>. Written as a difference equation, this becomes
+					<me>p_{t+1} -p_t = -0.5p_t + 1 </me>.
+				We can see once again that the solution function cannot be linear, so we will check the ratio of consecutive average rates of change:
+					<md>
+						<mrow>\dfrac{AROC_{[t+1,t+2]}}{AROC_{[t,t+1]}} \amp= \dfrac{p_{t+2} - p_{t+1}}{p_{t+1} - p_t}  </mrow>
+						<mrow> \amp= \dfrac{(0.5p_{t+1} +1) - (0.5p_t +1)}{p_{t+1} - p_t}</mrow>
+						<mrow>\amp= \dfrac{0.5p_{t+1} - 0.5p_t}{p_{t+1} - p_t}</mrow>
+						<mrow>\amp= \dfrac{0.5(p_{t+1} - p_t)}{p_{t+1} - p_t}</mrow>
+						<mrow> \amp=0.5</mrow>
+					</md>
+				This shows that a solution function of the form <m>p_t = v \cdot 0.5^t + u</m> would fit the discrete system described by the updating function <m>p_{t+1} = 0.5p_t + 1</m>. However, unlike in the previous example, creating a table of values will show that the solution function is <em>not</em> <m> p_t = 10 \cdot 0.5^t</m>:
+					<table>
+						<tabular>
+							<row header="yes" bottom="minor">
+							<cell>
+								<m>t</m>
+							</cell>
+							<cell>
+								<m>p_t</m>
+							</cell>
+							<cell>
+								<m>p_{t+1}</m>
+							</cell>
+							<cell>
+								<m>10 \cdot 0.5^t</m>
+							</cell>
+						</row>
+						<row>
+							<cell>
+								<m>0</m>
+							</cell>
+							<cell>
+								<m>10</m>
+							</cell>
+							<cell>
+								<m>6</m>
+							</cell>
+							<cell>
+								<m>10</m>
+							</cell>
+						</row>
+						<row>
+							<cell>
+								<m>1</m>
+							</cell>
+							<cell>
+								<m>6</m>
+							</cell>
+							<cell>
+								<m>4</m>
+							</cell>
+							<cell>
+								<m>5</m>
+							</cell>
+						</row>
+						<row>
+							<cell>
+								<m>2</m>
+							</cell>
+							<cell>
+								<m>4</m>
+							</cell>
+							<cell>
+								<m>3</m>
+							</cell>
+							<cell>
+								<m>2.5</m>
+							</cell>
+						</row>
+						<row>
+							<cell>
+								<m>3</m>
+							</cell>
+							<cell>
+								<m>3</m>
+							</cell>
+							<cell>
+								<m>2.5</m>
+							</cell>
+							<cell>
+								<m>1.25</m>
+							</cell>
+						</row>
+						<row>
+							<cell>
+								<m>4</m>
+							</cell>
+							<cell>
+								<m>2.5</m>
+							</cell>
+							<cell>
+								<m>2.25</m>
+							</cell>
+							<cell>
+								<m>0.625</m>
+							</cell>
+						</row>
+						<row>
+							<cell>
+								<m>5</m>
+							</cell>
+							<cell>
+								<m>2.25</m>
+							</cell>
+							<cell>
+								<m>2.125</m>
+							</cell>
+							<cell>
+								<m>0.3125</m>
+							</cell>
+						</row>
+						</tabular>
+					</table>
+				We can, however, notice from the table that the values of <m>p_t</m> seem to be getting closer to <m>2</m> as time goes on. We will develop a tool for verifying this hypothesis in <xref ref="sec-1-8">Section</xref>, but creating a table like above is a good way to build intuition for how the solution behaves. 
+				</p>
+				<p>
+				We know that the solution function is a transformation of the exponential function <m>f(t) =0.5^t</m>, and that we'd like there to be a horizontal asymptote at <m>y=2</m>, since this is what the outputs seems to approach as <m>t</m> gets large. Since <m>f(t) =0.5^t</m> is exponential decay and has a horizontal asymptote at <m>y=0</m>, we will shift the function up <m>2</m> using transformations:
+					<me>p_t = v \cdot 0.5^t +2</me>
+				Now we will find the vertical scale required to satisfy the initial value <m>p_0 = 10</m>:
+					<md>
+						<mrow>10 \amp= v \cdot 0.5^0+2</mrow>
+						<mrow>10 \amp= v  +2</mrow>
+						<mrow>8 \amp= v </mrow>
+					</md>	
+				Thus, the solution function is given by <m>p_t = 8 \cdot 0.5^t + 2</m>. Create a table of values for <m>t=1,2,3,4,5</m> and <m>6</m> to verify this solution function fits the points of this DTDS.
+				</p>
+			</example>
+			<p>
+			We can summarize our findings from the previous examples with the following:
+			</p>
+			<assemblage xml:id="ass-1-7-solutions">
+				<title>Solution Functions of <m>p_{t+1} =bp_t + m, \,\, b \gt 0 </m></title>
+				<p>
+				Let <m>p_{t+1} =bp_t + m </m> be an updating function with initial value <m>p_0</m>.
+					<ul>
+						<li>If <m>b=1</m>, the corresponding solution function is linear with slope <m>m</m> and <m>y</m>-intercept <m>p_0</m>: <me>p_t = mt +p_0</me></li>
+						<li>If <m>m=0</m>, the corresponding solution function is exponential with base <m>b</m> and <m>y</m>-intercept <m>p_0</m>: <me>p_t = p_0 \cdot b^t</me></li>
+						<li>If <m>b \gt 0</m>, <m>b \neq 1</m>, and <m>m \neq 0</m>, the corresponding solution function is a transformation of an exponential function with base <m>b</m>.</li>
+					</ul>
+				</p>
+			</assemblage>
+			<activity>
+				<p>
+				Determine the solution function associated with each updating function and initial value.
+				</p>
+					<ol>
+						<li><m>d_{t+1} = d_t - 4, \,\, d_0 = 100</m> </li>
+						<li><m>k_{t+1} = 1.8k_t, \,\, k_0 = 20</m> </li>
+						<li><m>m_{t+1} = 0.8m_t + 5, \,\, m_0 = 20</m> </li>
+					</ol>
+			</activity>
+		</subsection>
+		
+		<subsection>
+			<title>Summary</title>
+			<ul>
+				<li> <question>What is a discrete-time dynamical system, and how can we represent one using functions?</question>
+					<answer>A discrete-time dynamical system describes a sequence of measurements made at equally spaced intervals. It is common to represent a DTDS using an updating function (a recursive function) and an initial value. </answer>
+				</li>
+				<li> <question>How can we make predictions about a discrete-time dynamical system?</question>
+					<answer>We can make predictions about a DTDS by describing its solution function. We can do this by creating a table of several values, plotting several points on a graph, and in some cases, finding the equation of the solution function explicitly. </answer>
+				</li>
+			</ul>
+		</subsection>
+		<exercises>
+			<exercise>
+				<statement>
+				Let <m>f(x)</m> be an updating function rule. 
+					<ol>
+						<li>If <m>f(x)</m> is invertible, what does <m>f^{-1}(x)</m> represent in the context of the DTDS? Illustrate your answer using the updating function <m>h_{t+1} = h_t + 1.5</m>.</li>
+						<li>What does <m>(f \circ f)(x)</m> represent in the context of the DTDS? Illustrate your answer using the updating function <m>h_{t+1} = h_t + 1.5</m>. </li>
+					</ol>
+				</statement>
+			</exercise>
+			<exercise>
+				<statement>
+				Determine the solution function associated with each updating function below. Use an initial value of <m>b_0 = 5</m> for each.
+				<ol>
+					<li>
+					<image width="60%" source="images/updating1.png">
+						<description>Graph of a line with slope one and y-intercept 1.  </description>
+					</image>
+					</li>
+					<li>
+					<image width="60%" source="images/updating2.png">
+						<description>Graph of a line with slope three fourths and y-intercept 0.  </description>
+					</image>
+					</li>
+				</ol>
+				</statement>
+				<answer>
+					<ol>
+						<li><m>b_t = t+5</m></li>
+						<li><m>b_t = 5\cdot (0.75)^t</m></li>
+					</ol>
+				</answer>
+			</exercise>
+			<exercise>
+				<statement>
+				A patient starts with a concentration of medicine in her bloodstream equal to <m>10</m> milligrams per liter. Each day, the patient decomposes <m>60 \%</m> of the medication in her bloodstream. However, the doctor gives her enough medication daily to increase the concentration in her bloodstream by <m>3</m> milligram per liter. 
+					<ol>
+						<li>What is the updating function and initial condition describing this DTDS? Graph the updating function, labeling axes appropriately.</li> 
+						<li>Create a table similar to that of <xref ref="t-1-7-dtds">Table</xref> using the updating function to find the concentration of medication on day <m>7</m>. Then graph the values of the solution function labeling axes appropriately.</li>
+						<li>Find the equation of the solution function for this DTDS explicitly. </li>
+					</ol>
+				</statement>
+				<answer>
+					<ol>
+						<li><m>b_{t+1} = 0.4b_t + 3</m>, <m>b_0 = 10 </m></li>
+						<li></li>
+						<li><m>b_t = 5\cdot (0.4)^t + 5</m></li>
+					</ol>
+				</answer>
+			</exercise>
+		</exercises>
+	</section>
+	
+<!--*******************************************************************************-->
+  <!--		SECTION 8         									-->
+  <!--*******************************************************************************-->
+  	<section xml:id="sec-1-8">
+		<title>Analyzing Discrete-Time Dynamical Systems </title>
+		<objectives xml:id="obj-1-8">
+			<ul>
+				<li> <p>How can we describe the qualitative behavior of a solution function without finding the equation of the solution function explicitly?</p></li>
+				<li> <p>What are equilibrium values of a DTDS and how can we find and describe them?</p></li>
+			</ul>
+		</objectives>
+		
+		<introduction>
+			<p>  
+			We ended <xref ref="sec-1-7">Section</xref> by finding explicit equations of solution functions for certain types of updating functions. In general, this is a very difficult task. It is beneficial to have other tools for describing the <em>qualitative</em> behavior of a solution function, especially when we can't find the equation explicitly. 
+			</p>
+			<p>
+			The qualitative behavior of a solution function describes how the function behaves as time goes on. Does the solution function increase or decrease for a particular initial value? Does the solution function approach a specific value? In this section we will learn a graphical tool for describing the behavior of a solution function, and how to identify important values that dictate the behavior of the system.
+			</p>
+		</introduction>
+		<exploration xml:id="wu-1-8">
+		Consider the updating function <m> g_{t+1}= 0.5g_t +2</m> with initial value <m>g_0 = 20</m>.
+			<ol>
+				<li>Sketch the graph of the updating function. Identify the updating function rule to help you, and clearly label your axes.</li>
+				<li>Complete the table below using the updating function. Plot the relevant points in your table on the graph of the updating function from the previous part.
+					<table xml:id="t-1-8-dtds">
+						<tabular>
+							<row header="yes" bottom="minor">
+								<cell>
+									<m>t</m>
+								</cell>
+								<cell>
+									<m>g_t</m>
+								</cell>
+								<cell>
+									<m>g_{t+1}</m>
+								</cell>
+							</row>
+							<row >
+								<cell>
+									<m>0</m>
+								</cell>
+								<cell>
+									
+								</cell>
+								<cell>
+									
+								</cell>
+							</row>
+							<row >
+								<cell>
+									<m>1</m>
+								</cell>
+								<cell>
+									
+								</cell>
+								<cell>
+									
+								</cell>
+							</row>
+							<row >
+								<cell>
+									<m>2</m>
+								</cell>
+								<cell>
+									
+								</cell>
+								<cell>
+									
+								</cell>
+							</row>
+							<row >
+								<cell>
+									<m>3</m>
+								</cell>
+								<cell>
+									
+								</cell>
+								<cell>
+									
+								</cell>
+							</row>
+						</tabular>
+					</table>
+				</li>
+			</ol>
+		</exploration>
+		
+		<subsection xml:id="ssec-1-8-cob">
+			<title>Cob-Webbing</title>
+			<p>
+			We have seen several examples in which we create tables like <xref ref="t-1-8-dtds">Table</xref> using the updating function and initial value. <term>Cob-webbing</term> <idx><h>cob-webbing</h></idx> is a method which mimics the iteration process used to create such a table on the graph of the <em>updating function</em> of a DTDS. Instead of producing the specific values like a table, cob-webbing is an efficient algorithm that can show us the qualitative behavior of a solution function starting from an initial value of our choosing. The cob-webbing algorithm is described below.
+			</p>
+			<assemblage>
+				<title>Cob-webbing Algorithm</title>
+				<idx><h>cob-webbing</h><h>algorithm</h></idx>
+				<p>
+				Begin with the graph of an updating function <m>b_{t+1} = f(b_t)</m>, the diagonal line <m>b_{t+1} = b_t</m>, and an initial condition <m>b_0</m>.
+				<ol>
+					<li> Identify <m>b_0</m> on the horizontal axis (<m>b_t</m>) of the graph of the updating function.</li>
+					<li>Travel vertically until you intersect the updating function, and draw a closed circle. </li>
+					<li xml:id="li-1-8-h"> From the closed circle, travel horizontally until you intersect the diagonal line <m>b_{t+1} = b_t</m>. </li>
+					<li xml:id="li-1-8-v"> From this point on the diagonal line, travel vertically until you intersect the updating function, and draw a closed circle. </li>
+					<li> Repeat <xref ref="li-1-8-h">step</xref> through <xref ref="li-1-8-v">step</xref> as many times as desired.</li>
+				</ol>
+				</p>
+			</assemblage>
+			<p>
+			The output value of the closed circles that are generated on the graph of the updating function using the cob-webbing algorithm are consecutive output values of the solution function. By generating these points graphically, we can visually see how the solution function is behaving. Is it increasing or decreasing? Is it approaching a particular value?
+			</p>
+			<example xml:id="ex-1-8-cob">
+				<title>Cob-webbing</title>
+				The interactive below shows the graph of an updating function <m>x_{t+1}= f(x_t)</m> which is more complicated than <xref ref="ass-1-7-solutions" text="custom">those that we analyzed previously</xref>. Use the interactive to visualize cob-webbing and answer the questions before viewing the answers.
+				<interactive desmos="u4nt89d6gr" width="170%" aspect="2:1" preview="images/1_8_int_prev_cobweb.png"/>
+				<ol>
+					<li>
+					If <m>x_0=0.25</m>, is the solution function increasing or deacreasing?
+						<answer>The solution function <m>x_t</m> is increasing, since the closed circles on the updating function have output values that are getting larger. </answer>	
+					</li>
+					<li>
+					If <m>x_0=0.25</m>, is the solution function increasing/decreasing at an increasing or decreasing rate?
+						<answer>The solution function is increasing at a decreasing rate, since it looks like the closed circles are getting bigger by a smaller amount each time.</answer>
+					</li>
+					<li>
+					If <m>x_0=0.25</m>, is the solution function approaching a particular value?
+						<answer>The solution function is getting closer and closer to the value <m>x_t= 1</m>.</answer>
+					</li>
+					<li>
+					Find an example of an initial value for which the solution function will decrease.
+						<answer>The solution function will decrease if <m>x_0 \gt 1</m>.</answer>
+					</li>
+				</ol>
+			</example>
+		</subsection>
+		
+		<subsection>
+			<title>Equilibrium Values and Stability</title>
+			<p>
+			In <xref ref="ex-1-8-cob">Example</xref>, you'll notice that the solution function approaches the value <m>x_t=1</m>, regardless of what the initial condition is. This is an example of a special value in a DTDS, which we define now.
+			</p>
+			<definition xml:id="def-1-8-eq">
+				<title>Equilibrium Values </title>
+				<idx><h>equilibrium value</h></idx>
+				<idx><h>equilibrium point</h></idx>
+				<idx><h>discrete-time dynamical system</h><h>equilibrium point</h></idx>
+				<idx><h>discrete-time dynamical system</h><h>equilibrium value</h></idx>
+				<notation><usage><m>b^*</m></usage><description>an equilibrium value for a DTDS whose dependent variable is <m>b</m></description></notation>
+				Let <m>b_{t+1} = f(b_t)</m> be an updating function for a DTDS. An output value <m>b^*</m> is an <term>equilibrium value</term> of the system if <m>f(b^*) = b^*</m>. 
+			</definition>
+			<remark>
+				<ol>
+					<li>It is also common to call an equilibrium value <m>b^*</m> an <term>equilibrium point</term>, referring to the point <m>(b^*,b^*)</m> which is on the graph of the updating function. </li>
+					<li>Another way to phrase <xref ref="def-1-8-eq">Definition</xref> is that an equilibrium value is an output value that is unchanged by the updating function. In <xref ref="ex-1-8-cob">Example</xref>, we can see that <m>x^*=1</m> is an equilibrium value because if we start cob-webbing at <m>x_0 =1</m>, the next output value is <m>x_1 =1</m>.</li>
+					<li>Equilibrium values help to separate the domain of initial values into pieces on which we can describe the general behavior of a solution function. In <xref ref="ex-1-8-cob">Example</xref>, <m>x^*=1</m> is the value to compare against to determine if the solution function will increase or decrease. If <m>x_0 \gt 1</m>, the solution function will decrease. If <m>x_0 \lt 1</m>, the solution function will increase.</li>
+					<li>Equilibrium values often have significant meaning in the context of the system being modeled. For example, if the updating function in <xref ref="ex-1-8-cob">Example</xref> is modeling a population with respect to time, <m>x^*=1</m> may represent a carrying capacity of that system. </li>
+				</ol>
+			</remark>
+			<p>
+			Given an updating function, we can find equilibrium values <em>algebraically</em> or <em>graphically</em>, depending on how the updating function is represented.
+			</p>
+			<example xml:id="ex-1-8-eqpt">
+				<title>Finding Equilibria</title>
+				<p>Let <m>p_{t+1} = 0.5p_t + 1</m>. 
+					<ul>
+						<li> <em>Finding Equilibria Algebraically</em>. An equilibrium value is a value <m>p^*</m> that is unchanged by the updating function. That is, <m>p^*</m> is an equilibrium value if 
+							<me>p^* = 0.5p^* + 1</me>.
+						We can subtract <m>0.5p^*</m> from both sides to get 
+							<me>0.5p^* = 1</me>, and then divide both sides by <m>0.5</m> to get 
+							<me>p^* = \dfrac{1}{0.5} = 2</me>. 
+						This shows that <m>p^*=2</m> is an equilibrium value of the system, which we can verify by computing <m>0.5\cdot \mathbf{2} + 1  = \mathbf{2}</m>.
+						</li>
+						<li><em>Finding Equilibria Graphically</em>. We can graph the updating function <m>p_{t+1} = 0.5p_t + 1</m> by recognizing the updating function rule as <m>f(x)=0.5x+1</m>:
+							<image width="60%" source="images/eqpt.png">
+								<description>The line with slope 0.5 and y intercept 1 graphed with the diagonal line y equal x. </description>
+							</image>  
+							We graph the updating function along with the diagonal line <m>p_{t+1}=p_t</m> because graphically, a value which is unchanged by the updating function can be identified by finding an intersection point with the line <m>p_{t+1}=p_t</m>. We can see on the graph that the diagonal intersects the updating function at <m>(2,2)</m>, which means <m>p^*=2</m> is an equilibrium value of the system.
+						
+						</li>
+					</ul>
+				</p>
+			</example>
+			<remark xml:id="r-1-8-trans">
+				<p>
+				Note that the updating function explored in <xref ref="ex-1-8-eqpt">Example</xref> is the same as the one we analyzed in <xref ref="ex-1-7-exptrans">Example</xref> when trying to use transformations to find a solution function equation explicitly. In <xref ref="ex-1-7-exptrans">Example</xref>, we used a table of iterated values to make an educated guess at what value the system was approaching in order to determine what a horizontal asymptote should be of the solution function. In <xref ref="ex-1-8-eqpt">Example</xref>, we see a more calculated way to find what a horizontal asymptote should be by calculating the equilibrium value of the system.
+				</p>
+			</remark>
+			<activity>
+				Consider a bacterial population which is modeled by the updating function <m>b_{t+1}=rb_t</m>, where the parameter <m>r</m> is the per capita reproduction rate.
+					<ol>
+						<li>Assuming <m>r=2</m>, find the equilibrium value(s) of this system algebraically. </li>
+						<li>Assuming <m>r \neq 1</m>, find the equilibrium value(s) of this system algebraically. </li>
+						<li>Sketch a graph of the updating function if <m>r=2</m>. Cob-web using several different initial values to describe how the solution function behaves with respect to the equilibrium value(s).</li>
+						<li>Sketch a graph of the updating function if <m>r=0.5</m>. Cob-web using several different initial values to describe how the solution function behaves with respect to the equilibrium value(s).</li>
+					</ol>
+			</activity>
+			<p>
+			Solution functions need not always approach an equilibrium value as time goes on. We describe how a system behaves with respect to its equilibrium values with the following vocabulary:
+			</p>
+			<definition>
+				<title>Stability</title>
+				<idx><h>equilibrium value</h><h>stable</h></idx>
+				<idx><h>equilibrium value</h><h>unstable</h></idx>
+				<p>
+				Let <m>p^*</m> be an equilibrium value of a DTDS. 
+				</p>
+				<p>
+				If the output values of solution functions get as close to <m>p^*</m> as we'd like when initial values are close to <m>p^*</m>, we say that <m>p^*</m> is a <term>stable equilibrium value</term>.
+				</p>
+				<p>
+				Otherwise, we say that <m>p^*</m> is an <term>unstable equilibrium value</term>.
+				</p>
+			</definition>
+			<example>
+				<title>Stability</title>
+				<ul>
+					<li><em>Stable Equilibrium Value</em>. For the updating function <m>x_{t+1} = f(x_t)</m> below, the value <m>x^*=1</m> is a stable equilibrium value. Change the initial value to different numbers above and below the equilibrium value, and notice that in all cases, the solution function tends towards the equilibrium value as time goes on. 
+						<interactive desmos="wxqars743x" width="170%" aspect="2:1" preview="images/1_8_int_prev_stab1.png"/>
+					</li>
+					<li><em>Unstable Equilibrium Value</em>. For the updating function <m>x_{t+1} = f(x_t)</m> below, the value <m>x^*=1</m> is an unstable equilibrium value. Change the initial value to different numbers above and below the equilibrium value, and notice the solution function does not always tend towards the equilibrium value as time goes on. 
+						<interactive desmos="pmijlwm6az" width="170%" aspect="2:1" preview="images/1_8_int_prev_stab2.png"/>
+					</li>
+				</ul>
+			</example>
+		</subsection>
+		
+		<subsection>
+			<title>Summary</title>
+			<ul>
+				<li> <question>How can we describe the qualitative behavior of a solution function without finding the equation of the solution function explicitly?</question>
+					<answer>We can describe the qualitative behavior of a solution function by cob-webbing on the graph of the updating function. The series of points generated by cob-webbing show us whether a solution function is increasing or decreasing, how it is increasing or decreasing, and if the solution function is approaching a particular value as time goes on.</answer>
+				</li>
+				<li> <question>What are equilibrium values of a DTDS and how can we find and describe them?</question>
+					<answer>Equilibrium values are values that are unchanged by the updating function. We can find equilibrium values algebraically using the equation of the updating function or graphically using the graph of the updating function. We can categorize equilibrium values as stable or unstable based on how solution functions behave with initial values that are close to the equilibrium value.</answer>
+				</li>
+			</ul>
+		</subsection>
+		
+		<exercises>
+			<exercise>
+				<statement>
+				A <idx><h>discrete-time dynamical system</h><h>updating function</h><h>linear</h></idx> <term>linear updating function</term> is an updating function whose updating function rule is a linear function. Is it possible for a DTDS with a linear updating function to have exactly two equilibrium values? Explain how you know.
+				</statement>
+				<answer>	
+					No
+				</answer>
+			</exercise>
+			<exercise>
+				<statement>
+				Give an example of the graph of an updating function that has <m>2</m> stable equilibrium values and <m>1</m> unstable equilibrium value. Use cob-webbing to illustrate why your example works.
+				</statement>
+			</exercise>
+		</exercises>
+	</section>
+
+<!--*******************************************************************************-->
+  <!--		SECTION 9        									-->
+  <!--*******************************************************************************-->
+  	<section xml:id="sec-1-9">
+		<title>Applications: The Lung Model and Competing Species </title>
+		<objectives xml:id="obj-1-9">
+			<ul>
+				<li> <p>How can we model gas exchange in the lung using a discrete-time dynamical system?</p></li>
+				<li> <p>What is a weighted average?</p></li>
+				<li><p>How can we model a system which involves two distinct populations that change over time?</p></li>
+			</ul>
+		</objectives>
+		
+		<introduction>
+			<p>  
+			In our final section of the chapter we will survey two discrete-time dynamical systems, using the tools we've developed so far to analyze the behavior of each system over time.
+			</p>
+		</introduction>
+		<exploration xml:id="wu-1-9">
+			<p>
+			Consider the updating function <m>p_{t+1} = 0.7p_t + 0.6</m>.
+				<ol>
+					<li>Determine the equilibrium value(s) of this system algebraically.</li>
+					<li>Create tables similar to that of <xref ref="t-1-7-dtds">Table</xref> using the updating function and appropriate initial values to guess whether the equilibrium value(s) from the previous part are stable or unstable.</li>
+					<li>Graph the updating function and use cob-webbing to verify your conclusion regarding the stability of the equilibrium value(s).</li>
+				</ol>
+			</p>
+		</exploration>
+		
+		<subsection>
+			<title>The Lung Model</title>
+			<p>
+			We will develop a basic DTDS measuring the concentration <m>c_t</m> of a gas in the lung after <m>t</m> breaths (exhale and inhale). As a starting place for developing our model, we will make several assumptions:
+				<ul>
+					<li>There is a fixed maximum volume <m>V</m> of air in the lung.</li>
+					<li>The volume of air breathed out during exhale <m>W</m> is the same as the volume of air breathed in during inhale.</li>
+					<li>The concentration <m>\beta</m> of the gas being measured is constant in the outside air.</li>
+				</ul>
+			This is a simplified model, but it is important to note that models are never perfect. It is important to analyze a model for its limitations, and adjust your model accordingly if there is a factor important to your study that is not being considered. An example of how one might adjust the lung model presented here is given in <xref ref="x-1-9-absorb">Exercise</xref>.
+			</p>
+			<p>
+			We will measure volume in liters (L) and the amount of gas particles in millimoles (mmol). Then the concentration of the gas will be measured in millimoles per liter (mmol/L). In order to develop our model, we will look at the concentration of gas at different stages of the breathing process, using unit conversions (<xref ref="sec-1-3">Section</xref>) to guide our computations. The current concentration in the lung is represented by <m>c_t</m>, and we are looking for the concentration after one more breath, <m>c_{t+1}</m>.
+			</p>
+			<table>
+				<tabular>
+					<row header="yes" bottom="major">
+						<cell>
+							Stage
+						</cell>
+						<cell>
+							Volume (L)
+						</cell>
+						<cell>
+							Concentration (mmol/L)
+						</cell>
+						<cell>
+							Amount (mmol)
+						</cell>
+					</row>
+					<row>
+						<cell>
+							Air in Lung Before Exhale
+						</cell>
+						<cell>
+							<m>V</m> L
+						</cell>
+						<cell>
+							<m>c_t</m> mmol/L
+						</cell>
+						<cell>
+							<m>V \cancel{\text{ L}} \cdot c_t\dfrac{\text{mmol}}{\cancel{\text{L}}} = Vc_t \text{ mmol} </m>
+						</cell>
+					</row>
+					<row>
+						<cell>
+							Exhaled Air
+						</cell>
+						<cell>
+							<m>W</m> L
+						</cell>
+						<cell>
+							<m>c_t</m> mmol/L
+						</cell>
+						<cell>
+							<m>W \cancel{\text{ L}} \cdot c_t\dfrac{\text{mmol}}{\cancel{\text{L}}} = Wc_t \text{ mmol} </m>
+						</cell>
+					</row>
+					<row>
+						<cell>
+							Air in Lung After Exhale
+						</cell>
+						<cell>
+							<m>(V-W)</m> L
+						</cell>
+						<cell>
+							<m>c_t</m> mmol/L
+						</cell>
+						<cell>
+							<m>(V-W) \cancel{\text{ L}} \cdot c_t\dfrac{\text{mmol}}{\cancel{\text{L}}} = (V-W)c_t \text{ mmol} </m>
+						</cell>
+					</row>
+					<row>
+						<cell>
+							Inhaled Air
+						</cell>
+						<cell>
+							<m>W</m> L
+						</cell>
+						<cell>
+							<m>\beta</m> mmol/L
+						</cell>
+						<cell>
+							<m>W \cancel{\text{ L}} \cdot \beta \dfrac{\text{mmol}}{\cancel{\text{L}}} = W\beta \text{ mmol} </m>
+						</cell>
+					</row>
+				</tabular>
+			</table>
+			<p>
+			The final stage of a single breath is to analyze the air in the lung after inhale. During this stage, however, we are looking to compute the concentration instead of being given it as in previous stages. Concentration is computed as <q>amount</q> divided <q>volume</q>. The volume of air after inhale is the full volume of the lung, <m>V</m> L. The amount of gas particles in the lung after inhale is the sum of of the amount left in the lung after exhale, plus the amount breathed in during inhale:
+				<me>(V-W)c_t \text{ mmol} + W\beta \text{ mmol} </me>
+			Thus, the new concentration of gas in the lung after one breath is 
+				<md>
+					<mrow>c_{t+1} \amp= \dfrac{(V-W)c_t + W\beta}{V}  </mrow>
+					<mrow> \amp=\dfrac{(V-W)}{V}c_t + \dfrac{W}{V}\beta</mrow>
+					<mrow> \amp=\left( 1 - \dfrac{W}{V}\right)c_t + \dfrac{W}{V}\beta</mrow>
+				</md>.
+			We summarize the development of the lung model below:
+				<assemblage xml:id="ass-1-9-lung">
+					<title>The Lung Model</title>
+					<idx><h>discrete-time dynamical system</h><h>the lung model</h></idx>
+					<p>
+					A DTDS which measures the concentration <m>c_t</m> (in mmol/L) of a gas in the lungs after <m>t</m> breaths is given by
+						<me>c_{t+1} = (1-p)c_t + p\beta</me>,
+					where <m>\beta</m> is the outside concentration of the gas being measured and <m>p= \dfrac{W}{V}</m> is the percentage of the lung's volume that is being filled with outside air during each inhale. 
+					</p>
+				</assemblage>
+				<activity>
+				Consider a lung model with <m>V = 6</m> L, <m>W = 2</m> L, and <m>\beta = 3</m> mmol/L.
+					<ol>
+						<li>Compute the equilibrium value(s) of this system algebraically.</li>
+						<li>Graph the updating function and use cob-webbing to classify the equilibrium value(s) as stable or unstable.</li>
+						<li>Interpret your previous answers in the context of the lung. Do your answers make sense?</li>
+					</ol>
+				</activity>
+			The updating function for the lung model is an example of a <em>weighted average</em>, which we define now.
+			</p>
+			<definition>
+				<title>Weighted Average</title>
+				<idx><h>weighted average</h></idx>
+				A <term>weighted average</term> of two numbers <m>a</m> and <m>b</m> is a sum of the form
+					<me>(1-p)a + pb</me>,
+				where <m>p</m> is any number such that <m>0 \leq p \leq 1</m>. The numbers <m>p</m> and <m>1-p</m> are called <term>weights</term> of the weighted average.
+			</definition>
+			<remark>
+				<ul>
+					<li>When <m>p=0.5</m>, this is just the average of two numbers: <me>(1-0.5)a+0.5b = 0.5a + 0.5b = \dfrac{a+b}{2}</me></li>
+					<li>The weights <m>p</m> and <m>1-p</m> represent a percentage, allowing us to place more importance (or weight) on one number over another. </li>
+					<li>The weights <m>p</m> and <m>1-p</m> always sum to <m>1</m> (<m>100 \%</m>). </li>
+				</ul>
+			</remark>
+			<example>
+				<title>Weighted Average</title>
+				<p>
+					<ol>
+						<li>The sum 
+							<me>0.8(2) + 0.2(10)</me>
+						is a weighted average of the numbers <m>2</m> and <m>10</m>. The number <m>2</m> is weighted as <m>80\%</m> while the number <m>10</m> is weighted as <m>20\%</m>. The sum is equal to <m>3.6</m>, which is much closer to <m>2</m> than <m>10</m> since <m>2 </m> is being given more importance.
+						</li>
+						<li>The sum 
+							<me>0.2(2) + 0.8(10)</me>
+						is a weighted average of the numbers <m>2</m> and <m>10</m>. The number <m>2</m> is weighted as <m>20\%</m> while the number <m>10</m> is weighted as <m>80\%</m>. The sum is equal to <m>8.4</m>, which is much closer to <m>10</m> than <m>2</m> since <m>10 </m> is being given more importance.
+						</li>
+					</ol>
+				</p>
+			</example>
+			<activity>
+				<p>
+				The lung model <m>c_{t+1} = (1-p)c_t + p\beta</m> is a weighted average.
+					<ol>
+						<li>What are the two numbers being averaged?</li>
+						<li>What are the weights of the weighted average?</li>
+						<li>Interpret the weighted average in the context of what is being modeled. What is being given more importance and why?</li>
+					</ol>
+				</p>
+			</activity>
+		</subsection>
+		
+		<subsection xml:id="ssec-1-9-competing">
+			<title>A Model for Competing Species</title>
+			<p>
+			Consider a situation in which there are two different bacterial strains growing in the same environment. We'd like to describe the make-up of these two populations in a single discrete-time dynamical system. We'll start by modeling each strain separately assuming an exponential growth model. Let the first strain's population after <m>t</m> minutes be represented by <m>x_t</m> and the second strain's population be represented by <m>y_t</m>. Then each population can be modeled separately as
+				<md>
+					<mrow>x_{t+1} = sx_t</mrow>
+					<mrow>y_{t+1}=ry_t</mrow>
+				</md>,
+			where <m>s</m> and <m>r</m> are the per capita growth rates of the first and second strain, respectively.
+			</p>
+			<p>
+			In order to create a single model that describes both of these populations, we will measure the <idx><h>population proportion</h></idx> <term>population proportion</term> of one of the strains. A  population proportion is the fraction that a sub-population represents with respect to the total population. Let <m>p_t</m> be the population proportion of the first strain after <m>t</m> minutes. Then
+				<me> p_t =\dfrac{\text{The population of strain 1 after t minutes}}{\text{The total population after t minutes}} =  \dfrac{x_t}{x_t +y_t}</me>.
+			Note that even though <m>p_t</m> is being measured with respect to the first strain's population, we could also compute the population proportion of the second strain, <m>\dfrac{y_t}{x_t+y_t}</m>, from this expression by computing <m>1 - p_t</m>, since the sum of the two population proportions should equal <m>1</m> (<m>100\%</m>). 
+			</p>
+			<p>
+			We would like to have an updating function that describes the relationship <m>p_t</m>. That is, we want an equation of the form <m>p_{t+1} = f(p_t)</m>. Towards that end, we compute
+				<md>
+					<mrow>p_{t+1} \amp= \dfrac{x_{t+1}}{x_{t+1} + y_{t+1}}</mrow>
+					<mrow> \amp= \dfrac{sx_t}{sx_t + ry_t}</mrow>
+					<mrow> \amp= \dfrac{sx_t}{sx_t + ry_t} \cdot \dfrac{\frac{1}{x_t + y_t}}{\frac{1}{x_t + y_t}}</mrow>
+					<mrow> \amp= \dfrac{s\frac{x_t}{x_t + y_t}}{s\frac{x_t}{x_t + y_t} + r\frac{y_t}{x_t + y_t}} </mrow>
+					<mrow>\amp= \dfrac{sp_t}{sp_t +r(1-p_t)}</mrow>
+					<mrow>\amp= \dfrac{sp_t}{r +(s-r)p_t}</mrow>
+				</md>
+			We summarize the development of this competing species model below:
+				<assemblage xml:id="ass-1-9-comp">
+					<title>Competing Species Model</title>
+					<idx><h>discrete-time dynamical system</h><h>competing species model</h></idx>
+					<p>
+					If species <m>1</m> grows with per capita growth rate <m>s</m> and species <m>2</m> grows with per capita growth rate <m>r</m>, the population proportion of species <m>1</m> is modeled by the updating function
+						<me>p_{t+1} = \dfrac{sp_t}{r+ (s-r)p_t}</me>.
+					</p>
+				</assemblage>	
+			We note here that the competing species model is an example of a <idx><h>discrete-time dynamical system</h><h>updating function</h><h>non-linear</h></idx> <term>non-linear updating function</term>. That is, the updating function rule <m>f(x) = \dfrac{sx}{r+(s-r)x}</m> is not a linear function. This can make finding equilibrium values algebraically more complex, and also allow us to have multiple different equilibrium values. The type of equations that are most relevant for us to be able to solve in this section are <idx><h>quadratic equations</h></idx> <term>quadratic equations</term>. You can find a nice review with solutions of solving quadratic equations at Paul's Online Notes, <url href="https://tutorial.math.lamar.edu/Classes/Alg/SolveQuadraticEqnsI.aspx" visual="tutorial.math.lamar.edu/Classes/Alg/SolveQuadraticEqnsI.aspx"> Part 1 </url> and <url href="https://tutorial.math.lamar.edu/Classes/Alg/SolveQuadraticEqnsII.aspx" visual="tutorial.math.lamar.edu/Classes/Alg/SolveQuadraticEqnsII.aspx"> Part 2 </url>.
+			</p>
+			<activity>
+				<p>
+				Use the interactive below to answer questions regarding the equilibrium values of the competing species model.
+					<interactive desmos="jmrevtw05y" width="170%" aspect="2:1" preview="images/1_9_int_prev_species.png"/>
+					<ol>
+						<li>Do the equilibrium values of this model depend on the values of <m>s</m> and <m>r</m>? Explain.</li>
+						<li>Compute the equilibrium values of <m>p_{t+1} = \dfrac{3p_t}{2+ (3-2)p_t}</m> algebraically, then use the interactive to verify your answers.</li>
+						<li>Compute the equilibrium values of <m>p_{t+1} = \dfrac{sp_t}{r+ (s-r)p_t}</m> algebraically.</li>
+						<li>Does the stability of the equilibrium values depend on the values of <m>s</m> and <m>r</m>? Use cob-webbing to determine when each equilibrium value is stable/unstable. Try to do the cob-webbing on your own before using the button provided that illustrates the cob-webbing. </li>
+						<li>What do the equilibrium values represent in the context of the competing species model? How can you interpret the stability of each equilibrium value in the context of the competing species model? </li>
+					</ol>
+				</p>
+			</activity>
+		</subsection>
+		
+		<subsection>
+			<title>Summary</title>
+			<ul>
+				<li> <question>How can we model gas exchange in the lung using a discrete-time dynamical system?</question>
+					<answer>We can model gas exchange in the lung using the <xref ref="ass-1-9-lung" text="custom">lung model</xref>.</answer>
+				</li>
+				<li> <question>What is a weighted average?</question>
+					<answer>A weighted average between two numbers <m>a</m> and <m>b</m> is a sum of the form <m>(1-p)a + pb</m>, where <m>0\leq p \leq 1</m>. Weighted averages give us a way to place more importance on one number over another when computing the average value. </answer>
+				</li>
+				<li><question>How can we model a system which involves two distinct populations that change over time?</question>
+					<answer>We can form a DTDS that measures a population proportion. One example of this is when two distinct population exhibit exponential growth, we get the <xref ref="ass-1-9-comp" text="custom">competing species model.</xref> One more example of this in the context of migration models is outlined in <xref ref="x-1-9-migration">Exercise</xref> and <xref ref="x-1-9-migration2">Exercise</xref>.</answer>
+				</li>
+			</ul>
+		</subsection>
+		
+		<exercises>
+			<exercise xml:id="x-1-9-absorb">
+				<statement>
+				Our current model for gas exchange in the lung does not account for absorption of the chemical in the body, which can occur for chemicals such as oxygen. If a fraction <m>\alpha</m> of the chemical is absorbed before breathing out, the new DTDS becomes
+					<me>c_{t+1} = (1 - p)(1-\alpha)c_t + p\beta</me>,
+				where <m>p = \frac{W}{V}</m> and <m>\beta</m> is the outside concentration of the chemical. 
+					<ol>
+						<li> Explain in words why multiplying <m>c_t</m> by <m>(1-\alpha)</m> makes sense.</li>
+						<li>Find the equilibrium value(s) <m>c^*</m> algebraically. Your answer should be in terms of <m>p</m>, <m>\alpha</m>, and <m>\beta</m>.</li>
+						<li>Let <m>p = 0.5</m> and <m>\beta= 0.2</m>. Use the table to test several values of <m>\alpha</m> to see how absorption effects equilibria. As absorption increases, what happens to the equilibrium concentration?</li>
+					</ol>
+				
+				<table>
+					<tabular>
+						<row header="yes" bottom="minor">
+							<cell><m>\alpha</m></cell>
+							<cell><m>c^*</m></cell>
+						</row>
+						<row>
+							<cell><m>0</m></cell>
+							<cell></cell>
+						</row>
+						<row>
+							<cell><m>0.25</m></cell>
+							<cell></cell>
+						</row>
+						<row>
+							<cell><m>0.5</m></cell>
+							<cell></cell>
+						</row>
+						<row>
+							<cell><m>0.75</m></cell>
+							<cell></cell>
+						</row>
+						<row>
+							<cell><m>1</m></cell>
+							<cell></cell>
+						</row>
+					</tabular>
+				</table>
+				</statement>
+				<answer>
+					<ol>
+						<li></li>
+						<li><m>c^* = \dfrac{p\beta}{p + \alpha(1-p)}</m></li>
+						<li>
+							<table>
+								<tabular>
+									<row header="yes" bottom="minor">
+										<cell><m>\alpha</m></cell>
+										<cell><m>c^*</m></cell>
+									</row>
+									<row>
+										<cell><m>0</m></cell>
+										<cell><m>0.2</m></cell>
+									</row>
+									<row>
+										<cell><m>0.25</m></cell>
+										<cell><m>0.16</m></cell>
+									</row>
+									<row>
+										<cell><m>0.5</m></cell>
+										<cell><m>0.133</m></cell>
+									</row>
+									<row>
+										<cell><m>0.75</m></cell>
+										<cell><m>0.114</m></cell>
+									</row>
+									<row>
+										<cell><m>1</m></cell>
+										<cell><m>0.1</m></cell>
+									</row>
+								</tabular>
+							</table>
+						</li>
+					</ol>
+				</answer>
+			</exercise>
+			
+			<exercise>
+				<statement>
+				Consider the lung model given by <m>c_{t+1} = 0.4c_t + 1.2</m>, <m>c_0 = 1</m>.
+					<ol>
+						<li><p>Find the solution function for this DTDS.</p>
+							<p> Hint: <xref ref="ex-1-7-exptrans">Example</xref> and <xref ref="r-1-8-trans">Remark</xref> </p>
+						 </li>
+						<li>Use the solution function to determine the approximate number of breaths it will take for the concentration to reach <m>1.99</m> mmol/L.</li>
+					</ol>
+				</statement>
+				<answer>
+					<ol>
+						<li><m>c_t = -(0.4)^t + 2</m></li>
+						<li>About <m>5</m> breaths</li>
+					</ol>
+				</answer>
+			</exercise>
+			<exercise>
+				<statement>
+				Explain why the sum <m>0.2(10) + 0.6(3)</m> is not a weighted average.
+				</statement>
+			</exercise>
+			<exercise xml:id="x-1-9-migration2">
+				<statement>
+				<p>
+				Suppose two nearby islands have populations of butterflies, with <m>x_t</m> on the first island and <m>y_t</m> on the second. Each year, <m>20\%</m> of the butterflies from the first island fly to the second and <m>30\%</m> of the butterflies from the second fly to the first.
+				</p>
+				<p>
+				Also suppose each butterfly that begins the year on the first island produces one offspring after migration (whether they find themselves on the first or the second island). Those that begin the year on the second island do not reproduce. Assume that no butterflies die.
+				</p>
+				<ol>
+					<li><p>As an initial example, suppose we start with 100 butterflies on each island. Find the number after migration and after reproduction on both islands.</p>
+						<p>Hint: The population of island 1 is <m>190</m> and island 2 is <m>110</m>, but it is <em>how</em> you calculate these numbers that you want to pay attention to.</p>
+					</li>
+					<li>Find equations for <m>x_{t+1}</m> and <m>y_{t+1}</m>, paying attention to how you calculated the previous part to identify patterns.</li>
+					<li>Let <m>p_t</m> represent the proportion of butterflies on the first island after <m>t</m> years. Find the updating function for <m>p_t</m>.</li>
+					<li>Find the equilibrium value of the system <m>p_t</m>. There should be only one that makes biological sense. Then classify the equilibrium value as stable or unstable. You may use any method of your choice.</li>
+					<li>Interpret the meaning of the equilibrium value and its stability in the context of the model.</li>
+				</ol>
+				</statement>
+				<answer>
+					<ol>
+						<li></li>
+						<li><m>x_{t+1} = 1.6x_t + 0.3y_t</m>, <m>y_{t+1} =  0.4x_t + 0.7y_t</m></li>
+						<li><m>p_{t+1} = \dfrac{1.3p_t + 0.3}{p_t + 1}</m></li>
+						<li><m>p^* = 0.72</m>, stable</li>
+					</ol>
+				</answer>
+			</exercise>
+			
+			<exercise xml:id="x-1-9-migration">
+				<statement>
+				A population of salmon live in one of two territories in the Atlantic ocean. There are <m>k_t</m> fish in territory 1 and <m>h_t</m> fish in territory 2. Every year, <m>80\%</m> of the fish from territory 1 migrate to territory 2, and <m>75\%</m> of the fish from territory 2 migrate to territory 1. 
+					<ol>
+						<li>Find an equation for <m>k_{t+1}</m> in terms of <m>k_t</m> and <m>h_t</m>.</li>
+						<li>Find an equation for <m>h_{t+1}</m> in terms of <m>k_t</m> and <m>h_t</m>.</li>
+						<li>Let <m>p_t</m> represent the proportion of fish living in territory 1 after <m>t</m> years. Find the updating function for <m>p_t</m>. </li>
+						<li>Find all equilibrium values of the system <m>p_t</m> and classify each as stable or unstable. You may use any method of your choice.</li>
+						<li>Interpret the meaning of each equilibrium value and its stability in the context of the model.</li>
+					</ol>
+				</statement>
+				<answer>
+					<ol>
+						<li><m>k_{t+1} = 0.2k_t +0.75h_t</m></li>
+						<li><m>h_{t+1} = 0.8k_t +0.25h_t</m></li>
+						<li><m>p_{t+1} = 0.75 - 0.55p_t</m></li>
+						<li><m>p^*= 0.484</m>, stable</li>
+					</ol>
+				</answer>
+			</exercise>
+		</exercises>
+	</section>
+
+ </chapter>
+ 

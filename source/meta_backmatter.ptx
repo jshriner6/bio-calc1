@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- This file contains all of the "backmatter" material  -->
+<!-- We show examples of how to have hints to divisional  -->
+<!-- excercies appear in a section, and then their        -->
+<!-- solutions in the next.  Then there is an appendix    -->
+<!-- with all notation generated, and finally the index.  -->
+<backmatter xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="meta_backmatter">
+  <title>Backmatter</title>
+  
+
+  <solutions divisional="answer" xml:id="exercises-answers">
+    <title>Answers to Selected Exercises</title>
+    <introduction>
+    	<p>
+	Below you will find answers to selected exercises from the end of each section. Worked solutions are not provided, so you are encouraged to discuss your thought process and reasoning for exercises with others, even if your final answer matches what is listed here. Your process and reasoning are the most important things for deepening your understanding and ensuring you can use important concepts on your own in the future, so use this section as a guide, but not a replacement for engaging in the exercises with others. 
+	</p>
+    </introduction>
+  </solutions>
+  
+  <appendix>
+    <title>List of Symbols</title>
+    <notation-list/>
+  </appendix>
+
+  <index>
+    <title>Index</title>
+    <index-list/>
+  </index>
+
+  <colophon>
+    <p>
+      This book was authored in <pretext/>.
+    </p>
+  </colophon>
+</backmatter>
+

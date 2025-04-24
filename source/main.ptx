@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- **********************************************************************              -->
+<!--			                                                                                              -->
+<!--  Jeff Shriner                                                                                              -->
+<!--                                                                                                                  -->
+<!-- This file is part of Calculus for Biological Scientists                 		 -->
+<!--                                                                                                                  -->
+<!-- Permission is granted to copy, distribute and/or modify this document   -->
+<!-- under the terms of the Creative Commons BY-SA license.  The work     -->
+<!-- may be used for free by any party so long as attribution is given to        -->
+<!-- the author(s), the work and its derivatives are used in the spirit of          -->
+<!-- "share and share alike".  All trademarks are the registered marks of.     -->
+<!-- their respective owners.                                                                           -->
+<!-- **********************************************************************              -->
+<pretext xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
+ <xi:include href="bookinfo.xml" /> 
+    <!-- ISBN, website, other metadata -->
+  <book>
+    <title>Calculus for Biological Scientists</title>
+    <xi:include href="meta_frontmatter.ptx" />  
+
+    <xi:include href="ch-1.xml" />
+    <xi:include href="ch-2.xml" />
+    <xi:include href="ch-3.xml" />
+    <xi:include href="./ch-4.xml" />
+
+    <xi:include href="meta_backmatter.ptx" />  
+  </book>
+</pretext>
