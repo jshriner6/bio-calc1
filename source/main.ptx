@@ -14,7 +14,29 @@
 <!-- **********************************************************************              -->
 <pretext xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
  <xi:include href="bookinfo.xml" /> 
-    <!-- ISBN, website, other metadata -->
+
+ <docinfo>
+   <brandlogo source="images/mountains.jpg" />
+
+  <macros>
+		\newcommand{\dollar}{\$}
+		\DeclareMathOperator{\erf}{erf}
+		\DeclareMathOperator{\arctanh}{arctanh}
+                \DeclareMathOperator{\arcsec}{arcsec}
+  </macros>
+  <cross-references text="type-global" />
+  <initialism>BC</initialism>
+<feedback>
+	<url>https://docs.google.com/forms/d/e/1FAIpQLSfqb-mJw72Dhhm6BRbYn5IO3eLVvxuBmMoiuRvvYTvmABnZTw/viewform?usp=sf_link</url>
+</feedback>
+   <document-id>shriner-BC</document-id>
+  <rename element="exploration" xml:lang="en-US">Warm-Up</rename>
+
+  <rename element="objectives" xml:lang="en-US">Motivating Questions</rename>
+  
+  <rename element="theorem" xml:lang="en-US">Fact</rename>
+</docinfo>
+
   <book>
     <title>Calculus for Biological Scientists</title>
     <xi:include href="meta_frontmatter.ptx" />  
