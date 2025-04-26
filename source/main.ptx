@@ -25,9 +25,7 @@
   </macros>
   <cross-references text="type-global" />
   <initialism>BC</initialism>
- <feedback>
-	<url>https://docs.google.com/forms/d/e/1FAIpQLSfqb-mJw72Dhhm6BRbYn5IO3eLVvxuBmMoiuRvvYTvmABnZTw/viewform?usp=sf_link</url>
- </feedback>
+ 
   <document-id>shriner-BC</document-id>
   <rename element="exploration" xml:lang="en-US">Warm-Up</rename>
 
@@ -43,7 +41,7 @@
     <xi:include href="ch-1.xml" />
     <xi:include href="ch-2.xml" />
     <xi:include href="ch-3.xml" />
-    <xi:include href="./ch-4.xml" />
+    <xi:include href="ch-4.xml" />
 
     <xi:include href="meta_backmatter.ptx" />  
   </book>
