@@ -2098,7 +2098,7 @@ study of change, and is therefore a useful tool to understand as a scientist. In
 					</image> 
 			</assemblage>
 			<p>
-			As seen in the <xref ref="int-1-6-trig" text="custom">unit circle</xref>, we can draw a right triangle within the unit circle for different values of <m>r</m>. When <m>r</m> is a multiple of <m>\dfrac{\pi}{4}</m> or <m>\dfrac{\pi}{6}</m>, that triangle will be one of the <xref ref="ass-1-6-triangle">special triangles</xref>, from which we can compute the desired trigonometric value.
+			As seen in the <xref ref="int-1-6-trig" text="custom">unit circle</xref>, we can draw a right triangle within the unit circle for different values of <m>r</m>. When <m>r</m> is a multiple of <m>\dfrac{\pi}{4}</m> or <m>\dfrac{\pi}{6}</m>, that triangle will be one of the <xref ref="ass-1-6-triangle" text="custom">special triangles</xref>, from which we can compute the desired trigonometric value.
 			</p>
 			
 			<example>
