@@ -2010,8 +2010,10 @@
       Because the process of taking a limit is a dynamic one,
       it can be helpful to use computing technology to visualize it. Use the interactive below to change the distance <m>h</m> from the <m>x</m> value <m>a=0</m>. Try to verbalize what the line connecting the two points starts to look like as <m>h</m> gets very close (but not equal to) <m>0</m>.
     </p>
-    	<interactive desmos="eb9qn2xyge" width="170%" aspect="2:1" xml:id="int-2-2-iroc" preview="images/2_2_int_prev_limit.png"/>
-
+    <figure xml:id="fig-2-2-iroc">
+      <interactive desmos="eb9qn2xyge" width="170%" aspect="2:1" xml:id="int-2-2-iroc" preview="images/2_2_int_prev_limit.png"/>
+    </figure>
+    	
     <p permid="EHk">
       <xref ref="F-1-3-SecToTanSeq">Figure</xref>
       shows a sequence of figures with several different lines through the points <m>(a, f(a))</m> and
@@ -3816,7 +3818,7 @@
 </activity>
 
 <p>
-<xref ref="act-1-4-1">Activity</xref> included some graphs for which the associated derivative function was not defined for certain <m>x</m> values. The interactive below contains another example of a function <m>f(x)</m> for which <m>f'(1)</m> does not exist. Use the interactive to see how secant lines behave as the distance <m>h</m> from <m>x=1</m> gets closer to zero from both the left and the right. Compare this behavior to <xref ref="int-2-2-iroc" text="custom">the interactive from Section 2.2</xref>, and write a thoughtful sentence explaining why it makes sense that <m>f'(1)</m> does not exist.
+<xref ref="act-1-4-1">Activity</xref> included some graphs for which the associated derivative function was not defined for certain <m>x</m> values. The interactive below contains another example of a function <m>f(x)</m> for which <m>f'(1)</m> does not exist. Use the interactive to see how secant lines behave as the distance <m>h</m> from <m>x=1</m> gets closer to zero from both the left and the right. Compare this behavior to <xref ref="fig-2-2-iroc" text="custom">the interactive from Section 2.2</xref>, and write a thoughtful sentence explaining why it makes sense that <m>f'(1)</m> does not exist.
 </p>
 	<interactive desmos="vokjwfntsl" width="170%" aspect="2:1" preview="images/2_3_int_prev_dne.png"/>
 
@@ -5454,7 +5456,7 @@
       -->
     </p>
 
-    <sidebyside widths="47% 47%" margins="0%" permid="RrX">
+   <!-- <sidebyside widths="47% 47%" margins="0%" permid="RrX"> -->
 
       <table xml:id="table-1-act-1-6-2" permid="sPn">
         <title>Select values of <m>F(t)</m>.</title>
@@ -5533,9 +5535,10 @@
         </tabular>
 
       </table>
-      -->
+      
 
     </sidebyside>
+    -->
 
     <p permid="AtM">
       <ol marker="a." permid="Hor">

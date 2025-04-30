@@ -1,2 +1,2 @@
 # bio-calc1
-Repository for xml files to generate Calculus for Biological Scientists. Transitioned from [the bio-calc repository](https://github.com/jshriner6/bio-calc) to utilize the pre-text codespace.
+Repository for xml files to generate Calculus for Biological Scientists. Transitioned from [the bio-calc repository](https://github.com/jshriner6/bio-calc) to utilize the PreTeXt codespace.

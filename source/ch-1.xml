@@ -2067,7 +2067,9 @@ study of change, and is therefore a useful tool to understand as a scientist. In
 			<p>
 			The circle in <xref ref="wu-1-6">Warm-Up</xref> is called the <idx><h>unit circle</h></idx> <term>unit circle</term>. As <m>r</m> changes, the line connecting <m>(0,0)</m> to the unit circle moves around the circle, eventually repeating itself. This repetition is the characteristic that allows us to define functions that repeat a pattern over time. Use the interactive below to determine the definitions of <m>\sin(r)</m>, <m>\cos(r)</m>, and <m>\tan(r)</m> before viewing the answers.
 			</p>
-			<interactive xml:id="int-1-6-trig" desmos="j6vqzcmwlf" width="170%" aspect="2:1" preview="images/1_6_int_prev_trig.png"/>
+			<figure xml:id="fig-1-6-trig">
+				<interactive xml:id="int-1-6-trig" desmos="j6vqzcmwlf" width="170%" aspect="2:1" preview="images/1_6_int_prev_trig.png"/>
+			</figure>
 			<idx><h>trigonometric functions</h></idx>
 			<idx><h>trigonometric functions</h><h>sine</h></idx>
 			<idx><h>trigonometric functions</h><h>cosine</h></idx>
@@ -2098,7 +2100,7 @@ study of change, and is therefore a useful tool to understand as a scientist. In
 					</image> 
 			</assemblage>
 			<p>
-			As seen in the <xref ref="int-1-6-trig" text="custom">unit circle</xref>, we can draw a right triangle within the unit circle for different values of <m>r</m>. When <m>r</m> is a multiple of <m>\dfrac{\pi}{4}</m> or <m>\dfrac{\pi}{6}</m>, that triangle will be one of the <xref ref="ass-1-6-triangle" text="custom">special triangles</xref>, from which we can compute the desired trigonometric value.
+			As seen in the <xref ref="fig-1-6-trig" text="custom">unit circle</xref>, we can draw a right triangle within the unit circle for different values of <m>r</m>. When <m>r</m> is a multiple of <m>\dfrac{\pi}{4}</m> or <m>\dfrac{\pi}{6}</m>, that triangle will be one of the <xref ref="ass-1-6-triangle" text="custom">special triangles</xref>, from which we can compute the desired trigonometric value.
 			</p>
 			
 			<example>

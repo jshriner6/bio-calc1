@@ -63,10 +63,7 @@
     <!-- and associated with a Google account via CX number    -->
     <!-- <search google-cx=""/> -->
     <!-- ***************************************************** -->
-     <!-->
-    <feedback>
-      <url href="https://docs.google.com/forms/d/e/1FAIpQLSfqb-mJw72Dhhm6BRbYn5IO3eLVvxuBmMoiuRvvYTvmABnZTw/viewform?usp=sf_link" visual="docs.google.com/forms">Feedback</url>
-    </feedback>
-  -->
+    
+    <feedback href="https://docs.google.com/forms/d/e/1FAIpQLSfqb-mJw72Dhhm6BRbYn5IO3eLVvxuBmMoiuRvvYTvmABnZTw/viewform?usp=sf_link"/>
   </html>
 </publication>

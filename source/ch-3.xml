@@ -1962,8 +1962,10 @@
 			</p>
 			<p>
 			Take a moment with the interactive below to visually verify our results regarding equilibrium values and stability in the logistic dynamical system.
-				<interactive desmos="an1jr9y0yt" width="170%" aspect="2:1" xml:id="int-3-3-logistic" preview="images/3_3_int_prev_logistic.png"/>
-			</p>
+      </p>
+      <figure xml:id="fig-3-3-logistic">
+        <interactive desmos="an1jr9y0yt" width="170%" aspect="2:1" xml:id="int-3-3-logistic" preview="images/3_3_int_prev_logistic.png"/>
+      </figure>
 			<activity>
 				<p> The following questions are in reference to the equilibrium values of the logistic map discussed above.
 					<ol>
@@ -1982,7 +1984,7 @@
 				<ol>
 					<li>Determine all of the positive equilibrium values of this system.</li>
 					<li>For each positive equilibrium value, determine the values of <m>r</m> which make that value stable.</li>
-					<li>Modify the equation in the <xref ref="int-3-3-logistic" text="custom">logistic map interactive</xref> to verify and visualize your results.</li>
+					<li>Modify the equation in the <xref ref="fig-3-3-logistic" text="custom">logistic map interactive</xref> to verify and visualize your results.</li>
 				</ol>
 			</p>
 			</activity>
