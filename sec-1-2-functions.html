@@ -1,0 +1,875 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US" dir="ltr">
+<head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>BC Functions</title>
+<link xmlns:xlink="http://www.w3.org/1999/xlink" rel="preconnect" href="https://fonts.googleapis.com">
+<link xmlns:xlink="http://www.w3.org/1999/xlink" rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link xmlns:xlink="http://www.w3.org/1999/xlink" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+<link href="_static/pretext/css/theme.css" rel="stylesheet" type="text/css">
+<link xmlns:xlink="http://www.w3.org/1999/xlink" href="_static/pretext/css/ol-markers.css" rel="stylesheet" type="text/css">
+<script>
+var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
+window.MathJax = {
+  "tex": {
+    "inlineMath": [
+      [
+        "\\(",
+        "\\)"
+      ]
+    ],
+    "tags": "none",
+    "tagSide": "right",
+    "tagIndent": ".8em",
+    "packages": {
+      "[+]": [
+        "base",
+        "extpfeil",
+        "ams",
+        "amscd",
+        "color",
+        "newcommand",
+        "knowl"
+      ]
+    }
+  },
+  "options": {
+    "ignoreHtmlClass": "tex2jax_ignore|ignore-math",
+    "processHtmlClass": "process-math"
+  },
+  "chtml": {
+    "scale": 0.98,
+    "mtextInheritFont": true
+  },
+  "loader": {
+    "load": [
+      "input/asciimath",
+      "[tex]/extpfeil",
+      "[tex]/amscd",
+      "[tex]/color",
+      "[tex]/newcommand",
+      "[pretext]/mathjaxknowl3.js"
+    ],
+    "paths": {
+      "pretext": "_static/pretext/js/lib"
+    }
+  },
+  "startup": {
+    pageReady() {
+      return MathJax.startup.defaultPageReady().then(function () {
+      console.log("in ready function");
+      rsMathReady();
+      }
+    )}
+  }
+};
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><meta xmlns:xlink="http://www.w3.org/1999/xlink" name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta xmlns:xlink="http://www.w3.org/1999/xlink" property="og:type" content="book">
+<meta xmlns:xlink="http://www.w3.org/1999/xlink" property="book:title" content="Calculus for Biological Scientists">
+<meta xmlns:xlink="http://www.w3.org/1999/xlink" property="book:author" content="Jeff Shriner">
+<script src="_static/pretext/js/lib/jquery.min.js"></script><script src="_static/pretext/js/lib/jquery.sticky.js"></script><script src="_static/pretext/js/lib/jquery.espy.min.js"></script><script src="_static/pretext/js/pretext.js"></script><script src="_static/pretext/js/pretext_add_on.js?x=1"></script><script src="_static/pretext/js/user_preferences.js"></script><!--** eBookCongig is necessary to configure interactive       **-->
+<!--** Runestone components to run locally in reader's browser **-->
+<!--** No external communication:                              **-->
+<!--**     log level is 0, Runestone Services are disabled     **-->
+<script type="text/javascript">
+eBookConfig = {};
+eBookConfig.useRunestoneServices = false;
+eBookConfig.host = 'http://127.0.0.1:8000';
+eBookConfig.course = 'PTX_Course_Title_Here';
+eBookConfig.basecourse = 'PTX_Base_Course';
+eBookConfig.isLoggedIn = false;
+eBookConfig.email = '';
+eBookConfig.isInstructor = false;
+eBookConfig.logLevel = 0;
+eBookConfig.username = '';
+eBookConfig.readings = null;
+eBookConfig.activities = null;
+eBookConfig.downloadsEnabled = false;
+eBookConfig.allow_pairs = false;
+eBookConfig.enableScratchAC = false;
+eBookConfig.build_info = "";
+eBookConfig.python3 = null;
+eBookConfig.runestone_version = '7.6.1';
+eBookConfig.jobehost = '';
+eBookConfig.proxyuri_runs = '';
+eBookConfig.proxyuri_files = '';
+eBookConfig.enable_chatcodes =  false;
+</script>
+<!--*** Runestone Services ***-->
+<script src="_static/prefix-runtime.c7804631fa963734.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.f7a03b209751032d.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
+<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.541c9106f2c605b9.css">
+<script xmlns:xlink="http://www.w3.org/1999/xlink" src="_static/pretext/js/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script>
+</head>
+<body id="shriner-BC" class="pretext book ignore-math">
+<a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead" class="ptx-masthead"><div class="ptx-banner">
+<img src="external/images/mountains.jpg" alt="Logo image"><div class="title-container">
+<h1 class="heading"><a href="root-1-2.html"><span class="title">Calculus for Biological Scientists</span></a></h1>
+<p class="byline">Jeff Shriner</p>
+</div>
+</div></header><nav xmlns:xlink="http://www.w3.org/1999/xlink" id="ptx-navbar" class="ptx-navbar navbar"><div class="ptx-navbar-contents">
+<button class="toc-toggle button" title="Contents"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5d2;</span><span class="name">Contents</span></button><a class="index-button button" href="meta_backmatter-4.html" title="Index"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe88e;</span><span class="name">Index</span></a><div class="searchbox">
+<div class="searchwidget"><button id="searchbutton" class="searchbutton button" type="button" title="Search book"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8b6;</span><span class="name">Search Book</span></button></div>
+<div id="searchresultsplaceholder" class="searchresultsplaceholder" style="display: none">
+<div class="search-results-controls">
+<input aria-label="Search term" id="ptxsearch" class="ptxsearch" type="text" name="terms" placeholder="Search term"><button title="Close search" id="closesearchresults" class="closesearchresults"><span class="material-symbols-outlined">close</span></button>
+</div>
+<h2 class="search-results-heading">Search Results: </h2>
+<div id="searchempty" class="searchempty"><span>No results.</span></div>
+<ol id="searchresults" class="searchresults"></ol>
+</div>
+</div>
+<span class="nav-other-controls"><button id="light-dark-button" class="light-dark-button button" title="Dark Mode"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe51c;</span><span class="name">Dark Mode</span></button></span><span class="treebuttons"><a class="previous-button button" href="sec-1-1-bio-math.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="ch-1.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="sec-1-3.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span>
+</div></nav><div xmlns:xlink="http://www.w3.org/1999/xlink" id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\dollar}{\$}
+\DeclareMathOperator{\erf}{erf}
+\DeclareMathOperator{\arctanh}{arctanh}
+              \DeclareMathOperator{\arcsec}{arcsec}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
+\)</span></div>
+<div class="ptx-page">
+<div xmlns:xlink="http://www.w3.org/1999/xlink" id="ptx-sidebar" class="ptx-sidebar"><nav id="ptx-toc" class="ptx-toc depth2 focused" data-preexpanded-levels="0" data-max-levels="2"><ul class="structural toc-item-list contains-active">
+<li class="toc-item toc-frontmatter">
+<div class="toc-title-box"><a href="meta_frontmatter.html" class="internal"><span class="title">Front Matter</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-colophon"><div class="toc-title-box"><a href="meta_frontmatter-3.html" class="internal"><span class="title">Colophon</span></a></div></li>
+<li class="toc-item toc-acknowledgement"><div class="toc-title-box"><a href="meta_frontmatter-4.html" class="internal"><span class="title">Acknowledgements</span></a></div></li>
+<li class="toc-item toc-preface"><div class="toc-title-box"><a href="meta_frontmatter-5.html" class="internal"><span class="title">Our Goals</span></a></div></li>
+<li class="toc-item toc-preface"><div class="toc-title-box"><a href="meta_frontmatter-6.html" class="internal"><span class="title">Students: Read this!</span></a></div></li>
+<li class="toc-item toc-preface"><div class="toc-title-box"><a href="meta_frontmatter-7.html" class="internal"><span class="title">Instructors: Read this!</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter contains-active">
+<div class="toc-title-box"><a href="ch-1.html" class="internal"><span class="codenumber">1</span> <span class="title">Functions As Models</span></a></div>
+<ul class="structural toc-item-list contains-active">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-1-1-bio-math.html" class="internal"><span class="codenumber">1.1</span> <span class="title">Biology and Calculus</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-1-1-bio-math.html#sec-1-1-bio-math-5" class="internal"><span class="codenumber">1.1.1</span> <span class="title">Mathematical Models</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-1-1-bio-math.html#sec-1-1-bio-math-6" class="internal"><span class="codenumber">1.1.2</span> <span class="title">Mathematical Processes</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-1-1-bio-math.html#sec-1-1-bio-math-9" class="internal"><span class="codenumber">1.1.3</span> <span class="title">Summary</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-1-1-bio-math.html#sec-1-1-bio-math-10" class="internal"><span class="codenumber">1.1.4</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section contains-active">
+<div class="toc-title-box"><a href="sec-1-2-functions.html" class="internal"><span class="codenumber">1.2</span> <span class="title">Functions</span></a></div>
+<ul class="structural toc-item-list active">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-1-2-functions.html#sec-1-2-functions-5" class="internal"><span class="codenumber">1.2.1</span> <span class="title">Functions and their Representations</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-1-2-functions.html#ssec-1-2-rec" class="internal"><span class="codenumber">1.2.2</span> <span class="title">Explicit and Recursive Functions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-1-2-functions.html#sec-1-2-functions-7" class="internal"><span class="codenumber">1.2.3</span> <span class="title">Variables and Parameters</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-1-2-functions.html#ssec-1-2-comb" class="internal"><span class="codenumber">1.2.4</span> <span class="title">Combinations of Functions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-1-2-functions.html#ssec-1-2-inverse" class="internal"><span class="codenumber">1.2.5</span> <span class="title">Inverse Functions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-1-2-functions.html#ssec-1-2-aroc" class="internal"><span class="codenumber">1.2.6</span> <span class="title">Average Rate of Change</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-1-2-functions.html#sec-1-2-functions-11" class="internal"><span class="codenumber">1.2.7</span> <span class="title">Summary</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-1-2-functions.html#sec-1-2-functions-12" class="internal"><span class="codenumber">1.2.8</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-1-3.html" class="internal"><span class="codenumber">1.3</span> <span class="title">Units and Dimensions of Functions</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-1-3.html#sec-1-3-5" class="internal"><span class="codenumber">1.3.1</span> <span class="title">Units and Dimensions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-1-3.html#sec-1-3-6" class="internal"><span class="codenumber">1.3.2</span> <span class="title">Conversion Factors and Fundamental Relations</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-1-3.html#ssec-1-3-trans" class="internal"><span class="codenumber">1.3.3</span> <span class="title">Function Transformations</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-1-3.html#sec-1-3-8" class="internal"><span class="codenumber">1.3.4</span> <span class="title">Summary</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-1-3.html#sec-1-3-9" class="internal"><span class="codenumber">1.3.5</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-1-4.html" class="internal"><span class="codenumber">1.4</span> <span class="title">Linear Functions</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-1-4.html#sec-1-4-5" class="internal"><span class="codenumber">1.4.1</span> <span class="title">Linear and Proportional Relationships</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-1-4.html#sec-1-4-6" class="internal"><span class="codenumber">1.4.2</span> <span class="title">Graphs of Linear Relationships</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-1-4.html#sec-1-4-7" class="internal"><span class="codenumber">1.4.3</span> <span class="title">Solutions of Linear Equations</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-1-4.html#sec-1-4-8" class="internal"><span class="codenumber">1.4.4</span> <span class="title">Summary</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-1-4.html#sec-1-4-9" class="internal"><span class="codenumber">1.4.5</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-1-5.html" class="internal"><span class="codenumber">1.5</span> <span class="title">Exponential and Logarithmic Functions</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-1-5.html#sec-1-5-4" class="internal"><span class="codenumber">1.5.1</span> <span class="title">Exponential Functions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-1-5.html#ssec-1-5-log" class="internal"><span class="codenumber">1.5.2</span> <span class="title">Logarithmic Functions and Solving Exponential Equations</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-1-5.html#sec-1-5-6" class="internal"><span class="codenumber">1.5.3</span> <span class="title">Scaling and Fitting Data with Logarithms</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-1-5.html#sec-1-5-7" class="internal"><span class="codenumber">1.5.4</span> <span class="title">Summary</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-1-5.html#sec-1-5-8" class="internal"><span class="codenumber">1.5.5</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-1-6.html" class="internal"><span class="codenumber">1.6</span> <span class="title">Trigonometric Functions</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-1-6.html#sec-1-6-5" class="internal"><span class="codenumber">1.6.1</span> <span class="title">The Unit Circle and Trigonometric Functions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-1-6.html#sec-1-6-6" class="internal"><span class="codenumber">1.6.2</span> <span class="title">Graphs and Transformations of Trigonometric Functions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-1-6.html#sec-1-6-7" class="internal"><span class="codenumber">1.6.3</span> <span class="title">Summary</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-1-6.html#sec-1-6-8" class="internal"><span class="codenumber">1.6.4</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-1-7.html" class="internal"><span class="codenumber">1.7</span> <span class="title">Discrete-Time Dynamical Systems</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-1-7.html#sec-1-7-5" class="internal"><span class="codenumber">1.7.1</span> <span class="title">Representing Discrete-Time Dynamical Systems</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-1-7.html#sec-1-7-6" class="internal"><span class="codenumber">1.7.2</span> <span class="title">Solutions to Discrete-Time Dynamical Systems</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-1-7.html#sec-1-7-7" class="internal"><span class="codenumber">1.7.3</span> <span class="title">Summary</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-1-7.html#sec-1-7-8" class="internal"><span class="codenumber">1.7.4</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-1-8.html" class="internal"><span class="codenumber">1.8</span> <span class="title">Analyzing Discrete-Time Dynamical Systems</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-1-8.html#ssec-1-8-cob" class="internal"><span class="codenumber">1.8.1</span> <span class="title">Cob-Webbing</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-1-8.html#sec-1-8-6" class="internal"><span class="codenumber">1.8.2</span> <span class="title">Equilibrium Values and Stability</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-1-8.html#sec-1-8-7" class="internal"><span class="codenumber">1.8.3</span> <span class="title">Summary</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-1-8.html#sec-1-8-8" class="internal"><span class="codenumber">1.8.4</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-1-9.html" class="internal"><span class="codenumber">1.9</span> <span class="title">Applications: The Lung Model and Competing Species</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-1-9.html#sec-1-9-5" class="internal"><span class="codenumber">1.9.1</span> <span class="title">The Lung Model</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-1-9.html#ssec-1-9-competing" class="internal"><span class="codenumber">1.9.2</span> <span class="title">A Model for Competing Species</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-1-9.html#sec-1-9-7" class="internal"><span class="codenumber">1.9.3</span> <span class="title">Summary</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-1-9.html#sec-1-9-8" class="internal"><span class="codenumber">1.9.4</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ch-2.html" class="internal"><span class="codenumber">2</span> <span class="title">The Derivative</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-2-1.html" class="internal"><span class="codenumber">2.1</span> <span class="title">Limits of Functions</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-2-1.html#sec-2-1-5" class="internal"><span class="codenumber">2.1.1</span> <span class="title">The Notion of Limit</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-2-1.html#ssec-2-1-instvel" class="internal"><span class="codenumber">2.1.2</span> <span class="title">Instantaneous Velocity</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-2-1.html#sec-2-1-7" class="internal"><span class="codenumber">2.1.3</span> <span class="title">Summary</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-2-1.html#ez-1-2" class="internal"><span class="codenumber">2.1.4</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-1-3-derivative-pt.html" class="internal"><span class="codenumber">2.2</span> <span class="title">The Derivative of a Function at a Point</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-1-3-derivative-pt.html#sec-1-3-derivative-pt-5" class="internal"><span class="codenumber">2.2.1</span> <span class="title">The Derivative of a Function at a Point</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-1-3-derivative-pt.html#sec-1-3-derivative-pt-6" class="internal"><span class="codenumber">2.2.2</span> <span class="title">Summary</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-1-3-derivative-pt.html#ez-1-3" class="internal"><span class="codenumber">2.2.3</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-1-4-derivative-fxn.html" class="internal"><span class="codenumber">2.3</span> <span class="title">The Derivative Function</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-1-4-derivative-fxn.html#sec-1-4-derivative-fxn-5" class="internal"><span class="codenumber">2.3.1</span> <span class="title">How the derivative is itself a function</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-1-4-derivative-fxn.html#sec-1-4-derivative-fxn-6" class="internal"><span class="codenumber">2.3.2</span> <span class="title">Summary</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-1-4-derivative-fxn.html#ez-1-4" class="internal"><span class="codenumber">2.3.3</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-1-6-second-d.html" class="internal"><span class="codenumber">2.4</span> <span class="title">The Second Derivative</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-1-6-second-d.html#sec-1-6-second-d-5" class="internal"><span class="codenumber">2.4.1</span> <span class="title">Increasing or decreasing</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-1-6-second-d.html#sec-1-6-second-d-6" class="internal"><span class="codenumber">2.4.2</span> <span class="title">The Second Derivative</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-1-6-second-d.html#sec-1-6-second-d-7" class="internal"><span class="codenumber">2.4.3</span> <span class="title">Concavity</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-1-6-second-d.html#sec-1-6-second-d-8" class="internal"><span class="codenumber">2.4.4</span> <span class="title">Summary</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-1-6-second-d.html#ez-1-6" class="internal"><span class="codenumber">2.4.5</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-2-1-elem-rules.html" class="internal"><span class="codenumber">2.5</span> <span class="title">Elementary Derivative Rules</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-2-1-elem-rules.html#sec-2-1-elem-rules-4" class="internal"><span class="codenumber">2.5.1</span> <span class="title">Some Key Notation</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-2-1-elem-rules.html#sec-2-1-elem-rules-5" class="internal"><span class="codenumber">2.5.2</span> <span class="title">Constant, Power, and Exponential Functions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-2-1-elem-rules.html#ssec-2-5-cmsum" class="internal"><span class="codenumber">2.5.3</span> <span class="title">Constant Multiples and Sums of Functions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-2-1-elem-rules.html#sec-2-1-elem-rules-7" class="internal"><span class="codenumber">2.5.4</span> <span class="title">Summary</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-2-1-elem-rules.html#ez-2-1" class="internal"><span class="codenumber">2.5.5</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-2-2-sin-cos.html" class="internal"><span class="codenumber">2.6</span> <span class="title">Derivatives of the Sine and Cosine Functions</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-2-2-sin-cos.html#sec-2-2-sin-cos-5" class="internal"><span class="codenumber">2.6.1</span> <span class="title">The sine and cosine functions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-2-2-sin-cos.html#sec-2-2-sin-cos-6" class="internal"><span class="codenumber">2.6.2</span> <span class="title">Summary</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-2-2-sin-cos.html#ez-2-2" class="internal"><span class="codenumber">2.6.3</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-2-3-prod-quot.html" class="internal"><span class="codenumber">2.7</span> <span class="title">Derivatives of Products and Quotients</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-2-3-prod-quot.html#sec-2-3-prod-quot-5" class="internal"><span class="codenumber">2.7.1</span> <span class="title">The product rule</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-2-3-prod-quot.html#sec-2-3-prod-quot-6" class="internal"><span class="codenumber">2.7.2</span> <span class="title">The quotient rule</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-2-3-prod-quot.html#sec-2-3-prod-quot-7" class="internal"><span class="codenumber">2.7.3</span> <span class="title">Combining rules</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-2-3-prod-quot.html#sec-2-3-prod-quot-8" class="internal"><span class="codenumber">2.7.4</span> <span class="title">Summary</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-2-3-prod-quot.html#ez-2-3" class="internal"><span class="codenumber">2.7.5</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-2-5-chain.html" class="internal"><span class="codenumber">2.8</span> <span class="title">Derivatives of Compositions</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-2-5-chain.html#sec-2-5-chain-5" class="internal"><span class="codenumber">2.8.1</span> <span class="title">The chain rule</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-2-5-chain.html#sec-2-5-chain-6" class="internal"><span class="codenumber">2.8.2</span> <span class="title">Using multiple rules simultaneously</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-2-5-chain.html#sec-2-5-chain-7" class="internal"><span class="codenumber">2.8.3</span> <span class="title">The composite version of basic function rules</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-2-5-chain.html#sec-2-5-chain-8" class="internal"><span class="codenumber">2.8.4</span> <span class="title">Summary</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-2-5-chain.html#ez-2-5" class="internal"><span class="codenumber">2.8.5</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-2-6-inverse.html" class="internal"><span class="codenumber">2.9</span> <span class="title">Derivatives of Inverse Functions</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-2-6-inverse.html#sec-2-6-inverse-5" class="internal"><span class="codenumber">2.9.1</span> <span class="title">Basic facts about inverse functions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-2-6-inverse.html#sec-2-6-inverse-6" class="internal"><span class="codenumber">2.9.2</span> <span class="title">The derivative of the natural logarithm function</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-2-6-inverse.html#sec-2-6-inverse-7" class="internal"><span class="codenumber">2.9.3</span> <span class="title">The link between the derivative of a function and the derivative of its inverse</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-2-6-inverse.html#sec-2-6-inverse-8" class="internal"><span class="codenumber">2.9.4</span> <span class="title">Summary</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-2-6-inverse.html#ez-2-6" class="internal"><span class="codenumber">2.9.5</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ch-3.html" class="internal"><span class="codenumber">3</span> <span class="title">Using the Derivative</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-1-8-tan-line-approx.html" class="internal"><span class="codenumber">3.1</span> <span class="title">Linear and Quadratic Approximation</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-1-8-tan-line-approx.html#sec-1-8-tan-line-approx-5" class="internal"><span class="codenumber">3.1.1</span> <span class="title">The tangent line</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-1-8-tan-line-approx.html#sec-1-8-tan-line-approx-6" class="internal"><span class="codenumber">3.1.2</span> <span class="title">Linear Approximation</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-1-8-tan-line-approx.html#sec-1-8-tan-line-approx-7" class="internal"><span class="codenumber">3.1.3</span> <span class="title">Quadratic Approximation</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-1-8-tan-line-approx.html#sec-1-8-tan-line-approx-8" class="internal"><span class="codenumber">3.1.4</span> <span class="title">Summary</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-1-8-tan-line-approx.html#ez-1-8" class="internal"><span class="codenumber">3.1.5</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-3-2.html" class="internal"><span class="codenumber">3.2</span> <span class="title">The Stability Theorem</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-3-2.html#sec-3-2-5" class="internal"><span class="codenumber">3.2.1</span> <span class="title">Testing stability of equilibria using the derivative</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-3-2.html#ssec-3-2-inconclusive" class="internal"><span class="codenumber">3.2.2</span> <span class="title">An inconclusive case using the derivative</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-3-2.html#sec-3-2-7" class="internal"><span class="codenumber">3.2.3</span> <span class="title">Summary</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-3-2.html#sec-3-2-8" class="internal"><span class="codenumber">3.2.4</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-3-3.html" class="internal"><span class="codenumber">3.3</span> <span class="title">The Logistic Discrete-Time Dynamical System</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-3-3.html#sec-3-3-6" class="internal"><span class="codenumber">3.3.1</span> <span class="title">The logistic map</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-3-3.html#sec-3-3-7" class="internal"><span class="codenumber">3.3.2</span> <span class="title">Equilibrium values and stability of the logistic map</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-3-3.html#sec-3-3-8" class="internal"><span class="codenumber">3.3.3</span> <span class="title">Summary</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-3-3.html#sec-3-3-9" class="internal"><span class="codenumber">3.3.4</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-3-1-tests.html" class="internal"><span class="codenumber">3.4</span> <span class="title">Identifying Extreme Values of Functions</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-3-1-tests.html#sec-3-1-tests-5" class="internal"><span class="codenumber">3.4.1</span> <span class="title">Critical numbers and the first derivative test</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-3-1-tests.html#sec-3-1-tests-6" class="internal"><span class="codenumber">3.4.2</span> <span class="title">The second derivative test</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-3-1-tests.html#sec-3-1-tests-7" class="internal"><span class="codenumber">3.4.3</span> <span class="title">Summary</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-3-1-tests.html#ez-3-1" class="internal"><span class="codenumber">3.4.4</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-3-3-optimization.html" class="internal"><span class="codenumber">3.5</span> <span class="title">Global Optimization and Applications</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-3-3-optimization.html#sec-3-3-optimization-5" class="internal"><span class="codenumber">3.5.1</span> <span class="title">Global Optimization</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-3-3-optimization.html#sec-3-3-optimization-6" class="internal"><span class="codenumber">3.5.2</span> <span class="title">Applications</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-3-3-optimization.html#sec-3-3-optimization-7" class="internal"><span class="codenumber">3.5.3</span> <span class="title">Summary</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-3-3-optimization.html#ez-3-3" class="internal"><span class="codenumber">3.5.4</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-2-8-LHR.html" class="internal"><span class="codenumber">3.6</span> <span class="title">Limits: L’Hôpital’s Rule</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-2-8-LHR.html#sec-2-8-LHR-5" class="internal"><span class="codenumber">3.6.1</span> <span class="title">Using derivatives to evaluate indeterminate limits of the form <span class="process-math">\(\frac{0}{0}\text{.}\)</span></span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-2-8-LHR.html#ssec-3-6-limitsinfty" class="internal"><span class="codenumber">3.6.2</span> <span class="title">Limits involving <span class="process-math">\(\infty\)</span></span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-2-8-LHR.html#sec-2-8-LHR-7" class="internal"><span class="codenumber">3.6.3</span> <span class="title">Summary</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-2-8-LHR.html#ez-2-8" class="internal"><span class="codenumber">3.6.4</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-3-6.html" class="internal"><span class="codenumber">3.7</span> <span class="title">Limits: Leading Behaviors</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-3-6.html#sec-3-6-6" class="internal"><span class="codenumber">3.7.1</span> <span class="title">Leading Behavior at <span class="process-math">\(\infty\)</span></span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-3-6.html#sec-3-6-7" class="internal"><span class="codenumber">3.7.2</span> <span class="title">Leading Behavior at <span class="process-math">\(-\infty\)</span></span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-3-6.html#sec-3-6-8" class="internal"><span class="codenumber">3.7.3</span> <span class="title">Summary</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-3-6.html#sec-3-6-9" class="internal"><span class="codenumber">3.7.4</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ch-4.html" class="internal"><span class="codenumber">4</span> <span class="title">Continuous-Time Dynamical Systems</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-4-1.html" class="internal"><span class="codenumber">4.1</span> <span class="title">Introduction to Differential Equations and Antiderivatives</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-1.html#sec-4-1-5" class="internal"><span class="codenumber">4.1.1</span> <span class="title">Differential Equations</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-1.html#sec-4-1-6" class="internal"><span class="codenumber">4.1.2</span> <span class="title">Solutions to Differential Equations and Antiderivatives</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-1.html#sec-4-1-7" class="internal"><span class="codenumber">4.1.3</span> <span class="title">Summary</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-4-1.html#sec-4-1-8" class="internal"><span class="codenumber">4.1.4</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-4-2.html" class="internal"><span class="codenumber">4.2</span> <span class="title">Solving Pure-Time Differential Equations</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-2.html#sec-4-2-5" class="internal"><span class="codenumber">4.2.1</span> <span class="title">Basic Antiderivatives</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-2.html#ssec-4-2-usub" class="internal"><span class="codenumber">4.2.2</span> <span class="title"><span class="process-math">\(u\)</span>-Substitution</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-2.html#sec-4-2-7" class="internal"><span class="codenumber">4.2.3</span> <span class="title">Summary</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-4-2.html#sec-4-2-8" class="internal"><span class="codenumber">4.2.4</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-4-3.html" class="internal"><span class="codenumber">4.3</span> <span class="title">Riemann Sums</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-3.html#sec-4-3-5" class="internal"><span class="codenumber">4.3.1</span> <span class="title">Areas, Distance, and Displacement</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-3.html#sec-4-3-7" class="internal"><span class="codenumber">4.3.2</span> <span class="title">Sigma Notation</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-3.html#sec-4-3-8" class="internal"><span class="codenumber">4.3.3</span> <span class="title">Riemann Sums</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-3.html#sec-4-3-9" class="internal"><span class="codenumber">4.3.4</span> <span class="title">When the function is sometimes negative</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-3.html#sec-4-3-10" class="internal"><span class="codenumber">4.3.5</span> <span class="title">Summary</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-4-3.html#ez-4-2" class="internal"><span class="codenumber">4.3.6</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-4-4.html" class="internal"><span class="codenumber">4.4</span> <span class="title">The Definite Integral</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-4.html#sec-4-4-5" class="internal"><span class="codenumber">4.4.1</span> <span class="title">The definition of the definite integral</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-4.html#sec-4-4-6" class="internal"><span class="codenumber">4.4.2</span> <span class="title">Some properties of the definite integral</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-4.html#sec-4-4-7" class="internal"><span class="codenumber">4.4.3</span> <span class="title">How the definite integral is connected to a function’s average value</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-4.html#sec-4-4-8" class="internal"><span class="codenumber">4.4.4</span> <span class="title">Summary</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-4-4.html#ez-4-3" class="internal"><span class="codenumber">4.4.5</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-4-5.html" class="internal"><span class="codenumber">4.5</span> <span class="title">The Fundamental Theorem of Calculus</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-5.html#sec-4-5-6" class="internal"><span class="codenumber">4.5.1</span> <span class="title">The Fundamental Theorem of Calculus</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-5.html#sec-4-5-7" class="internal"><span class="codenumber">4.5.2</span> <span class="title">Evaluating Definite Integrals via <span class="process-math">\(u\)</span>-substitution</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-5.html#sec-4-5-8" class="internal"><span class="codenumber">4.5.3</span> <span class="title">The total change theorem</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-5.html#sec-4-5-9" class="internal"><span class="codenumber">4.5.4</span> <span class="title">Summary</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-4-5.html#sec-4-5-10" class="internal"><span class="codenumber">4.5.5</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-4-6.html" class="internal"><span class="codenumber">4.6</span> <span class="title">Approximations of Solutions</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-6.html#sec-4-6-5" class="internal"><span class="codenumber">4.6.1</span> <span class="title">Euler’s Method</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-6.html#sec-4-6-6" class="internal"><span class="codenumber">4.6.2</span> <span class="title">The error in Euler’s method</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-6.html#sec-4-6-7" class="internal"><span class="codenumber">4.6.3</span> <span class="title">Summary</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-4-6.html#ez-7-3" class="internal"><span class="codenumber">4.6.4</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-backmatter">
+<div class="toc-title-box"><a href="meta_backmatter.html" class="internal"><span class="title">Backmatter</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-solutions"><div class="toc-title-box"><a href="exercises-answers.html" class="internal"><span class="codenumber">A</span> <span class="title">Answers to Selected Exercises</span></a></div></li>
+<li class="toc-item toc-appendix"><div class="toc-title-box"><a href="meta_backmatter-3.html" class="internal"><span class="codenumber">B</span> <span class="title">List of Symbols</span></a></div></li>
+<li class="toc-item toc-index"><div class="toc-title-box"><a href="meta_backmatter-4.html" class="internal"><span class="title">Index</span></a></div></li>
+<li class="toc-item toc-colophon"><div class="toc-title-box"><a href="meta_backmatter-5.html" class="internal"><span class="title">Colophon</span></a></div></li>
+</ul>
+</li>
+</ul></nav></div>
+<main class="ptx-main"><div id="ptx-content" class="ptx-content"><section xmlns:xlink="http://www.w3.org/1999/xlink" class="section" id="sec-1-2-functions"><h2 class="heading hide-type">
+<span class="type">Section</span><span class="space"> </span><span class="codenumber">1.2</span><span class="space"> </span><span class="title">Functions</span>
+</h2>
+<article class="objectives goal-like" id="obj-1-2"><h3 class="heading"><span class="type">Motivating Questions</span></h3>
+<ul class="disc" id="obj-1-2-1">
+<li id="obj-1-2-1-1"><div class="para" id="obj-1-2-1-1-1">What makes a relationship a function?</div></li>
+<li id="obj-1-2-1-2"><div class="para" id="obj-1-2-1-2-1">What are different ways we can describe a function?</div></li>
+<li id="obj-1-2-1-3"><div class="para" id="obj-1-2-1-3-1">What does it mean when there are letters in a model?</div></li>
+<li id="obj-1-2-1-4"><div class="para" id="obj-1-2-1-4-1">What are different ways that we can combine functions?</div></li>
+<li id="obj-1-2-1-5"><div class="para" id="obj-1-2-1-5-1">What does it mean for a function to be invertible?</div></li>
+<li id="obj-1-2-1-6"><div class="para" id="obj-1-2-1-6-1">How can we describe how a function changes over time?</div></li>
+</ul></article><section class="introduction" id="sec-1-2-functions-3"><div class="para" id="sec-1-2-functions-3-1">Functions are a core concept in the study of calculus. In this section we outline common representations of functions and some general properties that we will use throughout future sections.</div></section><article class="exploration project-like" id="wu-1-2"><h3 class="heading">
+<span class="type">Warm-Up</span><span class="space"> </span><span class="codenumber">1.2.1</span><span class="period">.</span>
+</h3>
+<ol class="lower-alpha ol-marker-1 cols2" id="wu-1-2-1">
+<li id="wu-1-2-1-1"><div class="para" id="p-derived-wu-1-2-1-1"><span class="process-math">\(\displaystyle y = x + 1 \)</span></div></li>
+<li id="wu-1-2-1-2"><div class="para" id="p-derived-wu-1-2-1-2"><span class="process-math">\(\displaystyle y^2 = x +1\)</span></div></li>
+</ol>
+<div class="para" id="wu-1-2-2">For each equation above, fill in the following tables: <iframe src="https://www.desmos.com/calculator/do5rormmpj" id="wu-1-2-2-1" width="1020" height="510"></iframe>
+</div></article><section class="subsection" id="sec-1-2-functions-5"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">1.2.1</span><span class="space"> </span><span class="title">Functions and their Representations</span>
+</h3>
+<div class="para" id="sec-1-2-functions-5-2">Understanding systems is all about being able to describe the <em class="emphasis">relationship</em> between the quantities involved. The population of a species is related to time, the energy an animal exerts when running is related to its speed, and the growth of a plant is related to its exposure to sunlight. Equations, tables, and graphs are all mathematical objects that help us represent relationships between quantities, and it is beneficial to be able to represent a single relationship in multiple different ways.</div>
+<div class="para" id="sec-1-2-functions-5-3">The systems we are typically interested in are a special type of relationship called a <em class="emphasis">function</em>:</div>
+<article class="definition definition-like" id="def-1-2-function"><h4 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">1.2.1</span><span class="period">.</span><span class="space"> </span><span class="title">Function.</span>
+</h4>
+<div class="para" id="def-1-2-function-3">Given two related quantities <span class="process-math">\(x\)</span> and <span class="process-math">\(y\text{,}\)</span> we say <dfn class="terminology"><span class="process-math">\(y\)</span> is a  function of <span class="process-math">\(x\)</span></dfn> if every <span class="process-math">\(x\)</span> value in the relationship is related to exactly one <span class="process-math">\(y\)</span> value.</div></article><div class="para" id="sec-1-2-functions-5-5">Using this terminology with our previous illustrations, we would say a population is a function of time, energy is a function of speed, and the height of a plant is a function of sunlight exposure. Notice that there is an ordering implied when we talk about function relationships.  When we say “<span class="process-math">\(y\)</span> is a  function of <span class="process-math">\(x\)</span>”, we call <span class="process-math">\(x\)</span> the <dfn class="terminology">input</dfn> (or <dfn class="terminology">independent variable</dfn>) and <span class="process-math">\(y\)</span> the <dfn class="terminology">output</dfn> (or <dfn class="terminology">dependent variable</dfn>).</div>
+<article class="example example-like" id="ex-1-2-reps"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">1.2.2</span><span class="period">.</span>
+</h4>
+<a href="sec-1-2-functions.html#wu-1-2" class="xref" data-knowl="./knowl/xref/wu-1-2.html" data-reveal-label="Reveal" data-close-label="Close" title="Warm-Up 1.2.1">Warm-Up 1.2.1</a><span class="process-math">\(y\)</span><span class="process-math">\(x\)</span><ol class="lower-alpha ol-marker-1" id="ex-1-2-reps-4">
+<li id="ex-1-2-reps-4-1">
+<div class="para" id="ex-1-2-reps-4-1-1">In <span class="process-math">\(y = x+1\text{,}\)</span> <span class="process-math">\(y\)</span> is a function of <span class="process-math">\(x\text{.}\)</span> Our reasoning will sound different depending on whether you are looking at the equation, table, or graph, but in all cases our reasoning is based on <a href="sec-1-2-functions.html#def-1-2-function" class="xref" data-knowl="./knowl/xref/def-1-2-function.html" data-reveal-label="Reveal" data-close-label="Close" title="Definition 1.2.1: Function">Definition 1.2.1</a>:</div>
+<div class="para logical" id="ex-1-2-reps-4-1-2"><ul class="disc" id="ex-1-2-reps-4-1-2-1">
+<li id="ex-1-2-reps-4-1-2-1-1"><div class="para" id="p-derived-ex-1-2-reps-4-1-2-1-1">
+<em class="emphasis">Equation:</em> For an <span class="process-math">\(x\)</span> value, the corresponding <span class="process-math">\(y\)</span> value is obtained by adding one. This gives a unique <span class="process-math">\(y\)</span> value for every <span class="process-math">\(x\)</span> value.</div></li>
+<li id="ex-1-2-reps-4-1-2-1-2">
+<div class="para" id="ex-1-2-reps-4-1-2-1-2-1">
+<em class="emphasis">Table:</em> Every <span class="process-math">\(x\)</span> value in the table is listed exactly once. This means each <span class="process-math">\(x\)</span> value in the table is associated with exactly one <span class="process-math">\(y\)</span> value.</div>
+<div class="para" id="ex-1-2-reps-4-1-2-1-2-2">
+<em class="alert">Warning:</em> When relationships are represented via tables, it is possible you have limited information about the relationship. Unless you are told that the table shows every <span class="process-math">\(x,y\)</span> pair in the relationship, you should assume there may be other <span class="process-math">\(x,y\)</span> pairs in the relationship not listed in the table.</div>
+</li>
+<li id="ex-1-2-reps-4-1-2-1-3"><div class="para" id="p-derived-ex-1-2-reps-4-1-2-1-3">
+<em class="emphasis">Graph:</em> If you pick an <span class="process-math">\(x\)</span> value and draw a vertical line at that <span class="process-math">\(x\)</span> value, you will intersect the graph exactly once. This means each <span class="process-math">\(x\)</span> value corresponds to exactly one <span class="process-math">\(y\)</span> value. This is known as the <dfn class="terminology">vertical line test</dfn>  to determine if the graph of a relationship represents a function relationship.</div></li>
+</ul></div>
+</li>
+<li id="ex-1-2-reps-4-2">
+<div class="para" id="ex-1-2-reps-4-2-1">In <span class="process-math">\(y^2 = x+1\text{,}\)</span> <span class="process-math">\(y\)</span> is <em class="emphasis">not</em> a function of <span class="process-math">\(x\text{.}\)</span> Our reasoning will sound different depending on whether you are looking at the equation, table, or graph, but in all cases our reasoning is based on <a href="sec-1-2-functions.html#def-1-2-function" class="xref" data-knowl="./knowl/xref/def-1-2-function.html" data-reveal-label="Reveal" data-close-label="Close" title="Definition 1.2.1: Function">Definition 1.2.1</a>:</div>
+<div class="para logical" id="ex-1-2-reps-4-2-2"><ul class="disc" id="ex-1-2-reps-4-2-2-1">
+<li id="ex-1-2-reps-4-2-2-1-1"><div class="para" id="p-derived-ex-1-2-reps-4-2-2-1-1">
+<em class="emphasis">Equation:</em> For an <span class="process-math">\(x\)</span> value, the corresponding <span class="process-math">\(y\)</span> value is obtained by the rule <span class="process-math">\(\pm \sqrt{x+1}\text{.}\)</span> This means that when <span class="process-math">\(x=0\text{,}\)</span> for example, the associated <span class="process-math">\(y\)</span> values are <span class="process-math">\(\pm 1\text{.}\)</span> This means there is an <span class="process-math">\(x\)</span> value associated to more than one <span class="process-math">\(y\)</span> value, and so this relationship is not a function.</div></li>
+<li id="ex-1-2-reps-4-2-2-1-2"><div class="para" id="p-derived-ex-1-2-reps-4-2-2-1-2">
+<em class="emphasis">Table:</em> There are <span class="process-math">\(x\)</span> values in the table listed more than once, and associated with different <span class="process-math">\(y\)</span> values. This means there are <span class="process-math">\(x\)</span> values in the relationship associated with more than one <span class="process-math">\(y\)</span> value.</div></li>
+<li id="ex-1-2-reps-4-2-2-1-3"><div class="para" id="p-derived-ex-1-2-reps-4-2-2-1-3">
+<em class="emphasis">Graph:</em> You can pick an <span class="process-math">\(x\)</span> value and draw a vertical line at that <span class="process-math">\(x\)</span> value such that you intersect the graph more than once. This means you have found an <span class="process-math">\(x\)</span> value which corresponds to more than one <span class="process-math">\(y\)</span> value. This is known as the <dfn class="terminology">vertical line test</dfn> to determine if the graph of a relationship represents a function relationship.</div></li>
+</ul></div>
+</li>
+</ol></article><article class="activity project-like" id="act-1-2-func"><h4 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">1.2.2</span><span class="period">.</span><span class="space"> </span><span class="title">Function Relationships.</span>
+</h4>
+<div class="para" id="act-1-2-func-2">Practice using <a href="sec-1-2-functions.html#def-1-2-function" class="xref" data-knowl="./knowl/xref/def-1-2-function.html" data-reveal-label="Reveal" data-close-label="Close" title="Definition 1.2.1: Function">Definition 1.2.1</a> by answering each question below. Focus on verbalizing your thought process. Your reasoning is more important than your final answer.</div>
+<ol class="decimal" id="act-1-2-func-3">
+<li id="act-1-2-func-3-1"><div class="para" id="p-derived-act-1-2-func-3-1">In the equation <span class="process-math">\(y^2 = x+1\text{,}\)</span> is <span class="process-math">\(x\)</span> a function of <span class="process-math">\(y\text{?}\)</span>
+</div></li>
+<li id="act-1-2-func-3-2"><div class="para" id="p-derived-act-1-2-func-3-2">Is student height a function of student name?</div></li>
+<li id="act-1-2-func-3-3">
+<div class="para" id="act-1-2-func-3-3-1">For each graph below, is <span class="process-math">\(y\)</span> a function of <span class="process-math">\(x\text{?}\)</span>
+</div>
+<div class="para logical" id="act-1-2-func-3-3-2"><ul class="disc" id="act-1-2-func-3-3-2-1">
+<li id="act-1-2-func-3-3-2-1-1"><div class="image-box" style="width: 60%; margin-left: 20%; margin-right: 20%;"><img src="external/images/func1.png" class="contained" alt="A line which is broken at x equal 2. There is a closed dot at y equal -2 and an open dot at y equal 1."></div></li>
+<li id="act-1-2-func-3-3-2-1-2"><div class="image-box" style="width: 60%; margin-left: 20%; margin-right: 20%;"><img src="external/images/func2.png" class="contained" alt="A line which is broken at x equal 2. There is a closed dot at y equal -2 and a closed dot at y equal 1."></div></li>
+<li id="act-1-2-func-3-3-2-1-3"><div class="image-box" style="width: 60%; margin-left: 20%; margin-right: 20%;"><img src="external/images/func3.png" class="contained" alt="A line which is broken at x equal 2. There is an open dot at y equal -2 and an open dot at y equal 1."></div></li>
+</ul></div>
+</li>
+</ol></article><div class="para" id="sec-1-2-functions-5-8">The graphs in <a href="sec-1-2-functions.html#act-1-2-func" class="xref" data-knowl="./knowl/xref/act-1-2-func.html" data-reveal-label="Reveal" data-close-label="Close" title="Activity 1.2.2: Function Relationships">Activity 1.2.2</a> are very similar, but they all represent different relationships. Of those that are functions, they differ in their domain and range, which we define below:</div>
+<article class="definition definition-like" id="sec-1-2-functions-5-9"><h4 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">1.2.3</span><span class="period">.</span><span class="space"> </span><span class="title">Domain and Range.</span>
+</h4>
+<div class="para logical" id="sec-1-2-functions-5-9-4"><ul class="disc" id="sec-1-2-functions-5-9-4-1">
+<li id="sec-1-2-functions-5-9-4-1-1"><div class="para" id="p-derived-sec-1-2-functions-5-9-4-1-1">The <dfn class="terminology">domain of a function</dfn> is the set of all possible input values.</div></li>
+<li id="sec-1-2-functions-5-9-4-1-2"><div class="para" id="p-derived-sec-1-2-functions-5-9-4-1-2">The <dfn class="terminology">range of a function</dfn> is the set of all possible output values.</div></li>
+</ul></div></article><article class="remark remark-like" id="sec-1-2-functions-5-10"><h4 class="heading">
+<span class="type">Remark</span><span class="space"> </span><span class="codenumber">1.2.4</span><span class="period">.</span>
+</h4>
+<div class="para logical" id="sec-1-2-functions-5-10-1">
+<div class="para">The domain of a function is typically determined by one or more of the following:</div>
+<ul class="disc" id="sec-1-2-functions-5-10-1-1">
+<li id="sec-1-2-functions-5-10-1-1-1"><div class="para" id="p-derived-sec-1-2-functions-5-10-1-1-1">
+<em class="emphasis">Operations:</em> There may be operations used to define a function which are undefined for specific inputs. For example, in <span class="process-math">\(y=\frac{1}{x}\text{,}\)</span> <span class="process-math">\(x=0\)</span> is not in the domain because the operation of division by <span class="process-math">\(0\)</span> is not defined.</div></li>
+<li id="sec-1-2-functions-5-10-1-1-2"><div class="para" id="p-derived-sec-1-2-functions-5-10-1-1-2">
+<em class="emphasis">Context:</em> When a function is used as a model, there may be some input values that don’t make sense for what the function represents. For example, if height is a function of time given by <span class="process-math">\(h = t^2\text{,}\)</span> negative <span class="process-math">\(t\)</span> values are not in the domain even though operationally the function is defined for negative <span class="process-math">\(t\)</span> values.</div></li>
+</ul>
+</div></article></section><section class="subsection" id="ssec-1-2-rec"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">1.2.2</span><span class="space"> </span><span class="title">Explicit and Recursive Functions</span>
+</h3>
+<div class="para logical" id="ssec-1-2-rec-2">
+<div class="para">When given a function relationship, there are two main ways we might express that relationship:</div>
+<ol class="decimal" id="ssec-1-2-rec-2-1">
+<li id="ssec-1-2-rec-2-1-1"><div class="para" id="p-derived-ssec-1-2-rec-2-1-1">
+<dfn class="terminology">Explicit Function</dfn>:  An explicit function describes the output (or dependent variable) explicitly in terms of the input (or independent variable). For example, <span class="process-math">\(y=x+1\)</span> is an explicit function. However, moving forward we will most often write explicit functions using <dfn class="terminology">function notation</dfn>, which means we write the output (dependent variable) as <span class="process-math">\(f(x)\)</span> instead of <span class="process-math">\(y\text{.}\)</span> The function <span class="process-math">\(y=x+1\)</span> is written using function notation as <span class="process-math">\(f(x) = x+1\text{.}\)</span> Note that we may name the function whatever we’d like (it does not have to be “<span class="process-math">\(f\)</span>”). For example, if the output was “population” and the input was “time”, we might call our function <span class="process-math">\(p(t)\text{.}\)</span>
+</div></li>
+<li id="ssec-1-2-rec-2-1-2"><div class="para" id="p-derived-ssec-1-2-rec-2-1-2">
+<dfn class="terminology">Recursive Function</dfn>:  A recursive function is typically used when modeling discrete systems, and describes the next output (or dependent variable) in terms of the current output (or dependent variable). For example, <span class="process-math">\(p_{t+1} = p_t +2 \)</span> is a recursive function. In words, this function says “the next output is equal to the current output plus two.” Notice that this relationship does have an independent variable <span class="process-math">\(t\text{,}\)</span> it is just not used in describing the relationship like in an explicit function.</div></li>
+</ol>
+</div></section><section class="subsection" id="sec-1-2-functions-7"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">1.2.3</span><span class="space"> </span><span class="title">Variables and Parameters</span>
+</h3>
+<div class="para" id="sec-1-2-functions-7-2">As illustrated in <a href="sec-1-1-bio-math.html#x-1-1-models" class="xref" data-knowl="./knowl/xref/x-1-1-models.html" data-reveal-label="Reveal" data-close-label="Close" title="Exercise 1.1.4.2">Exercise 1.1.4.2</a>, modeling real systems typically involves representing quantities with letters and numbers. It is important that we know how to interpret the letters that we see in function representations.</div>
+<article class="definition definition-like" id="sec-1-2-functions-7-3"><h4 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">1.2.5</span><span class="period">.</span><span class="space"> </span><span class="title">Variable and Parameter.</span>
+</h4>
+<ul class="disc" id="sec-1-2-functions-7-3-4">
+<li id="sec-1-2-functions-7-3-4-1"><div class="para" id="p-derived-sec-1-2-functions-7-3-4-1">A <dfn class="terminology">variable</dfn> represents a quantity that can change in a fixed model.</div></li>
+<li id="sec-1-2-functions-7-3-4-2"><div class="para" id="p-derived-sec-1-2-functions-7-3-4-2">A <dfn class="terminology">parameter</dfn> represents a quantity that is constant in a fixed model.</div></li>
+</ul></article><article class="example example-like" id="sec-1-2-functions-7-4"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">1.2.6</span><span class="period">.</span><span class="space"> </span><span class="title">Variables and Parameters.</span>
+</h4>
+<div class="para" id="sec-1-2-functions-7-4-2">The function <span class="process-math">\(h(t)=mt+b\)</span> describes a relationship whose graph looks like a straight line. One benefit of using function notation is that it clearly indicates to us which letters represent variables. The notation “<span class="process-math">\(h(t)\)</span>” tells us that <span class="process-math">\(t\)</span> is the input (or independent variable), and <span class="process-math">\(h(t)\)</span> is the output (or dependent variable). This means that for a fixed line, the input value <span class="process-math">\(t\)</span> can change, and <span class="process-math">\(h(t)\)</span> changes along with it.</div>
+<div class="para" id="sec-1-2-functions-7-4-3">Once we identify the independent and dependent variable, every other letter represents a parameter. In this example, <span class="process-math">\(m\)</span> and <span class="process-math">\(b\)</span> are parameters. This means that for a fixed line, <span class="process-math">\(m\)</span> and <span class="process-math">\(b\)</span> are constant values.</div></article><div class="para" id="sec-1-2-functions-7-5">One benefit of using parameters is that it allows us to describe many models at once, and we can then analyze how a specific system behaves based on its parameter values.</div></section><section class="subsection" id="ssec-1-2-comb"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">1.2.4</span><span class="space"> </span><span class="title">Combinations of Functions</span>
+</h3>
+<div class="para" id="ssec-1-2-comb-2">Just as there are ways to combine two numbers to get a new number, we can also combine two functions to get a new function. Given two functions <span class="process-math">\(g(x)\)</span> and <span class="process-math">\(k(x)\text{,}\)</span> we can define the following combinations: <article class="definition definition-like" id="ssec-1-2-comb-2-3"><h4 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">1.2.7</span><span class="period">.</span><span class="space"> </span><span class="title">Combining Functions.</span>
+</h4>
+<ul class="disc" id="ssec-1-2-comb-2-3-9">
+<li id="ssec-1-2-comb-2-3-9-1"><div class="para" id="p-derived-ssec-1-2-comb-2-3-9-1">
+<dfn class="terminology">Sum</dfn>: <span class="process-math">\((g+k)(x) = g(x) + k(x)\)</span>
+</div></li>
+<li id="ssec-1-2-comb-2-3-9-2"><div class="para" id="p-derived-ssec-1-2-comb-2-3-9-2">
+<dfn class="terminology">Difference</dfn>: <span class="process-math">\((g-k)(x) = g(x) - k(x)\)</span>
+</div></li>
+<li id="ssec-1-2-comb-2-3-9-3"><div class="para" id="p-derived-ssec-1-2-comb-2-3-9-3">
+<dfn class="terminology">Product</dfn>: <span class="process-math">\((g\cdot k)(x) = g(x) \cdot k(x)\)</span>
+</div></li>
+<li id="ssec-1-2-comb-2-3-9-4"><div class="para" id="p-derived-ssec-1-2-comb-2-3-9-4">
+<dfn class="terminology">Quotient</dfn>: <span class="process-math">\(\left(\dfrac{g}{k}\right)(x) = \dfrac{g(x)}{k(x)}\)</span>
+</div></li>
+<li id="ssec-1-2-comb-2-3-9-5"><div class="para" id="p-derived-ssec-1-2-comb-2-3-9-5">
+<dfn class="terminology">Composition</dfn>: <span class="process-math">\((g \circ k)(x) = g(k(x))\)</span>
+</div></li>
+</ul></article>
+</div>
+<article class="example example-like" id="ex-1-2-comb"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">1.2.8</span><span class="period">.</span><span class="space"> </span><span class="title">Combining Functions.</span>
+</h4>
+<div class="para" id="ex-1-2-comb-2">Let <span class="process-math">\(f(x) = x^2 +1\)</span> and <span class="process-math">\(g(x)=2x - 3\text{.}\)</span>
+</div>
+<ul class="disc" id="ex-1-2-comb-3">
+<li id="ex-1-2-comb-3-1"><div class="para" id="p-derived-ex-1-2-comb-3-1"><div class="displaymath process-math" id="ex-1-2-comb-3-1-1">
+\begin{align*}
+(f+g)(x) \amp= f(x) + g(x) \\
+\amp= (x^2+1) + (2x-3) \\
+\amp= x^2 + 2x -2
+\end{align*}
+</div></div></li>
+<li id="ex-1-2-comb-3-2"><div class="para" id="p-derived-ex-1-2-comb-3-2">
+<details class="ptx-footnote" aria-live="polite" id="ex-1-2-comb-3-2-1"><summary class="ptx-footnote__number" title="Footnote 1.2.1"><sup> 1 </sup></summary><div class="ptx-footnote__contents" id="ex-1-2-comb-3-2-1">Note the importance in using parentheses!</div></details><div class="displaymath process-math" id="ex-1-2-comb-3-2-2">
+\begin{align*}
+(f-g)(x) \amp= f(x) - g(x) \\
+\amp= (x^2+1) - (2x-3) \\
+\amp= x^2 - 2x +4 
+\end{align*}
+</div>
+</div></li>
+<li id="ex-1-2-comb-3-3"><div class="para" id="p-derived-ex-1-2-comb-3-3"><div class="displaymath process-math" id="ex-1-2-comb-3-3-1">
+\begin{align*}
+(f \cdot g)(x) \amp= f(x) \cdot g(x) \\
+\amp= (x^2+1) \cdot (2x-3) \\
+\amp= 2x^3- 3x^2 + 2x -3
+\end{align*}
+</div></div></li>
+<li id="ex-1-2-comb-3-4"><div class="para" id="p-derived-ex-1-2-comb-3-4"><div class="displaymath process-math" id="ex-1-2-comb-3-4-1">
+\begin{align*}
+\left(\dfrac{f}{g}\right)(x) \amp= \dfrac{f(x) }{ g(x)} \\
+\amp= \dfrac{(x^2+1)}{ (2x-3)} 
+\end{align*}
+</div></div></li>
+<li id="ex-1-2-comb-3-5"><div class="para" id="p-derived-ex-1-2-comb-3-5"><div class="displaymath process-math" id="ex-1-2-comb-3-5-1">
+\begin{align*}
+(f \circ g)(x) \amp= f(g(x)) \\
+\amp= g(x)^2+1 \\
+\amp= (2x-3)^2 +1\\
+\amp= 4x^2-12x+10
+\end{align*}
+</div></div></li>
+<li id="ex-1-2-comb-3-6"><div class="para" id="p-derived-ex-1-2-comb-3-6"><div class="displaymath process-math" id="ex-1-2-comb-3-6-1">
+\begin{align*}
+(g \circ f)(x) \amp= g(f(x)) \\
+\amp= 2f(x)-3 \\
+\amp= 2(x^2+1)-3\\
+\amp= 2x^2 -1
+\end{align*}
+</div></div></li>
+</ul></article><div class="para" id="ssec-1-2-comb-4">Composition is a way to combine functions that we cannot do with numbers, and allows us to “chain” multiple relationships together.</div>
+<article class="activity project-like" id="ssec-1-2-comb-5"><h4 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">1.2.3</span><span class="period">.</span><span class="space"> </span><span class="title">Composition.</span>
+</h4>
+<div class="para" id="ssec-1-2-comb-5-2">Let <span class="process-math">\(m(w)\)</span> be the number of mosquitos entering a house if <span class="process-math">\(w\)</span> windows are open, and <span class="process-math">\(b(m)\)</span> be the number of mosquito bites someone gets if there are <span class="process-math">\(m\)</span> mosquitos in a house.</div>
+<ol class="decimal" id="ssec-1-2-comb-5-3">
+<li id="ssec-1-2-comb-5-3-1"><div class="para" id="p-derived-ssec-1-2-comb-5-3-1">In this context, which composition makes sense: <span class="process-math">\(b \circ m\)</span> or <span class="process-math">\(m \circ b\text{?}\)</span>
+</div></li>
+<li id="ssec-1-2-comb-5-3-2"><div class="para" id="p-derived-ssec-1-2-comb-5-3-2">In words, what relationship does the composition that makes sense describe?</div></li>
+</ol></article></section><section class="subsection" id="ssec-1-2-inverse"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">1.2.5</span><span class="space"> </span><span class="title">Inverse Functions</span>
+</h3>
+<div class="para" id="ssec-1-2-inverse-2">We noticed in <a href="sec-1-2-functions.html#def-1-2-function" class="xref" data-knowl="./knowl/xref/def-1-2-function.html" data-reveal-label="Reveal" data-close-label="Close" title="Definition 1.2.1: Function">Definition 1.2.1</a> that there is an order implied in a function relationship. Depending on the question you would like to answer, the ordering of the function may or may not be desirable. For example, if you had a model where population was a function of time, and you wanted to know when the population would reach <span class="process-math">\(1,000\text{,}\)</span> this ordering would be desirable. However, if the population was decreasing and you wanted to know after how many years the population would become extinct, it may be desirable to have a model expressing time as a function of population. The property of being able to switch input and output and still have a function relationship is what we define below:</div>
+<article class="definition definition-like" id="ssec-1-2-inverse-3"><h4 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">1.2.9</span><span class="period">.</span><span class="space"> </span><span class="title">Inverse Function.</span>
+</h4>
+<div class="para" id="ssec-1-2-inverse-3-5">Let <span class="process-math">\(f(x)=y\)</span> be a function of <span class="process-math">\(x\text{.}\)</span> If <span class="process-math">\(x\)</span> is also a function of <span class="process-math">\(y\text{,}\)</span> we say that <span class="process-math">\(f\)</span> is <dfn class="terminology">invertible</dfn>. We denote <span class="process-math">\(x\)</span> as a function of <span class="process-math">\(y\)</span> as <span class="process-math">\(f^{-1}\text{,}\)</span> and call it the <dfn class="terminology">inverse function of <span class="process-math">\(f\)</span></dfn>.</div></article><article class="example example-like" id="ex-1-2-inv"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">1.2.10</span><span class="period">.</span><span class="space"> </span><span class="title">Inverse Functions as Graphs.</span>
+</h4>
+<div class="image-box" style="width: 60%; margin-left: 20%; margin-right: 20%;"><img src="external/images/f.png" class="contained" alt="A curve which is always increasing."></div>
+<div class="para" id="ex-1-2-inv-3">To determine if this function has an inverse function, we must determine if the relationship obtained by swapping input and output is also a function. 	We can test this directly on the graph of <span class="process-math">\(f\)</span> by remembering the vertical line test used in <a href="sec-1-2-functions.html#ex-1-2-reps" class="xref" data-knowl="./knowl/xref/ex-1-2-reps.html" data-reveal-label="Reveal" data-close-label="Close" title="Example 1.2.2">Example 1.2.2</a>, and thinking about how vertical lines change when we swap input and output.</div>
+<div class="para" id="ex-1-2-inv-4">A vertical line in the <span class="process-math">\(x,y\)</span> plane is a line whose points have a constant <span class="process-math">\(x\)</span> value. For example, the points <span class="process-math">\((1,0), (1,1), (1,2), (1,3)\)</span> all lie on the vertical line <span class="process-math">\(x=1\text{.}\)</span> When we swap input and output, those points become <span class="process-math">\((0,1), (1,1), (2,1), (3,1)\)</span>	, which all lie on the <em class="emphasis">horizontal</em> line <span class="process-math">\(y=1\text{.}\)</span> So we can determine if the function <span class="process-math">\(f\)</span> is invertible by drawing horizontal lines on the graph of <span class="process-math">\(f\text{.}\)</span> If every horizontal line intersects the graph at most once, then <span class="process-math">\(f\)</span> is invertible. Otherwise, the function <span class="process-math">\(f\)</span> is not invertible.</div>
+<div class="para" id="ex-1-2-inv-5">This is known as the <dfn class="terminology">horizontal line test</dfn> for testing invertibility. In this example we see the function is invertible, and we can visualize the graph of <span class="process-math">\(f^{-1}\)</span> by reflecting the graph of <span class="process-math">\(f\)</span> over the diagonal line <span class="process-math">\(y=x\text{:}\)</span>
+</div>
+<div class="image-box" style="width: 60%; margin-left: 20%; margin-right: 20%;"><img src="external/images/finverse.png" class="contained" alt="A curve which is the mirror image over the line y equals x of the previous curve."></div></article><article class="example example-like" id="ssec-1-2-inverse-5"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">1.2.11</span><span class="period">.</span><span class="space"> </span><span class="title">Inverse Functions as Equations.</span>
+</h4>
+<div class="para logical" id="ssec-1-2-inverse-5-2"><ul class="disc" id="ssec-1-2-inverse-5-2-1">
+<li id="ssec-1-2-inverse-5-2-1-1">
+<div class="para" id="ssec-1-2-inverse-5-2-1-1-1">Let <span class="process-math">\(f(x)= 3x + 1\text{.}\)</span> If <span class="process-math">\(f\)</span> has an inverse function, <span class="process-math">\(x\)</span> would be the output and <span class="process-math">\(f(x)\)</span> would be the input. As an equation, this means we will try to re-write the function relationship as “<span class="process-math">\(x=\)</span>”. For notational purposes, before we start the computation we’ll write the function as <span class="process-math">\(y=3x+1\)</span> instead of using function notation.</div>
+<div class="displaymath process-math" id="ssec-1-2-inverse-5-2-1-1-2">
+\begin{align*}
+y \amp=3x+1\\
+y-1 \amp= 3x\\
+\dfrac{y-1}{3}\amp= x\\
+x \amp= \dfrac{y-1}{3}
+\end{align*}
+</div>
+<div class="para" id="ssec-1-2-inverse-5-2-1-1-3">This shows us that <span class="process-math">\(f\)</span> is invertible, and also what the rule is for the inverse function. Instead of using <span class="process-math">\(x\)</span> as the output variable, we switch back to the standard notation and write <span class="process-math">\(f^{-1}\)</span> as a function of <span class="process-math">\(x\text{:}\)</span> <span class="process-math">\(f(x)=3x+1\)</span> and <span class="process-math">\(f^{-1}(x) = \dfrac{x-1}{3}\text{.}\)</span>
+</div>
+</li>
+<li id="ssec-1-2-inverse-5-2-1-2">
+<div class="para" id="ssec-1-2-inverse-5-2-1-2-1">Let <span class="process-math">\(g(x) = x^2 + 1\text{.}\)</span> We’ll try the same process as above to determine if there is an inverse function, <span class="process-math">\(g^{-1}\text{.}\)</span>
+</div>
+<div class="displaymath process-math" id="ssec-1-2-inverse-5-2-1-2-2">
+\begin{align*}
+y \amp= x^2+1\\
+y -1 \amp= x^2\\
+\pm \sqrt{y -1} \amp= x\\
+x \amp= \pm \sqrt{y -1} 
+\end{align*}
+</div>
+<div class="para" id="ssec-1-2-inverse-5-2-1-2-3">Note that <span class="process-math">\(x\)</span> is not a function of <span class="process-math">\(y\text{,}\)</span> and so our original function <span class="process-math">\(g(x)\)</span> is not invertible.</div>
+</li>
+</ul></div></article><div class="para" id="ssec-1-2-inverse-6">Invertible functions and their inverse functions have a special property under composition. As illustrated in <a href="sec-1-2-functions.html#ex-1-2-comb" class="xref" data-knowl="./knowl/xref/ex-1-2-comb.html" data-reveal-label="Reveal" data-close-label="Close" title="Example 1.2.8: Combining Functions">Example 1.2.8</a>, the order of composition matters. That is, for two functions <span class="process-math">\(f(x)\)</span> and <span class="process-math">\(g(x)\text{,}\)</span> the compositions <span class="process-math">\(f(g(x))\)</span> and <span class="process-math">\(g(f(x))\)</span> are, in general, different. However, composition with an invertible function and its inverse function is an example of a special case when the order does not matter. Even more, the composition will always result in the same function:</div>
+<article class="theorem theorem-like" id="ssec-1-2-inverse-7"><h4 class="heading">
+<span class="type">Fact</span><span class="space"> </span><span class="codenumber">1.2.12</span><span class="period">.</span>
+</h4>
+<div class="para" id="ssec-1-2-inverse-7-1">For an invertible function <span class="process-math">\(f(x)\)</span> and its inverse function <span class="process-math">\(f^{-1}(x)\text{,}\)</span>
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+f(f^{-1}(x)) = f^{-1}(f(x)) = x\text{.}
+\end{equation*}
+</div></article></section><section class="subsection" id="ssec-1-2-aroc"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">1.2.6</span><span class="space"> </span><span class="title">Average Rate of Change</span>
+</h3>
+<div class="para" id="ssec-1-2-aroc-2">We mentioned in <a href="sec-1-1-bio-math.html" class="internal" title="Section 1.1: Biology and Calculus">Section 1.1</a> that a main goal in mathematical modeling is to study how systems <em class="emphasis">change</em>. Given a function, one way we can describe how the function changes over time is by computing an <em class="emphasis">average rate of change</em>. This is also a foundational concept that will be used to extend our tools for describing change in <a href="ch-2.html" class="internal" title="Chapter 2: The Derivative">Chapter 2</a>.</div>
+<article class="definition definition-like" id="ssec-1-2-aroc-3"><h4 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">1.2.13</span><span class="period">.</span><span class="space"> </span><span class="title">Average Rate of Change.</span>
+</h4>
+<span class="process-math">\(f(x)\)</span><span class="process-math">\(x\)</span><span class="process-math">\(a\)</span><span class="process-math">\(b\text{,}\)</span><dfn class="terminology">average rate of change between <span class="process-math">\(a\)</span> and <span class="process-math">\(b\)</span></dfn><div class="displaymath process-math">
+\begin{equation*}
+AROC_{[a,b]}= \dfrac{f(b) - f(a)}{b-a}\text{.}
+\end{equation*}
+</div></article><div class="para" id="ssec-1-2-aroc-4">Being able to compute an average rate of change is necessary, but understanding what an average rate of change represents graphically will be even more important for our future developments in describing how functions change. Use the interactive provided to complete the statements below before viewing the answers.</div>
+<iframe src="https://www.desmos.com/calculator/lomycilmj5" id="ssec-1-2-aroc-5" width="1020" height="510"></iframe><ol class="decimal" id="ssec-1-2-aroc-6">
+<li id="ssec-1-2-aroc-6-1"><div class="para" id="p-derived-ssec-1-2-aroc-6-1">The value of <span class="process-math">\(AROC_{[-3,2]}\)</span> is <details id="ssec-1-2-aroc-6-1-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"></div></details>
+</div></li>
+<li id="ssec-1-2-aroc-6-2"><div class="para" id="p-derived-ssec-1-2-aroc-6-2">The line connecting the points <span class="process-math">\((-3,f(-3))\)</span> and <span class="process-math">\((2,f(2))\)</span> (<em class="emphasis">increases</em>/<em class="emphasis">decreases</em>/<em class="emphasis">stays the same</em>). <details id="ssec-1-2-aroc-6-2-6" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"></div></details>
+</div></li>
+<li id="ssec-1-2-aroc-6-3"><div class="para" id="p-derived-ssec-1-2-aroc-6-3">The value of <span class="process-math">\(AROC_{[-1,1]}\)</span> is <details id="ssec-1-2-aroc-6-3-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"></div></details>
+</div></li>
+<li id="ssec-1-2-aroc-6-4"><div class="para" id="p-derived-ssec-1-2-aroc-6-4">The line connecting the points <span class="process-math">\((-1,f(-1))\)</span> and <span class="process-math">\((1,f(1))\)</span> (<em class="emphasis">increases</em>/<em class="emphasis">decreases</em>/<em class="emphasis">stays the same</em>). <details id="ssec-1-2-aroc-6-4-6" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"></div></details>
+</div></li>
+<li id="ssec-1-2-aroc-6-5"><div class="para" id="p-derived-ssec-1-2-aroc-6-5">The value of <span class="process-math">\(AROC_{[-2,2]}\)</span> is <details id="ssec-1-2-aroc-6-5-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"></div></details>
+</div></li>
+<li id="ssec-1-2-aroc-6-6"><div class="para" id="p-derived-ssec-1-2-aroc-6-6">The line connecting the points <span class="process-math">\((-2,f(-2))\)</span> and <span class="process-math">\((2,f(2))\)</span> (<em class="emphasis">increases</em>/<em class="emphasis">decreases</em>/<em class="emphasis">stays the same</em>). <details id="ssec-1-2-aroc-6-6-6" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"></div></details>
+</div></li>
+<li id="ssec-1-2-aroc-6-7"><div class="para" id="p-derived-ssec-1-2-aroc-6-7">Graphically, the value of <span class="process-math">\(AROC_{[a,b]}\)</span> describes <details id="ssec-1-2-aroc-6-7-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content">
+<span class="process-math">\((a,f(a))\)</span><span class="process-math">\((b,f(b))\)</span><dfn class="terminology">secant line</dfn>
+</div></details>
+</div></li>
+</ol>
+<article class="activity project-like" id="ssec-1-2-aroc-7"><h4 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">1.2.4</span><span class="period">.</span><span class="space"> </span><span class="title">AROC.</span>
+</h4>
+<ol class="decimal" id="ssec-1-2-aroc-7-2">
+<li id="ssec-1-2-aroc-7-2-1"><div class="para" id="p-derived-ssec-1-2-aroc-7-2-1">Sketch the graph of a function <span class="process-math">\(f\)</span> such that <span class="process-math">\(AROC_{[0,2]} \gt 0\)</span> and <span class="process-math">\(f\)</span> is increasing on the interval <span class="process-math">\((0,2)\text{.}\)</span>
+</div></li>
+<li id="ssec-1-2-aroc-7-2-2"><div class="para" id="p-derived-ssec-1-2-aroc-7-2-2">Sketch the graph of a function <span class="process-math">\(f\)</span> such that <span class="process-math">\(AROC_{[0,2]} \gt 0\)</span> and <span class="process-math">\(f\)</span>  increases and decreases on the interval <span class="process-math">\((0,2)\text{.}\)</span>
+</div></li>
+<li id="ssec-1-2-aroc-7-2-3"><div class="para" id="p-derived-ssec-1-2-aroc-7-2-3">Sketch the graph of a function <span class="process-math">\(f\)</span> such that <span class="process-math">\(AROC_{[0,2]} \gt 0\)</span> and <span class="process-math">\(f\)</span> is decreasing on the interval <span class="process-math">\((0,2)\text{.}\)</span>
+</div></li>
+</ol></article></section><section class="subsection" id="sec-1-2-functions-11"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">1.2.7</span><span class="space"> </span><span class="title">Summary</span>
+</h3>
+<div class="para logical" id="sec-1-2-functions-11-2"><ul class="disc" id="sec-1-2-functions-11-2-1">
+<li id="sec-1-2-functions-11-2-1-1"><div class="para" id="p-derived-sec-1-2-functions-11-2-1-1">
+<article class="question example-like" id="sec-1-2-functions-11-2-1-1-1"><h4 class="heading">
+<span class="type">Question</span><span class="space"> </span><span class="codenumber">1.2.14</span><span class="period">.</span>
+</h4></article> <details id="sec-1-2-functions-11-2-1-1-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content">
+<span class="process-math">\(y\)</span><span class="process-math">\(x\)</span><span class="process-math">\(x\)</span><span class="process-math">\(y\)</span>
+</div></details>
+</div></li>
+<li id="sec-1-2-functions-11-2-1-2"><div class="para" id="p-derived-sec-1-2-functions-11-2-1-2">
+<article class="question example-like" id="sec-1-2-functions-11-2-1-2-1"><h4 class="heading">
+<span class="type">Question</span><span class="space"> </span><span class="codenumber">1.2.15</span><span class="period">.</span>
+</h4></article> <details id="sec-1-2-functions-11-2-1-2-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"></div></details>
+</div></li>
+<li id="sec-1-2-functions-11-2-1-3"><div class="para" id="p-derived-sec-1-2-functions-11-2-1-3">
+<article class="question example-like" id="sec-1-2-functions-11-2-1-3-1"><h4 class="heading">
+<span class="type">Question</span><span class="space"> </span><span class="codenumber">1.2.16</span><span class="period">.</span>
+</h4></article> <details id="sec-1-2-functions-11-2-1-3-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"></div></details>
+</div></li>
+<li id="sec-1-2-functions-11-2-1-4"><div class="para" id="p-derived-sec-1-2-functions-11-2-1-4">
+<article class="question example-like" id="sec-1-2-functions-11-2-1-4-1"><h4 class="heading">
+<span class="type">Question</span><span class="space"> </span><span class="codenumber">1.2.17</span><span class="period">.</span>
+</h4></article> <details id="sec-1-2-functions-11-2-1-4-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"></div></details>
+</div></li>
+<li id="sec-1-2-functions-11-2-1-5"><div class="para" id="p-derived-sec-1-2-functions-11-2-1-5">
+<article class="question example-like" id="sec-1-2-functions-11-2-1-5-1"><h4 class="heading">
+<span class="type">Question</span><span class="space"> </span><span class="codenumber">1.2.18</span><span class="period">.</span>
+</h4></article> <details id="sec-1-2-functions-11-2-1-5-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"></div></details>
+</div></li>
+<li id="sec-1-2-functions-11-2-1-6"><div class="para" id="p-derived-sec-1-2-functions-11-2-1-6">
+<article class="question example-like" id="sec-1-2-functions-11-2-1-6-1"><h4 class="heading">
+<span class="type">Question</span><span class="space"> </span><span class="codenumber">1.2.19</span><span class="period">.</span>
+</h4></article> <details id="sec-1-2-functions-11-2-1-6-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"></div></details>
+</div></li>
+</ul></div></section><section class="exercises" id="sec-1-2-functions-12"><h3 class="heading hide-type">
+<span class="type">Exercises</span><span class="space"> </span><span class="codenumber">1.2.8</span><span class="space"> </span><span class="title">Exercises</span>
+</h3>
+<article class="exercise exercise-like" id="sec-1-2-functions-12-1"><h4 class="heading"><span class="codenumber">1<span class="period">.</span></span></h4>Give an example of a relationship in which <span class="process-math">\(y\)</span> is not a function of <span class="process-math">\(x\text{.}\)</span> Represent your example as an equation, table, and graph.</article><article class="exercise exercise-like" id="sec-1-2-functions-12-2"><h4 class="heading"><span class="codenumber">2<span class="period">.</span></span></h4>Give an example of a relationship in which <span class="process-math">\(y\)</span> is a function of <span class="process-math">\(x\)</span> but is not an invertible function. Represent your example as an equation, table, and graph.</article><article class="exercise exercise-like" id="sec-1-2-functions-12-3"><h4 class="heading"><span class="codenumber">3<span class="period">.</span></span></h4>Consider the equation <span class="process-math">\(h= kt^2 -m^2t + cm\text{.}\)</span> <ol class="lower-alpha lower-alpha-level-1" id="sec-1-2-functions-12-3-1-2">
+<li id="sec-1-2-functions-12-3-1-2-1"><div class="para" id="p-derived-sec-1-2-functions-12-3-1-2-1">Write the equation using function notation if <span class="process-math">\(t\)</span> is the independent variable and <span class="process-math">\(h\)</span> is the dependent variable. What are the parameters?</div></li>
+<li id="sec-1-2-functions-12-3-1-2-2"><div class="para" id="p-derived-sec-1-2-functions-12-3-1-2-2">Write the equation using function notation if <span class="process-math">\(m\)</span> is the independent variable and <span class="process-math">\(h\)</span> is the dependent variable. What are the parameters?</div></li>
+</ol>
+<div class="solutions"><details id="sec-1-2-functions-12-3-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><ol class="lower-alpha lower-alpha-level-1" id="sec-1-2-functions-12-3-2-1">
+<li id="sec-1-2-functions-12-3-2-1-1"><div class="para" id="p-derived-sec-1-2-functions-12-3-2-1-1">Parameters: <span class="process-math">\(k,m,c\)</span>
+</div></li>
+<li id="sec-1-2-functions-12-3-2-1-2"><div class="para" id="p-derived-sec-1-2-functions-12-3-2-1-2">Parameters: <span class="process-math">\(k,t,c\)</span>
+</div></li>
+</ol></div></details></div></article><article class="exercise exercise-like" id="sec-1-2-functions-12-4"><h4 class="heading"><span class="codenumber">4<span class="period">.</span></span></h4>
+<ol class="lower-alpha lower-alpha-level-1" id="sec-1-2-functions-12-4-1-1">
+<li id="sec-1-2-functions-12-4-1-1-1"><div class="para logical" id="sec-1-2-functions-12-4-1-1-1-1">
+<div class="para">Sketch the graph of a single function <span class="process-math">\(q(x)\)</span> that meets all of the following criteria:</div>
+<ul class="disc" id="sec-1-2-functions-12-4-1-1-1-1-2">
+<li id="sec-1-2-functions-12-4-1-1-1-1-2-1">
+<div class="para" id="sec-1-2-functions-12-4-1-1-1-1-2-1-1">The domain of <span class="process-math">\(q(x)\)</span> is <span class="process-math">\([-1,0) \cup (0,4]\text{.}\)</span>
+</div>
+<div class="para" id="sec-1-2-functions-12-4-1-1-1-1-2-1-2">
+<em class="emphasis">Note:</em> This notation means the domain is between <span class="process-math">\(-1\)</span> and <span class="process-math">\(4\text{,}\)</span> not including <span class="process-math">\(0\text{.}\)</span>
+</div>
+</li>
+<li id="sec-1-2-functions-12-4-1-1-1-1-2-2"><div class="para" id="p-derived-sec-1-2-functions-12-4-1-1-1-1-2-2">The range of <span class="process-math">\(q(x)\)</span> is <span class="process-math">\([0,3]\text{.}\)</span>
+</div></li>
+<li id="sec-1-2-functions-12-4-1-1-1-1-2-3"><div class="para" id="p-derived-sec-1-2-functions-12-4-1-1-1-1-2-3"><span class="process-math">\(q(-1) &gt; q(4)\text{.}\)</span></div></li>
+</ul>
+</div></li>
+<li id="sec-1-2-functions-12-4-1-1-2"><div class="para" id="p-derived-sec-1-2-functions-12-4-1-1-2">Is your function from the previous part invertible? Explain why or why not.</div></li>
+</ol></article><article class="exercise exercise-like" id="sec-1-2-functions-12-5"><h4 class="heading"><span class="codenumber">5<span class="period">.</span></span></h4>The functions <span class="process-math">\(g(x)\)</span> and <span class="process-math">\(h(x)\)</span> are defined on the domain <span class="process-math">\((-\infty, \infty)\text{.}\)</span> Compute the following values given that <ul class="disc" id="sec-1-2-functions-12-5-1-4">
+<li id="sec-1-2-functions-12-5-1-4-1"><div class="para" id="p-derived-sec-1-2-functions-12-5-1-4-1">
+<span class="process-math">\(g(-1)=2\)</span> and <span class="process-math">\(h(-1)=-10\text{,}\)</span> and</div></li>
+<li id="sec-1-2-functions-12-5-1-4-2"><div class="para" id="p-derived-sec-1-2-functions-12-5-1-4-2">
+<span class="process-math">\(g(x)\)</span> and <span class="process-math">\(h(x)\)</span> are inverse functions of each other (i.e., <span class="process-math">\(g(x)=h^{-1}(x)\)</span> and <span class="process-math">\(h(x) = g^{-1}(x)\)</span>).</div></li>
+</ul> <ol class="lower-alpha lower-alpha-level-1" id="sec-1-2-functions-12-5-1-5">
+<li id="sec-1-2-functions-12-5-1-5-1"><div class="para" id="p-derived-sec-1-2-functions-12-5-1-5-1"><span class="process-math">\(\displaystyle (g+h)(-1)\)</span></div></li>
+<li id="sec-1-2-functions-12-5-1-5-2"><div class="para" id="p-derived-sec-1-2-functions-12-5-1-5-2"><span class="process-math">\(\displaystyle (g-h)(-1)\)</span></div></li>
+<li id="sec-1-2-functions-12-5-1-5-3"><div class="para" id="p-derived-sec-1-2-functions-12-5-1-5-3"><span class="process-math">\(\displaystyle (g \cdot h)(-1)\)</span></div></li>
+<li id="sec-1-2-functions-12-5-1-5-4"><div class="para" id="p-derived-sec-1-2-functions-12-5-1-5-4"><span class="process-math">\(\displaystyle (h \circ g)(-10)\)</span></div></li>
+<li id="sec-1-2-functions-12-5-1-5-5"><div class="para" id="p-derived-sec-1-2-functions-12-5-1-5-5"><span class="process-math">\(\displaystyle (g \circ h)(5)\)</span></div></li>
+</ol>
+<div class="solutions"><details id="sec-1-2-functions-12-5-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><ol class="lower-alpha lower-alpha-level-1" id="sec-1-2-functions-12-5-2-1">
+<li id="sec-1-2-functions-12-5-2-1-1"><div class="para" id="p-derived-sec-1-2-functions-12-5-2-1-1"><span class="process-math">\(\displaystyle -8\)</span></div></li>
+<li id="sec-1-2-functions-12-5-2-1-2"><div class="para" id="p-derived-sec-1-2-functions-12-5-2-1-2"><span class="process-math">\(\displaystyle 12\)</span></div></li>
+<li id="sec-1-2-functions-12-5-2-1-3"><div class="para" id="p-derived-sec-1-2-functions-12-5-2-1-3"><span class="process-math">\(\displaystyle -20\)</span></div></li>
+<li id="sec-1-2-functions-12-5-2-1-4"><div class="para" id="p-derived-sec-1-2-functions-12-5-2-1-4"><span class="process-math">\(\displaystyle -10\)</span></div></li>
+<li id="sec-1-2-functions-12-5-2-1-5"><div class="para" id="p-derived-sec-1-2-functions-12-5-2-1-5"><span class="process-math">\(\displaystyle 5\)</span></div></li>
+</ol></div></details></div></article><article class="exercise exercise-like" id="sec-1-2-functions-12-6"><h4 class="heading"><span class="codenumber">6<span class="period">.</span></span></h4>Let <span class="process-math">\(\sigma(x) = x^2 +1\text{.}\)</span> Calculate each average rate of change below. Then use the graph provided to illustrate what each calculation represents graphically. <ol class="lower-alpha lower-alpha-level-1" id="sec-1-2-functions-12-6-1-2">
+<li id="sec-1-2-functions-12-6-1-2-1"><div class="para" id="p-derived-sec-1-2-functions-12-6-1-2-1"><span class="process-math">\(\displaystyle AROC_{[0,3]}\)</span></div></li>
+<li id="sec-1-2-functions-12-6-1-2-2"><div class="para" id="p-derived-sec-1-2-functions-12-6-1-2-2"><span class="process-math">\(\displaystyle AROC_{[-2,2]}\)</span></div></li>
+<li id="sec-1-2-functions-12-6-1-2-3"><div class="para" id="p-derived-sec-1-2-functions-12-6-1-2-3"><span class="process-math">\(\displaystyle AROC_{[-3,1]}\)</span></div></li>
+</ol> <div class="image-box" style="width: 60%; margin-left: 20%; margin-right: 20%;"><img src="external/images/sigma.png" class="contained" alt="A parabola which is the graph of x squared plus one."></div>
+<div class="solutions"><details id="sec-1-2-functions-12-6-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><ol class="lower-alpha lower-alpha-level-1" id="sec-1-2-functions-12-6-2-1">
+<li id="sec-1-2-functions-12-6-2-1-1"><div class="para" id="p-derived-sec-1-2-functions-12-6-2-1-1"><span class="process-math">\(\displaystyle 3\)</span></div></li>
+<li id="sec-1-2-functions-12-6-2-1-2"><div class="para" id="p-derived-sec-1-2-functions-12-6-2-1-2"><span class="process-math">\(\displaystyle 0\)</span></div></li>
+<li id="sec-1-2-functions-12-6-2-1-3"><div class="para" id="p-derived-sec-1-2-functions-12-6-2-1-3"><span class="process-math">\(\displaystyle -2\)</span></div></li>
+</ol></div></details></div></article></section></section></div>
+<div class="ptx-content-footer">
+<a class="previous-button button" href="sec-1-1-bio-math.html" title="Previous"><span xmlns:xlink="http://www.w3.org/1999/xlink" class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span xmlns:xlink="http://www.w3.org/1999/xlink" class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="sec-1-3.html" title="Next"><span class="name">Next</span><span xmlns:xlink="http://www.w3.org/1999/xlink" class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
+</div></main>
+</div>
+<div id="ptx-page-footer" class="ptx-page-footer">
+<a class="feedback-link" href="https://docs.google.com/forms/d/e/1FAIpQLSfqb-mJw72Dhhm6BRbYn5IO3eLVvxuBmMoiuRvvYTvmABnZTw/viewform?usp=sf_link" target="_blank">Feedback</a><a xmlns:xlink="http://www.w3.org/1999/xlink" class="pretext-link" href="https://pretextbook.org" title="PreTeXt"><div class="logo"><svg xmlns="http://www.w3.org/2000/svg" height="100%" viewBox="338 3000 8772 6866" role="img"><title>PreTeXt logo</title><g style="stroke-width:.025in; stroke:currentColor; fill:none"><polyline points="472,3590 472,9732 " style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,9448 A 4660 4660  0  0  1  8598  9259"></path><path style="stroke-width:174;stroke-linecap:butt;" d="M 4488,9685 A 4228 4228  0  0  0   472  9732"></path><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,3590 A 4241 4241  0  0  1  8598  3496"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,3496  A 4241 4241  0  0  1  4724  3590"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,9259  A 4507 4507  0  0  1  4724  9448"></path><polyline points="5385,4299 4062,8125" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8598,3496 8598,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="850,3496 850,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="4960,9685 4488,9685" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="3070,4582 1889,6141 3070,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="6418,4582 7600,6141 6418,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8976,3590 8976,9732" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><path style="stroke-width:174;stroke-linecap:butt;" d="M 4960,9685 A 4228 4228  0  0  1  8976  9732"></path></g></svg></div></a><a xmlns:xlink="http://www.w3.org/1999/xlink" class="runestone-link" href="https://runestone.academy" title="Runestone Academy"><img class="logo" src="https://runestone.academy/runestone/static/images/RAIcon_cropped.png" alt="Runstone Academy logo"></a><a xmlns:xlink="http://www.w3.org/1999/xlink" class="mathjax-link" href="https://www.mathjax.org" title="MathJax"><img class="logo" src="https://www.mathjax.org/badge/badge-square-2.png" alt="MathJax logo"></a>
+</div>
+</body>
+</html>

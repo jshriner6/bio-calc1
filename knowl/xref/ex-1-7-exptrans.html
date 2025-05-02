@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body class="ignore-math">
+<article class="example example-like"><h4 class="heading">
+<span class="type">Example</span><span xmlns:xlink="http://www.w3.org/1999/xlink" class="space"> </span><span class="codenumber">1.7.8</span><span xmlns:xlink="http://www.w3.org/1999/xlink" class="period">.</span><span xmlns:xlink="http://www.w3.org/1999/xlink" class="space"> </span><span class="title">An Exponential Transformation Solution Function.</span>
+</h4>
+<div xmlns:xlink="http://www.w3.org/1999/xlink" class="para logical">
+<div class="para">Consider the updating function <span class="process-math">\(p_{t+1} = 0.5p_t + 1\)</span> with initial value <span class="process-math">\(p_0=10\text{.}\)</span> Written as a difference equation, this becomes</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/sec-1-8.html">
+\begin{equation*}
+p_{t+1} -p_t = -0.5p_t + 1 \text{.}
+\end{equation*}
+</div>
+<div class="para">We can see once again that the solution function cannot be linear, so we will check the ratio of consecutive average rates of change:</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/sec-1-8.html">
+\begin{align*}
+\dfrac{AROC_{[t+1,t+2]}}{AROC_{[t,t+1]}} \amp= \dfrac{p_{t+2} - p_{t+1}}{p_{t+1} - p_t}  \\
+\amp= \dfrac{(0.5p_{t+1} +1) - (0.5p_t +1)}{p_{t+1} - p_t}\\
+\amp= \dfrac{0.5p_{t+1} - 0.5p_t}{p_{t+1} - p_t}\\
+\amp= \dfrac{0.5(p_{t+1} - p_t)}{p_{t+1} - p_t}\\
+\amp=0.5
+\end{align*}
+</div>
+<div class="para">This shows that a solution function of the form <span class="process-math">\(p_t = v \cdot 0.5^t + u\)</span> would fit the discrete system described by the updating function <span class="process-math">\(p_{t+1} = 0.5p_t + 1\text{.}\)</span> However, unlike in the previous example, creating a table of values will show that the solution function is <em class="emphasis">not</em> <span class="process-math">\(p_t = 10 \cdot 0.5^t\text{:}\)</span> <figure class="table table-like"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">1.7.9<span class="period">.</span></span><span class="space"> </span></figcaption><div class="tabular-box natural-width"><table class="tabular">
+<tr class="header-horizontal">
+<th scope="col" class="l m b1 r0 l0 t0 lines"><span class="process-math">\(t\)</span></th>
+<th scope="col" class="l m b1 r0 l0 t0 lines"><span class="process-math">\(p_t\)</span></th>
+<th scope="col" class="l m b1 r0 l0 t0 lines"><span class="process-math">\(p_{t+1}\)</span></th>
+<th scope="col" class="l m b1 r0 l0 t0 lines"><span class="process-math">\(10 \cdot 0.5^t\)</span></th>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(0\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(10\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(6\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(10\)</span></td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(1\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(6\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(4\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(5\)</span></td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(2\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(4\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(3\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(2.5\)</span></td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(3\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(3\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(2.5\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(1.25\)</span></td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(4\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(2.5\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(2.25\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(0.625\)</span></td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(5\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(2.25\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(2.125\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(0.3125\)</span></td>
+</tr>
+</table></div></figure> We can, however, notice from the table that the values of <span class="process-math">\(p_t\)</span> seem to be getting closer to <span class="process-math">\(2\)</span> as time goes on. We will develop a tool for verifying this hypothesis in <a href="sec-1-8.html" class="internal" title="Section 1.8: Analyzing Discrete-Time Dynamical Systems">Section 1.8</a>, but creating a table like above is a good way to build intuition for how the solution behaves.</div>
+</div>
+<div xmlns:xlink="http://www.w3.org/1999/xlink" class="para logical">
+<div class="para">We know that the solution function is a transformation of the exponential function <span class="process-math">\(f(t) =0.5^t\text{,}\)</span> and that we’d like there to be a horizontal asymptote at <span class="process-math">\(y=2\text{,}\)</span> since this is what the outputs seems to approach as <span class="process-math">\(t\)</span> gets large. Since <span class="process-math">\(f(t) =0.5^t\)</span> is exponential decay and has a horizontal asymptote at <span class="process-math">\(y=0\text{,}\)</span> we will shift the function up <span class="process-math">\(2\)</span> using transformations:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+p_t = v \cdot 0.5^t +2
+\end{equation*}
+</div>
+<div class="para">Now we will find the vertical scale required to satisfy the initial value <span class="process-math">\(p_0 = 10\text{:}\)</span>
+</div>
+<div class="displaymath process-math">
+\begin{align*}
+10 \amp= v \cdot 0.5^0+2\\
+10 \amp= v  +2\\
+8 \amp= v 
+\end{align*}
+</div>
+<div class="para">Thus, the solution function is given by <span class="process-math">\(p_t = 8 \cdot 0.5^t + 2\text{.}\)</span> Create a table of values for <span class="process-math">\(t=1,2,3,4,5\)</span> and <span class="process-math">\(6\)</span> to verify this solution function fits the points of this DTDS.</div>
+</div></article><span class="incontext"><a class="internal" href="sec-1-7.html#ex-1-7-exptrans">in-context</a></span>
+</body>
+</html>

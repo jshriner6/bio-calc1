@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body class="ignore-math">
+<article class="example example-like"><h4 class="heading">
+<span class="type">Example</span><span xmlns:xlink="http://www.w3.org/1999/xlink" class="space"> </span><span class="codenumber">1.5.14</span><span xmlns:xlink="http://www.w3.org/1999/xlink" class="period">.</span><span xmlns:xlink="http://www.w3.org/1999/xlink" class="space"> </span><span class="title">Fitting Data.</span>
+</h4>
+<div xmlns:xlink="http://www.w3.org/1999/xlink" class="para">After collecting data, we may want to try and fit that data with a specific type of function. For example, we may suspect our data can be modeled by a  <dfn class="terminology">power function</dfn>: a function of the form <span class="process-math">\(f(x) = kx^p\text{.}\)</span> We would need to find values for the parameters <span class="process-math">\(k\)</span> and <span class="process-math">\(p\)</span> that best fit our data.</div>
+<div xmlns:xlink="http://www.w3.org/1999/xlink" class="para logical">
+<div class="para">If we take the log of both sides of <span class="process-math">\(f(x) = kx^p\text{,}\)</span> we get</div>
+<div class="displaymath process-math">
+\begin{align*}
+\log(f(x)) \amp= \log(kx^p) \\
+\log(f(x)) \amp= \log(k)+ \log(x^p) \\
+\underset{y}{\log(f(x))} \amp= \underset{m}{p} \cdot \underset{x}{\log(x)} + \underset{y_0}{\log(k)} 
+\end{align*}
+</div>
+<div class="para">This shows us that if our data fits a power function, then we can plot <span class="process-math">\(\log(f(x))\)</span> as our output and <span class="process-math">\(\log(x)\)</span> as our input and the resulting graph should be linear. Moreover, the slope of the linear function will be the power <span class="process-math">\(p\)</span> and the <span class="process-math">\(y\)</span>-intercept of the linear function will be <span class="process-math">\(\log(k)\text{.}\)</span>
+</div>
+</div>
+<div xmlns:xlink="http://www.w3.org/1999/xlink" class="para logical">
+<div class="para">The example below shows our original data points in the first table that we’d like to fit with a power function <span class="process-math">\(f(x)=kx^p\text{.}\)</span> The second table shows our data after taking the log of both input and output. We suspect the second table should be a linear function, so we can compute the average rate of change between each interval to confirm and find the slope:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\dfrac{\log(16)- \log(2)}{\log(2)-0} = 3
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\dfrac{\log(54)- \log(16)}{\log(3)-\log(2)} = 3
+\end{equation*}
+</div>
+<div class="para">So we see that <span class="process-math">\(p=3\text{.}\)</span> We can also see the <span class="process-math">\(y\)</span>-intercept from the table is <span class="process-math">\(\log(2)\text{,}\)</span> so <span class="process-math">\(k=2\text{.}\)</span> This means the power function that fits our original data is <span class="process-math">\(y=2x^3\text{.}\)</span>
+</div>
+</div>
+<iframe xmlns:xlink="http://www.w3.org/1999/xlink" src="https://www.desmos.com/calculator/drueualibc" id="sec-1-5-6-4-5" width="1020" height="510"></iframe></article><span class="incontext"><a class="internal" href="sec-1-5.html#sec-1-5-6-4">in-context</a></span>
+</body>
+</html>

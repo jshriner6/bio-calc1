@@ -1,0 +1,902 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US" dir="ltr">
+<head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>BC Exponential and Logarithmic Functions</title>
+<link xmlns:xlink="http://www.w3.org/1999/xlink" rel="preconnect" href="https://fonts.googleapis.com">
+<link xmlns:xlink="http://www.w3.org/1999/xlink" rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link xmlns:xlink="http://www.w3.org/1999/xlink" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+<link href="_static/pretext/css/theme.css" rel="stylesheet" type="text/css">
+<link xmlns:xlink="http://www.w3.org/1999/xlink" href="_static/pretext/css/ol-markers.css" rel="stylesheet" type="text/css">
+<script>
+var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
+window.MathJax = {
+  "tex": {
+    "inlineMath": [
+      [
+        "\\(",
+        "\\)"
+      ]
+    ],
+    "tags": "none",
+    "tagSide": "right",
+    "tagIndent": ".8em",
+    "packages": {
+      "[+]": [
+        "base",
+        "extpfeil",
+        "ams",
+        "amscd",
+        "color",
+        "newcommand",
+        "knowl"
+      ]
+    }
+  },
+  "options": {
+    "ignoreHtmlClass": "tex2jax_ignore|ignore-math",
+    "processHtmlClass": "process-math"
+  },
+  "chtml": {
+    "scale": 0.98,
+    "mtextInheritFont": true
+  },
+  "loader": {
+    "load": [
+      "input/asciimath",
+      "[tex]/extpfeil",
+      "[tex]/amscd",
+      "[tex]/color",
+      "[tex]/newcommand",
+      "[pretext]/mathjaxknowl3.js"
+    ],
+    "paths": {
+      "pretext": "_static/pretext/js/lib"
+    }
+  },
+  "startup": {
+    pageReady() {
+      return MathJax.startup.defaultPageReady().then(function () {
+      console.log("in ready function");
+      rsMathReady();
+      }
+    )}
+  }
+};
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><meta xmlns:xlink="http://www.w3.org/1999/xlink" name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta xmlns:xlink="http://www.w3.org/1999/xlink" property="og:type" content="book">
+<meta xmlns:xlink="http://www.w3.org/1999/xlink" property="book:title" content="Calculus for Biological Scientists">
+<meta xmlns:xlink="http://www.w3.org/1999/xlink" property="book:author" content="Jeff Shriner">
+<script src="_static/pretext/js/lib/jquery.min.js"></script><script src="_static/pretext/js/lib/jquery.sticky.js"></script><script src="_static/pretext/js/lib/jquery.espy.min.js"></script><script src="_static/pretext/js/pretext.js"></script><script src="_static/pretext/js/pretext_add_on.js?x=1"></script><script src="_static/pretext/js/user_preferences.js"></script><!--** eBookCongig is necessary to configure interactive       **-->
+<!--** Runestone components to run locally in reader's browser **-->
+<!--** No external communication:                              **-->
+<!--**     log level is 0, Runestone Services are disabled     **-->
+<script type="text/javascript">
+eBookConfig = {};
+eBookConfig.useRunestoneServices = false;
+eBookConfig.host = 'http://127.0.0.1:8000';
+eBookConfig.course = 'PTX_Course_Title_Here';
+eBookConfig.basecourse = 'PTX_Base_Course';
+eBookConfig.isLoggedIn = false;
+eBookConfig.email = '';
+eBookConfig.isInstructor = false;
+eBookConfig.logLevel = 0;
+eBookConfig.username = '';
+eBookConfig.readings = null;
+eBookConfig.activities = null;
+eBookConfig.downloadsEnabled = false;
+eBookConfig.allow_pairs = false;
+eBookConfig.enableScratchAC = false;
+eBookConfig.build_info = "";
+eBookConfig.python3 = null;
+eBookConfig.runestone_version = '7.6.1';
+eBookConfig.jobehost = '';
+eBookConfig.proxyuri_runs = '';
+eBookConfig.proxyuri_files = '';
+eBookConfig.enable_chatcodes =  false;
+</script>
+<!--*** Runestone Services ***-->
+<script src="_static/prefix-runtime.c7804631fa963734.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.f7a03b209751032d.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
+<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.541c9106f2c605b9.css">
+<script xmlns:xlink="http://www.w3.org/1999/xlink" src="_static/pretext/js/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script>
+</head>
+<body id="shriner-BC" class="pretext book ignore-math">
+<a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead" class="ptx-masthead"><div class="ptx-banner">
+<img src="external/images/mountains.jpg" alt="Logo image"><div class="title-container">
+<h1 class="heading"><a href="root-1-2.html"><span class="title">Calculus for Biological Scientists</span></a></h1>
+<p class="byline">Jeff Shriner</p>
+</div>
+</div></header><nav xmlns:xlink="http://www.w3.org/1999/xlink" id="ptx-navbar" class="ptx-navbar navbar"><div class="ptx-navbar-contents">
+<button class="toc-toggle button" title="Contents"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5d2;</span><span class="name">Contents</span></button><a class="index-button button" href="meta_backmatter-4.html" title="Index"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe88e;</span><span class="name">Index</span></a><div class="searchbox">
+<div class="searchwidget"><button id="searchbutton" class="searchbutton button" type="button" title="Search book"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8b6;</span><span class="name">Search Book</span></button></div>
+<div id="searchresultsplaceholder" class="searchresultsplaceholder" style="display: none">
+<div class="search-results-controls">
+<input aria-label="Search term" id="ptxsearch" class="ptxsearch" type="text" name="terms" placeholder="Search term"><button title="Close search" id="closesearchresults" class="closesearchresults"><span class="material-symbols-outlined">close</span></button>
+</div>
+<h2 class="search-results-heading">Search Results: </h2>
+<div id="searchempty" class="searchempty"><span>No results.</span></div>
+<ol id="searchresults" class="searchresults"></ol>
+</div>
+</div>
+<span class="nav-other-controls"><button id="light-dark-button" class="light-dark-button button" title="Dark Mode"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe51c;</span><span class="name">Dark Mode</span></button></span><span class="treebuttons"><a class="previous-button button" href="sec-1-4.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="ch-1.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="sec-1-6.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span>
+</div></nav><div xmlns:xlink="http://www.w3.org/1999/xlink" id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\dollar}{\$}
+\DeclareMathOperator{\erf}{erf}
+\DeclareMathOperator{\arctanh}{arctanh}
+              \DeclareMathOperator{\arcsec}{arcsec}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
+\)</span></div>
+<div class="ptx-page">
+<div xmlns:xlink="http://www.w3.org/1999/xlink" id="ptx-sidebar" class="ptx-sidebar"><nav id="ptx-toc" class="ptx-toc depth2 focused" data-preexpanded-levels="0" data-max-levels="2"><ul class="structural toc-item-list contains-active">
+<li class="toc-item toc-frontmatter">
+<div class="toc-title-box"><a href="meta_frontmatter.html" class="internal"><span class="title">Front Matter</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-colophon"><div class="toc-title-box"><a href="meta_frontmatter-3.html" class="internal"><span class="title">Colophon</span></a></div></li>
+<li class="toc-item toc-acknowledgement"><div class="toc-title-box"><a href="meta_frontmatter-4.html" class="internal"><span class="title">Acknowledgements</span></a></div></li>
+<li class="toc-item toc-preface"><div class="toc-title-box"><a href="meta_frontmatter-5.html" class="internal"><span class="title">Our Goals</span></a></div></li>
+<li class="toc-item toc-preface"><div class="toc-title-box"><a href="meta_frontmatter-6.html" class="internal"><span class="title">Students: Read this!</span></a></div></li>
+<li class="toc-item toc-preface"><div class="toc-title-box"><a href="meta_frontmatter-7.html" class="internal"><span class="title">Instructors: Read this!</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter contains-active">
+<div class="toc-title-box"><a href="ch-1.html" class="internal"><span class="codenumber">1</span> <span class="title">Functions As Models</span></a></div>
+<ul class="structural toc-item-list contains-active">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-1-1-bio-math.html" class="internal"><span class="codenumber">1.1</span> <span class="title">Biology and Calculus</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-1-1-bio-math.html#sec-1-1-bio-math-5" class="internal"><span class="codenumber">1.1.1</span> <span class="title">Mathematical Models</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-1-1-bio-math.html#sec-1-1-bio-math-6" class="internal"><span class="codenumber">1.1.2</span> <span class="title">Mathematical Processes</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-1-1-bio-math.html#sec-1-1-bio-math-9" class="internal"><span class="codenumber">1.1.3</span> <span class="title">Summary</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-1-1-bio-math.html#sec-1-1-bio-math-10" class="internal"><span class="codenumber">1.1.4</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-1-2-functions.html" class="internal"><span class="codenumber">1.2</span> <span class="title">Functions</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-1-2-functions.html#sec-1-2-functions-5" class="internal"><span class="codenumber">1.2.1</span> <span class="title">Functions and their Representations</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-1-2-functions.html#ssec-1-2-rec" class="internal"><span class="codenumber">1.2.2</span> <span class="title">Explicit and Recursive Functions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-1-2-functions.html#sec-1-2-functions-7" class="internal"><span class="codenumber">1.2.3</span> <span class="title">Variables and Parameters</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-1-2-functions.html#ssec-1-2-comb" class="internal"><span class="codenumber">1.2.4</span> <span class="title">Combinations of Functions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-1-2-functions.html#ssec-1-2-inverse" class="internal"><span class="codenumber">1.2.5</span> <span class="title">Inverse Functions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-1-2-functions.html#ssec-1-2-aroc" class="internal"><span class="codenumber">1.2.6</span> <span class="title">Average Rate of Change</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-1-2-functions.html#sec-1-2-functions-11" class="internal"><span class="codenumber">1.2.7</span> <span class="title">Summary</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-1-2-functions.html#sec-1-2-functions-12" class="internal"><span class="codenumber">1.2.8</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-1-3.html" class="internal"><span class="codenumber">1.3</span> <span class="title">Units and Dimensions of Functions</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-1-3.html#sec-1-3-5" class="internal"><span class="codenumber">1.3.1</span> <span class="title">Units and Dimensions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-1-3.html#sec-1-3-6" class="internal"><span class="codenumber">1.3.2</span> <span class="title">Conversion Factors and Fundamental Relations</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-1-3.html#ssec-1-3-trans" class="internal"><span class="codenumber">1.3.3</span> <span class="title">Function Transformations</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-1-3.html#sec-1-3-8" class="internal"><span class="codenumber">1.3.4</span> <span class="title">Summary</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-1-3.html#sec-1-3-9" class="internal"><span class="codenumber">1.3.5</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-1-4.html" class="internal"><span class="codenumber">1.4</span> <span class="title">Linear Functions</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-1-4.html#sec-1-4-5" class="internal"><span class="codenumber">1.4.1</span> <span class="title">Linear and Proportional Relationships</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-1-4.html#sec-1-4-6" class="internal"><span class="codenumber">1.4.2</span> <span class="title">Graphs of Linear Relationships</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-1-4.html#sec-1-4-7" class="internal"><span class="codenumber">1.4.3</span> <span class="title">Solutions of Linear Equations</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-1-4.html#sec-1-4-8" class="internal"><span class="codenumber">1.4.4</span> <span class="title">Summary</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-1-4.html#sec-1-4-9" class="internal"><span class="codenumber">1.4.5</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section contains-active">
+<div class="toc-title-box"><a href="sec-1-5.html" class="internal"><span class="codenumber">1.5</span> <span class="title">Exponential and Logarithmic Functions</span></a></div>
+<ul class="structural toc-item-list active">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-1-5.html#sec-1-5-4" class="internal"><span class="codenumber">1.5.1</span> <span class="title">Exponential Functions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-1-5.html#ssec-1-5-log" class="internal"><span class="codenumber">1.5.2</span> <span class="title">Logarithmic Functions and Solving Exponential Equations</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-1-5.html#sec-1-5-6" class="internal"><span class="codenumber">1.5.3</span> <span class="title">Scaling and Fitting Data with Logarithms</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-1-5.html#sec-1-5-7" class="internal"><span class="codenumber">1.5.4</span> <span class="title">Summary</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-1-5.html#sec-1-5-8" class="internal"><span class="codenumber">1.5.5</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-1-6.html" class="internal"><span class="codenumber">1.6</span> <span class="title">Trigonometric Functions</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-1-6.html#sec-1-6-5" class="internal"><span class="codenumber">1.6.1</span> <span class="title">The Unit Circle and Trigonometric Functions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-1-6.html#sec-1-6-6" class="internal"><span class="codenumber">1.6.2</span> <span class="title">Graphs and Transformations of Trigonometric Functions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-1-6.html#sec-1-6-7" class="internal"><span class="codenumber">1.6.3</span> <span class="title">Summary</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-1-6.html#sec-1-6-8" class="internal"><span class="codenumber">1.6.4</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-1-7.html" class="internal"><span class="codenumber">1.7</span> <span class="title">Discrete-Time Dynamical Systems</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-1-7.html#sec-1-7-5" class="internal"><span class="codenumber">1.7.1</span> <span class="title">Representing Discrete-Time Dynamical Systems</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-1-7.html#sec-1-7-6" class="internal"><span class="codenumber">1.7.2</span> <span class="title">Solutions to Discrete-Time Dynamical Systems</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-1-7.html#sec-1-7-7" class="internal"><span class="codenumber">1.7.3</span> <span class="title">Summary</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-1-7.html#sec-1-7-8" class="internal"><span class="codenumber">1.7.4</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-1-8.html" class="internal"><span class="codenumber">1.8</span> <span class="title">Analyzing Discrete-Time Dynamical Systems</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-1-8.html#ssec-1-8-cob" class="internal"><span class="codenumber">1.8.1</span> <span class="title">Cob-Webbing</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-1-8.html#sec-1-8-6" class="internal"><span class="codenumber">1.8.2</span> <span class="title">Equilibrium Values and Stability</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-1-8.html#sec-1-8-7" class="internal"><span class="codenumber">1.8.3</span> <span class="title">Summary</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-1-8.html#sec-1-8-8" class="internal"><span class="codenumber">1.8.4</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-1-9.html" class="internal"><span class="codenumber">1.9</span> <span class="title">Applications: The Lung Model and Competing Species</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-1-9.html#sec-1-9-5" class="internal"><span class="codenumber">1.9.1</span> <span class="title">The Lung Model</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-1-9.html#ssec-1-9-competing" class="internal"><span class="codenumber">1.9.2</span> <span class="title">A Model for Competing Species</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-1-9.html#sec-1-9-7" class="internal"><span class="codenumber">1.9.3</span> <span class="title">Summary</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-1-9.html#sec-1-9-8" class="internal"><span class="codenumber">1.9.4</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ch-2.html" class="internal"><span class="codenumber">2</span> <span class="title">The Derivative</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-2-1.html" class="internal"><span class="codenumber">2.1</span> <span class="title">Limits of Functions</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-2-1.html#sec-2-1-5" class="internal"><span class="codenumber">2.1.1</span> <span class="title">The Notion of Limit</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-2-1.html#ssec-2-1-instvel" class="internal"><span class="codenumber">2.1.2</span> <span class="title">Instantaneous Velocity</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-2-1.html#sec-2-1-7" class="internal"><span class="codenumber">2.1.3</span> <span class="title">Summary</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-2-1.html#ez-1-2" class="internal"><span class="codenumber">2.1.4</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-1-3-derivative-pt.html" class="internal"><span class="codenumber">2.2</span> <span class="title">The Derivative of a Function at a Point</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-1-3-derivative-pt.html#sec-1-3-derivative-pt-5" class="internal"><span class="codenumber">2.2.1</span> <span class="title">The Derivative of a Function at a Point</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-1-3-derivative-pt.html#sec-1-3-derivative-pt-6" class="internal"><span class="codenumber">2.2.2</span> <span class="title">Summary</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-1-3-derivative-pt.html#ez-1-3" class="internal"><span class="codenumber">2.2.3</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-1-4-derivative-fxn.html" class="internal"><span class="codenumber">2.3</span> <span class="title">The Derivative Function</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-1-4-derivative-fxn.html#sec-1-4-derivative-fxn-5" class="internal"><span class="codenumber">2.3.1</span> <span class="title">How the derivative is itself a function</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-1-4-derivative-fxn.html#sec-1-4-derivative-fxn-6" class="internal"><span class="codenumber">2.3.2</span> <span class="title">Summary</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-1-4-derivative-fxn.html#ez-1-4" class="internal"><span class="codenumber">2.3.3</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-1-6-second-d.html" class="internal"><span class="codenumber">2.4</span> <span class="title">The Second Derivative</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-1-6-second-d.html#sec-1-6-second-d-5" class="internal"><span class="codenumber">2.4.1</span> <span class="title">Increasing or decreasing</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-1-6-second-d.html#sec-1-6-second-d-6" class="internal"><span class="codenumber">2.4.2</span> <span class="title">The Second Derivative</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-1-6-second-d.html#sec-1-6-second-d-7" class="internal"><span class="codenumber">2.4.3</span> <span class="title">Concavity</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-1-6-second-d.html#sec-1-6-second-d-8" class="internal"><span class="codenumber">2.4.4</span> <span class="title">Summary</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-1-6-second-d.html#ez-1-6" class="internal"><span class="codenumber">2.4.5</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-2-1-elem-rules.html" class="internal"><span class="codenumber">2.5</span> <span class="title">Elementary Derivative Rules</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-2-1-elem-rules.html#sec-2-1-elem-rules-4" class="internal"><span class="codenumber">2.5.1</span> <span class="title">Some Key Notation</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-2-1-elem-rules.html#sec-2-1-elem-rules-5" class="internal"><span class="codenumber">2.5.2</span> <span class="title">Constant, Power, and Exponential Functions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-2-1-elem-rules.html#ssec-2-5-cmsum" class="internal"><span class="codenumber">2.5.3</span> <span class="title">Constant Multiples and Sums of Functions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-2-1-elem-rules.html#sec-2-1-elem-rules-7" class="internal"><span class="codenumber">2.5.4</span> <span class="title">Summary</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-2-1-elem-rules.html#ez-2-1" class="internal"><span class="codenumber">2.5.5</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-2-2-sin-cos.html" class="internal"><span class="codenumber">2.6</span> <span class="title">Derivatives of the Sine and Cosine Functions</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-2-2-sin-cos.html#sec-2-2-sin-cos-5" class="internal"><span class="codenumber">2.6.1</span> <span class="title">The sine and cosine functions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-2-2-sin-cos.html#sec-2-2-sin-cos-6" class="internal"><span class="codenumber">2.6.2</span> <span class="title">Summary</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-2-2-sin-cos.html#ez-2-2" class="internal"><span class="codenumber">2.6.3</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-2-3-prod-quot.html" class="internal"><span class="codenumber">2.7</span> <span class="title">Derivatives of Products and Quotients</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-2-3-prod-quot.html#sec-2-3-prod-quot-5" class="internal"><span class="codenumber">2.7.1</span> <span class="title">The product rule</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-2-3-prod-quot.html#sec-2-3-prod-quot-6" class="internal"><span class="codenumber">2.7.2</span> <span class="title">The quotient rule</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-2-3-prod-quot.html#sec-2-3-prod-quot-7" class="internal"><span class="codenumber">2.7.3</span> <span class="title">Combining rules</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-2-3-prod-quot.html#sec-2-3-prod-quot-8" class="internal"><span class="codenumber">2.7.4</span> <span class="title">Summary</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-2-3-prod-quot.html#ez-2-3" class="internal"><span class="codenumber">2.7.5</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-2-5-chain.html" class="internal"><span class="codenumber">2.8</span> <span class="title">Derivatives of Compositions</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-2-5-chain.html#sec-2-5-chain-5" class="internal"><span class="codenumber">2.8.1</span> <span class="title">The chain rule</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-2-5-chain.html#sec-2-5-chain-6" class="internal"><span class="codenumber">2.8.2</span> <span class="title">Using multiple rules simultaneously</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-2-5-chain.html#sec-2-5-chain-7" class="internal"><span class="codenumber">2.8.3</span> <span class="title">The composite version of basic function rules</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-2-5-chain.html#sec-2-5-chain-8" class="internal"><span class="codenumber">2.8.4</span> <span class="title">Summary</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-2-5-chain.html#ez-2-5" class="internal"><span class="codenumber">2.8.5</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-2-6-inverse.html" class="internal"><span class="codenumber">2.9</span> <span class="title">Derivatives of Inverse Functions</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-2-6-inverse.html#sec-2-6-inverse-5" class="internal"><span class="codenumber">2.9.1</span> <span class="title">Basic facts about inverse functions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-2-6-inverse.html#sec-2-6-inverse-6" class="internal"><span class="codenumber">2.9.2</span> <span class="title">The derivative of the natural logarithm function</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-2-6-inverse.html#sec-2-6-inverse-7" class="internal"><span class="codenumber">2.9.3</span> <span class="title">The link between the derivative of a function and the derivative of its inverse</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-2-6-inverse.html#sec-2-6-inverse-8" class="internal"><span class="codenumber">2.9.4</span> <span class="title">Summary</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-2-6-inverse.html#ez-2-6" class="internal"><span class="codenumber">2.9.5</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ch-3.html" class="internal"><span class="codenumber">3</span> <span class="title">Using the Derivative</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-1-8-tan-line-approx.html" class="internal"><span class="codenumber">3.1</span> <span class="title">Linear and Quadratic Approximation</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-1-8-tan-line-approx.html#sec-1-8-tan-line-approx-5" class="internal"><span class="codenumber">3.1.1</span> <span class="title">The tangent line</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-1-8-tan-line-approx.html#sec-1-8-tan-line-approx-6" class="internal"><span class="codenumber">3.1.2</span> <span class="title">Linear Approximation</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-1-8-tan-line-approx.html#sec-1-8-tan-line-approx-7" class="internal"><span class="codenumber">3.1.3</span> <span class="title">Quadratic Approximation</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-1-8-tan-line-approx.html#sec-1-8-tan-line-approx-8" class="internal"><span class="codenumber">3.1.4</span> <span class="title">Summary</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-1-8-tan-line-approx.html#ez-1-8" class="internal"><span class="codenumber">3.1.5</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-3-2.html" class="internal"><span class="codenumber">3.2</span> <span class="title">The Stability Theorem</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-3-2.html#sec-3-2-5" class="internal"><span class="codenumber">3.2.1</span> <span class="title">Testing stability of equilibria using the derivative</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-3-2.html#ssec-3-2-inconclusive" class="internal"><span class="codenumber">3.2.2</span> <span class="title">An inconclusive case using the derivative</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-3-2.html#sec-3-2-7" class="internal"><span class="codenumber">3.2.3</span> <span class="title">Summary</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-3-2.html#sec-3-2-8" class="internal"><span class="codenumber">3.2.4</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-3-3.html" class="internal"><span class="codenumber">3.3</span> <span class="title">The Logistic Discrete-Time Dynamical System</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-3-3.html#sec-3-3-6" class="internal"><span class="codenumber">3.3.1</span> <span class="title">The logistic map</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-3-3.html#sec-3-3-7" class="internal"><span class="codenumber">3.3.2</span> <span class="title">Equilibrium values and stability of the logistic map</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-3-3.html#sec-3-3-8" class="internal"><span class="codenumber">3.3.3</span> <span class="title">Summary</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-3-3.html#sec-3-3-9" class="internal"><span class="codenumber">3.3.4</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-3-1-tests.html" class="internal"><span class="codenumber">3.4</span> <span class="title">Identifying Extreme Values of Functions</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-3-1-tests.html#sec-3-1-tests-5" class="internal"><span class="codenumber">3.4.1</span> <span class="title">Critical numbers and the first derivative test</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-3-1-tests.html#sec-3-1-tests-6" class="internal"><span class="codenumber">3.4.2</span> <span class="title">The second derivative test</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-3-1-tests.html#sec-3-1-tests-7" class="internal"><span class="codenumber">3.4.3</span> <span class="title">Summary</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-3-1-tests.html#ez-3-1" class="internal"><span class="codenumber">3.4.4</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-3-3-optimization.html" class="internal"><span class="codenumber">3.5</span> <span class="title">Global Optimization and Applications</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-3-3-optimization.html#sec-3-3-optimization-5" class="internal"><span class="codenumber">3.5.1</span> <span class="title">Global Optimization</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-3-3-optimization.html#sec-3-3-optimization-6" class="internal"><span class="codenumber">3.5.2</span> <span class="title">Applications</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-3-3-optimization.html#sec-3-3-optimization-7" class="internal"><span class="codenumber">3.5.3</span> <span class="title">Summary</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-3-3-optimization.html#ez-3-3" class="internal"><span class="codenumber">3.5.4</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-2-8-LHR.html" class="internal"><span class="codenumber">3.6</span> <span class="title">Limits: L’Hôpital’s Rule</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-2-8-LHR.html#sec-2-8-LHR-5" class="internal"><span class="codenumber">3.6.1</span> <span class="title">Using derivatives to evaluate indeterminate limits of the form <span class="process-math">\(\frac{0}{0}\text{.}\)</span></span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-2-8-LHR.html#ssec-3-6-limitsinfty" class="internal"><span class="codenumber">3.6.2</span> <span class="title">Limits involving <span class="process-math">\(\infty\)</span></span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-2-8-LHR.html#sec-2-8-LHR-7" class="internal"><span class="codenumber">3.6.3</span> <span class="title">Summary</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-2-8-LHR.html#ez-2-8" class="internal"><span class="codenumber">3.6.4</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-3-6.html" class="internal"><span class="codenumber">3.7</span> <span class="title">Limits: Leading Behaviors</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-3-6.html#sec-3-6-6" class="internal"><span class="codenumber">3.7.1</span> <span class="title">Leading Behavior at <span class="process-math">\(\infty\)</span></span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-3-6.html#sec-3-6-7" class="internal"><span class="codenumber">3.7.2</span> <span class="title">Leading Behavior at <span class="process-math">\(-\infty\)</span></span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-3-6.html#sec-3-6-8" class="internal"><span class="codenumber">3.7.3</span> <span class="title">Summary</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-3-6.html#sec-3-6-9" class="internal"><span class="codenumber">3.7.4</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ch-4.html" class="internal"><span class="codenumber">4</span> <span class="title">Continuous-Time Dynamical Systems</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-4-1.html" class="internal"><span class="codenumber">4.1</span> <span class="title">Introduction to Differential Equations and Antiderivatives</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-1.html#sec-4-1-5" class="internal"><span class="codenumber">4.1.1</span> <span class="title">Differential Equations</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-1.html#sec-4-1-6" class="internal"><span class="codenumber">4.1.2</span> <span class="title">Solutions to Differential Equations and Antiderivatives</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-1.html#sec-4-1-7" class="internal"><span class="codenumber">4.1.3</span> <span class="title">Summary</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-4-1.html#sec-4-1-8" class="internal"><span class="codenumber">4.1.4</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-4-2.html" class="internal"><span class="codenumber">4.2</span> <span class="title">Solving Pure-Time Differential Equations</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-2.html#sec-4-2-5" class="internal"><span class="codenumber">4.2.1</span> <span class="title">Basic Antiderivatives</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-2.html#ssec-4-2-usub" class="internal"><span class="codenumber">4.2.2</span> <span class="title"><span class="process-math">\(u\)</span>-Substitution</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-2.html#sec-4-2-7" class="internal"><span class="codenumber">4.2.3</span> <span class="title">Summary</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-4-2.html#sec-4-2-8" class="internal"><span class="codenumber">4.2.4</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-4-3.html" class="internal"><span class="codenumber">4.3</span> <span class="title">Riemann Sums</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-3.html#sec-4-3-5" class="internal"><span class="codenumber">4.3.1</span> <span class="title">Areas, Distance, and Displacement</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-3.html#sec-4-3-7" class="internal"><span class="codenumber">4.3.2</span> <span class="title">Sigma Notation</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-3.html#sec-4-3-8" class="internal"><span class="codenumber">4.3.3</span> <span class="title">Riemann Sums</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-3.html#sec-4-3-9" class="internal"><span class="codenumber">4.3.4</span> <span class="title">When the function is sometimes negative</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-3.html#sec-4-3-10" class="internal"><span class="codenumber">4.3.5</span> <span class="title">Summary</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-4-3.html#ez-4-2" class="internal"><span class="codenumber">4.3.6</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-4-4.html" class="internal"><span class="codenumber">4.4</span> <span class="title">The Definite Integral</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-4.html#sec-4-4-5" class="internal"><span class="codenumber">4.4.1</span> <span class="title">The definition of the definite integral</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-4.html#sec-4-4-6" class="internal"><span class="codenumber">4.4.2</span> <span class="title">Some properties of the definite integral</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-4.html#sec-4-4-7" class="internal"><span class="codenumber">4.4.3</span> <span class="title">How the definite integral is connected to a function’s average value</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-4.html#sec-4-4-8" class="internal"><span class="codenumber">4.4.4</span> <span class="title">Summary</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-4-4.html#ez-4-3" class="internal"><span class="codenumber">4.4.5</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-4-5.html" class="internal"><span class="codenumber">4.5</span> <span class="title">The Fundamental Theorem of Calculus</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-5.html#sec-4-5-6" class="internal"><span class="codenumber">4.5.1</span> <span class="title">The Fundamental Theorem of Calculus</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-5.html#sec-4-5-7" class="internal"><span class="codenumber">4.5.2</span> <span class="title">Evaluating Definite Integrals via <span class="process-math">\(u\)</span>-substitution</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-5.html#sec-4-5-8" class="internal"><span class="codenumber">4.5.3</span> <span class="title">The total change theorem</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-5.html#sec-4-5-9" class="internal"><span class="codenumber">4.5.4</span> <span class="title">Summary</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-4-5.html#sec-4-5-10" class="internal"><span class="codenumber">4.5.5</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-4-6.html" class="internal"><span class="codenumber">4.6</span> <span class="title">Approximations of Solutions</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-6.html#sec-4-6-5" class="internal"><span class="codenumber">4.6.1</span> <span class="title">Euler’s Method</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-6.html#sec-4-6-6" class="internal"><span class="codenumber">4.6.2</span> <span class="title">The error in Euler’s method</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-6.html#sec-4-6-7" class="internal"><span class="codenumber">4.6.3</span> <span class="title">Summary</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-4-6.html#ez-7-3" class="internal"><span class="codenumber">4.6.4</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-backmatter">
+<div class="toc-title-box"><a href="meta_backmatter.html" class="internal"><span class="title">Backmatter</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-solutions"><div class="toc-title-box"><a href="exercises-answers.html" class="internal"><span class="codenumber">A</span> <span class="title">Answers to Selected Exercises</span></a></div></li>
+<li class="toc-item toc-appendix"><div class="toc-title-box"><a href="meta_backmatter-3.html" class="internal"><span class="codenumber">B</span> <span class="title">List of Symbols</span></a></div></li>
+<li class="toc-item toc-index"><div class="toc-title-box"><a href="meta_backmatter-4.html" class="internal"><span class="title">Index</span></a></div></li>
+<li class="toc-item toc-colophon"><div class="toc-title-box"><a href="meta_backmatter-5.html" class="internal"><span class="title">Colophon</span></a></div></li>
+</ul>
+</li>
+</ul></nav></div>
+<main class="ptx-main"><div id="ptx-content" class="ptx-content"><section xmlns:xlink="http://www.w3.org/1999/xlink" class="section" id="sec-1-5"><h2 class="heading hide-type">
+<span class="type">Section</span><span class="space"> </span><span class="codenumber">1.5</span><span class="space"> </span><span class="title">Exponential and Logarithmic Functions</span>
+</h2>
+<article class="objectives goal-like" id="obj-1-5"><h3 class="heading"><span class="type">Motivating Questions</span></h3>
+<ul class="disc" id="obj-1-5-1">
+<li id="obj-1-5-1-1"><div class="para" id="obj-1-5-1-1-1">What is an exponential function?</div></li>
+<li id="obj-1-5-1-2"><div class="para" id="obj-1-5-1-2-1">What is a logarithmic function?</div></li>
+<li id="obj-1-5-1-3"><div class="para" id="obj-1-5-1-3-1">How do we solve exponential equations?</div></li>
+</ul></article><article class="exploration project-like" id="wu-1-5"><h3 class="heading">
+<span class="type">Warm-Up</span><span class="space"> </span><span class="codenumber">1.5.1</span><span class="period">.</span>
+</h3>
+<div class="para" id="wu-1-5-1">The table of a function <span class="process-math">\(h(x)\)</span> is given below. Compute <span class="process-math">\(AROC_{[-1,0]}\text{,}\)</span> <span class="process-math">\(AROC_{[0,1]}\text{,}\)</span> and <span class="process-math">\(AROC_{[1,2]}\text{,}\)</span> recalling <a href="sec-1-2-functions.html#ssec-1-2-aroc" class="internal" title="Subsection 1.2.6: Average Rate of Change">Subsection 1.2.6</a> as needed.</div>
+<figure class="table table-like" id="wu-1-5-2"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">1.5.1<span class="period">.</span></span><span class="space"> </span></figcaption><div class="tabular-box natural-width"><table class="tabular">
+<tr class="header-horizontal">
+<th scope="col" class="l m b1 r0 l0 t0 lines"><span class="process-math">\(x\)</span></th>
+<th scope="col" class="l m b1 r0 l0 t0 lines"><span class="process-math">\(h(x)\)</span></th>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(-1\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(0.5\)</span></td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(0\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(1\)</span></td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(1\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(2\)</span></td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(2\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(4\)</span></td>
+</tr>
+</table></div></figure><div class="para" id="wu-1-5-3">Then sketch the visual representation of each average rate of change on a graph to get an idea of how the function changes over time.</div></article><section class="subsection" id="sec-1-5-4"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">1.5.1</span><span class="space"> </span><span class="title">Exponential Functions</span>
+</h3>
+<aside class="aside aside-like" id="sec-1-5-4-2"><h4 class="heading"><span class="title">Properties of Exponents.</span></h4>
+<div class="para" id="sec-1-5-4-2-2">In working with exponential functions, we will often use properties of exponents. We will not review those in full detail in this text, but you may find a review with examples at <a class="external" href="https://tutorial.math.lamar.edu/Classes/Alg/IntegerExponents.aspx#Int_Props" target="_blank">Paul’s Online Notes: Properties of Exponents</a><details class="ptx-footnote" aria-live="polite" id="sec-1-5-4-2-2-2"><summary class="ptx-footnote__number" title="Footnote 1.5.1"><sup> 1 </sup></summary><div class="ptx-footnote__contents" id="sec-1-5-4-2-2-2"><code class="code-inline tex2jax_ignore">tutorial.math.lamar.edu/Classes/Alg/IntegerExponents.aspx#Int_Props</code></div></details>.</div></aside><div class="para" id="sec-1-5-4-3">You should have found in <a href="sec-1-5.html#wu-1-5" class="xref" data-knowl="./knowl/xref/wu-1-5.html" data-reveal-label="Reveal" data-close-label="Close" title="Warm-Up 1.5.1">Warm-Up 1.5.1</a> that the value of <span class="process-math">\(AROC_{[a,b]}\)</span> was dependent on the interval <span class="process-math">\([a,b]\text{.}\)</span> Since this function does not have a constant average rate of change, we know that it does not represent a linear relationship that we studied in <a href="sec-1-4.html" class="internal" title="Section 1.4: Linear Functions">Section 1.4</a>. There is, however, still an important pattern to be discovered in this relationship: each consecutive output value is multiplied by the constant <span class="process-math">\(2\)</span> in order to get the next output value. This is the defining characteristic of an <dfn class="terminology">exponential function</dfn>:</div>
+<article class="definition definition-like" id="sec-1-5-4-4"><h4 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">1.5.2</span><span class="period">.</span><span class="space"> </span><span class="title">Exponential Function.</span>
+</h4>
+<div class="para" id="sec-1-5-4-4-3">An <dfn class="terminology">exponential function</dfn> is a function of the form <span class="process-math">\(f(x)= b^x\text{,}\)</span> for some constant <span class="process-math">\(b\)</span> where <span class="process-math">\(b \gt 0\)</span> and <span class="process-math">\(b \neq 1\text{.}\)</span> The constant <span class="process-math">\(b\)</span> is called the  <dfn class="terminology">base</dfn> of the exponential.</div></article><div class="para" id="sec-1-5-4-5">If <span class="process-math">\(b \gt 1\)</span> we call the function  <dfn class="terminology">exponential growth</dfn>. If <span class="process-math">\(0 \lt b \lt 1\)</span> we call the function  <dfn class="terminology">exponential decay</dfn>. Use the interactive to view how the graph of <span class="process-math">\(f(x) = b^x\)</span> changes for different values of <span class="process-math">\(b\text{:}\)</span>
+</div>
+<iframe src="https://www.desmos.com/calculator/h9kzns2y9j" id="sec-1-5-4-6" width="1020" height="510"></iframe><article class="example example-like" id="sec-1-5-4-7"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">1.5.3</span><span class="period">.</span><span class="space"> </span><span class="title">Exponential Models.</span>
+</h4>
+<div class="para" id="sec-1-5-4-7-2">Exponential functions can be accurate in modeling population growth on a restricted domain. If you have a population that initially has <span class="process-math">\(1\)</span> individual, and each individual produces one more individual every year (i.e., the population doubles every year), you could model this with the exponential function <span class="process-math">\(p(t) = 2^t\text{.}\)</span>
+</div></article><div class="para logical" id="sec-1-5-4-8">
+<div class="para">You may observe a system that behaves exponentially, but does not exactly fit a model of the form <span class="process-math">\(y=b^x\text{.}\)</span> For example, the output value associated with <span class="process-math">\(x=0\)</span> may not be always be <span class="process-math">\(b^0 =1\text{.}\)</span> This is an instance in which transformations from <a href="sec-1-3.html#ssec-1-3-trans" class="internal" title="Subsection 1.3.3: Function Transformations">Subsection 1.3.3</a> can be useful. A general transformation of an exponential function has the form</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/ssec-1-3-trans.html">
+\begin{equation*}
+f(x) = v \cdot b^{h(x-r)}+ u\text{.}
+\end{equation*}
+</div>
+<div class="para">Using rules of exponents this can be written as</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/ssec-1-3-trans.html">
+\begin{equation*}
+f(x) =(vb^{-hr}) \cdot (b^h)^x +u\text{.}
+\end{equation*}
+</div>
+<div class="para">Defining <span class="process-math">\(v_1=vb^{-hr}\)</span> as a new vertical scale and <span class="process-math">\(b_1=b^h\)</span> as a new base, we can write the transformation as</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/ssec-1-3-trans.html">
+\begin{equation*}
+f(x)=v_1 \cdot (b_1)^x + u\text{,}
+\end{equation*}
+</div>
+<div class="para">using only a vertical scale and vertical shift on the graph of <span class="process-math">\(y=(b_1)^x\text{.}\)</span> Therefore, we will focus on transformations of exponential functions in the form <span class="process-math">\(f(x)=v \cdot b^x +u\text{.}\)</span> Take a moment to use the interactive below to describe how each parameter transforms <span class="process-math">\(y=b^x\)</span> (<span class="process-math">\(b \gt 1\)</span>) before viewing the answers.</div>
+</div>
+<iframe src="https://www.desmos.com/calculator/aosgwl700w" id="sec-1-5-4-9" width="1020" height="510"></iframe><div class="para logical" id="sec-1-5-4-10"><ul class="disc" id="sec-1-5-4-10-1">
+<li id="sec-1-5-4-10-1-1"><div class="para" id="p-derived-sec-1-5-4-10-1-1">
+<span class="process-math">\(v\)</span> <details id="sec-1-5-4-10-1-1-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content">
+<span class="process-math">\(|v|\text{.}\)</span><span class="process-math">\(f(x)=vb^x\text{,}\)</span><span class="process-math">\(v\)</span><span class="process-math">\(y\)</span>
+</div></details>
+</div></li>
+<li id="sec-1-5-4-10-1-2"><div class="para" id="p-derived-sec-1-5-4-10-1-2">
+<span class="process-math">\(u\)</span> <details id="sec-1-5-4-10-1-2-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><span class="process-math">\(|u|\)</span></div></details>
+</div></li>
+</ul></div>
+<div class="para" id="sec-1-5-4-11">Though <span class="process-math">\(AROC_{[a,b]}\)</span> is not constant for exponential functions, we can still use these computations to help identify when a relationship fits an exponential model (or a transformation of one) using the following fact:</div>
+<article class="theorem theorem-like" id="f-1-5-aroc"><h4 class="heading">
+<span class="type">Fact</span><span class="space"> </span><span class="codenumber">1.5.4</span><span class="period">.</span>
+</h4>
+<div class="para logical" id="f-1-5-aroc-1">
+<div class="para">If <span class="process-math">\(f(x) = v \cdot b^{x} + u\text{,}\)</span> then</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\dfrac{AROC_{[x+1,x+2]}}{AROC_{[x,x+1]}} = b
+\end{equation*}
+</div>
+<div class="para">for every <span class="process-math">\(x\)</span> value.</div>
+</div></article><article class="example example-like" id="sec-1-5-4-13"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">1.5.5</span><span class="period">.</span><span class="space"> </span><span class="title">Constant AROC Ratio.</span>
+</h4>
+<a href="sec-1-5.html#wu-1-5" class="xref" data-knowl="./knowl/xref/wu-1-5.html" data-reveal-label="Reveal" data-close-label="Close" title="Warm-Up 1.5.1">Warm-Up 1.5.1</a><div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/wu-1-5.html">
+\begin{equation*}
+\dfrac{AROC_{[x+1,x+2]}}{AROC_{[x,x+1]}}
+\end{equation*}
+</div>
+<span class="process-math">\(x=-1\)</span><span class="process-math">\(x=0\text{:}\)</span><div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/wu-1-5.html">
+\begin{equation*}
+\dfrac{AROC_{[-1+1,-1+2]}}{AROC_{[-1,-1+1]}} = \dfrac{AROC_{[0,1]}}{AROC_{[-1,0]}} = \dfrac{1}{0.5} = 2  
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/wu-1-5.html">
+\begin{equation*}
+\dfrac{AROC_{[0+1,0+2]}}{AROC_{[0,0+1]}} = \dfrac{AROC_{[1,2]}}{AROC_{[0,1]}} = \dfrac{2}{1} = 2  
+\end{equation*}
+</div>
+<div class="para" id="sec-1-5-4-13-8">The table lists points of the function <span class="process-math">\(f(x) = 2^x\text{,}\)</span> which is why we computed the constant <span class="process-math">\(b=2\)</span> for each ratio.</div></article><article class="activity project-like" id="sec-1-5-4-14"><h4 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">1.5.2</span><span class="period">.</span>
+</h4>
+<div class="para" id="sec-1-5-4-14-1">Determine whether the tables below represent an exponential relationship (or a transformation of one). If yes, what is the base?</div>
+<figure class="table table-like" id="sec-1-5-4-14-2"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">1.5.6<span class="period">.</span></span><span class="space"> </span></figcaption><div class="tabular-box natural-width"><table class="tabular">
+<tr class="header-horizontal">
+<th scope="col" class="l m b1 r0 l0 t0 lines"><span class="process-math">\(x\)</span></th>
+<th scope="col" class="l m b1 r0 l0 t0 lines"><span class="process-math">\(g(x)\)</span></th>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(-2\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(5\)</span></td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(-1\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(3\)</span></td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(0\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(1\)</span></td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(1\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(-1\)</span></td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(2\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(-3\)</span></td>
+</tr>
+</table></div></figure><figure class="table table-like" id="sec-1-5-4-14-3"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">1.5.7<span class="period">.</span></span><span class="space"> </span></figcaption><div class="tabular-box natural-width"><table class="tabular">
+<tr class="header-horizontal">
+<th scope="col" class="l m b1 r0 l0 t0 lines"><span class="process-math">\(x\)</span></th>
+<th scope="col" class="l m b1 r0 l0 t0 lines"><span class="process-math">\(k(x)\)</span></th>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(-2\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(15\)</span></td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(-1\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(7\)</span></td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(0\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(3\)</span></td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(1\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(1\)</span></td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(2\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(0\)</span></td>
+</tr>
+</table></div></figure></article><div class="para" id="sec-1-5-4-15">It can be useful to write exponential functions using specific bases, depending on the information we are given about the system and what question(s) we are trying to answer. There are two related contexts in which this will be relevant:</div>
+<article class="assemblage assemblage-like" id="sec-1-5-4-16"><h4 class="heading"><span class="title">Doubling Time and Half Life.</span></h4>
+<div class="para" id="sec-1-5-4-16-8">Given a function <span class="process-math">\(p(t)=p_0 \cdot b^t\text{,}\)</span> <span class="process-math">\(b \gt 1\text{,}\)</span> the <dfn class="terminology">doubling time</dfn> is the input value <span class="process-math">\(t_d\)</span> such that <span class="process-math">\(p(t_d)= 2p_0\text{.}\)</span>
+</div>
+<div class="para" id="sec-1-5-4-16-9">Given a function <span class="process-math">\(p(t)=p_0 \cdot b^t\text{,}\)</span> <span class="process-math">\(0 \lt b \lt 1\text{,}\)</span> the <dfn class="terminology">half life</dfn> is the input value <span class="process-math">\(t_h\)</span> such that <span class="process-math">\(p(t_h)= \dfrac{1}{2}p_0\text{.}\)</span>
+</div></article><article class="example example-like" id="ex-1-5-dt"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">1.5.8</span><span class="period">.</span><span class="space"> </span><span class="title">Doubling Time.</span>
+</h4>
+<div class="para logical" id="ex-1-5-dt-2">
+<div class="para">If we know that the doubling time of a population is <span class="process-math">\(3\)</span> years, then we can quickly write down a model for this population using the base <span class="process-math">\(2\text{:}\)</span>
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+p(t) = p_0 \cdot 2^{t/3}\text{,}
+\end{equation*}
+</div>
+<div class="para">where <span class="process-math">\(t\)</span> is measured in years. Note that when we plug in <span class="process-math">\(t=3\text{,}\)</span> we get</div>
+<div class="displaymath process-math">
+\begin{equation*}
+p(3) = p_0 \cdot 2^{3/3} = 2p_0\text{,}
+\end{equation*}
+</div>
+<div class="para">which shows that the doubling time is <span class="process-math">\(t_d =3\)</span> as desired. If we’d like to know how much the population increases each <em class="emphasis">year</em>, we can use rules of exponents to write</div>
+<div class="displaymath process-math">
+\begin{equation*}
+p(t)= p_0 \cdot (2^{1/3})^t\text{,}
+\end{equation*}
+</div>
+<div class="para">to see that the base is <span class="process-math">\(2^{1/3} \approx 1.26\text{.}\)</span> This means the population increases by approximately <span class="process-math">\(26\%\)</span> each year.</div>
+</div></article><div class="para logical" id="sec-1-5-4-18">
+<div class="para">Another common base for writing exponential functions is the number  <span class="process-math">\(e\text{.}\)</span> This is an irrational number equal to approximately <span class="process-math">\(2.718\text{,}\)</span> which is special in calculus for reasons we will see in <a href="sec-2-1-elem-rules.html" class="internal" title="Section 2.5: Elementary Derivative Rules">Section 2.5</a>. Writing an exponential function such as <span class="process-math">\(2^x\)</span> using base <span class="process-math">\(e\)</span> means re-writing <span class="process-math">\(2^x\)</span> as <span class="process-math">\(e^{kx}\)</span> for some constant <span class="process-math">\(k\text{.}\)</span> Using rules of exponents to write</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/sec-2-1-elem-rules.html">
+\begin{equation*}
+2^x = e^{kx} = (e^k)^x\text{,}
+\end{equation*}
+</div>
+<div class="para">we see this means finding a constant <span class="process-math">\(k\)</span> such that <span class="process-math">\(2 = e^k\text{.}\)</span> How do we find such a <span class="process-math">\(k\text{?}\)</span>
+</div>
+</div>
+<div class="para" id="sec-1-5-4-19">Similarly, in <a href="sec-1-5.html#ex-1-5-dt" class="xref" data-knowl="./knowl/xref/ex-1-5-dt.html" data-reveal-label="Reveal" data-close-label="Close" title="Example 1.5.8: Doubling Time">Example 1.5.8</a>, we were given the doubling time and found an equation. What if we were given an equation <span class="process-math">\(p(t)=10 \cdot (1.5)^t\text{,}\)</span> and asked to find the doubling time? We would need to solve the equation <span class="process-math">\(20 = 10 \cdot (1.5)^t\text{,}\)</span> or equivalently <span class="process-math">\(2 = 1.5^t\text{,}\)</span> for <span class="process-math">\(t\text{.}\)</span>
+</div>
+<div class="para" id="sec-1-5-4-20">Solving <span class="process-math">\(2 = e^k\)</span> for <span class="process-math">\(k\)</span> and <span class="process-math">\(2 = 1.5^t\)</span> for <span class="process-math">\(t\)</span> are similar in that the variable we are looking to solve for is in the <em class="emphasis">exponent</em>. These are called  <dfn class="terminology">exponential equations</dfn>, and we need tools from <a href="sec-1-5.html#ssec-1-5-log" class="internal" title="Subsection 1.5.2: Logarithmic Functions and Solving Exponential Equations">Subsection 1.5.2</a> to solve them.</div></section><section class="subsection" id="ssec-1-5-log"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">1.5.2</span><span class="space"> </span><span class="title">Logarithmic Functions and Solving Exponential Equations</span>
+</h3>
+<aside class="aside aside-like" id="ssec-1-5-log-2"><h4 class="heading"><span class="title">Properties of Logarithms.</span></h4>
+<div class="para" id="ssec-1-5-log-2-2">In working with logarithmic functions, we will often use properties of logarithms. We will not review those in full detail in this text, but you may find a review with examples at <a class="external" href="https://tutorial.math.lamar.edu/Classes/Alg/LogFunctions.aspx" target="_blank">Paul’s Online Notes: Properties of Logarithms</a><details class="ptx-footnote" aria-live="polite" id="ssec-1-5-log-2-2-2"><summary class="ptx-footnote__number" title="Footnote 1.5.2"><sup> 2 </sup></summary><div class="ptx-footnote__contents" id="ssec-1-5-log-2-2-2"><code class="code-inline tex2jax_ignore">tutorial.math.lamar.edu/Classes/Alg/LogFunctions</code></div></details>.</div></aside><div class="para" id="ssec-1-5-log-3">
+<article class="question example-like" id="ssec-1-5-log-3-1"><h4 class="heading">
+<span class="type">Question</span><span class="space"> </span><span class="codenumber">1.5.9</span><span class="period">.</span>
+</h4>
+<em class="emphasis">Hint</em></article> <details id="ssec-1-5-log-3-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><a href="sec-1-2-functions.html#ex-1-2-inv" class="xref" data-knowl="./knowl/xref/ex-1-2-inv.html" data-reveal-label="Reveal" data-close-label="Close" title="Example 1.2.10: Inverse Functions as Graphs">Example 1.2.10</a></div></details>
+</div>
+<article class="definition definition-like" id="ssec-1-5-log-4"><h4 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">1.5.10</span><span class="period">.</span><span class="space"> </span><span class="title">Logarithmic Function of Base <span class="process-math">\(b\)</span>.</span>
+</h4>
+<span class="process-math">\(b\text{,}\)</span><span class="process-math">\(y=b^x\text{,}\)</span><dfn class="terminology">logarithmic function of base <span class="process-math">\(b\)</span></dfn><span class="process-math">\(y=\log_b(x)\text{.}\)</span></article><div class="para" id="ssec-1-5-log-5">Base <span class="process-math">\(10\)</span> and base <span class="process-math">\(e\)</span> are used often and have special notation:</div>
+<article class="assemblage assemblage-like" id="ssec-1-5-log-6"><h4 class="heading"><span class="title">The Common and Natural Log.</span></h4>
+<div class="para" id="ssec-1-5-log-6-4">Instead of writing <span class="process-math">\(\log_{10}(x)\text{,}\)</span> we write <span class="process-math">\(\log(x)\text{.}\)</span> Note that every logarithm has a base, so if you don’t see one indicated, it is assumed to be <span class="process-math">\(10\text{!}\)</span> This is called the <dfn class="terminology">common logarithm</dfn>.</div>
+<div class="para" id="ssec-1-5-log-6-5">Instead of writing <span class="process-math">\(\log_{e}(x)\text{,}\)</span> we write <span class="process-math">\(\ln(x)\text{.}\)</span> This is called the <dfn class="terminology">natural logarithm</dfn>.</div></article><div class="para" id="ssec-1-5-log-7">Since logarithmic functions are inverse functions of exponentials, and inverse functions are obtained by swapping the input and output of the original function, we can always interpret logarithmic expressions in terms of exponential expressions:</div>
+<article class="assemblage assemblage-like" id="ssec-1-5-log-8"><h4 class="heading"><span class="title">Interpreting Log Expressions.</span></h4>
+<div class="para logical" id="ssec-1-5-log-8-2">
+<div class="para">The expression</div>
+<div class="displaymath process-math">
+\begin{equation*}
+y=\log_b(x)
+\end{equation*}
+</div>
+<div class="para">is equivalent to the expression</div>
+<div class="displaymath process-math">
+\begin{equation*}
+b^y = x\text{.}
+\end{equation*}
+</div>
+</div></article><article class="example example-like" id="ssec-1-5-log-9"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">1.5.11</span><span class="period">.</span><span class="space"> </span><span class="title">Interpreting Log Expressions.</span>
+</h4>
+<div class="para" id="ssec-1-5-log-9-2"></div>
+<div class="para" id="ssec-1-5-log-9-3">
+<span class="process-math">\(\log_2(8) = 3\)</span> since <span class="process-math">\(2^3 = 8\text{.}\)</span>
+</div>
+<div class="para" id="ssec-1-5-log-9-4">
+<span class="process-math">\(\log(0.01) = -2\)</span> since <span class="process-math">\(10^{-2} = 0.01\text{.}\)</span>
+</div>
+<div class="para" id="ssec-1-5-log-9-5">
+<span class="process-math">\(\ln(\sqrt{e}) = 0.5\)</span> since <span class="process-math">\(e^{0.5} =\sqrt{e}\text{.}\)</span>
+</div></article><div class="para" id="ssec-1-5-log-10">Since the graph of an inverse functions is related to the graph of the original function by reflection across the line <span class="process-math">\(y=x\)</span> (<a href="sec-1-2-functions.html#ex-1-2-inv" class="xref" data-knowl="./knowl/xref/ex-1-2-inv.html" data-reveal-label="Reveal" data-close-label="Close" title="Example 1.2.10: Inverse Functions as Graphs">Example 1.2.10</a>), we can see what graphs of logarithmic functions look like as the base <span class="process-math">\(b\)</span> changes:</div>
+<iframe src="https://www.desmos.com/calculator/s17e2hlhqk" id="ssec-1-5-log-11" width="1020" height="510"></iframe><div class="para" id="ssec-1-5-log-12">A property of logarithms that make them a useful tool for solving exponential equations is the following:</div>
+<article class="assemblage assemblage-like" id="ssec-1-5-log-13"><h4 class="heading"><span class="title">Composing Logarithms and Exponentials.</span></h4>
+<div class="para logical" id="ssec-1-5-log-13-2">
+<div class="displaymath process-math">
+\begin{equation*}
+\log_b(a^x) = x\cdot \log_b(a)
+\end{equation*}
+</div>
+<div class="para">In words, this says that if everything inside of a logarithm is raised to a power, we can bring the power outside of the logarithm using multiplication. Note also that the bases do not need to match to use this property. If they do match, we get a nicer simplification:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\log_b(b^x) = x\cdot\log_b(b) = x
+\end{equation*}
+</div>
+</div></article><article class="example example-like" id="ssec-1-5-log-14"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">1.5.12</span><span class="period">.</span><span class="space"> </span><span class="title">Solving Exponential Equations Using Logarithms.</span>
+</h4>
+<div class="para logical" id="ssec-1-5-log-14-2">
+<div class="para">We will write <span class="process-math">\(y=2^x\)</span> in the form <span class="process-math">\(y=e^{kx}\text{.}\)</span> As seen previously, this means we must solve <span class="process-math">\(2=e^k\)</span> for <span class="process-math">\(k\text{:}\)</span>
+</div>
+<div class="displaymath process-math" id="ssec-1-5-log-14-2-5">
+\begin{align*}
+2 \amp=e^k\\
+\ln(2) \amp=\ln(e^k)\\
+\ln(2) \amp=k
+\end{align*}
+</div>
+<div class="para">So <span class="process-math">\(k = \ln(2)\text{,}\)</span> which means <span class="process-math">\(y=2^x\)</span> can be written as <span class="process-math">\(y =e^{\ln(2)x}\text{.}\)</span>
+</div>
+</div>
+<div class="para logical" id="ssec-1-5-log-14-3">
+<div class="para">We will find the doubling time for the function <span class="process-math">\(p(t)=10 \cdot (1.5)^t\text{.}\)</span> Since <span class="process-math">\(p(0) =10\text{,}\)</span> we must find the value <span class="process-math">\(t\)</span> such that <span class="process-math">\(p(t)=2 \cdot p(0) = 20\text{:}\)</span>
+</div>
+<div class="displaymath process-math" id="ssec-1-5-log-14-3-5">
+\begin{align*}
+20 \amp=10\cdot (1.5)^t\\
+2 \amp=1.5^t\\
+\log(2) \amp=\log(1.5^t)\\
+\log(2) \amp=t \cdot \log(1.5)\\
+\dfrac{\log(2)}{\log(1.5)} \amp=t
+\end{align*}
+</div>
+<div class="para">So <span class="process-math">\(t_d = \dfrac{\log(2)}{\log(1.5)} \approx 1.71\text{.}\)</span>
+</div>
+</div></article><article class="activity project-like" id="ssec-1-5-log-15"><h4 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">1.5.3</span><span class="period">.</span>
+</h4>
+<div class="para logical" id="ssec-1-5-log-15-1">
+<div class="para">A fish population is changing according to the model <span class="process-math">\(p(t)= 500 \cdot e^{-2t}\text{.}\)</span>
+</div>
+<ol class="decimal" id="ssec-1-5-log-15-1-2">
+<li id="ssec-1-5-log-15-1-2-1"><div class="para" id="p-derived-ssec-1-5-log-15-1-2-1">Find the doubling time or half life of the population (whichever is appropriate).</div></li>
+<li id="ssec-1-5-log-15-1-2-2"><div class="para" id="p-derived-ssec-1-5-log-15-1-2-2">By what percentage does the population increase or decrease each year?</div></li>
+</ol>
+</div></article></section><section class="subsection" id="sec-1-5-6"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">1.5.3</span><span class="space"> </span><span class="title">Scaling and Fitting Data with Logarithms</span>
+</h3>
+<div class="para" id="sec-1-5-6-2">Aside from being a tool for solving exponential equations, logarithms can also be useful for scaling and fitting data, as our next examples illustrate.</div>
+<article class="example example-like" id="sec-1-5-6-3"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">1.5.13</span><span class="period">.</span><span class="space"> </span><span class="title">Scaling Data.</span>
+</h4>
+<div class="para" id="sec-1-5-6-3-2">Some systems produce data that are very large or small, and/or cover a very large range. It can be difficult to plot such data in an effective way. Logarithms are useful for taking very large (or small) numbers and making them more manageable, and for compressing a data set that covers a very large range.</div>
+<div class="para" id="sec-1-5-6-3-3">For example, you may have a function that measures the acidity of soil over time. Acidity is based on the concentration of hydrogen ions present, and can be measured in moles per liter (<span class="process-math">\(M\)</span>). These numbers are very small, and can vary widely if the acidity of the soil is changing.</div>
+<div class="para" id="sec-1-5-6-3-4">The example below shows what the data might look like to plot the molarity <span class="process-math">\(a\)</span> against time <span class="process-math">\(t\)</span> in the first table. In the window given, it’s difficult to see any difference between the points. Further, because they cover such a large range of values (<span class="process-math">\(.1\)</span> to <span class="process-math">\(10^{-13}\)</span>), it is difficult to change the window to display the relationship in an effective way.</div>
+<div class="para" id="sec-1-5-6-3-5">Using the second table, we plot <span class="process-math">\(-\log(a)\)</span> against time <span class="process-math">\(t\text{.}\)</span> In fact, this is the definition of <dfn class="terminology">pH</dfn> for measuring acidity. As you can see, this makes the numbers more manageable to plot, the relationship of acidity with respect to time easier to describe qualitatively, and changes the range of outputs to values between <span class="process-math">\(1\)</span> and <span class="process-math">\(13\text{.}\)</span>
+</div>
+<iframe src="https://www.desmos.com/calculator/ytbhq6wvz7" id="sec-1-5-6-3-6" width="1020" height="510"></iframe></article><article class="example example-like" id="sec-1-5-6-4"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">1.5.14</span><span class="period">.</span><span class="space"> </span><span class="title">Fitting Data.</span>
+</h4>
+<div class="para" id="sec-1-5-6-4-2">After collecting data, we may want to try and fit that data with a specific type of function. For example, we may suspect our data can be modeled by a  <dfn class="terminology">power function</dfn>: a function of the form <span class="process-math">\(f(x) = kx^p\text{.}\)</span> We would need to find values for the parameters <span class="process-math">\(k\)</span> and <span class="process-math">\(p\)</span> that best fit our data.</div>
+<div class="para logical" id="sec-1-5-6-4-3">
+<div class="para">If we take the log of both sides of <span class="process-math">\(f(x) = kx^p\text{,}\)</span> we get</div>
+<div class="displaymath process-math" id="sec-1-5-6-4-3-2">
+\begin{align*}
+\log(f(x)) \amp= \log(kx^p) \\
+\log(f(x)) \amp= \log(k)+ \log(x^p) \\
+\underset{y}{\log(f(x))} \amp= \underset{m}{p} \cdot \underset{x}{\log(x)} + \underset{y_0}{\log(k)} 
+\end{align*}
+</div>
+<div class="para">This shows us that if our data fits a power function, then we can plot <span class="process-math">\(\log(f(x))\)</span> as our output and <span class="process-math">\(\log(x)\)</span> as our input and the resulting graph should be linear. Moreover, the slope of the linear function will be the power <span class="process-math">\(p\)</span> and the <span class="process-math">\(y\)</span>-intercept of the linear function will be <span class="process-math">\(\log(k)\text{.}\)</span>
+</div>
+</div>
+<div class="para logical" id="sec-1-5-6-4-4">
+<div class="para">The example below shows our original data points in the first table that we’d like to fit with a power function <span class="process-math">\(f(x)=kx^p\text{.}\)</span> The second table shows our data after taking the log of both input and output. We suspect the second table should be a linear function, so we can compute the average rate of change between each interval to confirm and find the slope:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\dfrac{\log(16)- \log(2)}{\log(2)-0} = 3
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\dfrac{\log(54)- \log(16)}{\log(3)-\log(2)} = 3
+\end{equation*}
+</div>
+<div class="para">So we see that <span class="process-math">\(p=3\text{.}\)</span> We can also see the <span class="process-math">\(y\)</span>-intercept from the table is <span class="process-math">\(\log(2)\text{,}\)</span> so <span class="process-math">\(k=2\text{.}\)</span> This means the power function that fits our original data is <span class="process-math">\(y=2x^3\text{.}\)</span>
+</div>
+</div>
+<iframe src="https://www.desmos.com/calculator/drueualibc" id="sec-1-5-6-4-5" width="1020" height="510"></iframe></article></section><section class="subsection" id="sec-1-5-7"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">1.5.4</span><span class="space"> </span><span class="title">Summary</span>
+</h3>
+<ul class="disc" id="sec-1-5-7-2">
+<li id="sec-1-5-7-2-1"><div class="para" id="p-derived-sec-1-5-7-2-1">
+<article class="question example-like" id="sec-1-5-7-2-1-1"><h4 class="heading">
+<span class="type">Question</span><span class="space"> </span><span class="codenumber">1.5.15</span><span class="period">.</span>
+</h4></article> <details id="sec-1-5-7-2-1-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para logical" id="sec-1-5-7-2-1-2-1">
+<div class="para">An exponential function is a function that has the form <span class="process-math">\(f(x)=b^x\)</span> for some constant <span class="process-math">\(b\)</span> where <span class="process-math">\(b \gt 0\)</span> and <span class="process-math">\(b \neq 1\text{.}\)</span> A special property of these functions is that the ratio of consecutive average rates of change is equal to <span class="process-math">\(b\text{.}\)</span> That is,</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\dfrac{AROC_{[x+1,x+2]}}{AROC_{[x,x+1]}} = b
+\end{equation*}
+</div>
+<div class="para">for every <span class="process-math">\(x\)</span> value.</div>
+</div></div></details>
+</div></li>
+<li id="sec-1-5-7-2-2"><div class="para" id="p-derived-sec-1-5-7-2-2">
+<article class="question example-like" id="sec-1-5-7-2-2-1"><h4 class="heading">
+<span class="type">Question</span><span class="space"> </span><span class="codenumber">1.5.16</span><span class="period">.</span>
+</h4></article> <details id="sec-1-5-7-2-2-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content">
+<span class="process-math">\(b\)</span><span class="process-math">\(b\text{.}\)</span><span class="process-math">\(\log_b(x)=y\)</span><span class="process-math">\(b^y=x\text{.}\)</span>
+</div></details>
+</div></li>
+<li id="sec-1-5-7-2-3"><div class="para" id="p-derived-sec-1-5-7-2-3">
+<article class="question example-like" id="sec-1-5-7-2-3-1"><h4 class="heading">
+<span class="type">Question</span><span class="space"> </span><span class="codenumber">1.5.17</span><span class="period">.</span>
+</h4></article> <details id="sec-1-5-7-2-3-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><span class="process-math">\(\log_b(a^x)=x \cdot \log_b(a)\text{.}\)</span></div></details>
+</div></li>
+</ul></section><section class="exercises" id="sec-1-5-8"><h3 class="heading hide-type">
+<span class="type">Exercises</span><span class="space"> </span><span class="codenumber">1.5.5</span><span class="space"> </span><span class="title">Exercises</span>
+</h3>
+<article class="exercise exercise-like" id="sec-1-5-8-1"><h4 class="heading"><span class="codenumber">1<span class="period">.</span></span></h4>Let <span class="process-math">\(j(x)=e^{kx}\text{.}\)</span> For what values of <span class="process-math">\(k\)</span> is <span class="process-math">\(j(x)\)</span> increasing?  For what values of <span class="process-math">\(k\)</span> is <span class="process-math">\(j(x)\)</span> decreasing? Justify your answers by using what you know about the graph of <span class="process-math">\(y=b^x\text{.}\)</span><div class="solutions"><details id="sec-1-5-8-1-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content">
+<span class="process-math">\(k \gt 0\text{,}\)</span><span class="process-math">\(k \lt 0\)</span>
+</div></details></div></article><article class="exercise exercise-like" id="sec-1-5-8-2"><h4 class="heading"><span class="codenumber">2<span class="period">.</span></span></h4>In the table below, determine the value of <span class="process-math">\(c\)</span> that would make the points fit an exponential relationship with base <span class="process-math">\(0.25\text{.}\)</span> <figure class="table table-like" id="sec-1-5-8-2-1-3"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">1.5.18<span class="period">.</span></span><span class="space"> </span></figcaption><div class="tabular-box natural-width"><table class="tabular">
+<tr class="header-horizontal">
+<th scope="col" class="l m b1 r0 l0 t0 lines"><span class="process-math">\(x\)</span></th>
+<th scope="col" class="l m b1 r0 l0 t0 lines"><span class="process-math">\(y\)</span></th>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(0\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(8\)</span></td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(1\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(c\)</span></td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(2\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(3\)</span></td>
+</tr>
+</table></div></figure><div class="solutions"><details id="sec-1-5-8-2-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><span class="process-math">\(c =4 \)</span></div></details></div></article><article class="exercise exercise-like" id="sec-1-5-8-3"><h4 class="heading"><span class="codenumber">3<span class="period">.</span></span></h4>Use logarithms to find a power function that fits the data in the table below: <figure class="table table-like" id="sec-1-5-8-3-1-1"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">1.5.19<span class="period">.</span></span><span class="space"> </span></figcaption><div class="tabular-box natural-width"><table class="tabular">
+<tr class="header-horizontal">
+<th scope="col" class="l m b1 r0 l0 t0 lines"><span class="process-math">\(x\)</span></th>
+<th scope="col" class="l m b1 r0 l0 t0 lines"><span class="process-math">\(h(x)\)</span></th>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(0\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(0\)</span></td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(2\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(24\)</span></td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(4\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(384\)</span></td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(6\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(1944\)</span></td>
+</tr>
+</table></div></figure><div class="solutions"><details id="sec-1-5-8-3-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><span class="process-math">\(h(x) = 1.5x^4\)</span></div></details></div></article><article class="exercise exercise-like" id="sec-1-5-8-4"><h4 class="heading"><span class="codenumber">4<span class="period">.</span></span></h4>You have data that you suspect fits an exponential model of the form <span class="process-math">\(f(x)= a\cdot b^x\text{.}\)</span> Show that if you plot <span class="process-math">\(\log(f(x))\)</span> as the output and <span class="process-math">\(x\)</span> as the input, you should get a linear relationship. What is the slope? What is the <span class="process-math">\(y\)</span>-intercept?<div class="solutions"><details id="sec-1-5-8-4-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content">
+<span class="process-math">\(\log(b)\text{,}\)</span><span class="process-math">\(y\)</span><span class="process-math">\((0,\log(a))\)</span>
+</div></details></div></article></section></section></div>
+<div class="ptx-content-footer">
+<a class="previous-button button" href="sec-1-4.html" title="Previous"><span xmlns:xlink="http://www.w3.org/1999/xlink" class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span xmlns:xlink="http://www.w3.org/1999/xlink" class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="sec-1-6.html" title="Next"><span class="name">Next</span><span xmlns:xlink="http://www.w3.org/1999/xlink" class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
+</div></main>
+</div>
+<div id="ptx-page-footer" class="ptx-page-footer">
+<a class="feedback-link" href="https://docs.google.com/forms/d/e/1FAIpQLSfqb-mJw72Dhhm6BRbYn5IO3eLVvxuBmMoiuRvvYTvmABnZTw/viewform?usp=sf_link" target="_blank">Feedback</a><a xmlns:xlink="http://www.w3.org/1999/xlink" class="pretext-link" href="https://pretextbook.org" title="PreTeXt"><div class="logo"><svg xmlns="http://www.w3.org/2000/svg" height="100%" viewBox="338 3000 8772 6866" role="img"><title>PreTeXt logo</title><g style="stroke-width:.025in; stroke:currentColor; fill:none"><polyline points="472,3590 472,9732 " style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,9448 A 4660 4660  0  0  1  8598  9259"></path><path style="stroke-width:174;stroke-linecap:butt;" d="M 4488,9685 A 4228 4228  0  0  0   472  9732"></path><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,3590 A 4241 4241  0  0  1  8598  3496"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,3496  A 4241 4241  0  0  1  4724  3590"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,9259  A 4507 4507  0  0  1  4724  9448"></path><polyline points="5385,4299 4062,8125" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8598,3496 8598,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="850,3496 850,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="4960,9685 4488,9685" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="3070,4582 1889,6141 3070,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="6418,4582 7600,6141 6418,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8976,3590 8976,9732" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><path style="stroke-width:174;stroke-linecap:butt;" d="M 4960,9685 A 4228 4228  0  0  1  8976  9732"></path></g></svg></div></a><a xmlns:xlink="http://www.w3.org/1999/xlink" class="runestone-link" href="https://runestone.academy" title="Runestone Academy"><img class="logo" src="https://runestone.academy/runestone/static/images/RAIcon_cropped.png" alt="Runstone Academy logo"></a><a xmlns:xlink="http://www.w3.org/1999/xlink" class="mathjax-link" href="https://www.mathjax.org" title="MathJax"><img class="logo" src="https://www.mathjax.org/badge/badge-square-2.png" alt="MathJax logo"></a>
+</div>
+</body>
+</html>
