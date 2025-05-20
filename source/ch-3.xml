@@ -872,22 +872,27 @@
     <p permid="JcV">
       <ul permid="oAk">
         <li permid="xTW">
-          <question permid="iKY">What is the formula for the general tangent line approximation to a differentiable function
+          <question permid="iKY"><p>What is the formula for the general tangent line approximation to a differentiable function
           <m>y = f(x)</m> at the point <m>(a,f(a))</m>?
+          </p>
           </question>
           <answer>
+            <p>
             The tangent line to a differentiable function <m>y = f(x)</m> at the point
             <m>(a,f(a))</m> is given in point-slope form by the equation
             <me permid="mpy">
               y - f(a) = f'(a)(x-a)
             </me>.
+            </p>
           </answer>
         </li>
 
         <li permid="ebf">
-          <question permid="OSh">What is the principle of local linearity and what is the linear approximation (or local linearization) of a differentiable function <m>f</m> at a point <m>(a,f(a))</m>?
+          <question permid="OSh"><p>What is the principle of local linearity and what is the linear approximation (or local linearization) of a differentiable function <m>f</m> at a point <m>(a,f(a))</m>?
+            </p>
           </question>
           <answer>
+            <p>
             The principle of local linearity tells us that if we zoom in on a point where a function <m>y = f(x)</m> is differentiable,
             the function will be indistinguishable from its tangent line.
             That is,
@@ -896,13 +901,16 @@
             <m>y = L(x)</m>, where <m>L(x) = f(a) + f'(a)(x-a)</m>.
             Thus,
             <m>f(x) \approx L(x)</m> for all <m>x</m> near <m>x = a</m>.
+            </p>
           </answer>
         </li>
 
         <li permid="Kio">
-          <question permid="uZq">How does knowing just the tangent line approximation tell us information about the behavior of the original function itself near the point of approximation?
+          <question permid="uZq"><p>How does knowing just the tangent line approximation tell us information about the behavior of the original function itself near the point of approximation?
+          </p>
           </question>
           <answer>
+            <p>
             If we know the tangent line approximation
             <m>L(x) = f(a) + f'(a)(x-a)</m> to a function <m>y=f(x)</m>,
             then because <m>L(a) = f(a)</m> and <m>L'(a) = f'(a)</m>,
@@ -910,18 +918,23 @@
             and its derivative at the point where <m>x = a</m>.
             In other words,
             the linear approximation tells us the height and slope of the original function.
+            </p>
           </answer>
         </li>
         <li>
         	<question>
+            <p>
 	 How does knowing the second derivative's value at this point provide us additional knowledge of the original function's behavior?
+              </p>
 	 </question>
 	 <answer>
+    <p>
 	 If, in addition, we know the value of <m>f''(a)</m>,
             we then know whether the tangent line lies above or below the graph of
             <m>y = f(x)</m>, depending on the concavity of <m>f</m>. We also can compute the quadratic approximation of <m>f</m> centered at <m>a</m>,
             	<me>Q(x) = f(a) + f'(a)(x-a) + \dfrac{f''(a)}{2}(x-a)^2</me>,
 	  which may provide us with even better approximations near the center <m>a</m>.
+    </p>
 	 </answer>
         </li>
       </ul>
@@ -1752,20 +1765,24 @@
 		<title>Summary</title>
 		<ul>
 			<li>
-			<question>How can we use the first derivative to help classify equilibrium values as stable or unstable?</question>
+			<question><p>How can we use the first derivative to help classify equilibrium values as stable or unstable?</p></question>
 			<answer>
+        <p>
 			Due to local linearity of differentiable functions, the cob-webbing behavior for initial values near an equilibrium value can be analyzed by understanding the cob-webbing behavior of linear updating functions. This results in the following stability criteria for an updating function rule <m>f(x)</m> and an equilibrium value <m>x^*</m>:
 				<ul>
 					<li>If <m>|f'(x^*)| \lt 1</m>, then <m>x^*</m> is a stable equilibrium value.</li>
 					<li>If <m>|f'(x^*)| \gt 1</m>, then <m>x^*</m> is an unstable equilibrium value.</li>
 				</ul>
 			Though the sign of the derivative does not impact stability, it can tell us whether a solution function will oscillate around its equilibrium value. Oscillation around <m>x^*</m> occurs when <m>f'(x^*) \lt 0</m>.
+      </p>
 			</answer>
 			</li>
 			<li>
-			<question> Can the first derivative always tell us whether an equilibrium value is stable or unstable?</question>
+			<question> <p>Can the first derivative always tell us whether an equilibrium value is stable or unstable?</p></question>
 			<answer>
+        <p>
 			No. If <m>|f'(x^*)| = 1</m>, then the stability theorem is inconclusive. Another method must be used to determine the stability of <m>x^*</m>.
+      </p>
 			</answer>
 			</li>
 		</ul>
@@ -1993,19 +2010,24 @@
 			<title>Summary</title>
 			<ul>
 				<li>
-				<question>What is the logistic dynamical system and what can it be used for?</question>
+				<question><p>What is the logistic dynamical system and what can it be used for?</p></question>
 				<answer>
-				The logistic dynamical system is the DTDS with updating function <m>x_{t+1} = rx_t(1-x_t)</m>. It can be used as a model for population growth which takes into account a maximum possible population, among other things.			<aside>
+          <p>
+				The logistic dynamical system is the DTDS with updating function <m>x_{t+1} = rx_t(1-x_t)</m>. It can be used as a model for population growth which takes into account a maximum possible population, among other things.			
+          <aside>
 						<p>
 						The logistic map has many other applications outside of population modeling, and its behavior contains some interesting and deep mathematics, particularly in the types of unstable behavior that can occur around equilibrium values. Though it is outside the scope of this course, you can see a brief introduction to the other aspects of the logistic map in <url href="https://www.veritasium.com/videos/2020/1/29/this-equation-will-change-how-you-see-the-world" visual="veritasium.com"> this video from Veritasium</url>.
 						</p>
 					</aside>
+          </p>
 				</answer>
 				</li>
 				<li>
-				<question>How can we use calculus tools we've developed so far to understand how the logistic dynamical system behaves?</question>
+				<question><p>How can we use calculus tools we've developed so far to understand how the logistic dynamical system behaves?</p></question>
 				<answer>
+          <p>
 				Since the logistic DTDS contains a parameter <m>r</m>, we cannot look at a single graph to analyze its behavior. Instead, we can compute equilibrium values algebraically and compute the derivative of the updating function, which gives us answers in terms of the parameter <m>r</m>. We can then analyze these expressions to determine how the parameter <m>r</m> effects the system's behavior. For example, we can use the Stability Theorem to determine which values of <m>r</m> make a given equilibrium value stable.
+        </p>
 				</answer>
 				</li>
 			</ul>
@@ -3183,31 +3205,36 @@
     <p permid="TXZ">
       <ul permid="Uty">
         <li permid="sWi">
-          <question permid="dNk">What are the critical numbers of a function <m>f</m> and how are they connected to identifying the most extreme values the function achieves?</question>
+          <question permid="dNk"><p>What are the critical numbers of a function <m>f</m> and how are they connected to identifying the most extreme values the function achieves?</p></question>
           <answer>
+            <p>
             The critical numbers of a continuous function <m>f</m> are the values of <m>p</m> for which
             <m>f'(p) = 0</m> or <m>f'(p)</m> does not exist.
             These values are important because they identify horizontal tangent lines or corner points on the graph,
             which are the only possible locations at which a local maximum or local minimum can occur.
+            </p>
           </answer>
         </li>
 
         <li permid="Zdr">
-          <question permid="JUt">How does the first derivative of a function reveal important information about the behavior of the function,
-          including the function's extreme values?</question>
+          <question permid="JUt"><p>How does the first derivative of a function reveal important information about the behavior of the function,
+          including the function's extreme values?</p></question>
           <answer>
+            <p>
             Given a differentiable function <m>f</m>,
             whenever <m>f'</m> is positive, <m>f</m> is increasing;
             whenever <m>f'</m> is negative, <m>f</m> is decreasing.
             The first derivative test tells us that at any point where <m>f</m> changes from increasing to decreasing,
             <m>f</m> has a local maximum,
             while conversely at any point where <m>f</m> changes from decreasing to increasing <m>f</m> has a local minimum.
+            </p>
           </answer>
         </li>
 
         <li permid="FkA">
-          <question permid="qbC">How can the second derivative of a function be used to help identify extreme values of the function?</question>
+          <question permid="qbC"><p>How can the second derivative of a function be used to help identify extreme values of the function?</p></question>
           <answer>
+            <p>
             Given a twice differentiable function <m>f</m>,
             if we have a horizontal tangent line at <m>x = p</m> and <m>f''(p)</m> is nonzero,
             the sign of <m>f''</m> tells us the concavity of <m>f</m> and hence whether <m>f</m> has a maximum or minimum at <m>x = p</m>.
@@ -3217,6 +3244,7 @@
             then <m>f</m> has a local minimum at <m>p</m>.
             If <m>f'(p) = 0</m> and <m>f''(p) = 0</m>,
             then the second derivative does not tell us whether <m>f</m> has a local extreme at <m>p</m> or not.
+            </p>
           </answer>
         </li>
       </ul>
@@ -4900,31 +4928,37 @@
     <p permid="Bdx">
       <ul permid="pkE">
         <li permid="qZR">
-          <question permid="MHV"> What are the differences between finding relative extreme values and global extreme values of a function?</question>
+          <question permid="MHV"> <p>What are the differences between finding relative extreme values and global extreme values of a function?</p></question>
           <answer>
+            <p>
             To find relative extreme values of a function,
             we use a first derivative sign chart and classify all of the function's critical numbers.
             If instead we are interested in absolute extreme values,
             we first decide whether we are considering the entire domain of the function or a particular interval.
+            </p>
             </answer>
         </li>
 
         <li permid="Xha">
-          <question permid="sPe">How is the process of finding the global maximum or minimum of a function over the function's entire domain different from determining the global maximum or minimum on a restricted domain?</question>
+          <question permid="sPe"><p>How is the process of finding the global maximum or minimum of a function over the function's entire domain different from determining the global maximum or minimum on a restricted domain?</p></question>
           <answer>
+            <p>
             In the case of finding global extremes over the function's entire domain,
             we will typically see models that contain a single critical number in the domain. In this case we use <xref ref="thm-3-5-scp">Fact</xref> to help determine the global extrema we're interested in.
             If we are working to find absolute extremes on a restricted interval,
             then we first identify all critical numbers of the function that lie in the interval.
+            </p>
           </answer>
         </li>
 
         <li permid="Doj">
-          <question permid="YWn">For a function that is guaranteed to have both a global maximum and global minimum on a closed,
+          <question permid="YWn"><p>For a function that is guaranteed to have both a global maximum and global minimum on a closed,
           bounded interval,
           what are the possible points at which these extreme values occur?
+          </p>
           </question>
           <answer>
+            <p>
             For a continuous function on a closed, bounded interval,
             the only possible points at which absolute extreme values occur are the critical numbers and the endpoints.
             Thus, we simply evaluate the function at each endpoint and each critical number in the interval,
@@ -4932,6 +4966,7 @@
             (the absolute maximum)
             and which is smallest
             (the absolute minimum).
+            </p>
           </answer>
         </li>
       </ul>
@@ -6538,8 +6573,9 @@
     <p permid="WEk">
       <ul permid="vCt">
         <li permid="Ufd">
-          <question permid="EWf">How can derivatives be used to help us evaluate indeterminate limits of the form <m>\frac{0}{0}</m>?</question>
+          <question permid="EWf"><p>How can derivatives be used to help us evaluate indeterminate limits of the form <m>\frac{0}{0}</m>?</p></question>
           <answer>
+            <p>
             Derivatives can be used to help us evaluate indeterminate limits of the form
             <m>\frac{0}{0}</m> through L'Hôpital's Rule,
             by replacing the functions in the numerator and denominator with their tangent line approximations.
@@ -6548,26 +6584,31 @@
             <me permid="hNj">
               \lim_{x \to a}\frac{f(x)}{g(x)} = \lim_{x \to a}\frac{f'(x)}{g'(x)}
             </me>.
+            </p>
           </answer>
         </li>
 
         <li permid="Amm">
-          <question permid="ldo">What does it mean to say that
+          <question permid="ldo"><p>What does it mean to say that
           <m>\lim_{x \to \infty} f(x) = L</m> and <m>\lim_{x \to a} f(x) = \infty</m>?
+          </p>
           </question>
           <answer>
+            <p>
             When we write <m>x \to \infty</m>,
             this means that <m>x</m> is increasing without bound.
             Thus, <m>\lim_{x \to \infty} f(x) = L</m>
             means that we can make <m>f(x)</m> as close to <m>L</m> as we like by choosing <m>x</m> to be sufficiently large.
             Similarly, <m>\lim_{x \to a} f(x) = \infty</m>,
             means that we can make <m>f(x)</m> as large as we like by choosing <m>x</m> sufficiently close to <m>a</m>.
+            </p>
           </answer>
         </li>
 
         <li permid="gtv">
-          <question permid="Rkx">How can derivatives assist us in evaluating indeterminate limits of the form <m>\frac{\infty}{\infty}</m>?</question>
+          <question permid="Rkx"><p>How can derivatives assist us in evaluating indeterminate limits of the form <m>\frac{\infty}{\infty}</m>?</p></question>
           <answer>
+            <p>
             A version of L'Hôpital's Rule also helps us evaluate indeterminate limits of the form <m>\frac{\infty}{\infty}</m>.
             If <m>f</m> and <m>g</m> are differentiable and both approach zero or both approach <m>\pm \infty</m> as <m>x \to a</m>
             (where <m>a</m> is allowed to be <m>\infty</m>),
@@ -6575,6 +6616,7 @@
             <me permid="NUs">
               \lim_{x \to a} \frac{f(x)}{g(x)} = \lim_{x \to a} \frac{f'(x)}{g'(x)}
             </me>.
+            </p>
           </answer>
         </li>
       </ul>
@@ -7177,16 +7219,20 @@
 	<subsection>
 		<title>Summary</title>
 		<ul>
-			<li><question>How can we evaluate complicated limits as <m>x \to \infty</m>?  </question>
+			<li><question><p>How can we evaluate complicated limits as <m>x \to \infty</m>?  </p></question>
 				<answer>
+          <p>
 				To evaluate limits of the form <m>\lim_{x\to \infty} f(x)</m>, we can determine if <m>f(x)</m> has a leading behavior at <m>\infty</m>, <m>f_\infty(x)</m>. If so, we know
 					<me>\lim_{x\to \infty} f(x) = \lim_{x\to \infty} f_\infty(x)</me>.
+          </p>
 				</answer>
 			</li>
-			<li><question>How can we evaluate complicated limits as <m>x \to -\infty</m>?  </question>
+			<li><question><p>How can we evaluate complicated limits as <m>x \to -\infty</m>?  </p></question>
 				<answer>
+          <p>
 				To evaluate limits of the form <m>\lim_{x\to -\infty} f(x)</m>, we can determine if <m>f(x)</m> has a leading behavior at <m>-\infty</m>, <m>f_{-\infty}(x)</m>. If so, we know
 					<me>\lim_{x\to -\infty} f(x) = \lim_{x\to -\infty} f_{-\infty}(x)</me>.
+          </p>
 				</answer>
 			</li>
 		</ul>

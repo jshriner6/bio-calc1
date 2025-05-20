@@ -16,7 +16,7 @@
       <!-- In addition to specifying the copyright holder, you should  -->
       <!-- include a license, such as the cc-by-sa license shown below -->
       <!-- so people reading your book know how they can use it.       -->
-      <year>2022 <ndash/>2024</year> <!-- for multiple years: <ndash/>2022 -->
+      <year>2022 <ndash/>2025</year> <!-- for multiple years: <ndash/>2022 -->
       <holder>Jeff Shriner</holder>
       <!-- <minilicense><image source="../images/by-sa.png" /></minilicense> -->
       <minilicense>CC BY-SA 4.0 License</minilicense>
@@ -159,7 +159,7 @@
     </p>
     
     <p>
-      The <pretext /> source code for the text is shared at <url href="https://github.com/jshriner6/bio-calc" visual="github.com">GitHub</url>. If you find errors in the text or have other suggestions, use the <url href="https://docs.google.com/forms/d/e/1FAIpQLSfqb-mJw72Dhhm6BRbYn5IO3eLVvxuBmMoiuRvvYTvmABnZTw/viewform?usp=sf_link" visual="docs.google.com/forms">feedback link</url> in the HTML version (found at the bottom left), or email the author directly.
+      The <pretext /> source code for the text is shared at <url href="https://github.com/jshriner6/bio-calc1" visual="github.com">GitHub</url>. If you find errors in the text or have other suggestions, use the <url href="https://docs.google.com/forms/d/e/1FAIpQLSfqb-mJw72Dhhm6BRbYn5IO3eLVvxuBmMoiuRvvYTvmABnZTw/viewform?usp=sf_link" visual="docs.google.com/forms">feedback link</url> in the HTML version (found at the bottom left), or email the author directly.
     </p>
   </preface>
 

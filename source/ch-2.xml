@@ -951,41 +951,49 @@
     <p permid="qZe">
       <ul permid="jQe">
         <li permid="ozX">
-          <question>What is the mathematical notion of <em>limit</em> and what role do limits play in the study of functions?</question>
+          <question><p>What is the mathematical notion of <em>limit</em> and what role do limits play in the study of functions?</p></question>
             <answer>
+              <p>
             Limits enable us to examine trends in function behavior near a specific point.
             In particular,
             taking a limit at a given point asks if the function values nearby tend to approach a particular fixed value.
+            </p>
             </answer>
         </li>
 
         <li permid="UHg">
-          <question>What is the meaning of the notation <m>\displaystyle \lim_{x \to a} f(x) = L</m>?</question>
+          <question><p>What is the meaning of the notation <m>\displaystyle \lim_{x \to a} f(x) = L</m>?</p></question>
             <answer>
+              <p>
             We read <m>\lim_{x \to a} f(x) = L</m>,
             as <q>the limit of <m>f</m> as <m>x</m> approaches <m>a</m> is <m>L</m>,</q>
             which means that we can make the value of <m>f(x)</m> as close to <m>L</m> as we want by taking <m>x</m> sufficiently close
             (but not equal)
             to <m>a</m>.
+            </p>
             </answer>
         </li>
 
         <li permid="AOp">
-          <question>How do we go about determining the value of the limit of a function at a point?</question>
+          <question><p>How do we go about determining the value of the limit of a function at a point?</p></question>
             <answer>
+              <p>
             To find
             <m>\lim_{x \to a} f(x)</m> for a given value of <m>a</m> and a known function <m>f</m>,
             we can estimate this value from the graph of <m>f</m>,
             or we can make a table of function values for <m>x</m>-values that are closer and closer to <m>a</m>.
             If we want the exact value of the limit,
             we can work with the function algebraically to understand how different parts of the formula for <m>f</m> change as <m>x \to a</m>.
+              </p>
             </answer>
         </li>
 
         <li permid="gVy">
-          <question>What is instantaneous velocity and how do we compute it?</question>
+          <question><p>What is instantaneous velocity and how do we compute it?</p></question>
            <answer>
+            <p>
             We find the instantaneous velocity of a moving object at a fixed time by taking the limit of average velocities of the object over shorter and shorter time intervals containing the time of interest.
+            </p>
             </answer>
         </li>
       </ul>
@@ -2645,9 +2653,10 @@
     <p permid="pym">
       <ul permid="znx">
         <li permid="IHj">
-        		<question>How is the average rate of change of a function on a given interval defined,
-          and what does this quantity measure?</question>
+        		<question><p>How is the average rate of change of a function on a given interval defined,
+          and what does this quantity measure?</p></question>
           <answer>
+            <p>
           The average rate of change of a function <m>f</m> on the interval <m>[a,b]</m> is <m>\frac{f(b)-f(a)}{b-a}</m>.
           The units on the average rate of change are units of <m>f(x)</m> per unit of <m>x</m>,
           and the numerical value of the average rate of change represents the slope of the secant line between the points <m>(a,f(a))</m> and
@@ -2655,13 +2664,15 @@
           If we view the interval as being <m>[a,a+h]</m> instead of <m>[a,b]</m>,
           the meaning is still the same,
           but the average rate of change is now computed using the difference quotient, <m>\frac{f(a+h)-f(a)}{h}</m>.
-          </answer>
+            </p>
+        </answer>
         </li>
 
         <li permid="oOs">
-        		<question> How is the instantaneous rate of change of a function at a particular point defined?
-          How is the instantaneous rate of change linked to average rate of change?</question>
+        		<question><p> How is the instantaneous rate of change of a function at a particular point defined?
+          How is the instantaneous rate of change linked to average rate of change?</p></question>
           <answer>
+            <p>
           The instantaneous rate of change with respect to <m>x</m> of a function <m>f</m> at a value <m>x = a</m> is denoted <m>f'(a)</m>
           (read <q>the derivative of <m>f</m> evaluated at <m>a</m></q>
           or <q><m>f</m>-prime at <m>a</m></q>)
@@ -2671,14 +2682,16 @@
           </me>,
           provided the limit exists.
           Note particularly that the instantaneous rate of change at <m>x = a</m> is the limit of the average rate of change on <m>[a,a+h]</m> as <m>h \to 0</m>.
-          </answer>
+        </p>  
+        </answer>
         </li>
 
         <li permid="UVB">
-        		<question>What is the derivative of a function at a given point?
+        		<question><p>What is the derivative of a function at a given point?
           What does this derivative value measure?
-          How do we interpret the derivative value graphically?</question>
+          How do we interpret the derivative value graphically?</p></question>
           <answer>
+            <p>
           Provided the derivative <m>f'(a)</m> exists,
           its value tells us the instantaneous rate of change of <m>f</m> with respect to <m>x</m> at <m>x = a</m>,
           which geometrically is the slope of the tangent line to the curve
@@ -2686,13 +2699,16 @@
           We even say that <m>f'(a)</m> is the
           <q>slope of the curve</q>
           at the point <m>(a,f(a))</m>.
+            </p>
           </answer>
         </li>
 
         <li permid="BcK">
-        		<question>How are limits used formally in the computation of derivatives?</question>
+        		<question><p>How are limits used formally in the computation of derivatives?</p></question>
 		<answer>
+        <p>
           Limits allow us to move from the rate of change over an interval to the rate of change at a single point.
+        </p>
           	</answer>
         </li>
       </ul>
@@ -4053,10 +4069,11 @@
     <p permid="wHm">
       <ul permid="ceB">
         <li permid="gOu">
-          <question>How does the limit definition of the derivative of a function <m>f</m> lead to an entirely new
+          <question><p>How does the limit definition of the derivative of a function <m>f</m> lead to an entirely new
           (but related)
-          function <m>f'</m>?</question>
+          function <m>f'</m>? </p></question>
           <answer>
+            <p>
             The limit definition of the derivative,
             <m>f'(x) = \lim_{h \to 0} \frac{f(x+h)-f(x)}{h}</m>,
             produces a value for each <m>x</m> at which the derivative is defined,
@@ -4064,40 +4081,47 @@
             It is especially important to note that taking the derivative is a process that starts with a given function (<m>f</m>) and produces a new,
             related function
             (<m>f'</m>).
+            </p>
           </answer>
         </li>
 
         <li permid="MVD">
-          <question> What is the difference between writing <m>f'(a)</m> and <m>f'(x)</m>? </question>
+          <question><p> What is the difference between writing <m>f'(a)</m> and <m>f'(x)</m>? </p></question>
           <answer>
+            <p>
             There is essentially no difference between writing <m>f'(a)</m>
             (as we did regularly in <xref ref="sec-1-3-derivative-pt">Section</xref>)
             and writing <m>f'(x)</m>.
             In either case,
             the variable is just a placeholder that is used to define the rule for the derivative function.
+            </p>
           </answer>
         </li>
 
         <li permid="tcM">
-          <question> How is the graph of the derivative function <m>f'(x)</m> related to the graph of <m>f(x)</m>?</question>
+          <question> <p>How is the graph of the derivative function <m>f'(x)</m> related to the graph of <m>f(x)</m>? </p></question>
           <answer>
+            <p>
             Given the graph of a function <m>y = f(x)</m>,
             we can sketch an approximate graph of its derivative
             <m>y = f'(x)</m> by observing that <em>heights</em>
             on the derivative's graph correspond to <em>slopes</em>
             on the original function's graph.
+            </p>
           </answer>
         </li>
 
         <li permid="ZjV">
-          <question> What are some examples of functions <m>f</m> for which <m>f'</m> is not defined at one or more points? </question>
+          <question> <p>What are some examples of functions <m>f</m> for which <m>f'</m> is not defined at one or more points?</p> </question>
           <answer>
+            <p>
             In <xref ref="act-1-4-1">Activity</xref>,
             we encountered some functions that had sharp corners on their graphs,
             such as the shifted absolute value function.
             At such points, the derivative fails to exist,
             and we say that <m>f</m> is not differentiable there.
             It suffices to understand this as a consequence of the jump that must occur in the derivative function at a sharp corner on the graph of the original function.
+            </p>
           </answer>
         </li>
       </ul>
@@ -5739,47 +5763,55 @@
     <p permid="bXx">
       <ul permid="FFz">
         <li permid="Kps">
-          <question>  How does the derivative of a function tell us whether the function is increasing or decreasing  on an interval?</question>
+          <question> <p> How does the derivative of a function tell us whether the function is increasing or decreasing  on an interval?</p></question>
           <answer>
+            <p>
             A differentiable function <m>f</m> is increasing on an interval whenever its first derivative is positive,
             and decreasing whenever its first derivative is negative.
+            </p>
           </answer>
         </li>
 
         <li permid="qwB">
-          <question> What can we learn by taking the derivative of the derivative
+          <question><p> What can we learn by taking the derivative of the derivative
           (the <em>second</em> derivative)
-          of a function <m>f</m>?</question>
+          of a function <m>f</m>?</p></question>
           <answer>
+            <p>
             By taking the derivative of the derivative of a function <m>f</m>,
             we arrive at the second derivative, <m>f''</m>.
             The second derivative measures the instantaneous rate of change of the first derivative.
             The sign of the second derivative tells us whether the slope of the tangent line to <m>f</m> is increasing or decreasing.
+            </p>
           </answer>
         </li>
 
         <li permid="WDK">
-          <question>What does it mean to say that a function is concave up or concave down?
-          How are these characteristics connected to certain properties of the derivative of the function?</question>
+          <question><p>What does it mean to say that a function is concave up or concave down?
+          How are these characteristics connected to certain properties of the derivative of the function?</p></question>
           <answer>
+            <p>
             A differentiable function is concave up whenever its first derivative is increasing
             (which is true when its second derivative is positive),
             and concave down whenever its first derivative is decreasing
             (which is true when its second derivative is negative).
             Examples of functions that are everywhere concave up are <m>y = x^2</m> and <m>y = e^x</m>;
             examples of functions that are everywhere concave down are <m>y = -x^2</m> and <m>y = -e^x</m>.
+            </p>
           </answer>
         </li>
 
         <li permid="CKT">
-          <question>What are the units of the second derivative?
-          How do they help us understand the rate of change of the rate of change?</question>
+          <question><p>What are the units of the second derivative?
+          How do they help us understand the rate of change of the rate of change?</p></question>
           <answer>
+            <p>
             The units on the second derivative are
             <q>units of output per unit of input per unit of input.</q>
             They tell us how the value of the derivative function is changing in response to changes in the input.
             In other words,
             the second derivative tells us the rate of change of the rate of change of the original function.
+            </p>
           </answer>
         </li>
       </ul>
@@ -7457,45 +7489,54 @@ When functions are used as models, they are not always represented explicitly as
     <p permid="TQv">
       <ul permid="FcW">
         <li permid="ipz">
-          <question permid="LCc"> What are alternate notations for the derivative?</question>
+          <question permid="LCc"> <p>What are alternate notations for the derivative?</p></question>
           <answer>
+            <p>
             Given a differentiable function <m>y = f(x)</m>,
             we can express the derivative of <m>f</m> in several different notations:
             <m>f'(x)</m>, <m>\frac{df}{dx}</m>,
             <m>\frac{dy}{dx}</m>, and <m>\frac{d}{dx}[f(x)]</m>.
+            </p>
           </answer>
         </li>
 
         <li permid="OwI">
-          <question permid="rJl">How can we use the algebraic structure of a function <m>f(x)</m> to compute a formula for <m>f'(x)</m>? </question>
+          <question permid="rJl"><p>How can we use the algebraic structure of a function <m>f(x)</m> to compute a formula for <m>f'(x)</m>? </p></question>
           <answer>
+            <p>
             The limit definition of the derivative leads to patterns among certain families of functions that enable us to compute derivative formulas without resorting directly to the limit definition.
             For example,
             if <m>f</m> is a power function of the form <m>f(x) = x^n</m>,
             then <m>f'(x) = nx^{n-1}</m> for any real number <m>n</m> other than 0.
             This is called the Rule for Power Functions.
+            </p>
           </answer>
         </li>
 
         <li permid="uDR">
-          <question permid="XQu">What is the derivative of a power function of the form <m>f(x) = x^n</m>?
+          <question permid="XQu"><p>What is the derivative of a power function of the form <m>f(x) = x^n</m>?
           What is the derivative of an exponential function of the form <m>f(x) = b^x</m>?
+          </p>
           </question>
           <answer>
+            <p>
             We have stated a rule for derivatives of exponential functions in the same spirit as the rule for power functions:
             for any positive real number <m>b</m>,
             if <m>f(x) = b^x</m>, then <m>f'(x) = b^x \ln(b)</m>.
+            </p>
           </answer>
         </li>
 
         <li permid="aLa">
-          <question permid="DXD">If we know the derivative of <m>y = f(x)</m>,
+          <question permid="DXD"><p>If we know the derivative of <m>y = f(x)</m>,
           what is the derivative of <m>y = k f(x)</m>,
           where <m>k</m> is a constant? 
           If we know the derivatives of <m>y = f(x)</m> and <m>y = g(x)</m>,
           how do we compute the derivative of <m>y = f(x) + g(x)</m>?
+          </p>
           </question>
           <answer>
+            <p>
             If we are given a constant multiple of a function whose derivative we know,
             or a sum of functions whose derivatives we know,
             the Constant Multiple and Sum Rules make it straightforward to compute the derivative of the overall function.
@@ -7504,6 +7545,7 @@ When functions are used as models, they are not always represented explicitly as
             <me permid="EHx">
               \frac{d}{dx} \left[af(x) + bg(x)\right] = af'(x) + bg'(x)
             </me>.
+            </p>
           </answer>
         </li>
       </ul>
@@ -8812,36 +8854,44 @@ When functions are used as models, they are not always represented explicitly as
     <p permid="IlX">
       <ul permid="BMR">
         <li permid="apB">
-          <question permid="LgD"> What is a graphical justification for why <m>\frac{d}{dx}[b^x] = b^x \ln(b)</m>? </question>
+          <question permid="LgD"><p> What is a graphical justification for why <m>\frac{d}{dx}[b^x] = b^x \ln(b)</m>? </p></question>
           <answer>
+            <p>
             For an exponential function <m>f(x) = b^x</m> <m>(b \gt 1)</m>,
             the graph of <m>f'(x)</m> appears to be a scaled version of the original function.
             In particular, careful analysis of the graph of<m>f(x) = 2^x</m>,
             suggests that <m>\frac{d}{dx}[2^x] = 2^x \ln(2)</m>,
             which is a special case of the rule we stated in <xref ref="sec-2-1-elem-rules">Section</xref>.
+            </p>
           </answer>
         </li>
 
         <li permid="GwK">
-          <question permid="rnM">What do the graphs of <m>y = \sin(x)</m> and
+          <question permid="rnM"><p>What do the graphs of <m>y = \sin(x)</m> and
           <m>y = \cos(x)</m> suggest as formulas for their respective derivatives?
+          </p>
           </question>
           <answer>
+            <p>
             By carefully analyzing the graphs of
             <m>y = \sin(x)</m> and <m>y = \cos(x)</m>,
             and by using the limit definition of the derivative at select points,
             we found that <m>\frac{d}{dx} [\sin(x)] = \cos(x)</m> and <m>\frac{d}{dx} [\cos(x)] = -\sin(x)</m>.
+            </p>
           </answer>
         </li>
 
         <li permid="mDT">
-          <question permid="XuV"> Once we know the derivatives of <m>\sin(x)</m> and <m>\cos(x)</m>,
+          <question permid="XuV"><p> Once we know the derivatives of <m>\sin(x)</m> and <m>\cos(x)</m>,
           how do previous derivative rules work when these functions are involved?
+          </p>
           </question>
           <answer>
+            <p>
             We note that all previously encountered derivative rules still hold,
             but now may also be applied to functions involving the sine and cosine.
             All of the established meaning of the derivative applies to these trigonometric functions as well.
+            </p>
           </answer>
         </li>
       </ul>
@@ -10337,38 +10387,45 @@ When functions are used as models, they are not always represented explicitly as
     <p permid="OpE">
       <ul permid="aZv">
         <li permid="YeP">
-          <question permid="Vkj"> How does the algebraic structure of a function guide us in computing its derivative using shortcut rules? </question>
+          <question permid="Vkj"> <p>How does the algebraic structure of a function guide us in computing its derivative using shortcut rules? </p></question>
           <answer>
+            <p>
             If a function is a sum, product,
             or quotient of simpler functions,
             then we can use the sum, product,
             or quotient rules to differentiate it in terms of the simpler functions and their derivatives.
+            </p>
           </answer>
         </li>
 
         <li permid="ElY">
-          <question permid="Brs"> How do we compute the derivative of a product of two basic functions in terms of the derivatives of the basic functions?</question>
+          <question permid="Brs"> <p>How do we compute the derivative of a product of two basic functions in terms of the derivatives of the basic functions?</p></question>
           <answer>
+            <p>
             The product rule tells us that if <m>P</m> is a product of differentiable functions <m>f</m> and <m>g</m> according to the rule <m>P(x) = f(x) g(x)</m>, then
             <me permid="FFM">
               P'(x) = f'(x)g(x)+ f(x)g'(x) 
             </me>.
+            </p>
           </answer>
         </li>
 
         <li permid="kth">
-          <question permid="hyB">How do we compute the derivative of a quotient of two basic functions in terms of the derivatives of the basic functions?</question>
+          <question permid="hyB"><p>How do we compute the derivative of a quotient of two basic functions in terms of the derivatives of the basic functions?</p></question>
           <answer>
+            <p>
             The quotient rule tells us that if <m>Q</m> is a quotient of differentiable functions <m>f</m> and <m>g</m> according to the rule <m>Q(x) = \frac{f(x)}{g(x)}</m>, then
             <me permid="lMV">
               Q'(x) = \frac{f'(x)g(x) - f(x)g'(x)}{g(x)^2}
             </me>.
+            </p>
           </answer>
         </li>
 
         <li permid="QAq">
-          <question permid="NFK"> How do the product and quotient rules combine with the sum and constant multiple rules to expand the library of functions we can differentiate quickly?</question>
+          <question permid="NFK"><p> How do the product and quotient rules combine with the sum and constant multiple rules to expand the library of functions we can differentiate quickly?</p></question>
           <answer>
+            <p>
             Along with the constant multiple and sum rules,
             the product and quotient rules enable us to compute the derivative of any function that consists of sums,
             constant multiples, products,
@@ -10380,6 +10437,7 @@ When functions are used as models, they are not always represented explicitly as
             then <m>F</m> is a quotient,
             in which the numerator is a sum of constant multiples and the denominator is a product.
             Thus, the derivative of <m>F</m> can be found by applying the quotient rule and then using the sum and constant multiple rules to differentiate the numerator and the product rule to differentiate the denominator.
+            </p>
           </answer>
         </li>
       </ul>
@@ -12295,29 +12353,34 @@ When functions are used as models, they are not always represented explicitly as
     <p permid="mLk">
       <ul permid="fCk">
         <li permid="XXL">
-          <question permid="wAv"> What is a composite function and how do we recognize its structure algebraically?</question>
+          <question permid="wAv"><p> What is a composite function and how do we recognize its structure algebraically?</p></question>
           <answer>
+            <p>
             A composite function is one where the input variable <m>x</m> first passes through one function,
             and then the resulting output passes through another.
             For example, the function
             <m>h(x) = 2^{\sin(x)}</m> is composite since <m>x \longrightarrow \sin(x) \longrightarrow 2^{\sin(x)}</m>.
+            </p>
           </answer>
         </li>
 
         <li permid="EeU">
-          <question permid="cHE">Given a composite function
+          <question permid="cHE"><p>Given a composite function
           <m>C(x) = f(g(x))</m> that is built from differentiable functions <m>f</m> and <m>g</m>,
           how do we compute <m>C'(x)</m> in terms of <m>f</m>,
           <m>g</m>, <m>f'</m>, and <m>g'</m>?
           What is the statement of the Chain Rule?
+          </p>
           </question>
           <answer>
+            <p>
             Given a composite function
             <m>C(x) = f(g(x))</m> where <m>f</m> and <m>g</m> are differentiable functions,
             the chain rule tells us that
             <me permid="KiB">
               C'(x) = f'(g(x)) g'(x)
             </me>.
+            </p>
           </answer>
         </li>
       </ul>
@@ -13990,22 +14053,27 @@ When functions are used as models, they are not always represented explicitly as
     <p permid="yiE">
       <ul permid="pkr">
         <li permid="mpL">
-          <question permid="vJx"> What is the derivative of the natural logarithm function?</question>
+          <question permid="vJx"><p> What is the derivative of the natural logarithm function?</p></question>
           <answer>
+            <p>
             For all positive real numbers <m>x</m>,
             <m>\frac{d}{dx}[\ln(x)] = \frac{1}{x}</m>.
+            </p>
           </answer>
         </li>
 
         <li permid="SwU">
-          <question permid="bQG"> If <m>g</m> is the inverse of a differentiable function <m>f</m>,
+          <question permid="bQG"><p> If <m>g</m> is the inverse of a differentiable function <m>f</m>,
           how is <m>g'</m> computed in terms of <m>f</m>, <m>f'</m>,
           and <m>g</m>?
+          </p>
           </question>
           <answer>
+            <p>
              If <m>g</m> is the inverse of a differentiable function <m>f</m>,
             then for any point <m>x</m> in the domain of <m>g'</m>,
             <m>g'(x) = \frac{1}{f'(g(x))}</m>.
+            </p>
           </answer>
         </li>
         </ul>

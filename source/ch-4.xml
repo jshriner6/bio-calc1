@@ -172,14 +172,18 @@
 		<subsection>
 			<title>Summary</title>
 			<ul>
-				<li><question>What is a differential equation and how do these models relate to discrete-time dynamical systems?</question>
+				<li><question><p>What is a differential equation and how do these models relate to discrete-time dynamical systems?</p></question>
 					<answer>
-					A differential equation is an equation that describes derivative values of a function that is unknown to us. A first-order differential equation describes the instantaneous rate of change of a system, and so is the continuous counterpart of an updating function (or difference equation), which describes the average rate of change of a discrete-time dynamical system. 
+            <p>
+					A differential equation is an equation that describes derivative values of a function that is unknown to us. A first-order differential equation describes the instantaneous rate of change of a system, and so is the continuous counterpart of an updating function (or difference equation), which describes the average rate of change of a discrete-time dynamical system.
+          </p> 
 					</answer>
 				</li>
-				<li><question>What is a solution to a differential equation and how does this relate to the concept of an antiderivative?</question>
+				<li><question><p>What is a solution to a differential equation and how does this relate to the concept of an antiderivative?</p></question>
 					<answer>
+            <p>
 					A solution to a differential equation is any function whose derivative satisfies the differential equation. When we are working with a pure-time differential equation <m>\frac{dy}{dt}= f(t)</m>, a solution is an antiderivative of the function <m>f(t)</m>; that is, a solution is a function <m>y(t)= F(t)</m> such that <m>F'(t) = f(t)</m>. 
+          </p>
 					</answer>
 				</li>
 			</ul>
@@ -720,14 +724,18 @@
 		<subsection>
 			<title>Summary</title>
 			<ul>
-				<li><question>How can we solve pure-time differential equations that are sums of basic functions?</question>
+				<li><question><p>How can we solve pure-time differential equations that are sums of basic functions?</p></question>
 					<answer>
+            <p>
 					To find the general solution of a pure-time differential equation <m>\frac{dy}{dt} =f(t)</m>, we need to find the family of antiderivatives <m>f(t)</m>, <m>\int f(t) dt</m>. When <m>f(t)</m> is a single basic function, we can reverse the appropriate rule using the <xref ref="ass-4-2-basic" text="custom">basic antiderivative rules</xref>. When <m>f(t)</m> is made up of a sum and/or constant multiple of these basic functions, we can break it up using the <xref ref="ass-4-2-mult" text="custom">constant multiple rule</xref> and the <xref ref="ass-4-2-sum" text="custom">sum rule</xref>.
+          </p>
 					</answer>
 				</li>
-				<li><question>How can we solve more complicated pure-time differential equations?</question>
+				<li><question><p>How can we solve more complicated pure-time differential equations?</p></question>
 					<answer>
+            <p>
 					For pure-time differential equations that are defined with an appropriate <q>function-derivative pair</q>, we can use the method of <xref ref="ass-4-2-usub" text="custom"><m>u</m>-substitution</xref> to find the general solution. 
+          </p>
 					</answer>
 				</li>
 			</ul>
@@ -1935,27 +1943,35 @@
       <ul permid="gId">
       <li>
       	<question>
+          <p>
 	How does the area between a velocity curve and the horizontal time axis over a particular interval give us information about position?
+            </p>
 	</question>
 	<answer>
+    <p>
 	The (signed) area between a velocity curve and the horizontal time axis on a particular interval tells us the total change in position (displacement) of the object over that time interval. By treating all area as positive, we can also compute the total distance traveled by the object over that time interval.
+  </p>
 	</answer>
       </li>
         <li permid="FkN">
-          <question permid="qbP">  How can we use a Riemann sum to estimate the area between a given curve and the horizontal axis over a particular interval?</question>
+          <question permid="qbP"> <p> How can we use a Riemann sum to estimate the area between a given curve and the horizontal axis over a particular interval?</p></question>
           <answer>
+            <p>
             A Riemann sum is simply a sum of products of the form
             <m>f(x_i^*) \Delta x</m> that estimates the area between a positive function and the horizontal axis over a given interval.
             If the function is sometimes negative on the interval,
             the Riemann sum estimates the difference between the areas that lie above the horizontal axis and those that lie below the axis.
+            </p>
           </answer>
         </li>
 
         <li permid="lrW">
-          <question permid="WiY">What are the differences among left, right, and
+          <question permid="WiY"><p>What are the differences among left, right, and
           middle Riemann sums?
+          </p>
           </question>
           <answer>
+            <p>
             The three most common types of Riemann sums are left, right,
             and middle sums,
             but we can also work with a more general Riemann sum.
@@ -1964,12 +1980,14 @@
             we evaluate the function at the left endpoint of each subinterval,
             while for right and middle sums,
             we use right endpoints and midpoints, respectively.
+            </p>
           </answer>
         </li>
 
         <li permid="Rzf">
-          <question permid="Cqh"> How can we write Riemann sums in an abbreviated form?</question>
+          <question permid="Cqh"><p> How can we write Riemann sums in an abbreviated form?</p></question>
           <answer>
+            <p>
             The left,
             right, and middle Riemann sums are denoted <m>L_n</m>,
             <m>R_n</m>, and <m>M_n</m>, with formulas
@@ -1981,6 +1999,7 @@
             where <m>x_0 = a</m>, <m>x_i = a + i\Delta x</m>,
             and <m>x_n = b</m>, using <m>\Delta x = \frac{b-a}{n}</m>.
             For the midpoint sum, <m>\overline{x}_{i} = (x_{i-1} + x_i)/2</m>.
+            </p>
           </answer>
         </li>
       </ul>
@@ -3831,17 +3850,20 @@
     <p permid="gAZ">
       <ul permid="cmF">
         <li permid="APp">
-          <question permid="RNA">How does increasing the number of subintervals affect the accuracy of the approximation generated by a Riemann sum?</question>
+          <question permid="RNA"><p>How does increasing the number of subintervals affect the accuracy of the approximation generated by a Riemann sum?</p></question>
           <answer>
+            <p>
             Any Riemann sum of a continuous function <m>f</m> on an interval <m>[a,b]</m> provides an estimate of the net signed area bounded by the function and the horizontal axis on the interval.
             Increasing the number of subintervals in the Riemann sum improves the accuracy of this estimate,
             and letting the number of subintervals increase without bound results in the values of the corresponding Riemann sums approaching the exact value of the enclosed net signed area.
+            </p>
           </answer>
         </li>
 
         <li permid="gWy">
-          <question permid="xUJ">What is the definition of the definite integral of a function <m>f</m> over the interval <m>[a,b]</m>?</question>
+          <question permid="xUJ"><p>What is the definition of the definite integral of a function <m>f</m> over the interval <m>[a,b]</m>?</p></question>
           <answer>
+            <p>
             When we take the limit of Riemann sums,
             we arrive at what we call the definite integral of <m>f</m> over the interval <m>[a,b]</m>.
             In particular, the symbol
@@ -3856,12 +3878,14 @@
             and <m>x_i^*</m> satisfies
             <m>x_{i-1} \le x_i^* \le x_i</m>
             (for <m>i = 1, \ldots, n</m>).
+            </p>
           </answer>
         </li>
 
         <li permid="NdH">
-          <question permid="ebS">What does the definite integral measure exactly,
+          <question permid="ebS"><p>What does the definite integral measure exactly,
           and what are some of the key properties of the definite integral?
+          </p>
           </question>
           <answer>
           <p>
@@ -5719,18 +5743,22 @@
     <p permid="iEH">
       <ul permid="ZGu">
         <li permid="qEF">
-          <question permid="TRi"> How can we find the exact value of a definite integral without taking the limit of a Riemann sum?</question>
+          <question permid="TRi"> <p>How can we find the exact value of a definite integral without taking the limit of a Riemann sum?</p></question>
           <answer>
+            <p>
             We can find the exact value of a definite integral without taking the limit of a Riemann sum or using a familiar area formula by finding the antiderivative of the integrand,
             and then applying the Fundamental Theorem of Calculus.
+            </p>
           </answer>
         </li>
 
         <li permid="WLO">
-          <question permid="zYr">What is the statement of the Fundamental Theorem of Calculus,
+          <question permid="zYr"><p>What is the statement of the Fundamental Theorem of Calculus,
           and how do antiderivatives of functions play a key role in applying the theorem?
+          </p>
           </question>
           <answer>
+            <p>
             The Fundamental Theorem of Calculus says that if <m>f</m> is a continuous function on <m>[a,b]</m> and <m>F</m> is an antiderivative of <m>f</m>, then
             <me permid="ZUP">
               \int_a^b f(x) \, dx = F(b) - F(a)
@@ -5738,12 +5766,14 @@
             Hence,
             if we can find an antiderivative for the integrand <m>f</m>,
             evaluating the definite integral comes from simply computing the change in <m>F</m> on <m>[a,b]</m>.
+            </p>
           </answer>
         </li>
 
         <li permid="CSX">
-          <question permid="gfA">What is the meaning of the definite integral of a rate of change in contexts other than when the rate of change represents velocity?</question>
+          <question permid="gfA"><p>What is the meaning of the definite integral of a rate of change in contexts other than when the rate of change represents velocity?</p></question>
           <answer>
+            <p>
             A slightly different perspective on the FTC allows us to restate it as the Total Change Theorem,
             which says that
             <me permid="GbY">
@@ -5751,6 +5781,7 @@
             </me>,
             for any continuously differentiable function <m>f</m>.
             This means that the definite integral of the instantaneous rate of change of a function <m>f</m> on an interval <m>[a,b]</m> is equal to the total change in the function <m>f</m> on <m>[a,b]</m>.
+            </p>
           </answer>
         </li>
       </ul>
@@ -7653,18 +7684,22 @@
     <p permid="HDD">
       <ul permid="uFr">
         <li permid="naS">
-          <question permid="LDC">What is Euler's method and how can we use it to approximate the solution to an initial value problem?</question>
+          <question permid="LDC"><p>What is Euler's method and how can we use it to approximate the solution to an initial value problem?</p></question>
             <answer>
+              <p>
             Euler's method is an algorithm for approximating the solution to an initial value problem by following the tangent lines while we take horizontal steps across the <m>t</m>-axis.
+            </p>
           </answer>
         </li>
 
         <li permid="Tib">
-          <question permid="rKL">How accurate is Euler's method?</question>
+          <question permid="rKL"><p>How accurate is Euler's method?</p></question>
           <answer>
+            <p>
             If we wish to approximate <m>y(\overline{t})</m> for some fixed
             <m>\overline{t}</m> by taking horizontal steps of size <m>\Delta t</m>,
             then the error in our approximation is proportional to <m>\Delta t</m>.
+            </p>
           </answer>
         </li>
       </ul>

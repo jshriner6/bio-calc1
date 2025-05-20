@@ -190,7 +190,9 @@ study of change, and is therefore a useful tool to understand as a scientist. In
 								Each year <m>t</m>, a population <m>P</m> of wolves is measured. A model which describes the population at a yearly interval is a discrete-time dynamical system. The graph of the relationship between population and time of such a model might look something like this:
 								</p>
 									<image width="60%" source="images/dtds.png">
-										<description>Five discrete points corresponding to each t value 0, 1, 2, 3, and 4.  </description>
+										<description>
+											Five discrete points corresponding to each t value 0, 1, 2, 3, and 4. 
+										</description>
 									</image>  
 					</example>	
 					
@@ -321,16 +323,33 @@ study of change, and is therefore a useful tool to understand as a scientist. In
 				Below we re-visit the <xref ref="obj-1-1" text="custom">Motivating Questions</xref> from the beginning of the section. It is good practice to attempt to summarize in your own words before viewing the answers.
 				</p>
 				<ul>
-					<li> <question>What is a mathematical model and why do we need them? </question>
-						<answer>A mathematical model is a mathematical representation that describes a system we have observed and measured. We can manipulate mathematical models in order to analyze and predict how a system is changing. </answer>
+					<li> <question><p>What is a mathematical model and why do we need them?</p> </question>
+						<answer>
+							<p>						
+							A mathematical model is a mathematical representation that describes a system we 
+							have observed and measured. We can manipulate mathematical models in order to 
+							analyze and predict how a system is changing. 
+							</p>
+						</answer>
 					</li>
-					<li><question> What are some common mathematical models? </question>
-						<answer>Common mathematical models are functions, discrete-time dynamical systems, and continuous-time dynamical systems. </answer>
+					<li><question><p> What are some common mathematical models?</p> </question>
+						<answer>
+							<p>Common mathematical models are functions, discrete-time dynamical systems, and 
+								continuous-time dynamical systems. 
+							</p>
+						</answer>
 					</li>
-					<li><question>What are some mathematical processes that can help us become better problem solvers?</question>
-						<answer> Processes that can help us become better problem solvers are creating examples and counterexamples, and learning how to utilize technology in a way that reinforces and enhances our understanding of a concept. </answer>
+					<li><question><p>What are some mathematical processes that can help us become better problem solvers?</p></question>
+						<answer> 
+							<p>
+							Processes that can help us become better problem solvers are creating examples and 
+							counterexamples, and learning how to utilize technology in a way that reinforces 
+							and enhances our understanding of a concept. 
+							</p>
+						</answer>
 					</li>
 				</ul>
+				
 
 			</subsection>
 			
@@ -751,25 +770,25 @@ study of change, and is therefore a useful tool to understand as a scientist. In
 			<interactive desmos="lomycilmj5" width="170%" aspect="2:1" preview="images/1_2_int_prev_aroc.png" /> 
 			<ol>
 				<li>The value of <m>AROC_{[-3,2]}</m> is
-					<answer>1</answer>
+					<answer><m>1</m></answer>
 				</li>
 				<li> The line connecting the points <m>(-3,f(-3))</m> and <m>(2,f(2))</m> (<em>increases</em>/<em>decreases</em>/<em>stays the same</em>).
-					<answer>increases</answer>
+					<answer><p>increases</p></answer>
 				</li>
 				<li>The value of <m>AROC_{[-1,1]}</m> is
-					<answer>-1.5</answer>
+					<answer><m>-1.5</m></answer>
 				</li>
 				<li> The line connecting the points <m>(-1,f(-1))</m> and <m>(1,f(1))</m> (<em>increases</em>/<em>decreases</em>/<em>stays the same</em>).
-					<answer>decreases</answer>
+					<answer><p>decreases</p></answer>
 				</li>
 				<li>The value of <m>AROC_{[-2,2]}</m> is
-					<answer>0</answer>
+					<answer><m>0</m></answer>
 				</li>
 				<li> The line connecting the points <m>(-2,f(-2))</m> and <m>(2,f(2))</m> (<em>increases</em>/<em>decreases</em>/<em>stays the same</em>).
-					<answer>stays the same</answer>
+					<answer><p>stays the same</p></answer>
 				</li>
 				<li> Graphically, the value of <m>AROC_{[a,b]}</m> describes	
-					<answer>whether the line connecting the two points <m>(a,f(a))</m> and <m>(b,f(b))</m> increases, decreases, or stays the same. Further, the larger the average rate of change is in absolute value, the steeper the line will increase or decrease. The line connecting the two points is called the <term>secant line</term>. </answer>		
+					<answer><p>whether the line connecting the two points <m>(a,f(a))</m> and <m>(b,f(b))</m> increases, decreases, or stays the same. Further, the larger the average rate of change is in absolute value, the steeper the line will increase or decrease. The line connecting the two points is called the <term>secant line</term>.</p> </answer>		
 				</li>
 			</ol>
 			
@@ -787,23 +806,23 @@ study of change, and is therefore a useful tool to understand as a scientist. In
 			<title>Summary </title>
 			<p>
 				<ul>
-					<li> <question>What makes a relationship a function? </question>
-						<answer>A quantity <m>y</m> is a function of a quantity <m>x</m> when each <m>x</m> value is associated with exactly one <m>y</m> value. </answer>
+					<li> <question><p>What makes a relationship a function?</p> </question>
+						<answer><p>A quantity <m>y</m> is a function of a quantity <m>x</m> when each <m>x</m> value is associated with exactly one <m>y</m> value. </p></answer>
 					</li>
-					<li> <question>What are different ways we can describe a function? </question>
-						<answer>We can describe function relationships using equations, tables, and graphs. Function relationships can also be described explicitly or recursively.</answer>
+					<li> <question><p>What are different ways we can describe a function?</p> </question>
+						<answer><p>We can describe function relationships using equations, tables, and graphs. Function relationships can also be described explicitly or recursively.</p></answer>
 					</li>
-					<li><question> What does it mean when there are letters in a model? </question>
-						<answer>A letter in function may represent a variable (a changing quantity) or a parameter ( a constant quantity). Function notation is useful for helping us recognize the variables in a model.</answer>
+					<li><question> <p>What does it mean when there are letters in a model? </p></question>
+						<answer><p>A letter in function may represent a variable (a changing quantity) or a parameter ( a constant quantity). Function notation is useful for helping us recognize the variables in a model.</p></answer>
 					</li>
 					<li><question>What are different ways that we can combine functions?</question>
-						<answer>We can combine functions like numbers using addition, subtraction, multiplication, and division. We can also put functions inside of other functions using composition.</answer>
+						<answer><p>We can combine functions like numbers using addition, subtraction, multiplication, and division. We can also put functions inside of other functions using composition.</p></answer>
 					</li>
-					<li><question>What does it mean for a function to be invertible?</question>
-						<answer>A function is invertible if swapping domain and range results in another function relationship.</answer>
+					<li><question><p>What does it mean for a function to be invertible?</p></question>
+						<answer><p>A function is invertible if swapping domain and range results in another function relationship.</p></answer>
 					</li>
-					<li><question>How can we describe how a function changes over time?</question>
-						<answer>We can describe how a function changes over a specific time interval by computing the average rate of change over that time interval. Graphically, this number tells us the steepness of the secant line connecting the two end points, and if the secant line is increasing or decreasing. </answer>
+					<li><question><p>How can we describe how a function changes over time?</p></question>
+						<answer><p>We can describe how a function changes over a specific time interval by computing the average rate of change over that time interval. Graphically, this number tells us the steepness of the secant line connecting the two end points, and if the secant line is increasing or decreasing. </p></answer>
 					</li>
 			</ul>
 			</p>
@@ -1085,14 +1104,14 @@ study of change, and is therefore a useful tool to understand as a scientist. In
 			<title>Summary</title>
 			<p>
 				<ul>
-					<li> <question>When using functions as models, how do we ensure our models are meaningful? </question>
-						<answer>To ensure our models are meaningful, we must be sure we are using appropriate fundamental relations that describe the quantities we are measuring, and appropriate units to measure those variable quantities. </answer>
+					<li> <question><p>When using functions as models, how do we ensure our models are meaningful?</p> </question>
+						<answer><p>To ensure our models are meaningful, we must be sure we are using appropriate fundamental relations that describe the quantities we are measuring, and appropriate units to measure those variable quantities.</p> </answer>
 					</li>
-					<li> <question>When computing with functions that are being used as models, how do we ensure our computations are meaningful? </question>
-						<answer>We can use the units of variable quantities when making computations to ensure that units combine and cancel appropriately to give a meaningful output.</answer>
+					<li> <question><p>When computing with functions that are being used as models, how do we ensure our computations are meaningful?</p> </question>
+						<answer><p>We can use the units of variable quantities when making computations to ensure that units combine and cancel appropriately to give a meaningful output.</p></answer>
 					</li>
-					<li><question> How can we visualize unit conversions graphically? </question>
-						<answer>Unit conversions result in a transformation of the graph of the function being used. Function transformations can be useful in recognizing the general shape and other properties of graphs of complicated functions. </answer>
+					<li><question><p> How can we visualize unit conversions graphically? </p></question>
+						<answer><p>Unit conversions result in a transformation of the graph of the function being used. Function transformations can be useful in recognizing the general shape and other properties of graphs of complicated functions. </p></answer>
 					</li>
 				</ul>
 			</p>
@@ -1462,14 +1481,14 @@ study of change, and is therefore a useful tool to understand as a scientist. In
 		<subsection>
 			<title>Summary</title>
 			<ul>
-				<li> <question>What is the difference between a linear function and a proportional relationship? </question>
-					<answer>A linear function is a function relationship which has a constant average rate of change between any two points. A proportional relationship is a specific type of linear function in which the <m>y</m>- intercept is equal to <m>0</m>.</answer>
+				<li> <question><p>What is the difference between a linear function and a proportional relationship? </p></question>
+					<answer><p>A linear function is a function relationship which has a constant average rate of change between any two points. A proportional relationship is a specific type of linear function in which the <m>y</m>- intercept is equal to <m>0</m>.</p></answer>
 				</li>
-				<li> <question>How is the equation of a linear function related to its graph?  </question>
-					<answer>The graph of a linear function can be determined by its slope and <m>y</m>-intercept. The slope determines whether the graph increases or decreases, and how quickly it increases or decreases. The <m>y</m>-intercept is a vertical shift of the graph of <m>y=mx</m> which determines where the graph crosses the <m>y</m>-axis. </answer>
+				<li> <question><p>How is the equation of a linear function related to its graph?  </p></question>
+					<answer><p>The graph of a linear function can be determined by its slope and <m>y</m>-intercept. The slope determines whether the graph increases or decreases, and how quickly it increases or decreases. The <m>y</m>-intercept is a vertical shift of the graph of <m>y=mx</m> which determines where the graph crosses the <m>y</m>-axis. </p></answer>
 				</li>
-				<li><question> What do solutions to linear equations represent graphically?</question>
-				<answer>Solutions to linear equations are points of intersection when graphing the lines on the left and right of the <q><m>=</m></q> sign. It is possible to have exactly one solution, no solution, or infinitely many solutions.</answer>
+				<li><question> <p>What do solutions to linear equations represent graphically?</p></question>
+				<answer><p>Solutions to linear equations are points of intersection when graphing the lines on the left and right of the <q><m>=</m></q> sign. It is possible to have exactly one solution, no solution, or infinitely many solutions.</p></answer>
 				</li>
 			</ul>
 		</subsection>
@@ -1902,17 +1921,17 @@ study of change, and is therefore a useful tool to understand as a scientist. In
 		<subsection>
 			<title>Summary</title>
 			<ul>
-				<li> <question>What is an exponential function? </question>
+				<li> <question><p>What is an exponential function? </p></question>
 					<answer><p>An exponential function is a function that has the form <m>f(x)=b^x</m> for some constant <m>b</m> where <m>b \gt 0</m> and <m>b \neq 1</m>. A special property of these functions is that the ratio of consecutive average rates of change is equal to <m>b</m>. That is, 
 						<me>\dfrac{AROC_{[x+1,x+2]}}{AROC_{[x,x+1]}} = b</me>
 						for every <m>x</m> value.</p>
 					</answer>
 				</li>
-				<li> <question>What is a logarithmic function?</question>
-					<answer>A logarithmic function of base <m>b</m> is the inverse function of the exponential function of base <m>b</m>. That is, <m>\log_b(x)=y</m> means <m>b^y=x</m>.</answer>
+				<li> <question><p>What is a logarithmic function?</p></question>
+					<answer><p>A logarithmic function of base <m>b</m> is the inverse function of the exponential function of base <m>b</m>. That is, <m>\log_b(x)=y</m> means <m>b^y=x</m>.</p></answer>
 				</li>
-				<li><question> How do we solve exponential equations?</question>
-					<answer>To solve equations for a variable that is in the exponent, we can apply logarithms to both sides of the equation and use properties of logarithms. Specifically, we use the property that <m>\log_b(a^x)=x \cdot \log_b(a)</m>.</answer>
+				<li><question><p> How do we solve exponential equations?</p></question>
+					<answer><p>To solve equations for a variable that is in the exponent, we can apply logarithms to both sides of the equation and use properties of logarithms. Specifically, we use the property that <m>\log_b(a^x)=x \cdot \log_b(a)</m>.</p></answer>
 				</li>
 			</ul>
 		</subsection>
@@ -2215,13 +2234,13 @@ study of change, and is therefore a useful tool to understand as a scientist. In
 		<subsection>
 			<title>Summary</title>
 			<ul>
-				<li> <question>How are <m>\sin(\theta)</m>, <m>\cos(\theta)</m>, and <m>\tan(\theta)</m> defined?</question>
-					<answer>These functions are defined based on the coordinates of the unit circle associated with the angle <m>\theta</m>. <m>\sin(\theta)</m> is the <m>y</m> value, <m>\cos(\theta)</m> is the <m>x</m> value, and <m>\tan(\theta)</m>is the slope of the line connecting the point <m>(0,0)</m> to the point on the unit circle. 
-					 </answer>
+				<li> <question><p>How are <m>\sin(\theta)</m>, <m>\cos(\theta)</m>, and <m>\tan(\theta)</m> defined?</p></question>
+					<answer><p>These functions are defined based on the coordinates of the unit circle associated with the angle <m>\theta</m>. <m>\sin(\theta)</m> is the <m>y</m> value, <m>\cos(\theta)</m> is the <m>x</m> value, and <m>\tan(\theta)</m>is the slope of the line connecting the point <m>(0,0)</m> to the point on the unit circle. 
+					</p></answer>
 				</li>
-				<li> <question>How can we use trigonometric functions in modeling?</question>
+				<li> <question><p>How can we use trigonometric functions in modeling?</p></question>
 					<answer>
-					Trigonometric functions are useful in modeling relationships that repeat a pattern over a specific period of time. The maximum/minimum values, average value, and period can all be customized using transformations.
+					<p>Trigonometric functions are useful in modeling relationships that repeat a pattern over a specific period of time. The maximum/minimum values, average value, and period can all be customized using transformations.</p>
 					</answer>
 				</li>
 			</ul>
@@ -2621,11 +2640,11 @@ study of change, and is therefore a useful tool to understand as a scientist. In
 		<subsection>
 			<title>Summary</title>
 			<ul>
-				<li> <question>What is a discrete-time dynamical system, and how can we represent one using functions?</question>
-					<answer>A discrete-time dynamical system describes a sequence of measurements made at equally spaced intervals. It is common to represent a DTDS using an updating function (a recursive function) and an initial value. </answer>
+				<li> <question><p>What is a discrete-time dynamical system, and how can we represent one using functions?</p></question>
+					<answer><p>A discrete-time dynamical system describes a sequence of measurements made at equally spaced intervals. It is common to represent a DTDS using an updating function (a recursive function) and an initial value. </p></answer>
 				</li>
-				<li> <question>How can we make predictions about a discrete-time dynamical system?</question>
-					<answer>We can make predictions about a DTDS by describing its solution function. We can do this by creating a table of several values, plotting several points on a graph, and in some cases, finding the equation of the solution function explicitly. </answer>
+				<li> <question><p>How can we make predictions about a discrete-time dynamical system?</p></question>
+					<answer><p>We can make predictions about a DTDS by describing its solution function. We can do this by creating a table of several values, plotting several points on a graph, and in some cases, finding the equation of the solution function explicitly.</p> </answer>
 				</li>
 			</ul>
 		</subsection>
@@ -2910,11 +2929,11 @@ study of change, and is therefore a useful tool to understand as a scientist. In
 		<subsection>
 			<title>Summary</title>
 			<ul>
-				<li> <question>How can we describe the qualitative behavior of a solution function without finding the equation of the solution function explicitly?</question>
-					<answer>We can describe the qualitative behavior of a solution function by cob-webbing on the graph of the updating function. The series of points generated by cob-webbing show us whether a solution function is increasing or decreasing, how it is increasing or decreasing, and if the solution function is approaching a particular value as time goes on.</answer>
+				<li> <question><p>How can we describe the qualitative behavior of a solution function without finding the equation of the solution function explicitly?</p></question>
+					<answer><p>We can describe the qualitative behavior of a solution function by cob-webbing on the graph of the updating function. The series of points generated by cob-webbing show us whether a solution function is increasing or decreasing, how it is increasing or decreasing, and if the solution function is approaching a particular value as time goes on.</p></answer>
 				</li>
-				<li> <question>What are equilibrium values of a DTDS and how can we find and describe them?</question>
-					<answer>Equilibrium values are values that are unchanged by the updating function. We can find equilibrium values algebraically using the equation of the updating function or graphically using the graph of the updating function. We can categorize equilibrium values as stable or unstable based on how solution functions behave with initial values that are close to the equilibrium value.</answer>
+				<li> <question><p>What are equilibrium values of a DTDS and how can we find and describe them?</p></question>
+					<answer><p>Equilibrium values are values that are unchanged by the updating function. We can find equilibrium values algebraically using the equation of the updating function or graphically using the graph of the updating function. We can categorize equilibrium values as stable or unstable based on how solution functions behave with initial values that are close to the equilibrium value.</p></answer>
 				</li>
 			</ul>
 		</subsection>
@@ -3177,14 +3196,14 @@ study of change, and is therefore a useful tool to understand as a scientist. In
 		<subsection>
 			<title>Summary</title>
 			<ul>
-				<li> <question>How can we model gas exchange in the lung using a discrete-time dynamical system?</question>
-					<answer>We can model gas exchange in the lung using the <xref ref="ass-1-9-lung" text="custom">lung model</xref>.</answer>
+				<li> <question><p>How can we model gas exchange in the lung using a discrete-time dynamical system?</p></question>
+					<answer><p>We can model gas exchange in the lung using the <xref ref="ass-1-9-lung" text="custom">lung model</xref>.</p></answer>
 				</li>
-				<li> <question>What is a weighted average?</question>
-					<answer>A weighted average between two numbers <m>a</m> and <m>b</m> is a sum of the form <m>(1-p)a + pb</m>, where <m>0\leq p \leq 1</m>. Weighted averages give us a way to place more importance on one number over another when computing the average value. </answer>
+				<li> <question><p>What is a weighted average?</p></question>
+					<answer><p>A weighted average between two numbers <m>a</m> and <m>b</m> is a sum of the form <m>(1-p)a + pb</m>, where <m>0\leq p \leq 1</m>. Weighted averages give us a way to place more importance on one number over another when computing the average value. </p></answer>
 				</li>
-				<li><question>How can we model a system which involves two distinct populations that change over time?</question>
-					<answer>We can form a DTDS that measures a population proportion. One example of this is when two distinct population exhibit exponential growth, we get the <xref ref="ass-1-9-comp" text="custom">competing species model.</xref> One more example of this in the context of migration models is outlined in <xref ref="x-1-9-migration">Exercise</xref> and <xref ref="x-1-9-migration2">Exercise</xref>.</answer>
+				<li><question><p>How can we model a system which involves two distinct populations that change over time?</p></question>
+					<answer><p>We can form a DTDS that measures a population proportion. One example of this is when two distinct population exhibit exponential growth, we get the <xref ref="ass-1-9-comp" text="custom">competing species model.</xref> One more example of this in the context of migration models is outlined in <xref ref="x-1-9-migration">Exercise</xref> and <xref ref="x-1-9-migration2">Exercise</xref>.</p></answer>
 				</li>
 			</ul>
 		</subsection>
