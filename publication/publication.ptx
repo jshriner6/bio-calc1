@@ -94,6 +94,7 @@
     <!-- and associated with a Google account via CX number    -->
     <!-- <search google-cx=""/> -->
     <!-- ***************************************************** -->
+     <baseurl href="https://jshriner6.github.io/bio-calc1"/>
     
     <feedback href="https://docs.google.com/forms/d/e/1FAIpQLSfqb-mJw72Dhhm6BRbYn5IO3eLVvxuBmMoiuRvvYTvmABnZTw/viewform?usp=sf_link"/>
   </html>
