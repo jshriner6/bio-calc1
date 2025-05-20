@@ -72,6 +72,7 @@ window.MathJax = {
 </script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><meta xmlns:xlink="http://www.w3.org/1999/xlink" name="Keywords" content="Authored in PreTeXt">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta xmlns:xlink="http://www.w3.org/1999/xlink" property="og:type" content="book">
+<meta xmlns:xlink="http://www.w3.org/1999/xlink" property="og:image" content="https://jshriner6.github.io/bio-calc1/external/images/mountains.jpg">
 <meta xmlns:xlink="http://www.w3.org/1999/xlink" property="book:title" content="Calculus for Biological Scientists">
 <meta xmlns:xlink="http://www.w3.org/1999/xlink" property="book:author" content="Jeff Shriner">
 <script src="_static/pretext/js/lib/jquery.min.js"></script><script src="_static/pretext/js/lib/jquery.sticky.js"></script><script src="_static/pretext/js/lib/jquery.espy.min.js"></script><script src="_static/pretext/js/pretext.js"></script><script src="_static/pretext/js/pretext_add_on.js?x=1"></script><script src="_static/pretext/js/user_preferences.js"></script><!--** eBookCongig is necessary to configure interactive       **-->
@@ -861,21 +862,22 @@ h'(t) = 3^{t^2 + 2t}\ln(3) (2t+2) \sin^4(t)  + 3^{t^2 + 2t} 4\sin^3(t) \cos(t) \
 <li id="sec-2-5-chain-8-2-1-1"><div class="para" id="p-derived-sec-2-5-chain-8-2-1-1">
 <article class="question example-like" id="sec-2-5-chain-8-2-1-1-1"><h4 class="heading">
 <span class="type">Question</span><span class="space"> </span><span class="codenumber">2.8.9</span><span class="period">.</span>
-</h4></article> <details id="sec-2-5-chain-8-2-1-1-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content">
-<span class="process-math">\(x\)</span><span class="process-math">\(h(x) = 2^{\sin(x)}\)</span><span class="process-math">\(x \longrightarrow \sin(x) \longrightarrow 2^{\sin(x)}\text{.}\)</span>
-</div></details>
+</h4>
+<div class="para" id="sec-2-5-chain-8-2-1-1-1-1">What is a composite function and how do we recognize its structure algebraically?</div></article> <details id="sec-2-5-chain-8-2-1-1-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para" id="sec-2-5-chain-8-2-1-1-2-1">A composite function is one where the input variable <span class="process-math">\(x\)</span> first passes through one function, and then the resulting output passes through another. For example, the function <span class="process-math">\(h(x) = 2^{\sin(x)}\)</span> is composite since <span class="process-math">\(x \longrightarrow \sin(x) \longrightarrow 2^{\sin(x)}\text{.}\)</span>
+</div></div></details>
 </div></li>
 <li id="sec-2-5-chain-8-2-1-2"><div class="para" id="p-derived-sec-2-5-chain-8-2-1-2">
 <article class="question example-like" id="sec-2-5-chain-8-2-1-2-1"><h4 class="heading">
 <span class="type">Question</span><span class="space"> </span><span class="codenumber">2.8.10</span><span class="period">.</span>
 </h4>
-<span class="process-math">\(C(x) = f(g(x))\)</span><span class="process-math">\(f\)</span><span class="process-math">\(g\text{,}\)</span><span class="process-math">\(C'(x)\)</span><span class="process-math">\(f\text{,}\)</span><span class="process-math">\(g\text{,}\)</span><span class="process-math">\(f'\text{,}\)</span><span class="process-math">\(g'\text{?}\)</span></article> <details id="sec-2-5-chain-8-2-1-2-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content">
-<span class="process-math">\(C(x) = f(g(x))\)</span><span class="process-math">\(f\)</span><span class="process-math">\(g\)</span><div class="displaymath process-math">
+<div class="para" id="sec-2-5-chain-8-2-1-2-1-1">Given a composite function <span class="process-math">\(C(x) = f(g(x))\)</span> that is built from differentiable functions <span class="process-math">\(f\)</span> and <span class="process-math">\(g\text{,}\)</span> how do we compute <span class="process-math">\(C'(x)\)</span> in terms of <span class="process-math">\(f\text{,}\)</span> <span class="process-math">\(g\text{,}\)</span> <span class="process-math">\(f'\text{,}\)</span> and <span class="process-math">\(g'\text{?}\)</span> What is the statement of the Chain Rule?</div></article> <details id="sec-2-5-chain-8-2-1-2-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para logical" id="sec-2-5-chain-8-2-1-2-2-1">
+<div class="para">Given a composite function <span class="process-math">\(C(x) = f(g(x))\)</span> where <span class="process-math">\(f\)</span> and <span class="process-math">\(g\)</span> are differentiable functions, the chain rule tells us that</div>
+<div class="displaymath process-math">
 \begin{equation*}
 C'(x) = f'(g(x)) g'(x)\text{.}
 \end{equation*}
 </div>
-</div></details>
+</div></div></details>
 </div></li>
 </ul></div></section><section class="exercises" id="ez-2-5"><h3 class="heading hide-type">
 <span class="type">Exercises</span><span class="space"> </span><span class="codenumber">2.8.5</span><span class="space"> </span><span class="title">Exercises</span>
