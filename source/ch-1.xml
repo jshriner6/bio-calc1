@@ -833,12 +833,12 @@ study of change, and is therefore a useful tool to understand as a scientist. In
 		<exercises>
 			<exercise>
 				<statement>
-				Give an example of a relationship in which <m>y</m> is not a function of <m>x</m>. Represent your example as an equation, table, and graph. 
+				Give an example of a relationship in which <m>y</m> is not a function of <m>x</m>. Write a sentence explaining why your example works, and represent your example as an equation, table, and graph. 
 				</statement>
 			</exercise>
 			<exercise>
 				<statement>
-				Give an example of a relationship in which <m>y</m> is a function of <m>x</m> but is not an invertible function. Represent your example as an equation, table, and graph. 
+				Give an example of a relationship in which <m>y</m> is a function of <m>x</m> but is not an invertible function. Write a sentence explaining why your example works, and represent your example as an equation, table, and graph. 
 				</statement>
 			</exercise>
 			<exercise>
@@ -1955,7 +1955,7 @@ study of change, and is therefore a useful tool to understand as a scientist. In
 			</exercise>
 			<exercise>
 				<statement>
-				In the table below, determine the value of <m>c</m> that would make the points fit an exponential relationship with base <m>0.25</m>.
+				Use <xref ref="f-1-5-aroc"/> to determine the value of <m>c</m> that would make the points in the table below fit an exponential relationship with base <m>0.25</m>.
 				<table>
 					<tabular>
 						<row header="yes" bottom="minor">
@@ -2672,7 +2672,9 @@ study of change, and is therefore a useful tool to understand as a scientist. In
 			</exercise>
 			<exercise>
 				<statement>
-				Determine the solution function associated with each updating function below. Use an initial value of <m>b_0 = 5</m> for each.
+				First write the equation of each updating function represented by the graph, using correct notation for updating functions. 
+				Then determine the solution function associated with each updating function, using correct notation for solution functions. 
+				Use an initial value of <m>b_0 = 5</m> for each.
 				<ol>
 					<li>
 					<image width="60%" source="images/updating1.png">

@@ -1728,7 +1728,7 @@
 		Because of this example, we may be tempted to conclude that when the derivative of an updating function rule at an equilibrium value is equal to <m>1</m>, the equilibrium value is stable. A single example, however, cannot prove to us that this will always occur. The next example will show us that we can, in fact, get different behavior if we change the second derivative value of the updating function at the equilibrium value.  
 		</p>
 		<p>
-		Now we consider the updating function <m>x_{t+1}=0.5(x_t)^2 = 0.5</m>. It can be verified algebraically that <m>x^*=1</m> is an equilibrium value. Note also that the updating function rule is <m>f(x)=0.5x^2 +0.5</m>, so that <m>f'(x)=x</m>. Therefore, <m>f'(1)=1</m>, which means this is a case in which the derivative of the updating function rule at the equilibrium value is equal to <m>1</m>. Use the interactive below to answer the questions before viewing the answers.
+		Now we consider the updating function <m>x_{t+1}=0.5(x_t)^2 + 0.5</m>. It can be verified algebraically that <m>x^*=1</m> is an equilibrium value. Note also that the updating function rule is <m>f(x)=0.5x^2 +0.5</m>, so that <m>f'(x)=x</m>. Therefore, <m>f'(1)=1</m>, which means this is a case in which the derivative of the updating function rule at the equilibrium value is equal to <m>1</m>. Use the interactive below to answer the questions before viewing the answers.
 			<interactive desmos="igtnpjb0du" width="170%" aspect="2:1" preview="images/3_2_int_prev_stabthm2.png"/>
 			<ul>
 				<li>For initial values close to and greater than the equilibrium value, how does the solution function behave? 
