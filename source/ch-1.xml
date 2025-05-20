@@ -462,7 +462,9 @@ study of change, and is therefore a useful tool to understand as a scientist. In
 			When we say <q><m>y</m> is a  function of <m>x</m></q>, we call <m>x</m> the <term>input</term> (or <term>independent variable</term>) and <m>y</m> the <term>output</term> (or <term>dependent variable</term>).
 			</p> 
 			<example xml:id="ex-1-2-reps">
+				<p>
 			Looking at <xref ref="wu-1-2">Warm-Up</xref>, one equation represents <m>y</m> as a function of <m>x</m> and one does not.
+				</p>
 				<ol marker="a.">
 					<li>
 						<p>In <m> y = x+1</m>, <m>y</m> is a function of <m>x</m>. Our reasoning will sound different depending on whether you are looking at the equation, table, or graph, but in all cases our reasoning is based on <xref ref="def-1-2-function">Definition</xref>:
@@ -815,7 +817,7 @@ study of change, and is therefore a useful tool to understand as a scientist. In
 					<li><question> <p>What does it mean when there are letters in a model? </p></question>
 						<answer><p>A letter in function may represent a variable (a changing quantity) or a parameter ( a constant quantity). Function notation is useful for helping us recognize the variables in a model.</p></answer>
 					</li>
-					<li><question>What are different ways that we can combine functions?</question>
+					<li><question><p>What are different ways that we can combine functions?</p></question>
 						<answer><p>We can combine functions like numbers using addition, subtraction, multiplication, and division. We can also put functions inside of other functions using composition.</p></answer>
 					</li>
 					<li><question><p>What does it mean for a function to be invertible?</p></question>
@@ -1229,7 +1231,9 @@ study of change, and is therefore a useful tool to understand as a scientist. In
 				<title>Linear Function</title>
 				<idx><h>linear function</h></idx>
 				<idx><h>function</h><h>linear</h></idx>
+				<p>
 				A <term>linear function</term> is a function such that <m>AROC_{[a,b]}</m> is constant for every two <m>x</m> values <m>a</m> and <m>b</m> in the domain of the function.
+				</p>
 			</definition>
 			<p>
 			If a function has a constant average rate of change, we can say something very specific about the equation for the function. For suppose <m>f(x)</m> is a linear function. Then we know that for any <m>x</m> value, the average rate of change between <m>x</m> and <m>0</m> is constant (call it <m>m</m>). That is, 
@@ -1637,7 +1641,7 @@ study of change, and is therefore a useful tool to understand as a scientist. In
 			<p>
 				<ul>
 					<li><m>v</m>
-						<answer> is a vertical scale by a factor of <m>|v|</m>. When a function has the form <m>f(x)=vb^x</m>, <m>v</m> is the <m>y</m>-intercept.</answer>
+						<answer><p> is a vertical scale by a factor of <m>|v|</m>. When a function has the form <m>f(x)=vb^x</m>, <m>v</m> is the <m>y</m>-intercept.</p></answer>
 					</li>
 					<!--<li><m>h</m>
 						<answer> is a horizontal scale. It will stretch or compress the graph horizontally by a factor of <m>\left|\dfrac{1}{h}\right|</m>.</answer>
@@ -1646,7 +1650,7 @@ study of change, and is therefore a useful tool to understand as a scientist. In
 						<answer> is a horizontal shift. It will shift the graph left or right <m>|r|</m> units.</answer>
 					</li> -->
 					<li><m>u</m>
-						<answer> is a vertical shift. It will shift the graph up or down <m>|u|</m> units.</answer>
+						<answer><p> is a vertical shift. It will shift the graph up or down <m>|u|</m> units.</p></answer>
 					</li>
 				</ul>
 			</p>
@@ -1660,9 +1664,11 @@ study of change, and is therefore a useful tool to understand as a scientist. In
 			</theorem>
 			<example>
 				<title>Constant AROC Ratio</title>
+				<p>
 				Looking at the table in <xref ref="wu-1-5">Warm-Up</xref>, we compute <me>\dfrac{AROC_{[x+1,x+2]}}{AROC_{[x,x+1]}}</me> for <m>x=-1</m> and <m>x=0</m>:
 				<me>\dfrac{AROC_{[-1+1,-1+2]}}{AROC_{[-1,-1+1]}} = \dfrac{AROC_{[0,1]}}{AROC_{[-1,0]}} = \dfrac{1}{0.5} = 2  </me>
 				<me>\dfrac{AROC_{[0+1,0+2]}}{AROC_{[0,0+1]}} = \dfrac{AROC_{[1,2]}}{AROC_{[0,1]}} = \dfrac{2}{1} = 2  </me>
+				</p>
 				<p>
 				The table lists points of the function <m>f(x) = 2^x</m>, which is why we computed the constant <m>b=2</m> for each ratio. 
 				</p>
@@ -1778,14 +1784,16 @@ study of change, and is therefore a useful tool to understand as a scientist. In
 				</p>
 			</aside>
 			<p>
-				<question>Are exponential functions invertible? <em>Hint</em>: Picture what the graphs of exponential functions look like.</question>
-				<answer>Yes, because they pass the horizontal line test (see <xref ref="ex-1-2-inv">Example</xref>).</answer>
+				<question><p>Are exponential functions invertible? <em>Hint</em>: Picture what the graphs of exponential functions look like.</p></question>
+				<answer><p>Yes, because they pass the horizontal line test (see <xref ref="ex-1-2-inv">Example</xref>).</p></answer>
 			</p>
 			<definition>
 				<title>Logarithmic Function of Base <m>b</m></title>
 				<idx><h>logarithmic function</h></idx>
 				<idx><h>logarithmic function</h><h>base</h></idx>
+				<p>
 				Given an exponential function with base <m>b</m>, <m>y=b^x</m>, its inverse function is called the <term>logarithmic function of base <m>b</m></term>. It is written <m>y=\log_b(x)</m>.
+				</p>
 			</definition>
 			<p>
 			Base <m>10</m> and base <m>e</m> are used often and have special notation:
@@ -2098,13 +2106,13 @@ study of change, and is therefore a useful tool to understand as a scientist. In
 			<idx><h>trigonometric functions</h><h>tangent</h></idx>
 			<ul>
 				<li><m>\sin(r)</m> 
-					<answer>For a value of <m>r</m>, you can draw a right triangle in the unit circle by drawing a vertical line up or down to the <m>x</m>-axis. <m>\sin(r)</m> is the height of that triangle. Equivalently,  <m>\sin(r)</m> is the <m>y</m> value of the point on the unit circle associated with <m>r</m>.</answer>
+					<answer><p>For a value of <m>r</m>, you can draw a right triangle in the unit circle by drawing a vertical line up or down to the <m>x</m>-axis. <m>\sin(r)</m> is the height of that triangle. Equivalently,  <m>\sin(r)</m> is the <m>y</m> value of the point on the unit circle associated with <m>r</m>.</p></answer>
 				</li>
 				<li><m>\cos(r)</m>
-					<answer>For a value of <m>r</m>, you can draw a right triangle in the unit circle by drawing a vertical line up or down to the <m>x</m>-axis. <m>\cos(r)</m> is the length of that triangle. Equivalently,  <m>\cos(r)</m> is the <m>x</m> value of the point on the unit circle associated with <m>r</m>.</answer>
+					<answer><p>For a value of <m>r</m>, you can draw a right triangle in the unit circle by drawing a vertical line up or down to the <m>x</m>-axis. <m>\cos(r)</m> is the length of that triangle. Equivalently,  <m>\cos(r)</m> is the <m>x</m> value of the point on the unit circle associated with <m>r</m>.</p></answer>
 				 </li>
 				<li><m>\tan(r)</m>
-					<answer>For a value of <m>r</m>, you can draw a right triangle in the unit circle by drawing a vertical line up or down to the <m>x</m>-axis. <m>\tan(r)</m> is the slope of the triangle's hypotenuse. Equivalently,  <m>\tan(r)</m> is the slope of the line associated with <m>r</m> connecting <m>(0,0)</m> to the unit circle.</answer>
+					<answer><p>For a value of <m>r</m>, you can draw a right triangle in the unit circle by drawing a vertical line up or down to the <m>x</m>-axis. <m>\tan(r)</m> is the slope of the triangle's hypotenuse. Equivalently,  <m>\tan(r)</m> is the slope of the line associated with <m>r</m> connecting <m>(0,0)</m> to the unit circle.</p></answer>
 				 </li>
 			</ul>
 			<remark>
@@ -2130,7 +2138,7 @@ study of change, and is therefore a useful tool to understand as a scientist. In
 				<p>
 				We will compute trigonometric values of <m>\dfrac{2\pi}{3}</m>. The first step is to identify the picture of <m>\dfrac{2\pi}{3}</m> in the unit circle:
 					<image width="60%" source="images/trigcomp.png">
-						<description>A transformation of a trigonometric function.  </description>
+						<description>Then angle 2 pi over 3 sketched in the unit circle.   </description>
 					</image> 
 				As the picture shows, we can then draw a right triangle within the unit circle by drawing a vertical line down to the input axis. We can then determine all of the angles of the triangle, and fill in each length, which tells us the coordinates of the point on the unit circle. Pay attention to whether the coordinates are positive or negative! These are exactly what define, sine, cosine, and tangent of the angle:
 					<md>
@@ -2175,19 +2183,19 @@ study of change, and is therefore a useful tool to understand as a scientist. In
 			<ul>
 				<li>
 					<m>A</m>
-					<answer>This performs a vertical scale on the graph. If <m>A \lt 0</m>, it vertically reflects the graph. The value of <m>|A|</m> is called the <term>amplitude</term> and is half the distance between the maximum (<m>MAX</m>) and minimum (<m>MIN</m>)  values of the function. It can be computed by <m> |A| = \dfrac{MAX - MIN}{2}</m>. </answer>
+					<answer><p>This performs a vertical scale on the graph. If <m>A \lt 0</m>, it vertically reflects the graph. The value of <m>|A|</m> is called the <term>amplitude</term> and is half the distance between the maximum (<m>MAX</m>) and minimum (<m>MIN</m>)  values of the function. It can be computed by <m> |A| = \dfrac{MAX - MIN}{2}</m>.</p> </answer>
 				</li>
 				<li>
 					<m>P</m>
-					<answer>This contributes to the horizontal scale of the graph. It is called the <term>period</term> of the function, and determines how long it takes for the function to start repeating itself.</answer>
+					<answer><p>This contributes to the horizontal scale of the graph. It is called the <term>period</term> of the function, and determines how long it takes for the function to start repeating itself.</p></answer>
 				</li>
 				<li>
 					<m>H</m>
-					<answer>This performs a horizontal shift of the graph. It is called a <term>phase shift</term> of the function.</answer>
+					<answer><p>This performs a horizontal shift of the graph. It is called a <term>phase shift</term> of the function.</p></answer>
 				</li>
 				<li>
 					<m>V</m>
-					<answer>This performs a vertical shift of the graph. It is the <m>y</m> value over which the graph has vertical symmetry, and is called the <term>average</term> of the function. It can be computed by <m> V = \dfrac{MAX + MIN}{2}</m>.</answer>
+					<answer><p>This performs a vertical shift of the graph. It is the <m>y</m> value over which the graph has vertical symmetry, and is called the <term>average</term> of the function. It can be computed by <m> V = \dfrac{MAX + MIN}{2}</m>.</p></answer>
 				</li>
 			</ul>
 			<example>
@@ -2310,7 +2318,9 @@ study of change, and is therefore a useful tool to understand as a scientist. In
 			</p>
 		</introduction>
 		<exploration xml:id="wu-1-7">
+			<p>
 		A tree is initially <m>2</m> meters tall, and grows <m>150</m> centimeters each year. 
+			</p>
 			<ol>
 				<li>Write the relationship of height versus time as a <em>recursive</em> function (recall <xref ref="ssec-1-2-rec">Subsection</xref>). Be careful with units! (<xref ref="sec-1-3">Section</xref>)</li>
 				<li>Use your recursive relationship to determine the height of the tree after <m>5</m> years.</li>
@@ -2339,7 +2349,9 @@ study of change, and is therefore a useful tool to understand as a scientist. In
 			In computing with updating functions, it will become useful to identify the function rule used for the recursive relationship. We do this by writing the rule explicitly, treating the current value of the recursive relationship as the input and the next value in the recursive relationship as the output. We call this the <idx><h>discrete-time dynamical system</h><h>updating function rule</h></idx> <term>updating function rule</term>. For example, in <xref ref="ex-1-7-dtds">Example</xref>, the updating function is <m>h_{t+1} = h_t +1.5</m>. Recognizing <m>h_t</m> as the input and <m>h_{t+1}</m> as the output, the updating function rule is <m>f(x) = x+1.5</m>.
 			</p>
 			<activity>
+				<p>
 			A population of bacteria double each minute. There is initially <m>3</m> million bacteria.
+				</p>
 				<ol>
 					<li>Write the updating function and initial value for this DTDS. Focus on using correct notation.</li>
 					<li>What is the updating function rule?</li>
@@ -2813,24 +2825,26 @@ study of change, and is therefore a useful tool to understand as a scientist. In
 			</p>
 			<example xml:id="ex-1-8-cob">
 				<title>Cob-webbing</title>
+				<p>
 				The interactive below shows the graph of an updating function <m>x_{t+1}= f(x_t)</m> which is more complicated than <xref ref="ass-1-7-solutions" text="custom">those that we analyzed previously</xref>. Use the interactive to visualize cob-webbing and answer the questions before viewing the answers.
+				</p>
 				<interactive desmos="u4nt89d6gr" width="170%" aspect="2:1" preview="images/1_8_int_prev_cobweb.png"/>
 				<ol>
 					<li>
 					If <m>x_0=0.25</m>, is the solution function increasing or deacreasing?
-						<answer>The solution function <m>x_t</m> is increasing, since the closed circles on the updating function have output values that are getting larger. </answer>	
+						<answer><p>The solution function <m>x_t</m> is increasing, since the closed circles on the updating function have output values that are getting larger.</p> </answer>	
 					</li>
 					<li>
 					If <m>x_0=0.25</m>, is the solution function increasing/decreasing at an increasing or decreasing rate?
-						<answer>The solution function is increasing at a decreasing rate, since it looks like the closed circles are getting bigger by a smaller amount each time.</answer>
+						<answer><p>The solution function is increasing at a decreasing rate, since it looks like the closed circles are getting bigger by a smaller amount each time.</p></answer>
 					</li>
 					<li>
 					If <m>x_0=0.25</m>, is the solution function approaching a particular value?
-						<answer>The solution function is getting closer and closer to the value <m>x_t= 1</m>.</answer>
+						<answer><p>The solution function is getting closer and closer to the value <m>x_t= 1</m>.</p></answer>
 					</li>
 					<li>
 					Find an example of an initial value for which the solution function will decrease.
-						<answer>The solution function will decrease if <m>x_0 \gt 1</m>.</answer>
+						<answer><p>The solution function will decrease if <m>x_0 \gt 1</m>.</p></answer>
 					</li>
 				</ol>
 			</example>
@@ -2848,7 +2862,9 @@ study of change, and is therefore a useful tool to understand as a scientist. In
 				<idx><h>discrete-time dynamical system</h><h>equilibrium point</h></idx>
 				<idx><h>discrete-time dynamical system</h><h>equilibrium value</h></idx>
 				<notation><usage><m>b^*</m></usage><description>an equilibrium value for a DTDS whose dependent variable is <m>b</m></description></notation>
+				<p>
 				Let <m>b_{t+1} = f(b_t)</m> be an updating function for a DTDS. An output value <m>b^*</m> is an <term>equilibrium value</term> of the system if <m>f(b^*) = b^*</m>. 
+				</p>
 			</definition>
 			<remark>
 				<ol>
@@ -2874,7 +2890,7 @@ study of change, and is therefore a useful tool to understand as a scientist. In
 						</li>
 						<li><em>Finding Equilibria Graphically</em>. We can graph the updating function <m>p_{t+1} = 0.5p_t + 1</m> by recognizing the updating function rule as <m>f(x)=0.5x+1</m>:
 							<image width="60%" source="images/eqpt.png">
-								<description>The line with slope 0.5 and y intercept 1 graphed with the diagonal line y equal x. </description>
+								<description>The line with slope 0.5 and vertical intercept 1 graphed with the line p t equals p t plus 1. </description>
 							</image>  
 							We graph the updating function along with the diagonal line <m>p_{t+1}=p_t</m> because graphically, a value which is unchanged by the updating function can be identified by finding an intersection point with the line <m>p_{t+1}=p_t</m>. We can see on the graph that the diagonal intersects the updating function at <m>(2,2)</m>, which means <m>p^*=2</m> is an equilibrium value of the system.
 						
@@ -2888,7 +2904,9 @@ study of change, and is therefore a useful tool to understand as a scientist. In
 				</p>
 			</remark>
 			<activity>
+				<p>
 				Consider a bacterial population which is modeled by the updating function <m>b_{t+1}=rb_t</m>, where the parameter <m>r</m> is the per capita reproduction rate.
+				</p>
 					<ol>
 						<li>Assuming <m>r=2</m>, find the equilibrium value(s) of this system algebraically. </li>
 						<li>Assuming <m>r \neq 1</m>, find the equilibrium value(s) of this system algebraically. </li>
@@ -3092,7 +3110,9 @@ study of change, and is therefore a useful tool to understand as a scientist. In
 					</p>
 				</assemblage>
 				<activity>
+					<p>
 				Consider a lung model with <m>V = 6</m> L, <m>W = 2</m> L, and <m>\beta = 3</m> mmol/L.
+					</p>
 					<ol>
 						<li>Compute the equilibrium value(s) of this system algebraically.</li>
 						<li>Graph the updating function and use cob-webbing to classify the equilibrium value(s) as stable or unstable.</li>
@@ -3104,9 +3124,11 @@ study of change, and is therefore a useful tool to understand as a scientist. In
 			<definition>
 				<title>Weighted Average</title>
 				<idx><h>weighted average</h></idx>
+				<p>
 				A <term>weighted average</term> of two numbers <m>a</m> and <m>b</m> is a sum of the form
 					<me>(1-p)a + pb</me>,
 				where <m>p</m> is any number such that <m>0 \leq p \leq 1</m>. The numbers <m>p</m> and <m>1-p</m> are called <term>weights</term> of the weighted average.
+				</p>
 			</definition>
 			<remark>
 				<ul>

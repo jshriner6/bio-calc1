@@ -1714,13 +1714,13 @@
 			<interactive desmos="l7lzh9l5g8" width="170%" aspect="2:1" preview="images/3_2_int_prev_stabthm1.png"/>
 			<ul>
 				<li>For initial values close to and greater than the equilibrium value, how does the solution function behave? 
-					<answer>For initial values greater than <m>0</m>, cob-webbing shows that the solution function decreases towards <m>0</m>.</answer>
+					<answer><p>For initial values greater than <m>0</m>, cob-webbing shows that the solution function decreases towards <m>0</m>.</p></answer>
 				</li>
 				<li>For initial values close to and less than the equilibrium value, how does the solution function behave? 
-					<answer>For initial values less than <m>0</m>, cob-webbing shows that the solution function increases towards <m>0</m>.</answer>
+					<answer><p>For initial values less than <m>0</m>, cob-webbing shows that the solution function increases towards <m>0</m>.</p></answer>
 				</li>
 				<li>Would you classify the equilibrium value as stable or unstable?
-					<answer>Since the solution function values get closer and closer to the equilibrium value for initial values on either side of the equilibrium value, we would classify the equilibrium value as stable.</answer>
+					<answer><p>Since the solution function values get closer and closer to the equilibrium value for initial values on either side of the equilibrium value, we would classify the equilibrium value as stable.</p></answer>
 				</li>
 			</ul>
 		</p>
@@ -1732,13 +1732,13 @@
 			<interactive desmos="igtnpjb0du" width="170%" aspect="2:1" preview="images/3_2_int_prev_stabthm2.png"/>
 			<ul>
 				<li>For initial values close to and greater than the equilibrium value, how does the solution function behave? 
-					<answer>For initial values greater than <m>1</m>, cob-webbing shows that the solution function increases away from <m>1</m>.</answer>
+					<answer><p>For initial values greater than <m>1</m>, cob-webbing shows that the solution function increases away from <m>1</m>.</p></answer>
 				</li>
 				<li>For initial values close to and less than the equilibrium value, how does the solution function behave? 
-					<answer>For initial values less than <m>1</m>, cob-webbing shows that the solution function increases towards <m>1</m>.</answer>
+					<answer><p>For initial values less than <m>1</m>, cob-webbing shows that the solution function increases towards <m>1</m>.</p></answer>
 				</li>
 				<li>Would you classify the equilibrium value as stable or unstable?
-					<answer>This is a case we have not seen yet. The behavior is different depending on which side of the equilibrium value the initial value is on. Since the solution function values do not approach the equilibrium value for initial values on both sides of the equilibrium value, we would classify this equilibrium value as having a special case of unstable behavior.</answer>
+					<answer><p>This is a case we have not seen yet. The behavior is different depending on which side of the equilibrium value the initial value is on. Since the solution function values do not approach the equilibrium value for initial values on both sides of the equilibrium value, we would classify this equilibrium value as having a special case of unstable behavior.</p></answer>
 				</li>
 			</ul>
 		</p>
@@ -4909,13 +4909,17 @@
 			<li>
 				If the travel time is larger than <m>1</m>, should the bee leave sooner or later than it does when the travel time is <m>1</m> second?
 				<answer>
+          <p>
 				When the travel time is larger, there is more incentive to stay on the current flower, so the bee should leave later than when the travel time is <m>1</m> second.
+          </p>
 				</answer>
 			</li>
 			<li>
 				If the travel time is smaller than <m>1</m>, should the bee leave sooner or later than it does when the travel time is <m>1</m> second?
 				<answer>
+          <p>
 				When the travel time is smaller, there is more incentive to leave the current flower, so the bee should leave sooner than when the travel time is <m>1</m> second.
+          </p>
 				</answer>
 			</li>
 		</ul>

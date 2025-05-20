@@ -377,9 +377,12 @@
 						<mrow> \amp= \int e^t dt - 2\int \sin(t) dt + 4\int t^3 dt</mrow>
 						<mrow> \amp= e^t - 2(-\cos(t)) + 4 \cdot \frac{1}{4}t^4 + C </mrow>
 						<mrow>\amp= e^t +2\cos(t) + t^4 + C</mrow>
-					</md>.<fn>Though technically each individual integral has its own constant, in the end we can add them all together to a single constant. In practice, we typically just add one constant at the very end as we've done in this example.</fn>
+					</md>.
+          <p>
+          <fn>Though technically each individual integral has its own constant, in the end we can add them all together to a single constant. In practice, we typically just add one constant at the very end as we've done in this example.</fn>
 				Now we use the initial value <m>s(0)=2</m> to find the specific solution:
 					<me>2 = e^0 + 2\cos(0) + 0^4 + C = 1 +2 + C</me>, which implies <m>C=-1</m>. Thus, the specific solution to this initial value problem is <m>s(t) = e^t +2\cos(t) + t^4 -1</m>.
+        </p>
 			</example>
 			<activity xml:id="act-4-2-ivp">
 				<p>
