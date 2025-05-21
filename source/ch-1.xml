@@ -190,9 +190,9 @@ study of change, and is therefore a useful tool to understand as a scientist. In
 								Each year <m>t</m>, a population <m>P</m> of wolves is measured. A model which describes the population at a yearly interval is a discrete-time dynamical system. The graph of the relationship between population and time of such a model might look something like this:
 								</p>
 									<image width="60%" source="images/dtds.png">
-										<description>
-											Five discrete points corresponding to each t value 0, 1, 2, 3, and 4. 
-										</description>
+										<shortdescription>
+											Five discrete points corresponding to each t value 0, 1, 2, 3, and 4.
+										</shortdescription>
 									</image>  
 					</example>	
 					
@@ -202,7 +202,9 @@ study of change, and is therefore a useful tool to understand as a scientist. In
 								As time <m>t</m> passes in seconds, my distance <m>D</m> from the door is measured. A model which describes my distance over the entire continuous time interval is a continuous-time dynamical system. The graph of the relationship between distance and time of such a model might look something like this:
 								</p>
 									<image width="60%" source="images/ctds.png">
-										<description>A continuous line which defines a distance for every possible t value between 0 and 5.  </description>
+										<shortdescription>
+											A continuous line which defines a distance for every possible t value between 0 and 5.  
+										</shortdescription>
 									</image>  
 					</example>	
 					
