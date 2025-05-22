@@ -510,15 +510,33 @@ study of change, and is therefore a useful tool to understand as a scientist. In
 						<p>
 							<ul>
 								<li><image width="60%" source="images/func1.png">
-										<description>A line which is broken at x equal 2. There is a closed dot at y equal -2 and an open dot at y equal 1. </description>
+										<shortdescription>A piece-wise defined graph with an open circle and closed circle at x equal 2. </shortdescription>
+										<description>
+											<p>
+											A decreasing line ending with an open circle at x equal 2 and y equal 1. 
+											An increasing line starting with a closed circle at x equal 2 and y equal -2. 
+											</p>
+										</description>
 									</image>  
 								 </li>
 								 <li><image width="60%" source="images/func2.png">
-										<description>A line which is broken at x equal 2. There is a closed dot at y equal -2 and a closed dot at y equal 1.</description>
+										<shortdescription>A piece-wise defined graph with two closed circles at x equal 2. </shortdescription>
+										<description>
+											<p>
+											A decreasing line ending with a closed circle at x equal 2 and y equal 1. 
+											An increasing line starting with a closed circle at x equal 2 and y equal -2. 
+											</p>
+										</description>
 									</image>  
 								 </li>
 								 <li><image width="60%" source="images/func3.png">
-										<description>A line which is broken at x equal 2. There is an open dot at y equal -2 and an open dot at y equal 1.  </description>
+										<shortdescription>A piece-wise defined graph with two open circles at x equal 2. </shortdescription>
+										<description>
+											<p>
+											A decreasing line ending with an open circle at x equal 2 and y equal 1. 
+											An increasing line starting with an open circle at x equal 2 and y equal -2. 
+											</p>
+										</description>
 									</image>  
 								 </li>
 							</ul>
@@ -699,7 +717,7 @@ study of change, and is therefore a useful tool to understand as a scientist. In
 			<example xml:id="ex-1-2-inv">
 				<title>Inverse Functions as Graphs</title>
 					<image width="60%" source="images/f.png">
-						<description>A curve which is always increasing.</description>
+						<shortdescription>A curve which is increasing rapidly.</shortdescription>
 					</image>  
 					<p>
 					To determine if this function has an inverse function, we must determine if the relationship obtained by swapping input and output is also a function. 	We can test this directly on the graph of <m>f</m> by remembering the vertical line test used in <xref ref="ex-1-2-reps">Example</xref>, and thinking about how vertical lines change when we swap input and output. 
@@ -710,7 +728,7 @@ study of change, and is therefore a useful tool to understand as a scientist. In
 					<p> This is known as the <term>horizontal line test</term> for testing invertibility. In this example we see the function is invertible, and we can visualize the graph of <m>f^{-1}</m> by reflecting the graph of <m>f</m> over the diagonal line <m>y=x</m>:
 					</p>
 					<image width="60%" source="images/finverse.png">
-						<description>A curve which is the mirror image over the line y equals x of the previous curve.</description>
+						<shortdescription>A curve which is the mirror image over the diagonal line y equals x of the previous curve.</shortdescription>
 					</image> 
 			</example>
 			<example>
@@ -908,7 +926,7 @@ study of change, and is therefore a useful tool to understand as a scientist. In
 						<li> <m>AROC_{[-3,1]}</m></li>
 					</ol>
 				<image width="60%" source="images/sigma.png">
-					<description>A parabola which is the graph of x squared plus one.</description>
+					<shortdescription>A U shaped curve whose minimum is at x equal 0 and y equal 1.</shortdescription>
 				</image> 
 				</statement>
 				<answer>
@@ -1155,7 +1173,7 @@ study of change, and is therefore a useful tool to understand as a scientist. In
 				The graph of a function <m>h(x)</m> is given below:
 				</p>
 					<image width="60%" source="images/trans.png">
-						<description>A graph shaped like a v.</description>
+						<shortdescription>A graph shaped like a V whose minimum value is at x equal 0 and y equal 0.</shortdescription>
 					</image> 
 				<p>
 				On the same coordinate system, sketch the graph of each transformation of <m>h(x)</m>.
@@ -1467,7 +1485,7 @@ study of change, and is therefore a useful tool to understand as a scientist. In
 				In <xref ref="ex-1-4-lin">Example</xref>, we saw that a solution to the linear equation <m>x+1 = 2x-1</m> is <m>x=2</m>. Graphically, this means if we graphed <m>y=x+1</m> and <m>y=2x-1</m>, there would be an intersection point at <m>x=2</m>:
 				</p>
 				<image width="60%" source="images/intersect.png">
-						<description>A graph of two lines intersecting at x equal two.</description>
+						<shortdescription>A graph of two lines intersecting at x equal 2 and y equal 3.</shortdescription>
 				</image> 
 			</example>
 			
@@ -2128,7 +2146,13 @@ study of change, and is therefore a useful tool to understand as a scientist. In
 			<assemblage xml:id="ass-1-6-triangle">
 				<title><m>\dfrac{\pi}{4}</m>-<m>\dfrac{\pi}{4}</m> and <m>\dfrac{\pi}{6}</m>-<m>\dfrac{\pi}{3}</m> Right Triangles</title>
 					<image width="60%" source="images/triangles.png">
-						<description>Lengths of right triangles with angles pi over 4, pi over 4 radians and pi over 6, pi over 3 radians.  </description>
+						<shortdescription>Two right triangles with angles pi over 4, pi over 4 radians and pi over 6, pi over 3 radians.</shortdescription>
+						<description>
+							<p>
+								Both triangles have hypotenuse length 1. The triangle with angles pi over 4 has side length square root 2 over 2. 
+								The side opposite of angle pi over 6 has length .5 and the side opposite of angle pi over 3 has length square root 3 over 2.
+							</p> 
+						</description>
 					</image> 
 			</assemblage>
 			<p>
@@ -2140,7 +2164,7 @@ study of change, and is therefore a useful tool to understand as a scientist. In
 				<p>
 				We will compute trigonometric values of <m>\dfrac{2\pi}{3}</m>. The first step is to identify the picture of <m>\dfrac{2\pi}{3}</m> in the unit circle:
 					<image width="60%" source="images/trigcomp.png">
-						<description>Then angle 2 pi over 3 sketched in the unit circle.   </description>
+						<shortdescription>Then angle 2 pi over 3 sketched in the unit circle. The pi over 3 pi over 6 triangle is sketched in quadrant 3.  </shortdescription>
 					</image> 
 				As the picture shows, we can then draw a right triangle within the unit circle by drawing a vertical line down to the input axis. We can then determine all of the angles of the triangle, and fill in each length, which tells us the coordinates of the point on the unit circle. Pay attention to whether the coordinates are positive or negative! These are exactly what define, sine, cosine, and tangent of the angle:
 					<md>
@@ -2439,7 +2463,7 @@ study of change, and is therefore a useful tool to understand as a scientist. In
 				</p>
 				<figure>
 					<image width="60%" source="images/updating.png">
-						<description>Graph of the line y equals x plus 1.5.  </description>
+						<shortdescription>Graph of a line with slope 1 and y intercept 1.5. The horizontal axis is h t and the vertical axis is h t plus 1.</shortdescription>
 					</image>  
 					<caption>Graph of the updating function.</caption>
 				</figure>
@@ -2448,7 +2472,13 @@ study of change, and is therefore a useful tool to understand as a scientist. In
 				</p>
 				<figure>
 					<image width="60%" source="images/solution.png">
-						<description>Graph of the line y equals 1.5 times x plus 2, with discrete points at the input values 0, 1, 2, 3, and 4.  </description>
+						<shortdescription>Graph of the solution function.</shortdescription>
+						<description>
+							<p>
+							Graph of a line with slope 1.5 and y intercept 2. The horizontal axis ist and the vertical axis is h t.
+							Discrete points are plotted for t equal 0, 1, 2, 3, and 4.  
+							</p>
+						</description>
 					</image>
 					<caption>Graph of the solution function. </caption>
 				</figure>
@@ -2680,12 +2710,12 @@ study of change, and is therefore a useful tool to understand as a scientist. In
 				<ol>
 					<li>
 					<image width="60%" source="images/updating1.png">
-						<description>Graph of a line with slope one and y-intercept 1.  </description>
+						<shortdescription>Graph of a line with slope 1 and y intercept 1. The horizontal axis is b t and the vertical axis is b t plus 1.</shortdescription>
 					</image>
 					</li>
 					<li>
 					<image width="60%" source="images/updating2.png">
-						<description>Graph of a line with slope three fourths and y-intercept 0.  </description>
+						<shortdescription>Graph of a line with slope .75 and y intercept 0. The horizontal axis is b t and the vertical axis is b t plus 1.</shortdescription>
 					</image>
 					</li>
 				</ol>
@@ -2894,7 +2924,7 @@ study of change, and is therefore a useful tool to understand as a scientist. In
 						</li>
 						<li><em>Finding Equilibria Graphically</em>. We can graph the updating function <m>p_{t+1} = 0.5p_t + 1</m> by recognizing the updating function rule as <m>f(x)=0.5x+1</m>:
 							<image width="60%" source="images/eqpt.png">
-								<description>The line with slope 0.5 and vertical intercept 1 graphed with the line p t equals p t plus 1. </description>
+								<shortdescription>The line with slope 0.5 and vertical intercept 1 graphed with the line p t equals p t plus 1. </shortdescription>
 							</image>  
 							We graph the updating function along with the diagonal line <m>p_{t+1}=p_t</m> because graphically, a value which is unchanged by the updating function can be identified by finding an intersection point with the line <m>p_{t+1}=p_t</m>. We can see on the graph that the diagonal intersects the updating function at <m>(2,2)</m>, which means <m>p^*=2</m> is an equilibrium value of the system.
 						
