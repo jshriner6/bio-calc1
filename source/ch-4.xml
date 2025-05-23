@@ -158,12 +158,12 @@
 				<ol>
 					<li>
 					<image width="60%" source="images/4_1_de1.png">
-						<description>A graph of the differential equation d-y-d-x equals negative one fifth x plus1. </description>
+						<shortdescription>A graph of the differential equation d y d x equals negative one fifth x plus 1. </shortdescription>
 					</image>
 					</li>
 					<li>
 					<image width="60%" source="images/4_1_de2.png">
-						<description>A graph of the differential equation d-y-d-x equals x minus 2 times x minus 4. </description>
+						<shortdescription>A graph of the differential equation d y d x equals quantity x minus 2 times quantity x minus 4. </shortdescription>
 					</image>
 					</li>
 				</ol>
@@ -226,17 +226,17 @@
 				<ol>
 					<li>
 					<image width="60%" source="images/4_1_xde1.png">
-						<description>A graph of the differential equation d-y-d-x equals e to the x. </description>
+						<shortdescription>A graph of the differential equation d y d x equals e to the x. </shortdescription>
 					</image>
 					</li>
 					<li>
 					<image width="60%" source="images/4_1_xde2.png">
-						<description>A graph of the differential equation d-y-d-x equals natural log of x. </description>
+						<shortdescription>A graph of the differential equation d y d x equals natural log of x. </shortdescription>
 					</image>
 					</li>
 					<li>
 					<image width="60%" source="images/4_1_xde3.png">
-						<description>A graph of the differential equation d-y-d-x equals negative quantity x minus three times quantity x minus six. </description>
+						<shortdescription>A graph of the differential equation d y d x equals negative quantity x minus three times quantity x minus six. </shortdescription>
 					</image>
 					</li>
 				</ol>
@@ -1005,7 +1005,7 @@
       <figure xml:id="F-4-2-Intro" permid="OEz">
         <caption>A velocity function that is sometimes negative.</caption>
         <image source="images/4_2_Intro" >
-        		<description>The graph of a velocity function which is sometimes negative. The graph shows the area between the curve and the input axis between input values a and b. </description>
+        		<shortdescription>The graph of a velocity function with shaded areas between the curve and the input axis.</shortdescription>
         </image>
       </figure>
     </sidebyside>
@@ -1047,7 +1047,7 @@
   <figure xml:id="F-4-2-PA1" permid="gvv">
     <caption>Three approaches to estimating the area under <m>y = v(t)</m> on the interval <m>[0,2]</m>.</caption>
     <image width="97%" source="images/4_2_PA1" >
-    	<description>Graphs of three different ways rectangles can be used to estimate the area under a velocity curve. </description>
+    	<shortdescription>Graphs of three different ways rectangles can be used to estimate the area under a velocity curve. </shortdescription>
     </image>
   </figure>
 
@@ -1364,7 +1364,7 @@
     <figure xml:id="F-4-2-Interval" permid="SiZ">
       <caption>Subdividing the interval <m>[a,b]</m> into <m>n</m> subintervals of equal length <m>\Delta x</m>.</caption>
       <image width="80%" source="images/4_2_Interval" >
-      	<description>A number line for the interval a to b which is subdivided into n subintervals of equal length delta x. </description>
+      	<shortdescription>A number line for the interval a to b which is subdivided into n subintervals of equal length delta x. </shortdescription>
       </image>
     </figure>
 
@@ -1403,7 +1403,7 @@
     <figure xml:id="F-4-2-LeftSum" permid="yqi">
       <caption>Subdividing the interval <m>[a,b]</m> into <m>n</m> subintervals of equal length <m>\Delta x</m> and approximating the area under <m>y = f(x)</m> over <m>[a,b]</m> using left rectangles.</caption>
       <image width="73%" source="images/4_2_LeftSum" >
-      	<description>The graph of a function f whose area between the curve and input axis is estimated by rectangles using left end points on each subinterval. </description>
+      	<shortdescription>The graph of a function f whose area between the curve and input axis is estimated by rectangles using left end points on each subinterval. </shortdescription>
       </image>
     </figure>
 
@@ -1438,7 +1438,7 @@
     <figure xml:id="F-4-2-RightMidSum" permid="exr">
       <caption>Riemann sums using right endpoints and midpoints.</caption>
       <image width="100%" source="images/4_2_RightMidSum" >
-      	<description>The graph of a function f whose area between the curve and input axis is estimated by rectangles using right end points on each subinterval, and the graph of a function f whose area between the curve and input axis is estimated by rectangles using mid points on each subinterval. </description>
+      	<shortdescription>Two graphs of a function f whose area between the curve and input axis is estimated by rectangles using right end points and mid points on each subinterval.</shortdescription>
       </image>
     </figure>
 
@@ -1551,7 +1551,7 @@
             Use the graph below to illustrate the exact area that will tell you the value of the distance the object traveled on the time interval <m>2 \le t \le 5</m>.
           </p>
           <image width="100%" source="images/4_3_riemann.png" >
-          	<description>The graph of a velocity function to be used to estimate the distance travelled by an object between the time interval t equal 2 seconds and t equal 5 seconds. </description>
+          	<shortdescription>The graph of a velocity function which is a parabola. </shortdescription>
           </image>
         </li>
 
@@ -1721,7 +1721,7 @@
     <figure xml:id="F-4-2-NegF" permid="bCL">
       <caption>At left and center, two left Riemann sums for a function <m>f</m> that is sometimes negative; at right, the areas bounded by <m>f</m> on the interval <m>[a,d]</m>.</caption>
       <image width="100%" source="images/4_2_NegF">
-      	<description>Graphs of two left Riemann sums used to estimate the displacement of an object when velocity is sometimes negative, and a graph of the areas which represent the exact displacement of the object. </description>
+      	<shortdescription>Two left Riemann sums used to estimate displacement, and a graph of the areas which represent the exact displacement. </shortdescription>
       </image>
     </figure>
 
@@ -2546,7 +2546,7 @@
       <figure xml:id="F-4-2-Ez4" permid="VKv">
         <caption>The rate, <m>r(t)</m>, of pollution in tons per week.</caption>
         <image width="47%" source="images/4_2_Ez4" >
-        		<description>The graph of the rate of pollution in tons per week as a function of time measured in weeks. </description>
+        		<shortdescription>A graph of r of t.</shortdescription>
         </image>
       </figure>
         <!--
@@ -2712,7 +2712,7 @@
     <figure xml:id="F-4-3-IncreaseN" permid="iLL">
       <caption>At left and center, two left Riemann sums for a function <m>f</m> that is sometimes negative; at right, the exact areas bounded by <m>f</m> on the interval <m>[a,d]</m>.</caption>
       <image width="100%" source="images/4_2_NegF" >
-      	<description>The graph of a function whose area between a and d is estimated using a left Riemann sum, the graph of a function whose area between a and d is estimated using a left Riemann sum with more rectangles, and the graph of a function whose exact area between a and d is shaded.  </description>
+      	<shortdescription>Two left Riemann sums used to estimate area, and a graph which represents the exact area. </shortdescription>
       </image>
     </figure>
 
@@ -2803,7 +2803,7 @@
   <figure xml:id="F-4-3-GGBApplet2" permid="rEu">
     <caption>A left Riemann sum with 5 subintervals for the function <m>f(x) = 2x+1</m> on the interval <m>[1,4]</m> using a window with <m>-2 \leq y \leq 10</m>.  The value of the sum is <m>L_5 = 16.2</m>.</caption>
     <image width="100%" source="images/4_4_suminteractive.png" >
-    	<description>The graph of a left Riemann sum with five rectangles on the interval x equal 1 to x equal 4 for the function two x plus one. </description>
+    	<shortdescription>The graph of a left Riemann sum with five rectangles on the interval x equal 1 to x equal 4 for the function 2 x plus 1. </shortdescription>
     </image>
   </figure>
 </exploration>
@@ -2897,7 +2897,7 @@
     <figure xml:id="F-4-3-DefIntInterp" permid="sfx">
       <caption>A continuous function <m>f</m> on the interval <m>[a,d]</m>.</caption>
       <image width="47%" source="images/4_3_DefIntInterp" >
-      	<description>A graph of a function f with the area between f and the input axis shaded on the interval x equal a to x equal d. </description>
+      	<shortdescription>A graph of a function f with the area between f and the input axis shaded on the interval x equal a to x equal d. </shortdescription>
       </image>
     </figure>
   <!--</sidebyside>-->
@@ -2953,7 +2953,7 @@
     <figure xml:id="F-4-3-TrapArea" permid="YmG">
       <caption>The area bounded by <m>f(x)=2x+1</m> and the <m>x</m>-axis on the interval <m>[1,4]</m>.</caption>
       <image width="47%" source="images/4_3_TrapArea" >
-      	<description>The graph of two x plus one with the exact area under the curve shaded between x equal one and x equal four. </description>
+      	<shortdescription>The graph of two x plus one with the exact area under the curve shaded between x equal one and x equal four. </shortdescription>
       </image>
     </figure>
 
@@ -2993,7 +2993,7 @@
           <figure xml:id="F-4-3-Act1" permid="ptR">
             <caption>The function <m>g</m> for part (d).  Note that <m>g</m> is piecewise defined, and each piece of the function is part of a circle or part of a line.</caption>
             <image width="65%" source="images/4_3_Act1">
-            	<description>The graph of a piecewise function g. </description>
+            	<shortdescription>The graph of a piecewise function g. </shortdescription>
             </image>
           </figure>
 
@@ -3172,7 +3172,7 @@
     <figure xml:id="F-4-3-AdditiveProp" permid="eLM">
       <caption>The area bounded by <m>y=f(x)</m> on the interval <m>[a,c]</m>.</caption>
       <image width="47%" source="images/4_3_AdditiveProp" >
-      	<description>The graph of a function on an interval x equal a to x equal c. The area under the curve on this interval is split into two areas at x equal b. </description>
+      	<shortdescription>The graph of a function on an interval x equal a to x equal c, split into 2 areas. </shortdescription>
       </image>
     </figure>
 <!--</sidebyside>-->
@@ -3240,7 +3240,7 @@
     <figure xml:id="F-4-3-ConstMult" permid="KSV">
       <caption>The areas bounded by <m>y = f(x)</m> and <m>y = 2f(x)</m> on <m>[a,b]</m>.</caption>
       <image width="100%" source="images/4_3_ConstMult" >
-      	<description>Graphs of the areas bounded by a function f and the function two times f on an interval x equal a to x equal b. </description>
+      	<shortdescription>Graphs of the areas bounded by a function f and the function two times f on an interval x equal a to x equal b. </shortdescription>
       </image>
     </figure>
 
@@ -3279,7 +3279,7 @@
     <figure xml:id="F-4-3-Sum" permid="rae">
       <caption>The areas bounded by <m>y = f(x)</m> and <m>y = g(x)</m> on <m>[a,b]</m>, as well as the area bounded by <m>y = f(x) + g(x)</m>.</caption>
       <image width="100%" source="images/4_3_Sum" >
-      	<description>Graphs of the areas bounded by the functions f and g as well the graph of the area bounded by the function f plus g. </description>
+      	<shortdescription>Graphs of the areas bounded by the functions f and g as well the graph of the area bounded by the function f plus g. </shortdescription>
       </image>
     </figure>
 
@@ -3608,7 +3608,7 @@
     <figure xml:id="F-4-3-AvgVal" permid="AtQ">
       <caption>A function <m>y = f(x)</m>, the area it bounds, and its average value on <m>[a,b]</m>.</caption>
       <image width="100%" source="images/4_3_AvgVal" >
-      	<description>Three graphs which illustrate how the area bounded by a function on an interval is related the function's average value on that interval. </description>
+      	<shortdescription>Three graphs which relate the area bounded by a function on an interval to the function's average value on that interval. </shortdescription>
       </image>
     </figure>
 
@@ -3971,7 +3971,7 @@
         <figure xml:id="F-4-3-Ez1" permid="OIM">
           <caption>The velocity function of a moving object.</caption>
           <image source="images/4_3_Ez1" >
-          	<description>The graph of the velocity function of a moving object which is piecewise linear. </description>
+          	<shortdescription>The graph of the velocity function of a moving object which is piecewise linear. </shortdescription>
           </image>
         </figure>
       </sidebyside>
@@ -4344,7 +4344,7 @@
       <figure xml:id="F-4-3-Ez2" permid="TsF">
         <caption>Two functions <m>f</m> and <m>g</m>.</caption>
         <image width="100%" source="images/4_3_Ez2" >
-        		<description>The graphs of two piecewise functions f and g. </description>
+        		<shortdescription>The graphs of two piecewise functions f and g. </shortdescription>
         </image>
       </figure>
 
@@ -4761,7 +4761,7 @@
     <figure xml:id="F-4-4-Intro" permid="hUN">
       <caption>A velocity function that is sometimes negative.</caption>
       <image width="47%" source="images/4_2_Intro" >
-      	<description>The graph of a velocity function whose area bounded by the curve on the interval x equal a to x equal b is shaded. </description>
+      	<shortdescription>The graph of a velocity function whose area bounded by the curve on the interval x equal a to x equal b is shaded. </shortdescription>
       </image>
     </figure>
 
@@ -4843,7 +4843,7 @@
     <figure xml:id="F-4-4-FTCVel" permid="DCR">
       <caption>Finding distance traveled when we know a velocity function <m>v</m>.</caption>
       <image width="47%" source="images/4_4_FTCVel" >
-      	<description>The shaded area under a positive velocity curve from x equal a to x equal b representing the distance travelled on that interval. </description>
+      	<shortdescription>The shaded area under a positive velocity curve from x equal a to x equal b. </shortdescription>
       </image>
     </figure>
 
@@ -4906,7 +4906,7 @@
     <figure xml:id="F-4-4-FTCVel2" permid="jKa">
       <caption>The exact area of the region enclosed by <m>v(t) = 3t^2 + 40</m> on <m>[1,5]</m>.</caption>
       <image width="47%" source="images/4_4_FTCVel2" >
-      	<description>The shaded area under the velocity curve from x equal 1 to x equal 5 representing the exact distance travelled of two hundred and eighty four feet on that interval. </description>
+      	<shortdescription>The shaded area under the velocity curve from x equal 1 to x equal 5. </shortdescription>
       </image>
     </figure>
 
@@ -5445,7 +5445,7 @@
     <figure xml:id="F-4-4-TCT" permid="Cxy">
       <caption>The graphs of <m>f'(x) = 4 - 2x</m> (at left) and an antiderivative <m>f(x) = 4x - x^2</m> at right.  Differences in heights on <m>f</m> correspond to net signed areas bounded by <m>f'</m>.</caption>
       <image width="80%" source="images/4_4_TCT" >
-      	<description>Graphs of a function with labeled y values and its derivative function with shaded regions illustrating the total change theorem. </description>
+      	<shortdescription>Graphs illustrating the total change theorem. </shortdescription>
       </image>
     </figure>
 
@@ -5480,7 +5480,7 @@
         <figure xml:id="F-4-4-TCTEx" permid="Jsd">
           <caption>The rate <m>r(t)</m> of pollution leaking from a tank, measured in gallons per day.</caption>
           <image width="47%" source="images/4_4_TCTEx" >
-          	<description>The graph of the rate of pollution measured in gallons per day as a function of time measured in days. The bounded area between t equal four and t equal ten is shaded. </description>
+          	<shortdescription>The graph of r of t  with shaded area between t equal 4 and 10. </shortdescription>
           </image>
         </figure>
       </statement>
@@ -5548,7 +5548,7 @@
     <figure xml:id="F-4-4-Act3" permid="eGE">
       <caption>The rate <m>c(t)</m> at which a person exercising burns calories, measured in calories per minute.</caption>
       <image width="80%" source="images/4_5_calFTC.png" >
-      	<description>The graph of the rate of calorie burn measured in calories per minute as a function of time measured in minutes. </description>
+      	<shortdescription>The graph of c of t. </shortdescription>
       </image>
     </figure>
 
@@ -5807,7 +5807,7 @@
       <figure xml:id="F-4-4-Ez2" permid="TlB">
         <caption>The velocity function of a moving body.</caption>
         <image width="47%" source="images/4_4_Ez2" >
-        		<description>The graph of a velocity function measured in meters per minute as a function of time measured in minutes. </description>
+        		<shortdescription>The graph of v of t. </shortdescription>
         </image>
       </figure>
 
@@ -6631,7 +6631,7 @@
         <figure xml:id="F-7-3-PA" permid="jLN">
           <caption>Grid for plotting the tangent line.</caption>
           <image width="47%" source="images/7_3_PA" >
-          	<description>Blank axes for sketching the linear approximation of y centered at zero. </description>
+          	<shortdescription>Blank axes for sketching the linear approximation of y centered at zero. </shortdescription>
           </image>
         </figure>
 
@@ -6703,7 +6703,7 @@
       <figure xml:id="F-7-3-slope" permid="kgm">
         <caption>The role of slope in Euler's Method.</caption>
         <image permid="hVA" source="images/7_3_slope" >
-        		<description>A graph illustrating the slope of a line as delta y divided by delta t. </description>
+        		<shortdescription>A graph illustrating the slope of a line as delta y divided by delta t. </shortdescription>
         </image>
       </figure>
     </sidebyside>
@@ -6752,7 +6752,7 @@
       <figure xml:id="F-7-3-euler-points-1" permid="wuE">
         <caption>One step of Euler's method.</caption>
         <image source="images/7_3_euler_points_1" >
-        	<description>A graph of a line segment illustrating the first step of Euler's method. </description>
+        	<shortdescription>A graph of a line segment illustrating the first step of Euler's method. </shortdescription>
         </image>
       </figure>
     </sidebyside>
@@ -6783,7 +6783,7 @@
       <figure xml:id="F-7-3-euler-points-2" permid="IIW">
         <caption>Two steps of Euler's method.</caption>
         <image source="images/7_3_euler_points_2" >
-        		<description>A graph of two line segments illustrating the first two steps of Euler's method. </description>
+        		<shortdescription>A graph of two line segments illustrating the first two steps of Euler's method. </shortdescription>
         </image>
       </figure>
     </sidebyside>
@@ -6801,7 +6801,7 @@
       <figure xml:id="F-7-3-Euler-Pts-a" permid="oQf">
         <caption>The points and piecewise linear approximate solution generated by Euler's method.</caption>
         <image source="images/7_3_euler_points_6" permid="QXp">
-        		<description>A graph of six line segments illustrating the first six steps of Euler's method. </description>
+        		<shortdescription>A graph of six line segments illustrating the first six steps of Euler's method. </shortdescription>
         </image>
 
       </figure>
@@ -6809,7 +6809,7 @@
       <figure xml:id="F-7-3-Euler-Pts-b" permid="UXo">
         <caption>The approximate solution compared to the exact solution (shown in blue).</caption>
         <image source="images/7_3_euler" permid="xey">
-        		<description>Line segments from Euler's method graphed along with the exact solution that Euler's method is estimating. </description>
+        		<shortdescription>Line segments from Euler's method graphed along with the exact solution that Euler's method is estimating. </shortdescription>
         </image>
 
       </figure>
@@ -7028,7 +7028,7 @@
             <figure xml:id="F-act-7-3-1-grid" permid="giW">
               <caption>Grid for plotting points generated by Euler's method.</caption>
               <image source="images/7_3_euler_empty" >
-              	<description>Blank axes for plotting approximate solution values obtained using Euler's method.  </description>
+              	<shortdescription>Blank axes for plotting approximate solution values obtained using Euler's method.  </shortdescription>
               </image>
             </figure>
           </sidebyside>
@@ -7366,7 +7366,7 @@
             <figure xml:id="F-7-3-act-2" permid="fNx">
               <caption>Axes for plotting the results of Euler's method.</caption>
               <image source="images/7_3_euler_empty_2" >
-              	<description>Blank axes for plotting approximate solution values obtained using Euler's method.  </description>
+              	<shortdescription>Blank axes for plotting approximate solution values obtained using Euler's method.  </shortdescription>
               </image>
             </figure>
           </sidebyside>
@@ -7659,7 +7659,7 @@
       <figure permid="Bex">
         <caption>A plot of the error as a function of <m>\Delta t</m>.</caption>
         <image source="images/7_3_error" >
-        		<description>A plot of the error using Euler's method as a function of the step size delta t. </description>
+        		<shortdescription>A plot of the error using Euler's method as a function of the step size delta t. </shortdescription>
         </image>
       </figure>
     </sidebyside>

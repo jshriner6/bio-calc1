@@ -4791,7 +4791,7 @@
     <figure xml:id="F-1-6-Intro" permid="dcQ">
       <caption>Two tangent lines on a graph.</caption>
       <image width="45%" source="images/1_6_Intro">
-      	<description>The graph of a function with two tangent lines. One has a slope that is small and positive, while the other has a slope that is large in absolute value and negative. </description>
+      	<shortdescription>The graph of a function with two tangent lines. </shortdescription>
        </image>
     </figure>
 
@@ -4823,7 +4823,7 @@
   <figure xml:id="F-1-6-PA1" permid="yrI">
     <caption>The graph of <m>y = s(t)</m>, the position of the car (measured in thousands of feet from its starting location) at time <m>t</m> in minutes.</caption>
     <image width="40%" source="images/1_6_PA1" >
-    	<description>The graph of the position function of a car after t minutes. </description>
+    	<shortdescription>The graph of the position function of a car after t minutes. </shortdescription>
     </image>
   </figure>
 
@@ -4878,7 +4878,7 @@
   <figure xml:id="F-1-6-PA1b" permid="eyR">
     <caption>Axes for plotting <m>y = v(t) = s'(t)</m> and <m>y = v'(t)</m>.</caption>
     <image width="100%" source="images/1_6_PA1b" >
-    	<description>Blank axes for sketching the graph of the velocity function of the car and the derivative function of the velocity function. </description>
+    	<shortdescription>Blank axes for sketching the graph of the velocity function of the car and the derivative function of the velocity function. </shortdescription>
     </image>
   </figure>
 </exploration>
@@ -4939,7 +4939,7 @@
     <figure xml:id="F-1-6-Intro2" permid="hMJ">
       <caption>A function that is decreasing on the intervals <m>-3 \lt  x \lt  -2</m> and <m>0 \lt  x  \lt  2</m> and increasing on <m>-2 \lt  x \lt  0</m> and <m>2 \lt  x \lt  3</m>.</caption>
       <image width="47%" source="images/1_6_Intro2" >
-      		<description>The graph of a function with tangent lines illustrating how the derivative function can be used to determine if the function is increasing or decreasing. </description>
+      		<shortdescription>A graph illustrating how the derivative function can be used to determine if a function is increasing or decreasing. </shortdescription>
       </image>
     </figure>
   </subsection>
@@ -5019,7 +5019,7 @@
     <figure xml:id="F-1-6-3optsi" permid="jBW">
       <caption>Three functions that are all increasing, but doing so at an increasing rate, at a constant rate, and at a decreasing rate, respectively.</caption>
       <image width="100%" source="images/1_6_3optsi" >
-      	<description>Three graphs of increasing functions which are increasing at different rates. One is increasing at an increasing rate, one is increasing at a constant rate, and one is increasing at a decreasing rate. </description>
+      	<shortdescription>Three graphs of increasing functions which are increasing at different rates. </shortdescription>
       </image>
     </figure>
 
@@ -5058,7 +5058,7 @@
     <figure xml:id="F-1-6-3optsd" permid="PJf">
       <caption>From left to right, three functions that are all decreasing, but doing so in different ways.</caption>
       <image width="100%" source="images/1_6_3optsd" >
-      	<description>Three graphs of decreasing functions which are decreasing at different rates. One is decreasing at an increasing rate, one is decreasing at a constant rate, and one is decreasing at a decreasing rate. </description>
+      	<shortdescription>Three graphs of decreasing functions which are decreasing at different rates.</shortdescription>
       </image>
     </figure>
 
@@ -5117,7 +5117,7 @@
     <figure xml:id="F-1-6-concavity" permid="vQo">
       <caption>At left, a function that is concave up; at right, one that is concave down.</caption>
       <image width="90%" source="images/1_6_concavity" >
-      	<description>The graph of a function which is concave up and the graph of a function which is concave down. </description>
+      	<shortdescription>The graph of a function which is concave up and the graph of a function which is concave down. </shortdescription>
       </image>
     </figure>
 
@@ -5153,7 +5153,7 @@
     <figure xml:id="F-1-6-A1" permid="KiX">
       <caption>The graph of <m>y = s(t)</m>, the position of the car (measured in thousands of feet from its starting location) at time <m>t</m> in minutes.</caption>
       <image width="40%" source="images/1_6_PA1" >
-      	<description>The graph of the position function of a car after t minutes. </description>
+      	<shortdescription>The same graph of the position function of a car after t minutes from the warmup. </shortdescription>
       </image>
     </figure>
 
@@ -5810,7 +5810,7 @@
     <figure xml:id="F-1-6-A2" permid="nab">
       <caption>Two given functions <m>f</m>, with axes provided for plotting <m>f'</m> and <m>f''</m> below.</caption>
       <image width="100%" source="images/1_6_Act2" >
-      	<description>The graphs of two functions, along with blank axes for sketching the first derivative functions and the second derivative functions. </description>
+      	<shortdescription>The graphs of two functions, along with blank axes for sketching the first derivative functions and the second derivative functions. </shortdescription>
       </image>
     </figure>
   </statement>
@@ -6035,7 +6035,7 @@
       <figure xml:id="F-1-6-Ez2" permid="tQg">
         <caption>The graph of <m>y = g'(x)</m>.</caption>
         <image width="47%" source="images/1_6_Ez2" >
-        		<description>The graph of the derivative function of a function g. </description>
+        		<shortdescription>The graph of the derivative function of a function g, which is always positive. </shortdescription>
         </image>
       </figure>
 
@@ -7769,7 +7769,7 @@ When functions are used as models, they are not always represented explicitly as
       <figure xml:id="F-2-1-Ez3" permid="yeN">
         <caption>The graphs of <m>p</m> (in blue) and <m>q</m> (in green).</caption>
         <image width="47%" source="images/2_1_Ez3" >
-        		<description>The graphs of two piecewise linear functions p and q. </description>
+        		<shortdescription>The graphs of two piecewise linear functions p and q. </shortdescription>
         </image>
       </figure>
 
@@ -8298,7 +8298,7 @@ When functions are used as models, they are not always represented explicitly as
   <figure xml:id="F-2-2-PA1" permid="RPa">
     <caption>At left, the graph of <m>y = g(x) = 2^x</m>. At right, axes for plotting <m>y = g'(x)</m>.</caption>
     <image width="60%" source="images/2_2_PA1a" >
-    	<description>The graph of an increasing exponential function along with blank axes for sketching the graph of its derivative function. </description>
+    	<shortdescription>The graph of an increasing exponential function along with blank axes for sketching the graph of its derivative function. </shortdescription>
     </image>
   </figure>
 </exploration>
@@ -8334,7 +8334,7 @@ When functions are used as models, they are not always represented explicitly as
     <figure xml:id="F-2-2-A1" permid="fYF">
       <caption>At left, the graph of <m>y = f(x) = \sin(x)</m>.</caption>
       <image width="100%" source="images/2_2_sine" >
-      		<description>The graph of sine of x along with blank axes for sketching its derivative function. </description>
+      		<shortdescription>The graph of sine of x along with blank axes for sketching its derivative function. </shortdescription>
       </image>
     </figure>
 
@@ -8529,7 +8529,7 @@ When functions are used as models, they are not always represented explicitly as
     <figure xml:id="F-2-2-A2" permid="rRy">
       <caption>At left, the graph of <m>y = g(x) = \cos(x)</m>.</caption>
       <image width="100%" source="images/2_2_cosine" >
-      	<description>The graph of the cosine function along with blank axes for sketching its derivative function. </description>
+      	<shortdescription>The graph of the cosine function along with blank axes for sketching its derivative function. </shortdescription>
       </image>
     </figure>
 
@@ -10805,7 +10805,7 @@ When functions are used as models, they are not always represented explicitly as
         <figure xml:id="F-2-3-Ez3" permid="NJx">
           <caption>The graphs of <m>p</m> (in blue) and <m>q</m> (in green).</caption>
           <image source="images/2_1_Ez3" >
-          	<description>Graphs of two piecewise linear function p and q. </description>
+          	<shortdescription>Graphs of two piecewise linear function p and q. </shortdescription>
           </image>
         </figure>
       </sidebyside>
@@ -12730,7 +12730,7 @@ When functions are used as models, they are not always represented explicitly as
       <figure xml:id="F-2-5-Ez3" permid="Axd">
         <caption>The graphs of <m>p</m> (in blue) and <m>q</m> (in green).</caption>
         <image width="50%" source="images/2_1_Ez3" >
-        		<description>The graphs of two piecewise linear functions p and q. </description>
+        		<shortdescription>The graphs of two piecewise linear functions p and q. </shortdescription>
         </image>
       </figure>
 
@@ -13204,7 +13204,7 @@ When functions are used as models, they are not always represented explicitly as
     <figure xml:id="F-2-6-Inverse-Plot" permid="Wbu">
       <caption>A graph of a function <m>y = f(x)</m> along with its inverse, <m>y = f^{-1}(x)</m>.</caption>
       <image width="47%" source="images/2_6_InversePlot" >
-      		<description>The graph of a function f along with the graph of its inverse function. </description>
+      		<shortdescription>The graph of a function f along with the graph of its inverse function. </shortdescription>
       </image>
     </figure>
 
@@ -13306,7 +13306,7 @@ When functions are used as models, they are not always represented explicitly as
       <figure xml:id="F-2-6-Log-Exp" permid="Atq">
         <caption>A graph of the function <m>y = e^x</m> along with its inverse, <m>y = \ln(x)</m>, where both functions are viewed using the input variable <m>x</m>.</caption>
         <image source="images/2_6_LogExp" >
-        		<description>The graph of the function e to the x along with the graph of its inverse function natural log of x. Tangent lines are shown to illustrate how the derivative of the exponential function at a point is related to the derivative of the natural log function at the corresponding point. </description>
+        		<shortdescription>The graph of the function e to the x along with the graph of its inverse function natural log of x. </shortdescription>
         </image>
       </figure>
     </sidebyside>
@@ -14080,7 +14080,7 @@ When functions are used as models, they are not always represented explicitly as
     <figure xml:id="F-2-6-Gen-Inv" permid="Sbv">
       <caption>A graph of function <m>y = f(x)</m> along with its inverse, <m>y = g(x) = f^{-1}(x)</m>.  Observe that the slopes of the two tangent lines are reciprocals of one another.</caption>
       <image width="50%" source="images/2_6_GenInv" >
-      		<description>The graph of a function along with the graph of its inverse function. Tangent lines are shown to illustrate how the derivative of the original function at a point is related to the derivative of its inverse function at the corresponding point. </description>
+      		<shortdescription>The graph of a function along with the graph of its inverse function.  </shortdescription>
       </image>
     </figure>
 
@@ -14348,7 +14348,7 @@ When functions are used as models, they are not always represented explicitly as
         <figure xml:id="F-2-6-Ez4" permid="eHV">
           <caption>A function <m>y = f(x)</m></caption>
           <image source="images/2_6_Ez4" >
-          	<description>The graph of an invertible function f. </description>
+          	<shortdescription>The graph of an invertible function f. </shortdescription>
           </image>
         </figure>
       </sidebyside>
