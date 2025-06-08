@@ -3658,7 +3658,7 @@
   
  <exploration xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="PA-1-4" permid="OFZ">
   <p permid="iyQ">
-    Consider the function <m>f(x) = 4 - x^2</m>.
+    Consider the function <m>f(x) = 4x - x^2</m>.
 
     <ol marker="a." permid="RAF">
       <li permid="xHO">
@@ -3685,7 +3685,7 @@
         <p permid="CrH">
           Conjecture a formula for <m>f'(a)</m> that depends only on the value <m>a</m>.
           That is,
-          in the same way that we have a formula for <m>f(x)</m> (recall <m>f(x) = 4 - x^2</m>),
+          in the same way that we have a formula for <m>f(x)</m> (recall <m>f(x) = 4x - x^2</m>),
           see if you can use your work above to guess a formula for <m>f'(a)</m> in terms of <m>a</m>.
         </p>
       </li>

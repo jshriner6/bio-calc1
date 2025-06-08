@@ -352,6 +352,7 @@ study of change, and is therefore a useful tool to understand as a scientist. In
 					</li>
 				</ul>
 				
+				
 
 			</subsection>
 			
@@ -368,6 +369,7 @@ study of change, and is therefore a useful tool to understand as a scientist. In
 				</exercise>
 				
 				<exercise xml:id="x-1-1-models">
+					<statement>
 					<p>
 					The representations of models that we will practice working with in this text are motivated by the models that are used to analyze real systems.
 						<aside>
@@ -400,6 +402,7 @@ study of change, and is therefore a useful tool to understand as a scientist. In
 							</li>
 						</ol>
 					</p>
+					</statement>
 				</exercise>
 			</exercises>
 	</section>
