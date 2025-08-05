@@ -1,5 +1,12 @@
 <!DOCTYPE html>
 <html lang="en-US" dir="ltr">
+<!--******************************************-->
+<!--*  Authored with PreTeXt                 *-->
+<!--*  pretextbook.org                       *-->
+<!--*  Theme: default-modern                 *-->
+<!--*  Palette: greens                       *-->
+<!--******************************************-->
+
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
 <!--*                                          *-->
@@ -12,9 +19,9 @@
 </head>
 <body class="ignore-math">
 <article class="example example-like"><h4 class="heading">
-<span class="type">Example</span><span xmlns:xlink="http://www.w3.org/1999/xlink" class="space"> </span><span class="codenumber">1.7.8</span><span xmlns:xlink="http://www.w3.org/1999/xlink" class="period">.</span><span xmlns:xlink="http://www.w3.org/1999/xlink" class="space"> </span><span class="title">An Exponential Transformation Solution Function.</span>
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.7.8</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">An Exponential Transformation Solution Function.</span>
 </h4>
-<div xmlns:xlink="http://www.w3.org/1999/xlink" class="para logical">
+<div class="para logical">
 <div class="para">Consider the updating function <span class="process-math">\(p_{t+1} = 0.5p_t + 1\)</span> with initial value <span class="process-math">\(p_0=10\text{.}\)</span> Written as a difference equation, this becomes</div>
 <div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/sec-1-8.html">
 \begin{equation*}
@@ -31,7 +38,7 @@ p_{t+1} -p_t = -0.5p_t + 1 \text{.}
 \amp=0.5
 \end{align*}
 </div>
-<div class="para">This shows that a solution function of the form <span class="process-math">\(p_t = v \cdot 0.5^t + u\)</span> would fit the discrete system described by the updating function <span class="process-math">\(p_{t+1} = 0.5p_t + 1\text{.}\)</span> However, unlike in the previous example, creating a table of values will show that the solution function is <em class="emphasis">not</em> <span class="process-math">\(p_t = 10 \cdot 0.5^t\text{:}\)</span> <figure class="table table-like"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">1.7.9<span class="period">.</span></span><span class="space"> </span></figcaption><div class="tabular-box natural-width"><table class="tabular">
+<div class="para">This shows that a solution function of the form <span class="process-math">\(p_t = v \cdot 0.5^t + u\)</span> would fit the discrete system described by the updating function <span class="process-math">\(p_{t+1} = 0.5p_t + 1\text{.}\)</span> However, unlike in the previous example, creating a table of values will show that the solution function is <em class="emphasis">not</em> <span class="process-math">\(p_t = 10 \cdot 0.5^t\text{:}\)</span> <figure class="table table-like"><figcaption><span class="type">Table</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.7.9<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><div class="autopermalink" data-description="Table 1.7.9"><a href="#ex-1-7-exptrans-2-9" title="Copy heading and permalink for Table 1.7.9" aria-label="Copy heading and permalink for Table 1.7.9">🔗</a></div></figcaption><div class="tabular-box natural-width"><table class="tabular">
 <tr class="header-horizontal">
 <th scope="col" class="l m b1 r0 l0 t0 lines"><span class="process-math">\(t\)</span></th>
 <th scope="col" class="l m b1 r0 l0 t0 lines"><span class="process-math">\(p_t\)</span></th>
@@ -75,8 +82,9 @@ p_{t+1} -p_t = -0.5p_t + 1 \text{.}
 <td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(0.3125\)</span></td>
 </tr>
 </table></div></figure> We can, however, notice from the table that the values of <span class="process-math">\(p_t\)</span> seem to be getting closer to <span class="process-math">\(2\)</span> as time goes on. We will develop a tool for verifying this hypothesis in <a href="sec-1-8.html" class="internal" title="Section 1.8: Analyzing Discrete-Time Dynamical Systems">Section 1.8</a>, but creating a table like above is a good way to build intuition for how the solution behaves.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ex-1-7-exptrans-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div xmlns:xlink="http://www.w3.org/1999/xlink" class="para logical">
+<div class="para logical">
 <div class="para">We know that the solution function is a transformation of the exponential function <span class="process-math">\(f(t) =0.5^t\text{,}\)</span> and that we’d like there to be a horizontal asymptote at <span class="process-math">\(y=2\text{,}\)</span> since this is what the outputs seems to approach as <span class="process-math">\(t\)</span> gets large. Since <span class="process-math">\(f(t) =0.5^t\)</span> is exponential decay and has a horizontal asymptote at <span class="process-math">\(y=0\text{,}\)</span> we will shift the function up <span class="process-math">\(2\)</span> using transformations:</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -93,6 +101,8 @@ p_t = v \cdot 0.5^t +2
 \end{align*}
 </div>
 <div class="para">Thus, the solution function is given by <span class="process-math">\(p_t = 8 \cdot 0.5^t + 2\text{.}\)</span> Create a table of values for <span class="process-math">\(t=1,2,3,4,5\)</span> and <span class="process-math">\(6\)</span> to verify this solution function fits the points of this DTDS.</div>
-</div></article><span class="incontext"><a class="internal" href="sec-1-7.html#ex-1-7-exptrans">in-context</a></span>
+<div class="autopermalink" data-description="Paragraph"><a href="#ex-1-7-exptrans-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Example 1.7.8: An Exponential Transformation Solution Function"><a href="#ex-1-7-exptrans" title="Copy heading and permalink for Example 1.7.8: An Exponential Transformation Solution Function" aria-label="Copy heading and permalink for Example 1.7.8: An Exponential Transformation Solution Function">🔗</a></div></article><span class="incontext"><a class="internal" href="sec-1-7.html#ex-1-7-exptrans">in-context</a></span>
 </body>
 </html>
