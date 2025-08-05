@@ -784,7 +784,9 @@ study of change, and is therefore a useful tool to understand as a scientist. In
 				<title>Average Rate of Change</title>
 				<idx><h>average rate of change</h></idx>
 				<notation><usage><m>AROC_{[a,b]}</m></usage><description>the average rate of change between <m>x</m> values <m>a</m> and <m>b</m> for a given function</description></notation>
+				<p>
 				Given a function <m>f(x)</m> and <m>x</m> values <m>a</m> and <m>b</m>, the <term>average rate of change between <m>a</m> and <m>b</m></term> is the number 
+				</p>
 				<me>
 				AROC_{[a,b]}= \dfrac{f(b) - f(a)}{b-a}
 				</me>.
@@ -1032,7 +1034,9 @@ study of change, and is therefore a useful tool to understand as a scientist. In
 			</assemblage>
 			<example>
 				<title> Density</title>
+				<p>
 				A circular bacterial colony with radius <m>10 \text{mm} </m> has a density of <m>0.2 \dfrac{\text{mg}}{\text{mm}^2} </m>. The units given for the density are a good reminder that we'll be using the fundamental relation <m>m = \rho A</m> to compute the mass, since it gives us mass per unit area. The mass of the colony is then
+				</p>
 				<md>
 					<mrow> m \amp= \rho A </mrow>
 					<mrow> \amp = \rho \pi r^2 </mrow>
